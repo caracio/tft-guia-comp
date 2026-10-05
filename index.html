@@ -128,6 +128,12 @@ main{max-width:1200px;margin:0 auto;padding:16px var(--pad) 120px}
 .lbl{font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px}
 
 /* ===== Controle segmentado ===== */
+.sl{margin-top:10px}
+.sl-h{display:flex;justify-content:space-between;align-items:baseline}
+.sl-h b{font-size:20px;color:var(--text)}
+.sl input[type=range]{width:100%;height:32px;accent-color:var(--accent-fill);cursor:pointer;margin:2px 0}
+.sl-z{display:flex;justify-content:space-between;font-size:11px;color:var(--text-dim,var(--muted,#8a8fa3))}
+#sitRead{margin-top:10px;display:grid;gap:6px}
 .seg{display:flex;background:var(--panel2);border:1px solid var(--border-subtle);border-radius:var(--r-s);padding:4px;gap:4px;flex-wrap:wrap;min-height:var(--hit)}
 .seg button{flex:1 1 auto;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:36px;border:0;background:none;border-radius:calc(var(--r-s) - 2px);padding:0 10px;font-weight:600;font-size:14px;color:var(--muted);transition:background var(--t-base),color var(--t-base),transform var(--t-fast)}
 .seg button:hover{background:color-mix(in srgb,var(--control),#fff 6%)}
@@ -425,7 +431,14 @@ a{color:var(--accent)}
     <div class="layout">
       <div>
         <div class="card">
-          <div class="card-h"><h2><span class="step">1</span>Seus bonecos</h2></div>
+          <div class="card-h"><h2><span class="step">1</span>Checklist do 2-1</h2></div>
+          <p class="hint">Responda antes de subir para o nível 4. Sim em pelo menos 2 → suba.</p>
+          <div id="checks"></div>
+          <div id="checkVerdict"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-h"><h2><span class="step">2</span>Seus bonecos</h2></div>
           <p class="hint">Toque num boneco que você tem (banco ou tabuleiro). Cada toque sobe a estrela: 1★ → 2★ → 3★ → remove.</p>
           <div class="seg" id="modeSeg">
             <button data-mode="have" aria-pressed="true"><i data-icon="check"></i>Eu tenho</button>
@@ -440,33 +453,26 @@ a{color:var(--accent)}
         </div>
 
         <div class="card">
-          <div class="card-h"><h2><span class="step">2</span>Componentes de item</h2></div>
+          <div class="card-h"><h2><span class="step">3</span>Componentes de item</h2></div>
           <p class="hint">Toque para somar (até 4 de cada). O app indica comps que usam melhor esses componentes.</p>
           <div class="items" id="items"></div>
           <p class="note">As preferências de item vêm da frequência de componentes de cada comp no MetaTFT. Confirme os itens exatos na ficha da comp (aba <i>As 6 comps</i>).</p>
         </div>
 
         <div class="card">
-          <div class="card-h"><h2><span class="step">3</span>Sua situação</h2></div>
-          <p class="lbl" style="margin-top:4px">Vida</p>
-          <div class="seg" id="hpSeg">
-            <button data-hp="high">Alta (70+)</button>
-            <button data-hp="mid">Média</button>
-            <button data-hp="low">Baixa (&lt;40)</button>
+          <div class="card-h"><h2><span class="step">4</span>Sua situação</h2></div>
+          <div class="sl">
+            <div class="sl-h"><span class="lbl">Vida</span><b id="hpVal">55</b></div>
+            <input type="range" id="hpRange" min="0" max="100" step="1" value="55" aria-label="Vida">
+            <div class="sl-z"><span>Baixa &lt;40</span><span>Média</span><span>Alta 70+</span></div>
           </div>
-          <p class="lbl">Ouro</p>
-          <div class="seg" id="goldSeg">
-            <button data-gold="low">Pouco (&lt;20)</button>
-            <button data-gold="mid">Médio (20–30)</button>
-            <button data-gold="high">Muito (30+)</button>
+          <div class="sl">
+            <div class="sl-h"><span class="lbl">Ouro</span><b id="goldVal">25</b></div>
+            <input type="range" id="goldRange" min="0" max="100" step="1" value="25" aria-label="Ouro">
+            <div class="sl-z"><span>Pouco &lt;20</span><span>Médio 20–30</span><span>Muito 30+</span></div>
           </div>
+          <div id="sitRead"></div>
         </div>
-
-        <div class="card">
-          <div class="card-h"><h2><span class="step">4</span>Checklist do 2-1</h2></div>
-          <p class="hint">Responda antes de subir para o nível 4. Sim em pelo menos 2 → suba.</p>
-          <div id="checks"></div>
-          <div id="checkVerdict"></div>
         </div>
       </div>
 
@@ -780,7 +786,7 @@ function buildStageTips(comps){
 }
 
 /* ================= ESTADO ================= */
-const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", checks:[null,null,null], mode:"have", fam:"all", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2"};
+const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", hpv:55, goldv:25, checks:[null,null,null], mode:"have", fam:"all", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2"};
 let S = JSON.parse(JSON.stringify(DEF));
 try { const raw = localStorage.getItem("tft-guia-v2"); if (raw) S = Object.assign({}, DEF, JSON.parse(raw)); } catch(e){}
 function save(){ try{ localStorage.setItem("tft-guia-v2", JSON.stringify(S)); }catch(e){} }
@@ -941,19 +947,43 @@ function renderItems(){
     return `<button class="it ${n?"has":""}" data-it="${c.id}" aria-label="${c.name}, ${n} unidades">${n?`<span class="cnt">${n}</span>`:""}${imgTag(CDN_ITEMS+COMP_IMG[c.id]+".png",64,"ii")}${I(ITEM_ICON[c.id])}<span class="in">${c.name}</span></button>`;
   }).join("");
 }
+const hpZone = v => v<40?"low":v>=70?"high":"mid";
+const goldZone = v => v<20?"low":v>30?"high":"mid";
+function syncSit(){ S.hp = hpZone(S.hpv); S.gold = goldZone(S.goldv); }
+function sitAdvice(){
+  const gv=S.goldv, hz=S.hp, gz=S.gold, out=[];
+  const int = Math.min(5, Math.floor(gv/10)), next = int<5 ? (int+1)*10-gv : 0;
+  out.push(`<div class="note">${I("coins")}<span>Juros: <b>+${int}</b> por rodada${next?` · faltam ${next} de ouro para +${int+1}`:" (máximo)"}.</span></div>`);
+  let t, k;
+  if (hz==="low" && gz==="low"){ t="Sobreviva: gaste o ouro em poder imediato e na comp mais estável. Economizar agora custa vida."; k="warn"; }
+  else if (hz==="low"){ t="Vida baixa: pare de economizar, role para estabilizar e prefira comps estáveis."; k="warn"; }
+  else if (hz==="high" && gz==="high"){ t="Vida e ouro altos: janela de Fast 8. Suba de nível mantendo os juros."; k=""; }
+  else if (gz==="high"){ t="Ouro alto: suba de nível ou complete o board sem quebrar a faixa de juros."; k=""; }
+  else if (hz==="high"){ t="Vida alta: dá para fazer lose streak controlada e juntar ouro."; k=""; }
+  else if (gz==="low"){ t="Pouco ouro: compre só o que está no seu plano e evite rolar sem direção."; k=""; }
+  else { t="Situação equilibrada: siga o plano A e mantenha as 3 opções abertas."; k=""; }
+  out.push(`<div class="note ${k}">${I("alert")}<span>${t}</span></div>`);
+  return out.join("");
+}
 function renderSit(){
-  document.querySelectorAll("#hpSeg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.hp===S.hp));
-  document.querySelectorAll("#goldSeg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.gold===S.gold));
+  syncSit();
+  const hr=$("#hpRange"), gr=$("#goldRange");
+  if (hr && +hr.value!==S.hpv) hr.value=S.hpv; if (gr && +gr.value!==S.goldv) gr.value=S.goldv;
+  $("#hpVal").textContent=S.hpv; $("#goldVal").textContent=S.goldv; $("#sitRead").innerHTML=sitAdvice();
   document.querySelectorAll("#modeSeg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.mode===S.mode));
   $("#modeSeg").classList.toggle("contest", S.mode==="cont");
 }
-function renderChecks(){
-  $("#checks").innerHTML = CHECKQ.map((q,i)=>`<div class="q"><span>${q}</span><div class="seg"><button data-ck="${i}" data-v="1" aria-pressed="${S.checks[i]===1}">Sim</button><button data-ck="${i}" data-v="0" aria-pressed="${S.checks[i]===0}">Não</button></div></div>`).join("");
+function verdictHtml(){
   const ans = S.checks.filter(x=>x!==null).length, yes = S.checks.filter(x=>x===1).length;
   let h;
   if (ans<3 && yes<2) h = `<div class="verdict none">${I("hourglass")}<span>Responda as 3 perguntas para ver a decisão.</span></div>`;
   else if (yes>=2) h = `<div class="verdict go">${I("check")}<span>Suba para o nível 4 (${yes}/3 sim). Continue comprando as peças do seu plano.</span></div>`;
   else h = `<div class="verdict hold">${I("pause")}<span>Fique no nível 3. Faça lose streak e junte ouro e componentes (${yes}/3 sim).</span></div>`;
+  return h;
+}
+function renderChecks(){
+  $("#checks").innerHTML = CHECKQ.map((q,i)=>`<div class="q"><span>${q}</span><div class="seg"><button data-ck="${i}" data-v="1" aria-pressed="${S.checks[i]===1}">Sim</button><button data-ck="${i}" data-v="0" aria-pressed="${S.checks[i]===0}">Não</button></div></div>`).join("");
+  const h = verdictHtml();
   $("#checkVerdict").innerHTML = h;
 }
 
@@ -1098,11 +1128,20 @@ function chip(n){
   return `<button class="ch ${st?"own":""} ${ct?"cont":""}" data-eu="${encodeURIComponent(n)}" aria-label="${esc(n)}${st?", "+st+" estrelas":""}${ct?", contestado":""}">${av(n)}${esc(n)}${st?`<span class="st">${I("star").repeat(st)}</span>`:""}${ct?`<span class="ci">${I("swords")}</span>`:""}</button>`;
 }
 
+function decision21Html(){
+  const rank = RANK.length ? RANK : scoreAll();
+  const sig = rank[0] && rank[0].hasSignal;
+  const rows = sig ? rank.slice(0,3).map((r,i)=>{
+    const c = r.c, b = BOARDS[c.id][0], have = b.filter(n=>S.owned[n]).length, t = LVLT[c.id].t[0];
+    return `<div class="fam-row"><div class="fam-row-h"><b>${"ABC"[i]} · ${esc(c.name)}</b>${famTag(c.fam)}</div><div class="have">Board do lvl 4: você tem ${have}/${b.length}${t&&t!=="-"?` · esta comp sobe o 4 em ${t}`:""}</div><div class="ech">${b.map(chip).join("")}</div></div>`;
+  }).join("") : `<div class="note">${I("pointer")}<span>Marque seus bonecos e componentes na aba Escolher para ver seu Plano A, B e C aqui.</span></div>`;
+  return `<div class="card"><div class="card-h"><h2>Decisão do 2-1</h2><span class="hint" style="margin:0">Suba para o lvl 4 com 2 de 3 sim</span></div>${verdictHtml()}<h3>Seus 3 planos</h3>${rows}<button class="btn" data-tab="pick" style="margin-top:10px">${I("arrow-right")}<span class="lbl">Ir para Escolher e responder o checklist</span></button></div>`;
+}
 function renderEarly(){
   const stg = STAGES.find(s=>s.id===S.stage) || STAGES[1];
   $("#stageSeg").innerHTML = STAGES.map(s=>`<button data-stage="${s.id}" aria-pressed="${s.id===stg.id}">${s.t}<small>${s.sub}</small></button>`).join("");
   const tip = STIPS[stg.id];
-  let html = `<div class="card"><div class="cols"><div><h3>${I("check","c-good")}Foque em</h3><ul>${tip.focus.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div><h3>${I("x","c-bad")}Evite</h3><ul>${tip.avoid.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>${tip.extra?`<div class="note">${I("alert")}<span>${esc(tip.extra)}</span></div>`:""}</div>`;
+  let html = (stg.id==="s2" ? decision21Html() : "") + `<div class="card"><div class="cols"><div><h3>${I("check","c-good")}Foque em</h3><ul>${tip.focus.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div><h3>${I("x","c-bad")}Evite</h3><ul>${tip.avoid.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>${tip.extra?`<div class="note">${I("alert")}<span>${esc(tip.extra)}</span></div>`:""}</div>`;
 
   if (stg.lvl===3){
     const cnt = {};
@@ -1203,8 +1242,6 @@ document.addEventListener("click", e => {
     const sc = $("#units").scrollTop; refresh(); $("#units").scrollTop = sc; return;
   }
   if (t.dataset.it){ const id=t.dataset.it; const n=(S.items[id]||0)+1; S.items[id]= n>4?0:n; return refresh(); }
-  if (t.dataset.hp){ S.hp=t.dataset.hp; return refresh(); }
-  if (t.dataset.gold){ S.gold=t.dataset.gold; return refresh(); }
   if (t.dataset.mode){ S.mode=t.dataset.mode; return refresh(); }
   if (t.dataset.fam){ S.fam=t.dataset.fam; renderFam(); return refresh(); }
   if (t.dataset.ck){ const i=+t.dataset.ck, v=+t.dataset.v; S.checks[i] = S.checks[i]===v?null:v; return refresh(); }
@@ -1213,6 +1250,8 @@ document.addEventListener("click", e => {
   if (t.dataset.ag){ const id=t.dataset.ag; const i=S.augSel.indexOf(id); if(i>=0) S.augSel.splice(i,1); else { if (S.augSel.length>=3) S.augSel.shift(); S.augSel.push(id);} renderAug(); return save(); }
   if (t.dataset.cf){ window._cf=t.dataset.cf; return renderComps(); }
 });
+$("#hpRange").addEventListener("input", e => { S.hpv = +e.target.value; if (READY) refresh(); });
+$("#goldRange").addEventListener("input", e => { S.goldv = +e.target.value; if (READY) refresh(); });
 $("#q").addEventListener("input", e => { S.q = e.target.value; if (READY){ renderUnits(); save(); } });
 $("#dockBtn").addEventListener("click", () => $("#results").scrollIntoView({behavior:"smooth",block:"start"}));
 $("#btnReset").addEventListener("click", () => {
