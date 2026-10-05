@@ -407,6 +407,41 @@ a{color:var(--accent)}
 .ipr .cn{margin-left:4px}
 .ec-h .tier-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 .ec-h .tier-wrap small{font-size:10.5px;color:var(--muted);font-weight:600}
+
+/* ===== Desktop: tudo numa tela, sem rolagem vertical ===== */
+@media (min-width:1101px){
+  html,body{height:100%;overflow:hidden}
+  main{height:calc(100vh - var(--top-h));padding-top:10px;padding-bottom:10px;overflow:hidden}
+  #v-pick,#v-pick .layout{height:100%}
+  .layout{gap:10px;align-items:stretch}
+  .side,.results-col{position:static;max-height:none;height:100%;overflow-y:auto}
+  .col-units{overflow:hidden;display:flex;flex-direction:column;gap:8px;min-height:0}
+  .col-units .card{margin-bottom:0;padding:10px 12px}
+  .col-units .card:last-child{flex:1;min-height:0;display:flex;flex-direction:column}
+  .col-units .hint,.col-units .note,.col-units .legend{display:none}
+  .col-units .card-h{margin-bottom:6px}.col-units .card-h h2{font-size:15px}
+  .col-units .seg{min-height:0;padding:3px}.col-units .seg button{min-height:28px;font-size:13px}
+  .col-units .row{margin:6px 0}.col-units .lbl{display:none}
+  .col-units .search{min-height:30px;font-size:13px}.col-units .chip{min-height:26px;padding:0 9px;font-size:12.5px}
+  .items{grid-template-columns:repeat(auto-fit,minmax(58px,1fr));gap:6px}
+  .it{min-height:0;flex-direction:row;gap:5px;padding:4px 6px;justify-content:flex-start;font-size:10.5px}
+  .it img.ii{width:24px;height:24px}.it svg.ic{width:18px;height:18px}
+  .cnt{top:-5px;right:-4px}
+  .units{flex:1;min-height:0;max-height:none;overflow:hidden;padding:2px}
+  .ugrid{grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:3px}
+  .side .card,.results-col .card{padding:10px 12px;margin-bottom:8px}
+  .side .hint{margin-bottom:4px}.q{margin-top:5px;padding:3px 4px 3px 10px}.q .seg button{min-height:28px}
+  .sl{margin-top:4px}.sl input[type=range]{height:22px}
+  .results-col .plan{padding:10px 12px;margin-bottom:6px}.results-col .next{padding:10px 12px;margin-bottom:8px}
+  .results-col .hint{display:none}.results-col .next{gap:3px}.results-col .next p{font-size:13px}
+  .results-col .plan .strip{margin-top:5px}.results-col .plan{padding:8px 12px}
+  .ugr{display:flex;gap:6px;align-items:flex-start;margin-bottom:4px}
+  .ugr .ugh{flex:0 0 34px;margin:0;padding-top:6px;flex-direction:column;gap:2px;font-size:11px;line-height:1.1;text-align:center;white-space:normal}
+  .ugr .ugh i{display:none}.ugr .ugrid{flex:1;min-width:0}
+  .u{aspect-ratio:auto;gap:1px;padding:4px 2px}
+  .u .av{width:30px;height:30px}.un{font-size:9.5px}.dots{height:8px}
+}
+
 </style>
 </head>
 <body>
@@ -459,7 +494,13 @@ a{color:var(--accent)}
       </aside>
       <div class="col-units">
         <div class="card">
-          <div class="card-h"><h2><span class="step">2</span>Seus bonecos</h2></div>
+          <div class="card-h"><h2><span class="step">2</span>Componentes de item</h2></div>
+          <p class="hint">Toque para somar (até 4 de cada). O app indica comps que usam melhor esses componentes.</p>
+          <div class="items" id="items"></div>
+          <p class="note">As preferências de item vêm da frequência de componentes de cada comp no MetaTFT. Confirme os itens exatos na ficha da comp (aba <i>As 6 comps</i>).</p>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2><span class="step">3</span>Seus bonecos</h2></div>
           <p class="hint">Toque num boneco que você tem (banco ou tabuleiro). Cada toque sobe a estrela: 1★ → 2★ → 3★ → remove.</p>
           <div class="seg" id="modeSeg">
             <button data-mode="have" aria-pressed="true"><i data-icon="check"></i>Eu tenho</button>
@@ -477,12 +518,6 @@ a{color:var(--accent)}
           <div class="row" id="famChips" style="margin-top:0"></div>
           <div class="units" id="units"></div>
           <div class="legend" id="famLegend"></div>
-        </div>
-        <div class="card">
-          <div class="card-h"><h2><span class="step">3</span>Componentes de item</h2></div>
-          <p class="hint">Toque para somar (até 4 de cada). O app indica comps que usam melhor esses componentes.</p>
-          <div class="items" id="items"></div>
-          <p class="note">As preferências de item vêm da frequência de componentes de cada comp no MetaTFT. Confirme os itens exatos na ficha da comp (aba <i>As 6 comps</i>).</p>
         </div>
       </div>
 
@@ -952,7 +987,7 @@ function renderUnits(){
   };
   const sort = S.sort || "cost";
   const grid = l => `<div class="ugrid">${l.map(tile).join("")}</div>`;
-  const group = (label, l) => l.length ? `<div class="ugh">${label}<i></i></div>${grid(l)}` : "";
+  const group = (label, l) => l.length ? `<div class="ugr"><div class="ugh">${label}<i></i></div>${grid(l)}</div>` : "";
   let html;
   if (sort==="cost"){
     const costs = [...new Set(list.map(u=>IMG.cost[u.name]||0))].sort((a,b)=>a-b);
