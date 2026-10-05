@@ -115,10 +115,12 @@ i[data-icon],i[data-badge]{display:inline-flex;align-items:center;font-style:nor
 main{max-width:1680px;margin:0 auto;padding:16px var(--pad) 120px}
 @media (min-width:901px){main{padding-bottom:40px}}
 .view{display:none}.view.on{display:block}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,460px);gap:16px;align-items:start}
-@media (max-width:760px){.layout{grid-template-columns:1fr}}
-.results-col{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--top-h) + 12px);max-height:calc(100vh - var(--top-h) - 24px);overflow-y:auto;scrollbar-width:thin}
-@media (max-width:760px){.results-col{position:static;max-height:none;overflow:visible}}
+.layout{display:grid;grid-template-columns:300px minmax(0,1fr) minmax(0,1fr);grid-template-areas:"side units plan";gap:16px;align-items:start}
+.side{grid-area:side}.col-units{grid-area:units;min-width:0}.results-col{grid-area:plan;min-width:0}
+.side,.results-col{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--top-h) + 12px);max-height:calc(100vh - var(--top-h) - 24px);overflow-y:auto;scrollbar-width:thin}
+@media (max-width:1100px){.layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"side side" "units plan"}
+ .side{position:static;max-height:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}.side .card{margin-bottom:0}}
+@media (max-width:700px){.layout{grid-template-columns:1fr;grid-template-areas:"side" "units" "plan"}.side{grid-template-columns:1fr}.results-col{position:static;max-height:none;overflow:visible}}
 
 /* ===== Cartões ===== */
 .card{background:var(--panel);border:1px solid var(--border-subtle);border-radius:var(--r-l);padding:var(--card-pad);margin-bottom:12px}
@@ -157,7 +159,7 @@ main{max-width:1680px;margin:0 auto;padding:16px var(--pad) 120px}
 .chip.fC[aria-pressed="true"]{border-color:var(--fc);background:color-mix(in srgb,var(--fc) 12%,var(--panel2))}
 
 /* ===== Tiles de boneco ===== */
-.units{max-height:calc(100vh - 380px);min-height:260px;overflow-y:auto;padding:4px 2px;scrollbar-width:thin}
+.units{max-height:calc(100vh - 400px);min-height:240px;overflow-y:auto;padding:4px 2px;scrollbar-width:thin}
 .ugrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
 .ugh{display:flex;align-items:center;gap:8px;margin:12px 0 6px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .ugh:first-child{margin-top:2px}
@@ -271,7 +273,7 @@ details.note .why{margin-top:8px}
 #dockText{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #dockText b{color:var(--accent)}
 .dock-go{display:inline-flex;align-items:center;gap:4px;color:var(--muted);flex:0 0 auto;font-size:13px}
-@media (max-width:900px){.dock{display:block}}
+@media (max-width:700px){.dock{display:block}}
 
 /* ===== Augments ===== */
 .augs{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:12px}
@@ -433,14 +435,29 @@ a{color:var(--accent)}
   <!-- ESCOLHER -->
   <section class="view" id="v-pick">
     <div class="layout">
-      <div>
+      <aside class="side">
         <div class="card">
           <div class="card-h"><h2><span class="step">1</span>Checklist do 2-1</h2></div>
           <p class="hint">Responda antes de subir para o nível 4. Sim em pelo menos 2 → suba.</p>
           <div id="checks"></div>
           <div id="checkVerdict"></div>
         </div>
-
+        <div class="card">
+          <div class="card-h"><h2><span class="step">4</span>Vida e ouro</h2></div>
+          <div class="sl">
+            <div class="sl-h"><span class="lbl">Vida</span><b id="hpVal">55</b></div>
+            <input type="range" id="hpRange" min="0" max="100" step="1" value="55" aria-label="Vida">
+            <div class="sl-z"><span>Baixa &lt;40</span><span>Média</span><span>Alta 70+</span></div>
+          </div>
+          <div class="sl">
+            <div class="sl-h"><span class="lbl">Ouro</span><b id="goldVal">25</b></div>
+            <input type="range" id="goldRange" min="0" max="100" step="1" value="25" aria-label="Ouro">
+            <div class="sl-z"><span>Pouco &lt;20</span><span>Médio 20–30</span><span>Muito 30+</span></div>
+          </div>
+          <div id="sitRead"></div>
+        </div>
+      </aside>
+      <div class="col-units">
         <div class="card">
           <div class="card-h"><h2><span class="step">2</span>Seus bonecos</h2></div>
           <p class="hint">Toque num boneco que você tem (banco ou tabuleiro). Cada toque sobe a estrela: 1★ → 2★ → 3★ → remove.</p>
@@ -461,27 +478,11 @@ a{color:var(--accent)}
           <div class="units" id="units"></div>
           <div class="legend" id="famLegend"></div>
         </div>
-
         <div class="card">
           <div class="card-h"><h2><span class="step">3</span>Componentes de item</h2></div>
           <p class="hint">Toque para somar (até 4 de cada). O app indica comps que usam melhor esses componentes.</p>
           <div class="items" id="items"></div>
           <p class="note">As preferências de item vêm da frequência de componentes de cada comp no MetaTFT. Confirme os itens exatos na ficha da comp (aba <i>As 6 comps</i>).</p>
-        </div>
-
-        <div class="card">
-          <div class="card-h"><h2><span class="step">4</span>Sua situação</h2></div>
-          <div class="sl">
-            <div class="sl-h"><span class="lbl">Vida</span><b id="hpVal">55</b></div>
-            <input type="range" id="hpRange" min="0" max="100" step="1" value="55" aria-label="Vida">
-            <div class="sl-z"><span>Baixa &lt;40</span><span>Média</span><span>Alta 70+</span></div>
-          </div>
-          <div class="sl">
-            <div class="sl-h"><span class="lbl">Ouro</span><b id="goldVal">25</b></div>
-            <input type="range" id="goldRange" min="0" max="100" step="1" value="25" aria-label="Ouro">
-            <div class="sl-z"><span>Pouco &lt;20</span><span>Médio 20–30</span><span>Muito 30+</span></div>
-          </div>
-          <div id="sitRead"></div>
         </div>
       </div>
 
