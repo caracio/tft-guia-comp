@@ -77,7 +77,7 @@ i[data-icon],i[data-badge]{display:inline-flex;align-items:center;font-style:nor
 
 /* ===== Cabeçalho e abas ===== */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--panel);border-bottom:1px solid var(--line)}
-.top-in{max-width:1200px;margin:0 auto;padding:6px var(--pad);display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;min-height:56px}
+.top-in{max-width:1680px;margin:0 auto;padding:6px var(--pad);display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;min-height:56px}
 .brand{grid-column:1;grid-row:1;display:flex;align-items:center;gap:10px;min-width:0}
 .brand h1{font-size:22px;font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:.02em;line-height:1;white-space:nowrap}
 .brand h1 em{font-style:inherit;color:var(--accent)}
@@ -112,13 +112,13 @@ i[data-icon],i[data-badge]{display:inline-flex;align-items:center;font-style:nor
 @media (max-width:420px){.btn .lbl{display:none}.btn{padding:0 12px}}
 
 /* ===== Layout ===== */
-main{max-width:1200px;margin:0 auto;padding:16px var(--pad) 120px}
+main{max-width:1680px;margin:0 auto;padding:16px var(--pad) 120px}
 @media (min-width:901px){main{padding-bottom:40px}}
 .view{display:none}.view.on{display:block}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:12px;align-items:start}
-@media (max-width:900px){.layout{grid-template-columns:1fr}}
-.results-col{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--top-h) + 12px)}
-@media (max-width:900px){.results-col{position:static}}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,460px);gap:16px;align-items:start}
+@media (max-width:760px){.layout{grid-template-columns:1fr}}
+.results-col{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--top-h) + 12px);max-height:calc(100vh - var(--top-h) - 24px);overflow-y:auto;scrollbar-width:thin}
+@media (max-width:760px){.results-col{position:static;max-height:none;overflow:visible}}
 
 /* ===== Cartões ===== */
 .card{background:var(--panel);border:1px solid var(--border-subtle);border-radius:var(--r-l);padding:var(--card-pad);margin-bottom:12px}
@@ -157,8 +157,12 @@ main{max-width:1200px;margin:0 auto;padding:16px var(--pad) 120px}
 .chip.fC[aria-pressed="true"]{border-color:var(--fc);background:color-mix(in srgb,var(--fc) 12%,var(--panel2))}
 
 /* ===== Tiles de boneco ===== */
-.units{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px;max-height:430px;overflow-y:auto;padding:4px 2px;scrollbar-width:thin}
-@media (max-width:420px){.units{grid-template-columns:repeat(auto-fill,minmax(64px,1fr))}}
+.units{max-height:calc(100vh - 380px);min-height:260px;overflow-y:auto;padding:4px 2px;scrollbar-width:thin}
+.ugrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
+.ugh{display:flex;align-items:center;gap:8px;margin:12px 0 6px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ugh:first-child{margin-top:2px}
+.ugh i{flex:1;height:1px;background:var(--border-subtle)}
+@media (max-width:420px){.ugrid{grid-template-columns:repeat(auto-fill,minmax(64px,1fr))}}
 .u{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;aspect-ratio:1;background:var(--panel2);border:2px solid var(--border-subtle);border-radius:var(--r-m);padding:6px 4px;user-select:none;min-width:0;transition:background var(--t-fast),border-color var(--t-base),transform var(--t-fast),box-shadow var(--t-base)}
 .u:hover{background:color-mix(in srgb,var(--panel2),#fff 6%)}
 .u:active{transform:scale(.96)}
@@ -447,6 +451,12 @@ a{color:var(--accent)}
           <div class="row">
             <div class="search-wrap"><i data-icon="search"></i><input class="search" id="q" type="search" placeholder="Buscar boneco…" aria-label="Buscar boneco"></div>
           </div>
+          <div class="lbl" style="margin-top:0">Ordenar / agrupar por</div>
+          <div class="seg" id="sortSeg" style="margin-bottom:8px">
+            <button data-sort="cost" aria-pressed="true">Custo</button>
+            <button data-sort="alpha" aria-pressed="false">A–Z</button>
+            <button data-sort="comp" aria-pressed="false">Comp</button>
+          </div>
           <div class="row" id="famChips" style="margin-top:0"></div>
           <div class="units" id="units"></div>
           <div class="legend" id="famLegend"></div>
@@ -472,7 +482,6 @@ a{color:var(--accent)}
             <div class="sl-z"><span>Pouco &lt;20</span><span>Médio 20–30</span><span>Muito 30+</span></div>
           </div>
           <div id="sitRead"></div>
-        </div>
         </div>
       </div>
 
@@ -786,7 +795,7 @@ function buildStageTips(comps){
 }
 
 /* ================= ESTADO ================= */
-const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", hpv:55, goldv:25, checks:[null,null,null], mode:"have", fam:"all", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2"};
+const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", hpv:55, goldv:25, checks:[null,null,null], mode:"have", fam:"all", sort:"cost", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2"};
 let S = JSON.parse(JSON.stringify(DEF));
 try { const raw = localStorage.getItem("tft-guia-v2"); if (raw) S = Object.assign({}, DEF, JSON.parse(raw)); } catch(e){}
 function save(){ try{ localStorage.setItem("tft-guia-v2", JSON.stringify(S)); }catch(e){} }
@@ -932,14 +941,26 @@ function renderUnits(){
     if (S.fam!=="all" && !u.fams.has(S.fam)) return false;
     return true;
   });
-  $("#units").innerHTML = list.map(u => {
+  const tile = u => {
     const st = S.owned[u.name], ct = S.cont[u.name];
     const dots = [...u.fams].sort().map(f=>famBadge(f)).join("");
     return `<button class="u ${st?"own":""} ${st===3?"own3":""} ${ct?"cont":""}" data-u="${encodeURIComponent(u.name)}" aria-label="${esc(u.name)}${st?", "+st+" estrelas":""}${ct?", contestado":""}" title="${esc(u.name)}">
       ${st?starsSvg(st):""}${ct?`<span class="xmark">${I("swords")}</span>`:""}
       ${av(u.name)}
       <span class="un">${esc(u.name)}</span><span class="dots">${dots}</span></button>`;
-  }).join("") || `<p class="hint">Nenhum boneco encontrado.</p>`;
+  };
+  const sort = S.sort || "cost";
+  const grid = l => `<div class="ugrid">${l.map(tile).join("")}</div>`;
+  const group = (label, l) => l.length ? `<div class="ugh">${label}<i></i></div>${grid(l)}` : "";
+  let html;
+  if (sort==="cost"){
+    const costs = [...new Set(list.map(u=>IMG.cost[u.name]||0))].sort((a,b)=>a-b);
+    html = costs.map(c => group(c ? `${c} ouro` : "Outros", list.filter(u=>(IMG.cost[u.name]||0)===c))).join("");
+  } else if (sort==="comp"){
+    html = Object.keys(FAM).map(k => group(`${famBadge(k)} ${esc(FAM[k].name)}`, list.filter(u=>u.fams.has(k)))).join("");
+  } else html = list.length ? grid(list) : "";
+  $("#units").innerHTML = html || `<p class="hint">Nenhum boneco encontrado.</p>`;
+  document.querySelectorAll("#sortSeg button").forEach(b => b.setAttribute("aria-pressed", b.dataset.sort===sort));
 }
 function renderItems(){
   $("#items").innerHTML = COMPONENTS.map(c => {
@@ -1243,6 +1264,7 @@ document.addEventListener("click", e => {
   }
   if (t.dataset.it){ const id=t.dataset.it; const n=(S.items[id]||0)+1; S.items[id]= n>4?0:n; return refresh(); }
   if (t.dataset.mode){ S.mode=t.dataset.mode; return refresh(); }
+  if (t.dataset.sort){ S.sort=t.dataset.sort; return refresh(); }
   if (t.dataset.fam){ S.fam=t.dataset.fam; renderFam(); return refresh(); }
   if (t.dataset.ck){ const i=+t.dataset.ck, v=+t.dataset.v; S.checks[i] = S.checks[i]===v?null:v; return refresh(); }
   if (t.dataset.open){ setTab("comps"); window._cf="all"; renderComps(); const el=$("#cc-"+t.dataset.open); if(el){el.scrollIntoView({behavior:"smooth",block:"start"});} return; }
@@ -1291,6 +1313,9 @@ async function boot(){
     if (!json) throw lastErr || new Error("sem resposta");
     if (!json || !Array.isArray(json.top) || !json.top.length) throw new Error("JSON sem a lista 'top' de comps");
     buildData(json);
+    try { /* custos de todos os bonecos (opcional): assets/assets.json */
+      const ar = await fetch("assets/assets.json"); if (ar.ok){ const aj = await ar.json(); (aj.units||[]).forEach(u => { if (u.name && u.cost && !IMG.cost[u.name]) IMG.cost[u.name] = u.cost; }); }
+    } catch(e){}
   } catch(err){
     console.error("[tft] falha ao carregar dados:", err);
     bootEl.className = "card err"; bootEl.innerHTML = errorCard(err);
