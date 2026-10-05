@@ -418,7 +418,7 @@ a{color:var(--accent)}
   .side,.results-col{position:static;max-height:none;height:100%;overflow-y:auto}
   .col-units{overflow:hidden;display:flex;flex-direction:column;gap:8px;min-height:0}
   .col-units .card{margin-bottom:0;padding:10px 12px}
-  .col-units .card:last-child{flex:1;min-height:0;display:flex;flex-direction:column}
+  .col-units .card:last-child{min-height:0;display:flex;flex-direction:column}
   .col-units .hint,.col-units .note,.col-units .legend{display:none}
   .col-units .card-h{margin-bottom:6px}.col-units .card-h h2{font-size:15px}
   .col-units .seg{min-height:0;padding:3px}.col-units .seg button{min-height:28px;font-size:13px}
@@ -428,7 +428,7 @@ a{color:var(--accent)}
   .it{min-height:0;flex-direction:row;gap:5px;padding:4px 6px;justify-content:flex-start;font-size:10.5px}
   .it img.ii{width:24px;height:24px}.it svg.ic{width:18px;height:18px}
   .cnt{top:-5px;right:-4px}
-  .units{flex:1;min-height:0;max-height:none;overflow:hidden;padding:2px}
+  .units{flex:0 1 auto;min-height:0;max-height:none;overflow-y:auto;padding:2px}
   .ugrid{grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:3px}
   .side .card,.results-col .card{padding:10px 12px;margin-bottom:8px}
   .side .hint{margin-bottom:4px}.q{margin-top:5px;padding:3px 4px 3px 10px}.q .seg button{min-height:28px}
@@ -436,11 +436,11 @@ a{color:var(--accent)}
   .results-col .plan{padding:10px 12px;margin-bottom:6px}.results-col .next{padding:10px 12px;margin-bottom:8px}
   .results-col .hint{display:none}.results-col .next{gap:3px}.results-col .next p{font-size:13px}
   .results-col .plan .strip{margin-top:5px}.results-col .plan{padding:8px 12px}
-  .ugr{display:flex;gap:6px;align-items:flex-start;margin-bottom:4px}
-  .ugr .ugh{flex:0 0 34px;margin:0;padding-top:6px;flex-direction:column;gap:2px;font-size:11px;line-height:1.1;text-align:center;white-space:normal}
-  .ugr .ugh i{display:none}.ugr .ugrid{flex:1;min-width:0}
-  .u{aspect-ratio:auto;gap:1px;padding:4px 2px}
-  .u .av{width:30px;height:30px}.un{font-size:9.5px}.dots{height:8px}
+  .ugr{display:flex;gap:6px;align-items:center;margin-bottom:3px}
+  .ugr .ugh{flex:0 0 34px;margin:0;padding-top:0;flex-direction:column;gap:2px;font-size:11px;line-height:1.1;text-align:center;white-space:normal}
+  .ugr .ugh i{display:none}.ugr .ugrid{flex:1;min-width:0;grid-template-columns:repeat(var(--ucols,7),minmax(0,1fr));gap:4px}
+  .u{aspect-ratio:auto;gap:2px;padding:3px 2px}
+  .u .av{width:34px;height:34px}.un{font-size:11px}.u .dots{position:absolute;top:4px;left:4px;flex-direction:column;height:auto;gap:2px}
 }
 
 </style>
@@ -507,14 +507,14 @@ a{color:var(--accent)}
             <button data-mode="have" aria-pressed="true"><i data-icon="check"></i>Eu tenho</button>
             <button data-mode="cont" aria-pressed="false"><i data-icon="swords"></i>Rivais estão pegando</button>
           </div>
-          <div class="row">
+          <div class="lbl">Buscar / ordenar por</div>
+          <div class="row" style="margin-top:0">
             <div class="search-wrap"><i data-icon="search"></i><input class="search" id="q" type="search" placeholder="Buscar boneco…" aria-label="Buscar boneco"></div>
-          </div>
-          <div class="lbl" style="margin-top:0">Ordenar / agrupar por</div>
-          <div class="seg" id="sortSeg" style="margin-bottom:8px">
-            <button data-sort="cost" aria-pressed="true">Custo</button>
-            <button data-sort="alpha" aria-pressed="false">A–Z</button>
-            <button data-sort="comp" aria-pressed="false">Comp</button>
+            <div class="seg" id="sortSeg" style="flex:1 1 220px">
+              <button data-sort="cost" aria-pressed="true">Custo</button>
+              <button data-sort="alpha" aria-pressed="false">A–Z</button>
+              <button data-sort="comp" aria-pressed="false">Comp</button>
+            </div>
           </div>
           <div class="row" id="famChips" style="margin-top:0"></div>
           <div class="units" id="units"></div>
@@ -992,7 +992,9 @@ function renderUnits(){
   let html;
   if (sort==="cost"){
     const costs = [...new Set(list.map(u=>IMG.cost[u.name]||0))].sort((a,b)=>a-b);
-    html = costs.map(c => group(c ? `${c} ouro` : "Outros", list.filter(u=>(IMG.cost[u.name]||0)===c))).join("");
+    const byCost = costs.map(c => [c, list.filter(u=>(IMG.cost[u.name]||0)===c)]);
+    $("#units").style.setProperty("--ucols", Math.max(1, ...byCost.map(([,l]) => Math.ceil(l.length/2))));
+    html = byCost.map(([c,l]) => group(c ? `${c} ouro` : "Outros", l)).join("");
   } else if (sort==="comp"){
     html = Object.keys(FAM).map(k => group(`${famBadge(k)} ${esc(FAM[k].name)}`, list.filter(u=>u.fams.has(k)))).join("");
   } else html = list.length ? grid(list) : "";
