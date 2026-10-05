@@ -180,6 +180,30 @@ main{max-width:1200px;margin:0 auto;padding:16px var(--pad) 120px}
 .it.has{border-color:var(--info);color:var(--text)}
 .cnt{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px;padding:0 5px;border-radius:var(--r-full);background:var(--info);color:var(--on-fill);font-size:11px;font-weight:800;line-height:18px}
 
+/* ===== Imagens do jogo (CDN do MetaTFT; URLs vêm do comps.json, ver assets/README.md) ===== */
+.av{position:relative;overflow:hidden;border:1px solid transparent}
+.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.av.c1{border-color:#8e949b}.av.c2{border-color:#1fb36b}.av.c3{border-color:#2c8fff}.av.c4{border-color:#c850ff}.av.c5{border-color:#ffb800}
+.u .av{width:38px;height:38px}
+.it img.ii{width:32px;height:32px;border-radius:var(--r-xs);object-fit:contain}
+.it img.ii+svg.ic{display:none}
+.mini span{display:inline-flex;align-items:center;gap:5px;padding:2px 7px 2px 2px}
+.mini span .av{width:22px;height:22px;font-size:9px;border-radius:3px}
+.cc ul.ipr{padding-left:0}
+.ipr li{display:flex;align-items:center;gap:8px;list-style:none;margin:5px 0}
+.ipr img{width:28px;height:28px;border-radius:var(--r-xs);flex:0 0 auto;background:var(--panel2)}
+.traits{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.trait{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;background:var(--panel2);border:1px solid var(--border-subtle);border-radius:var(--r-full);padding:2px 9px 2px 4px;color:var(--text)}
+.trait img{width:18px;height:18px;filter:drop-shadow(0 0 1px rgba(0,0,0,.7))}
+.trait b{color:var(--muted);font-weight:700}
+.augs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;align-items:center}
+.augs span{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;background:var(--panel2);border:1px solid var(--border-subtle);border-radius:var(--r-xs);padding:2px 8px 2px 2px}
+.augs span.tl{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:none;border:0;padding:0 2px 0 0}
+.augs img{width:22px;height:22px;border-radius:4px}
+.strip{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px}
+.strip .av{width:30px;height:30px;font-size:11px;border-radius:var(--r-xs)}
+.strip .av.carry{box-shadow:0 0 0 2px var(--premium)}
+
 /* ===== Checklist ===== */
 .q{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 6px 6px 12px;background:var(--panel2);border-radius:var(--r-m);margin-top:8px;font-size:14px;font-weight:500}
 .q .seg{flex:0 0 auto;flex-wrap:nowrap;background:var(--control);border-color:transparent}
@@ -566,6 +590,15 @@ const styleOf = (levelling, roll) => {
 
 function buildData(json){
   META = json;
+  // imagens: cada comp traz `images` (nome -> URL) e `img` em units/traits/itemPriority/componentPriority
+  IMG.units = {}; IMG.items = {}; IMG.traits = {}; IMG.augments = {}; IMG.cost = {};
+  (json.top||[]).forEach(c => {
+    const im = c.images || {};
+    Object.assign(IMG.units, im.units||{}); Object.assign(IMG.items, im.items||{}); Object.assign(IMG.traits, im.traits||{}); Object.assign(IMG.augments, im.augments||{});
+    (c.units||[]).forEach(u => { if (u.img && !IMG.units[u.name]) IMG.units[u.name] = u.img; if (u.cost) IMG.cost[u.name] = u.cost; });
+    (c.traits||[]).forEach(t => { if (t.img) IMG.traits[t.name] = t.img; });
+    [...(c.itemPriority||[]), ...(c.componentPriority||[])].forEach(i => { if (i.img) IMG.items[i.name] = i.img; });
+  });
   // universo de campeões conhecidos (para separar invocações como "Lifebloom")
   const champs = new Set();
   [...(json.all_comps||[]), ...(json.top||[])].forEach(c => (c.units||[]).forEach(u => champs.add(u.name)));
@@ -643,6 +676,8 @@ function buildData(json){
     const ag = j.augments || {}; const tiers = ["S","A","B"].filter(t=>Array.isArray(ag[t])&&ag[t].length);
     const augNames = tiers.length ? tiers.map(t=>{ const l = uniq(ag[t]); return `Tier ${t}: ${l.slice(0,5).join(", ")}${l.length>5?"…":""}`; }).join(" ") : "Sem lista de augments para esta comp na fonte.";
     const aug = `${types.join(", ")}. ${augNames}`;
+    const augTiers = tiers.map(t => ({t, list: uniq(ag[t]).slice(0,6)}));
+    const traits = Array.isArray(j.traits) ? j.traits.filter(t=>t&&t.name).slice().sort((a,b)=>(b.count||0)-(a.count||0)) : [];
 
     const warn = [];
     if (j.difficulty==="Hard") warn.push("Difícil: depende de sorte de loja e de ninguém contestar.");
@@ -656,7 +691,7 @@ function buildData(json){
       avg:Number(j.avgPlacement)||4.5, pick:(j.playRate===null||j.playRate===undefined)?null:Number(j.playRate), win:j.winRate??null, top4:j.top4Rate??null, games:j.games||0,
       rw:null, lvl, roll:rollTxt, carries, mainCarry, early, core, items, dmg,
       stable: isReroll || String(j.tier||"").toUpperCase()==="S",
-      when, how, aug, warn, posRows, itemPriority:Array.isArray(j.itemPriority)?j.itemPriority.slice(0,5):[], trend, proUrl:(j.proTips&&j.proTips.url)||null};
+      when, how, aug, augTypes:types.join(", "), augTiers, traits, warn, posRows, itemPriority:Array.isArray(j.itemPriority)?j.itemPriority.slice(0,5):[], trend, proUrl:(j.proTips&&j.proTips.url)||null};
   });
 
   // avisos sobre peças compartilhadas (segunda passada, precisa de todas as comps)
@@ -754,6 +789,15 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const initials = n => n.replace(/[^A-Za-zÀ-ÿ' ]/g,"").split(/[\s']+/).filter(Boolean).slice(0,2).map(x=>x[0]).join("").toUpperCase();
 const hue = n => { let h=0; for (const ch of n) h = (h*31 + ch.charCodeAt(0)) % 360; return h; };
+
+/* ===== Imagens: nome de exibição -> URL no CDN do MetaTFT (preenchido em buildData a partir do comps.json) ===== */
+const IMG = {units:{}, items:{}, traits:{}, augments:{}, cost:{}};
+const CDN_ITEMS = "https://cdn.metatft.com/file/metatft/items/";
+const COMP_IMG = {bow:"da_component_recurvebow",sword:"da_component_bfsword",rod:"da_component_needlesslylargerod",tear:"da_component_tearofthegoddess",vest:"da_component_chainvest",cloak:"da_component_negatroncloak",belt:"da_component_giantsbelt",gloves:"da_component_sparringgloves",spatula:"da_component_spatula"};
+const thumb = (url, w) => url ? `https://cdn.metatft.com/cdn-cgi/image/width=${w},height=${w},format=auto/${url}` : "";
+const imgTag = (url, w, cls="") => url ? `<img${cls?` class="${cls}"`:""} src="${esc(thumb(url,w))}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : "";
+/* avatar de boneco: a imagem cobre as iniciais; se falhar, some e as iniciais continuam visíveis. Borda = custo. */
+const av = (n, extra="") => { const c = IMG.cost[n]; return `<span class="av${c?" c"+c:""}${extra?" "+extra:""}" style="background:hsl(${hue(n)} 55% 42%)">${esc(initials(n))}${imgTag(IMG.units[n],64)}</span>`; };
 const starMult = {1:1, 2:3, 3:5};
 
 /* ================= PONTUAÇÃO ================= */
@@ -887,14 +931,14 @@ function renderUnits(){
     const dots = [...u.fams].sort().map(f=>famBadge(f)).join("");
     return `<button class="u ${st?"own":""} ${st===3?"own3":""} ${ct?"cont":""}" data-u="${encodeURIComponent(u.name)}" aria-label="${esc(u.name)}${st?", "+st+" estrelas":""}${ct?", contestado":""}" title="${esc(u.name)}">
       ${st?starsSvg(st):""}${ct?`<span class="xmark">${I("swords")}</span>`:""}
-      <span class="av" style="background:hsl(${hue(u.name)} 55% 42%)">${esc(initials(u.name))}</span>
+      ${av(u.name)}
       <span class="un">${esc(u.name)}</span><span class="dots">${dots}</span></button>`;
   }).join("") || `<p class="hint">Nenhum boneco encontrado.</p>`;
 }
 function renderItems(){
   $("#items").innerHTML = COMPONENTS.map(c => {
     const n = S.items[c.id]||0;
-    return `<button class="it ${n?"has":""}" data-it="${c.id}" aria-label="${c.name}, ${n} unidades">${n?`<span class="cnt">${n}</span>`:""}${I(ITEM_ICON[c.id])}<span class="in">${c.name}</span></button>`;
+    return `<button class="it ${n?"has":""}" data-it="${c.id}" aria-label="${c.name}, ${n} unidades">${n?`<span class="cnt">${n}</span>`:""}${imgTag(CDN_ITEMS+COMP_IMG[c.id]+".png",64,"ii")}${I(ITEM_ICON[c.id])}<span class="in">${c.name}</span></button>`;
   }).join("");
 }
 function renderSit(){
@@ -945,6 +989,7 @@ function renderResults(){
     html += `<div class="plan ${i===0?"A":""}"><div class="plan-h"><div class="badge">${"ABC"[i]}</div>
       <div class="plan-t"><strong>${esc(c.name)}</strong><small>${esc(f.name)} · ${STYLE[c.style].label} · ${esc(c.diff)}</small></div>
       <span class="tier tier${c.tier}">${c.tier}</span></div>
+      <div class="strip">${c.core.map(n=>`<span title="${esc(n)}">${av(n, c.carries.includes(n)?"carry":"")}</span>`).join("")}</div>
       <div class="bar"><div style="width:${pct}%"></div></div>
       ${r.why.length?`<ul class="why">${r.why.map(w=>`<li class="${w.startsWith("Contestada")?"ct":""}">${esc(w)}</li>`).join("")}</ul>`:""}
       <div class="tags"><span class="tag">Média ${c.avg.toFixed(2)}</span><span class="tag">Pick ${fmtPct(c.pick)}</span>${extra}${famTag(c.fam)}</div>
@@ -1014,7 +1059,7 @@ function renderAug(){
 /* ================= COMPS ================= */
 function posGrid(rows){
   if (!rows || !rows.length) return "";
-  const cell = n => n ? `<span class="pc" title="${esc(n)}" aria-label="${esc(n)}"><span class="av" style="background:hsl(${hue(n)} 55% 42%)">${esc(initials(n))}</span></span>` : `<span class="pc"></span>`;
+  const cell = n => n ? `<span class="pc" title="${esc(n)}" aria-label="${esc(n)}">${av(n)}</span>` : `<span class="pc"></span>`;
   return `<h4>Posicionamento</h4><div class="pos">${rows.map((r,ri)=>`<div class="pr ${ri%2?"off":""}">${(r||[]).slice(0,7).map(cell).join("")}</div>`).join("")}</div><div class="pos-lab"><span>↑ frente (inimigo)</span><span>trás ↓</span></div>`;
 }
 function trendTxt(c){
@@ -1031,16 +1076,18 @@ function renderComps(){
     const f = FAM[c.fam];
     return `<article class="card cc" id="cc-${c.id}">
       <div class="cc-top f${c.fam}">${famBadge(c.fam,"fbadge")}<div class="plan-t"><strong>${esc(c.name)}</strong><small>${esc(f.name)} · ${STYLE[c.style].label} · ${esc(c.diff)}</small></div><span class="tier tier${c.tier}">${c.tier}</span></div>
+      ${c.traits.length?`<div class="traits">${c.traits.map(t=>`<span class="trait" title="${esc(t.name)} ${t.count}">${imgTag(t.img||IMG.traits[t.name],36)}${esc(t.name)}<b>${t.count}</b></span>`).join("")}</div>`:""}
       <div class="stat"><div><b>${c.avg.toFixed(2)}</b><span>Média</span></div><div><b>${fmtPct(c.top4)}</b><span>Top 4</span></div><div><b>${fmtPct(c.win)}</b><span>Win</span></div><div><b>${fmtPct(c.pick)}</b><span>Pick</span></div></div>
       <p class="why" style="padding:0">${c.games?Number(c.games).toLocaleString("pt-BR")+" partidas":""}${esc(trendTxt(c))}</p>
       <h4>Quando ir para esta comp</h4><p>${esc(c.when)}</p>
-      <h4>Bonecos de início</h4><div class="mini">${c.early.map(n=>`<span>${esc(n)}</span>`).join("")}</div>
-      <h4>Board final</h4><div class="mini">${c.core.map(n=>`<span class="${c.carries.includes(n)?"carry":""}">${esc(n)}</span>`).join("")}</div>
+      <h4>Bonecos de início</h4><div class="mini">${c.early.map(n=>`<span>${av(n)}${esc(n)}</span>`).join("")}</div>
+      <h4>Board final</h4><div class="mini">${c.core.map(n=>`<span class="${c.carries.includes(n)?"carry":""}">${av(n)}${esc(n)}</span>`).join("")}</div>
       ${posGrid(c.posRows)}
-      ${c.itemPriority.length?`<h4>Itens prioritários</h4><ul class="ipr">${c.itemPriority.map(i=>`<li><b>${esc(i.name)}</b>${(i.bestOn&&i.bestOn.length)?` · ${esc(i.bestOn.join(", "))}`:""}${i.avgPlacement?`<span class="cn">média ${Number(i.avgPlacement).toFixed(2)}</span>`:""}</li>`).join("")}</ul>`:""}
+      ${c.itemPriority.length?`<h4>Itens prioritários</h4><ul class="ipr">${c.itemPriority.map(i=>`<li>${imgTag(i.img||IMG.items[i.name],56)}<span><b>${esc(i.name)}</b>${(i.bestOn&&i.bestOn.length)?` · ${esc(i.bestOn.join(", "))}`:""}${i.avgPlacement?`<span class="cn">média ${Number(i.avgPlacement).toFixed(2)}</span>`:""}</span></li>`).join("")}</ul>`:""}
       <h4>Como jogar</h4><ul>${c.how.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
       <p class="why" style="margin-top:8px;padding:0"><b>Níveis:</b> ${esc(c.lvl)}${c.proUrl?` · <a href="${esc(c.proUrl)}" target="_blank" rel="noopener">guia pro no MetaTFT ${I("external")}</a>`:""}</p>
-      <h4>Tipos de augment</h4><p>${esc(c.aug)}</p>
+      <h4>Tipos de augment</h4><p>${esc(c.augTypes)}.</p>
+      ${c.augTiers.length?`<div class="augs">${c.augTiers.map(x=>`<span class="tl">Tier ${esc(x.t)}</span>`+x.list.map(n=>`<span title="${esc(n)}">${imgTag(IMG.augments[n],44)}${esc(n)}</span>`).join("")).join("")}</div>`:`<p class="hint">Sem lista de augments para esta comp na fonte.</p>`}
       <div class="note warn">${I("alert")}<span>${esc(c.warn)}</span></div></article>`;
   }).join("");
 }
@@ -1048,7 +1095,7 @@ function renderComps(){
 /* ================= EARLYS ================= */
 function chip(n){
   const st = S.owned[n], ct = S.cont[n];
-  return `<button class="ch ${st?"own":""} ${ct?"cont":""}" data-eu="${encodeURIComponent(n)}" aria-label="${esc(n)}${st?", "+st+" estrelas":""}${ct?", contestado":""}"><span class="av" style="background:hsl(${hue(n)} 55% 42%)">${esc(initials(n))}</span>${esc(n)}${st?`<span class="st">${I("star").repeat(st)}</span>`:""}${ct?`<span class="ci">${I("swords")}</span>`:""}</button>`;
+  return `<button class="ch ${st?"own":""} ${ct?"cont":""}" data-eu="${encodeURIComponent(n)}" aria-label="${esc(n)}${st?", "+st+" estrelas":""}${ct?", contestado":""}">${av(n)}${esc(n)}${st?`<span class="st">${I("star").repeat(st)}</span>`:""}${ct?`<span class="ci">${I("swords")}</span>`:""}</button>`;
 }
 
 function renderEarly(){
