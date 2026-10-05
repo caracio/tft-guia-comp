@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.tmp
+.vercel/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# saída local do scraper; a versão publicada fica em data/comps.json
+scraper/data/

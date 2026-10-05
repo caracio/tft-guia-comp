@@ -1,0 +1,3957 @@
+{
+ "fetched_at": "2026-10-05T20:53:26+00:00",
+ "source": {
+  "site": "MetaTFT",
+  "attribution": "Data by MetaTFT (https://www.metatft.com/comps)",
+  "endpoints": [
+   "https://api-hc.metatft.com/tft-comps-api/comps_data",
+   "https://data.metatft.com/lookups/TFTSet18_latest_en_us.json",
+   "https://api-hc.metatft.com/tft-comps-api/comp_augment_tiers?cluster_id=425",
+   "https://api-hc.metatft.com/tft-comps-api/comp_details?comp=<id>&cluster_id=425"
+  ]
+ },
+ "set": "TFTSet18",
+ "set_name": "Enchanted Wilds",
+ "patch": null,
+ "cluster_id": 425,
+ "queue_id": 1100,
+ "total_games": 1520092,
+ "source_updated_at": "2026-10-05T20:52:21+00:00",
+ "not_provided_by_source": [
+  "patch label",
+  "top4Rate",
+  "winRate",
+  "firstCarousel (empty for this set)"
+ ],
+ "top": [
+  {
+   "id": "425014",
+   "name": "Spellweaver Veigar",
+   "tier": "S",
+   "avgPlacement": 4.206,
+   "playRate": 7.17,
+   "games": 109004,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Hard",
+   "units": [
+    {
+     "name": "Alistar",
+     "id": "DA_18_Alistar",
+     "cost": 2,
+     "stars": 3,
+     "items": [
+      "Gargoyle Stoneplate",
+      "Spirit Visage",
+      "Warmogs Armor"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Cassiopeia",
+     "id": "DA_18_Cassiopeia",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "LeBlanc",
+     "id": "DA_18_LeBlanc",
+     "cost": 2,
+     "stars": 3,
+     "items": [
+      "Blue Buff",
+      "Morellonomicon",
+      "Void Staff"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Ornn",
+     "id": "DA_18_Ornn",
+     "cost": 1,
+     "stars": 3,
+     "items": [
+      "Gargoyle Stoneplate",
+      "Spirit Visage",
+      "Spirit Visage"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Rek'Sai",
+     "id": "DA_18_RekSai",
+     "cost": 1,
+     "stars": 3,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Veigar",
+     "id": "DA_18_Veigar",
+     "cost": 1,
+     "stars": 3,
+     "items": [
+      "Flora Fatalis Emblem",
+      "Blue Buff",
+      "Jeweled Gauntlet"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Fiddlesticks",
+     "id": "DA_Fiddlesticks18",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    }
+   ],
+   "traits": [
+    {
+     "name": "Blackthorn",
+     "count": 1
+    },
+    {
+     "name": "Brawler",
+     "count": 1
+    },
+    {
+     "name": "Defender",
+     "count": 1
+    },
+    {
+     "name": "Elderwood",
+     "count": 1
+    },
+    {
+     "name": "Spellweaver",
+     "count": 2
+    },
+    {
+     "name": "Flora Fatalis",
+     "count": 1
+    }
+   ],
+   "carries": [
+    "Alistar",
+    "LeBlanc",
+    "Ornn",
+    "Veigar"
+   ],
+   "early": {
+    "4": [
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar"
+    ],
+    "5": [
+     "Alistar",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar"
+    ],
+    "6": [
+     "Alistar",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar",
+     "Fiddlesticks"
+    ],
+    "7": [
+     "Alistar",
+     "Cassiopeia",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar",
+     "Fiddlesticks"
+    ]
+   },
+   "boardsByLevel": {
+    "7": [
+     "Alistar",
+     "Cassiopeia",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar",
+     "Fiddlesticks"
+    ],
+    "8": [
+     "Alistar",
+     "Cassiopeia",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Soraka",
+     "Veigar",
+     "Fiddlesticks"
+    ],
+    "9": [
+     "Ahri",
+     "Alistar",
+     "Alune",
+     "Cassiopeia",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar",
+     "Fiddlesticks"
+    ],
+    "10": [
+     "Ahri",
+     "Alistar",
+     "Alune",
+     "Cassiopeia",
+     "Ivern",
+     "LeBlanc",
+     "Ornn",
+     "Rek'Sai",
+     "Veigar",
+     "Fiddlesticks"
+    ]
+   },
+   "positioning": {
+    "rows": [
+     [
+      null,
+      null,
+      null,
+      "Alistar",
+      "Ornn",
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      "Rek'Sai",
+      "Cassiopeia",
+      "Fiddlesticks",
+      null,
+      null
+     ],
+     [
+      "Veigar",
+      "LeBlanc",
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "cells": {
+     "cell_1": "Veigar",
+     "cell_2": "LeBlanc",
+     "cell_10": "Rek'Sai",
+     "cell_11": "Cassiopeia",
+     "cell_12": "Fiddlesticks",
+     "cell_25": "Alistar",
+     "cell_26": "Ornn"
+    }
+   },
+   "levelTiming": {
+    "levels": {
+     "4": {
+      "stage": "2-3",
+      "games": 32182,
+      "avgRerolls": 7.2
+     },
+     "5": {
+      "stage": "3-2",
+      "games": 32986,
+      "avgRerolls": 20.6
+     },
+     "6": {
+      "stage": "4-1",
+      "games": 33970,
+      "avgRerolls": 11.6
+     },
+     "7": {
+      "stage": "4-6",
+      "games": 31908,
+      "avgRerolls": 12.1
+     },
+     "8": {
+      "stage": "5-6",
+      "games": 20527,
+      "avgRerolls": 7.9
+     },
+     "9": {
+      "stage": "7-1",
+      "games": 1175,
+      "avgRerolls": 8.4
+     }
+    },
+    "rollLevel": "5",
+    "finalLevelPct": {
+     "10": 1.9,
+     "4": 0.0,
+     "5": 1.0,
+     "6": 7.3,
+     "7": 37.1,
+     "8": 33.4,
+     "9": 19.3
+    },
+    "style": "lvl 5"
+   },
+   "itemPriority": [
+    {
+     "name": "Gargoyle Stoneplate",
+     "perGame": 1.22,
+     "avgPlacement": 4.0457,
+     "bestOn": [
+      "Ornn",
+      "Alistar"
+     ]
+    },
+    {
+     "name": "Jeweled Gauntlet",
+     "perGame": 1.04,
+     "avgPlacement": 4.0937,
+     "bestOn": [
+      "Veigar",
+      "LeBlanc"
+     ]
+    },
+    {
+     "name": "Blue Buff",
+     "perGame": 0.89,
+     "avgPlacement": 4.0645,
+     "bestOn": [
+      "Veigar",
+      "LeBlanc"
+     ]
+    },
+    {
+     "name": "Warmogs Armor",
+     "perGame": 0.79,
+     "avgPlacement": 4.0184,
+     "bestOn": [
+      "Ornn",
+      "Alistar"
+     ]
+    },
+    {
+     "name": "Void Staff",
+     "perGame": 0.66,
+     "avgPlacement": 3.8986,
+     "bestOn": [
+      "LeBlanc",
+      "Cassiopeia"
+     ]
+    },
+    {
+     "name": "Hextech Gunblade",
+     "perGame": 0.5,
+     "avgPlacement": 4.0373,
+     "bestOn": [
+      "Veigar",
+      "LeBlanc"
+     ]
+    },
+    {
+     "name": "Spirit Visage",
+     "perGame": 0.41,
+     "avgPlacement": 3.7218,
+     "bestOn": [
+      "Ornn",
+      "Alistar"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "perGame": 0.4,
+     "avgPlacement": 3.776,
+     "bestOn": [
+      "LeBlanc",
+      "Veigar"
+     ]
+    },
+    {
+     "name": "Thief's Gloves",
+     "perGame": 0.36,
+     "avgPlacement": 3.7378,
+     "bestOn": [
+      "Rek'Sai",
+      "Alistar"
+     ]
+    },
+    {
+     "name": "Crownguard",
+     "perGame": 0.33,
+     "avgPlacement": 3.6534,
+     "bestOn": [
+      "Ornn",
+      "Alistar"
+     ]
+    }
+   ],
+   "componentPriority": [
+    {
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "perGame": 3.91
+    },
+    {
+     "name": "Needlessly Large Rod",
+     "id": "DA_Component_NeedlesslyLargeRod",
+     "perGame": 3.11
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "perGame": 3.0
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "perGame": 2.74
+    },
+    {
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "perGame": 2.38
+    },
+    {
+     "name": "Sparring Gloves",
+     "id": "DA_Component_SparringGloves",
+     "perGame": 2.25
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "perGame": 1.72
+    },
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "perGame": 1.38
+    },
+    {
+     "name": "Spatula",
+     "id": "DA_Component_Spatula",
+     "perGame": 0.18
+    },
+    {
+     "name": "Frying Pan",
+     "id": "DA_Component_FryingPan",
+     "perGame": 0.14
+    }
+   ],
+   "firstCarousel": null,
+   "augments": {
+    "S": [
+     "Item Extraction",
+     "Pandora's Bench",
+     "Trade Sector"
+    ]
+   },
+   "proTips": {
+    "title": "VEIGAR > Blackthorn > Lvl 5 reroll ",
+    "notes": "- ORNN farms artifact: Best ones for Veigar in this order -> Dawncore > Eternal Pact > Luden's > Talisman;\n- CONSUMING FLORA augment is OP -> instead of Gunblade on Veigar;",
+    "url": "https://www.metatft.com/pro-comps?comp=b135d4a2-7436-4c88-b28e-f2e866e70021"
+   },
+   "trend": [
+    {
+     "day": "2026-09-28",
+     "avgPlacement": 4.24,
+     "games": 2708
+    },
+    {
+     "day": "2026-09-29",
+     "avgPlacement": 4.2289,
+     "games": 30744
+    },
+    {
+     "day": "2026-09-30",
+     "avgPlacement": 4.2312,
+     "games": 31632
+    },
+    {
+     "day": "2026-10-01",
+     "avgPlacement": 4.2249,
+     "games": 32787
+    },
+    {
+     "day": "2026-10-02",
+     "avgPlacement": 4.216,
+     "games": 33451
+    },
+    {
+     "day": "2026-10-03",
+     "avgPlacement": 4.2584,
+     "games": 35450
+    },
+    {
+     "day": "2026-10-04",
+     "avgPlacement": 4.2011,
+     "games": 36846
+    },
+    {
+     "day": "2026-10-05",
+     "avgPlacement": 4.1559,
+     "games": 33601
+    }
+   ]
+  },
+  {
+   "id": "425022",
+   "name": "Executioner Kha'Zix",
+   "tier": "S",
+   "avgPlacement": 4.21,
+   "playRate": 2.74,
+   "games": 41667,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium",
+   "units": [
+    {
+     "name": "Diana",
+     "id": "DA_18_Diana",
+     "cost": 3,
+     "stars": 2,
+     "items": [
+      "Executioner Emblem",
+      "Hand Of Justice",
+      "Ionic Spark"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Ezreal",
+     "id": "DA_18_Ezreal",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Deathblade",
+      "Red Buff",
+      "Spear of Shojin"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Hecarim",
+     "id": "DA_18_Hecarim",
+     "cost": 3,
+     "stars": 3,
+     "items": [
+      "Bramble Vest",
+      "Gargoyle Stoneplate",
+      "Warmogs Armor"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Kha'Zix",
+     "id": "DA_18_KhaZix",
+     "cost": 3,
+     "stars": 3,
+     "items": [
+      "Hand Of Justice",
+      "Nashor's Tooth",
+      "Rabadon's Deathcap"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Ornn",
+     "id": "DA_18_Ornn",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Soraka",
+     "id": "DA_18_Soraka",
+     "cost": 4,
+     "stars": 1,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Fiddlesticks",
+     "id": "DA_Fiddlesticks18",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    }
+   ],
+   "traits": [
+    {
+     "name": "Defender",
+     "count": 1
+    },
+    {
+     "name": "Elderwood",
+     "count": 1
+    },
+    {
+     "name": "Executioner",
+     "count": 1
+    },
+    {
+     "name": "Rival",
+     "count": 1
+    },
+    {
+     "name": "Vanguard",
+     "count": 1
+    },
+    {
+     "name": "Flora Fatalis",
+     "count": 2
+    }
+   ],
+   "carries": [
+    "Diana",
+    "Ezreal",
+    "Hecarim",
+    "Kha'Zix"
+   ],
+   "early": {
+    "4": [
+     "Kha'Zix",
+     "Yorick",
+     "Yunara",
+     "Karma"
+    ],
+    "5": [
+     "Kha'Zix"
+    ],
+    "6": [
+     "Diana",
+     "Hecarim",
+     "Kha'Zix",
+     "LeBlanc",
+     "Ornn",
+     "Fiddlesticks"
+    ],
+    "7": [
+     "Diana",
+     "Ezreal",
+     "Hecarim",
+     "Kha'Zix",
+     "Ornn",
+     "Soraka",
+     "Fiddlesticks"
+    ]
+   },
+   "boardsByLevel": {
+    "7": [
+     "Diana",
+     "Ezreal",
+     "Hecarim",
+     "Kha'Zix",
+     "Ornn",
+     "Soraka",
+     "Fiddlesticks"
+    ],
+    "8": [
+     "Aphelios",
+     "Diana",
+     "Ezreal",
+     "Hecarim",
+     "Kha'Zix",
+     "Ornn",
+     "Soraka",
+     "Fiddlesticks"
+    ],
+    "9": [
+     "Aphelios",
+     "Diana",
+     "Ezreal",
+     "Hecarim",
+     "Kennen",
+     "Kha'Zix",
+     "Ornn",
+     "Soraka",
+     "Fiddlesticks"
+    ],
+    "10": [
+     "Alune",
+     "Aphelios",
+     "Diana",
+     "Ezreal",
+     "Hecarim",
+     "Kennen",
+     "Kha'Zix",
+     "Ornn",
+     "Soraka",
+     "Fiddlesticks"
+    ]
+   },
+   "positioning": {
+    "rows": [
+     [
+      null,
+      "Kha'Zix",
+      "Hecarim",
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      "Diana",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      "Ornn",
+      "Fiddlesticks",
+      null,
+      null,
+      null
+     ],
+     [
+      "Ezreal",
+      "Soraka",
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    ],
+    "cells": {
+     "cell_1": "Ezreal",
+     "cell_2": "Soraka",
+     "cell_10": "Ornn",
+     "cell_11": "Fiddlesticks",
+     "cell_16": "Diana",
+     "cell_23": "Kha'Zix",
+     "cell_24": "Hecarim"
+    }
+   },
+   "levelTiming": {
+    "levels": {
+     "5": {
+      "stage": "2-5",
+      "games": 14329,
+      "avgRerolls": 0.2
+     },
+     "6": {
+      "stage": "3-2",
+      "games": 14553,
+      "avgRerolls": 1.0
+     },
+     "7": {
+      "stage": "3-6",
+      "games": 14415,
+      "avgRerolls": 41.1
+     },
+     "8": {
+      "stage": "6-1",
+      "games": 8154,
+      "avgRerolls": 10.9
+     },
+     "9": {
+      "stage": "7-3",
+      "games": 29,
+      "avgRerolls": 7.9
+     }
+    },
+    "rollLevel": "7",
+    "finalLevelPct": {
+     "10": 0.9,
+     "6": 0.1,
+     "7": 48.0,
+     "8": 40.9,
+     "9": 10.0
+    },
+    "style": "lvl 7"
+   },
+   "itemPriority": [
+    {
+     "name": "Hand Of Justice",
+     "perGame": 1.31,
+     "avgPlacement": 4.001,
+     "bestOn": [
+      "Kha'Zix",
+      "Diana"
+     ]
+    },
+    {
+     "name": "Gargoyle Stoneplate",
+     "perGame": 0.87,
+     "avgPlacement": 4.0751,
+     "bestOn": [
+      "Hecarim",
+      "Fiddlesticks"
+     ]
+    },
+    {
+     "name": "Rabadon's Deathcap",
+     "perGame": 0.76,
+     "avgPlacement": 3.9932,
+     "bestOn": [
+      "Kha'Zix",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Warmogs Armor",
+     "perGame": 0.61,
+     "avgPlacement": 4.0531,
+     "bestOn": [
+      "Hecarim",
+      "Fiddlesticks"
+     ]
+    },
+    {
+     "name": "Edge of Night",
+     "perGame": 0.56,
+     "avgPlacement": 4.1231,
+     "bestOn": [
+      "Kha'Zix",
+      "Diana"
+     ]
+    },
+    {
+     "name": "Ionic Spark",
+     "perGame": 0.45,
+     "avgPlacement": 3.7786,
+     "bestOn": [
+      "Diana",
+      "Hecarim"
+     ]
+    },
+    {
+     "name": "Red Buff",
+     "perGame": 0.42,
+     "avgPlacement": 3.8855,
+     "bestOn": [
+      "Ezreal",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "perGame": 0.4,
+     "avgPlacement": 3.7105,
+     "bestOn": [
+      "Ezreal",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Jeweled Gauntlet",
+     "perGame": 0.36,
+     "avgPlacement": 3.9787,
+     "bestOn": [
+      "Diana",
+      "Kha'Zix"
+     ]
+    },
+    {
+     "name": "Spirit Visage",
+     "perGame": 0.33,
+     "avgPlacement": 4.0025,
+     "bestOn": [
+      "Hecarim",
+      "Fiddlesticks"
+     ]
+    }
+   ],
+   "componentPriority": [
+    {
+     "name": "Needlessly Large Rod",
+     "id": "DA_Component_NeedlesslyLargeRod",
+     "perGame": 3.1
+    },
+    {
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "perGame": 3.09
+    },
+    {
+     "name": "Sparring Gloves",
+     "id": "DA_Component_SparringGloves",
+     "perGame": 3.05
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "perGame": 2.54
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "perGame": 2.53
+    },
+    {
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "perGame": 2.18
+    },
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "perGame": 2.07
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "perGame": 2.02
+    },
+    {
+     "name": "Frying Pan",
+     "id": "DA_Component_FryingPan",
+     "perGame": 0.31
+    },
+    {
+     "name": "Spatula",
+     "id": "DA_Component_Spatula",
+     "perGame": 0.21
+    }
+   ],
+   "firstCarousel": null,
+   "augments": null,
+   "proTips": {
+    "title": "KHA'ZIX > Lvl 7 reroll",
+    "notes": "- best to play from KHA'ZIX opener in 2-1;\n- KHA'ZIX evolutions in this order: Ravager > Executioner > Spellweaver > Rapidfire;\n- Yunara & Azir if you didn't find Ezreal & Soraka yet;\n- if no HECARIM3 -> try to 3star Fiddlesticks as main tank;",
+    "url": "https://www.metatft.com/pro-comps?comp=e181dd75-a1d9-48c5-baa5-3311b7158374"
+   },
+   "trend": [
+    {
+     "day": "2026-09-28",
+     "avgPlacement": 4.1481,
+     "games": 1269
+    },
+    {
+     "day": "2026-09-29",
+     "avgPlacement": 4.2649,
+     "games": 11246
+    },
+    {
+     "day": "2026-09-30",
+     "avgPlacement": 4.2228,
+     "games": 11313
+    },
+    {
+     "day": "2026-10-01",
+     "avgPlacement": 4.1815,
+     "games": 11805
+    },
+    {
+     "day": "2026-10-02",
+     "avgPlacement": 4.2023,
+     "games": 12416
+    },
+    {
+     "day": "2026-10-03",
+     "avgPlacement": 4.1869,
+     "games": 13728
+    },
+    {
+     "day": "2026-10-04",
+     "avgPlacement": 4.2231,
+     "games": 14197
+    },
+    {
+     "day": "2026-10-05",
+     "avgPlacement": 4.2271,
+     "games": 12338
+    }
+   ]
+  },
+  {
+   "id": "425013",
+   "name": "Flora Fatalis Azir",
+   "tier": "A",
+   "avgPlacement": 4.252,
+   "playRate": 4.58,
+   "games": 69627,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy",
+   "units": [
+    {
+     "name": "Azir",
+     "id": "DA_18_Azir",
+     "cost": 3,
+     "stars": 3,
+     "items": [
+      "Guinsoo's Rageblade",
+      "Hextech Gunblade",
+      "Rabadon's Deathcap"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Rammus",
+     "id": "DA_18_Rammus",
+     "cost": 3,
+     "stars": 3,
+     "items": [
+      "Crownguard",
+      "Gargoyle Stoneplate",
+      "Gargoyle Stoneplate"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Soraka",
+     "id": "DA_18_Soraka",
+     "cost": 4,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Teemo",
+     "id": "DA_18_Teemo",
+     "cost": 2,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Veigar",
+     "id": "DA_18_Veigar",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Zyra",
+     "id": "DA_18_Zyra",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Executioner Emblem",
+      "Morellonomicon",
+      "Void Staff"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Fiddlesticks",
+     "id": "DA_Fiddlesticks18",
+     "cost": 3,
+     "stars": 2,
+     "items": [
+      "Ionic Spark",
+      "Sunfire Cape",
+      "Warmogs Armor"
+     ],
+     "carry": true
+    }
+   ],
+   "traits": [
+    {
+     "name": "Blackthorn",
+     "count": 1
+    },
+    {
+     "name": "Defender",
+     "count": 1
+    },
+    {
+     "name": "Executioner",
+     "count": 1
+    },
+    {
+     "name": "Spellweaver",
+     "count": 1
+    },
+    {
+     "name": "Sprykin",
+     "count": 1
+    },
+    {
+     "name": "Summoner",
+     "count": 1
+    },
+    {
+     "name": "Thornmaiden",
+     "count": 1
+    },
+    {
+     "name": "Flora Fatalis",
+     "count": 2
+    }
+   ],
+   "carries": [
+    "Azir",
+    "Rammus",
+    "Zyra",
+    "Fiddlesticks"
+   ],
+   "early": {
+    "4": [
+     "Azir",
+     "Kobuko",
+     "Rek'Sai",
+     "Veigar"
+    ],
+    "5": [
+     "Azir",
+     "Rammus",
+     "Teemo",
+     "Veigar",
+     "Fiddlesticks"
+    ],
+    "6": [
+     "Azir",
+     "Rammus",
+     "Teemo",
+     "Veigar",
+     "Yunara",
+     "Fiddlesticks"
+    ],
+    "7": [
+     "Azir",
+     "Rammus",
+     "Soraka",
+     "Teemo",
+     "Veigar",
+     "Zyra",
+     "Fiddlesticks"
+    ]
+   },
+   "boardsByLevel": {
+    "7": [
+     "Azir",
+     "Rammus",
+     "Soraka",
+     "Teemo",
+     "Veigar",
+     "Zyra",
+     "Fiddlesticks"
+    ],
+    "8": [
+     "Azir",
+     "Kennen",
+     "Rammus",
+     "Soraka",
+     "Teemo",
+     "Veigar",
+     "Zyra",
+     "Fiddlesticks"
+    ],
+    "9": [
+     "Azir",
+     "Ezreal",
+     "Kennen",
+     "Rammus",
+     "Soraka",
+     "Teemo",
+     "Veigar",
+     "Zyra",
+     "Fiddlesticks"
+    ],
+    "10": [
+     "Azir",
+     "Ezreal",
+     "Kennen",
+     "Rammus",
+     "Soraka",
+     "Teemo",
+     "Veigar",
+     "Zyra",
+     "Mama Beak",
+     "Fiddlesticks"
+    ]
+   },
+   "positioning": {
+    "rows": [
+     [
+      null,
+      null,
+      null,
+      "Rammus",
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Teemo",
+      "Fiddlesticks",
+      null,
+      null
+     ],
+     [
+      "Azir",
+      null,
+      "Zyra",
+      null,
+      "Soraka",
+      null,
+      "Veigar"
+     ]
+    ],
+    "cells": {
+     "cell_1": "Azir",
+     "cell_3": "Zyra",
+     "cell_5": "Soraka",
+     "cell_7": "Veigar",
+     "cell_11": "Teemo",
+     "cell_12": "Fiddlesticks",
+     "cell_25": "Rammus"
+    }
+   },
+   "levelTiming": {
+    "levels": {
+     "5": {
+      "stage": "2-6",
+      "games": 23569,
+      "avgRerolls": 0.2
+     },
+     "6": {
+      "stage": "3-2",
+      "games": 24084,
+      "avgRerolls": 0.9
+     },
+     "7": {
+      "stage": "3-6",
+      "games": 23899,
+      "avgRerolls": 46.1
+     },
+     "8": {
+      "stage": "6-1",
+      "games": 12598,
+      "avgRerolls": 12.5
+     },
+     "9": {
+      "stage": "7-2",
+      "games": 172,
+      "avgRerolls": 7.9
+     }
+    },
+    "rollLevel": "7",
+    "finalLevelPct": {
+     "10": 0.6,
+     "5": 0.0,
+     "6": 0.1,
+     "7": 50.1,
+     "8": 40.6,
+     "9": 8.6
+    },
+    "style": "lvl 7"
+   },
+   "itemPriority": [
+    {
+     "name": "Gargoyle Stoneplate",
+     "perGame": 1.41,
+     "avgPlacement": 4.0466,
+     "bestOn": [
+      "Rammus",
+      "Fiddlesticks"
+     ]
+    },
+    {
+     "name": "Hextech Gunblade",
+     "perGame": 0.93,
+     "avgPlacement": 4.0718,
+     "bestOn": [
+      "Azir",
+      "Zyra"
+     ]
+    },
+    {
+     "name": "Guinsoo's Rageblade",
+     "perGame": 0.78,
+     "avgPlacement": 4.1544,
+     "bestOn": [
+      "Azir",
+      "Zyra"
+     ]
+    },
+    {
+     "name": "Void Staff",
+     "perGame": 0.69,
+     "avgPlacement": 3.9585,
+     "bestOn": [
+      "Zyra",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Rabadon's Deathcap",
+     "perGame": 0.64,
+     "avgPlacement": 3.8134,
+     "bestOn": [
+      "Azir",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Warmogs Armor",
+     "perGame": 0.56,
+     "avgPlacement": 4.1049,
+     "bestOn": [
+      "Rammus",
+      "Fiddlesticks"
+     ]
+    },
+    {
+     "name": "Archangel's Staff",
+     "perGame": 0.45,
+     "avgPlacement": 4.0184,
+     "bestOn": [
+      "Azir",
+      "Zyra"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "perGame": 0.41,
+     "avgPlacement": 3.8289,
+     "bestOn": [
+      "Zyra",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Thief's Gloves",
+     "perGame": 0.39,
+     "avgPlacement": 3.9408,
+     "bestOn": [
+      "Fiddlesticks",
+      "Soraka"
+     ]
+    },
+    {
+     "name": "Crownguard",
+     "perGame": 0.35,
+     "avgPlacement": 3.7804,
+     "bestOn": [
+      "Rammus",
+      "Fiddlesticks"
+     ]
+    }
+   ],
+   "componentPriority": [
+    {
+     "name": "Needlessly Large Rod",
+     "id": "DA_Component_NeedlesslyLargeRod",
+     "perGame": 4.57
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "perGame": 2.66
+    },
+    {
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "perGame": 2.63
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "perGame": 2.48
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "perGame": 2.34
+    },
+    {
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "perGame": 2.32
+    },
+    {
+     "name": "Sparring Gloves",
+     "id": "DA_Component_SparringGloves",
+     "perGame": 1.85
+    },
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "perGame": 1.75
+    },
+    {
+     "name": "Frying Pan",
+     "id": "DA_Component_FryingPan",
+     "perGame": 0.25
+    },
+    {
+     "name": "Spatula",
+     "id": "DA_Component_Spatula",
+     "perGame": 0.18
+    }
+   ],
+   "firstCarousel": null,
+   "augments": {
+    "S": [
+     "Team Building",
+     "Component Buffet",
+     "Heroic Grab Bag",
+     "Heroic Grab Bag+",
+     "Heroic Grab Bag++",
+     "Replication",
+     "Wand Overflow"
+    ]
+   },
+   "proTips": {
+    "title": "AZIR > Blackthorn > Lvl 7 reroll",
+    "notes": "- BLACKTHORN: Sacrifice highest cost caster (Zyra2 > Teemo2 > Veigar2 > Zyra1) -> AP & Manareg for Azir;\n- SPRYKIN: Rammus;\n- if no RAMMUS3 -> Fiddlesticks3 can be your main tank;\n- AZIR 3rd item can be either Rageblade (good early, not the best late game), Rabadons (best late game but need a lot of rods);",
+    "url": "https://www.metatft.com/pro-comps?comp=b74173f3-4018-4370-85c9-800504fcfc2f"
+   },
+   "trend": [
+    {
+     "day": "2026-09-28",
+     "avgPlacement": 4.3949,
+     "games": 1965
+    },
+    {
+     "day": "2026-09-29",
+     "avgPlacement": 4.3311,
+     "games": 21175
+    },
+    {
+     "day": "2026-09-30",
+     "avgPlacement": 4.3133,
+     "games": 21461
+    },
+    {
+     "day": "2026-10-01",
+     "avgPlacement": 4.2739,
+     "games": 22417
+    },
+    {
+     "day": "2026-10-02",
+     "avgPlacement": 4.2744,
+     "games": 22605
+    },
+    {
+     "day": "2026-10-03",
+     "avgPlacement": 4.2551,
+     "games": 23260
+    },
+    {
+     "day": "2026-10-04",
+     "avgPlacement": 4.2488,
+     "games": 23690
+    },
+    {
+     "day": "2026-10-05",
+     "avgPlacement": 4.2524,
+     "games": 20404
+    }
+   ]
+  },
+  {
+   "id": "425002",
+   "name": "Lunar Aphelios Nidalee",
+   "tier": "A",
+   "avgPlacement": 4.313,
+   "playRate": 11.26,
+   "games": 171236,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium",
+   "units": [
+    {
+     "name": "Aphelios",
+     "id": "DA_18_Aphelios",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Deathblade",
+      "Guinsoo's Rageblade",
+      "Kraken's Fury"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Diana",
+     "id": "DA_18_Diana",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Varus",
+     "id": "DA_18_Varus",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Amumu",
+     "id": "DA_Amumu18",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Dragon's Claw",
+      "Gargoyle Stoneplate",
+      "Warmogs Armor"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Kog'Maw",
+     "id": "DA_KogMaw18_AD",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Nidalee",
+     "id": "DA_Nidalee18_AP",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Infinity Edge",
+      "Spear of Shojin",
+      "Sterak's Gage"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Sentinel",
+     "id": "DA_Sentinel18",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Adaptive Helm",
+      "Protector's Vow",
+      "Protector's Vow"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Vi",
+     "id": "DA_Vi18",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    }
+   ],
+   "traits": [
+    {
+     "name": "Adaptor",
+     "count": 1
+    },
+    {
+     "name": "Caustic",
+     "count": 1
+    },
+    {
+     "name": "Inferno",
+     "count": 1
+    },
+    {
+     "name": "Invoker",
+     "count": 1
+    },
+    {
+     "name": "Lunar",
+     "count": 1
+    },
+    {
+     "name": "Rapidfire",
+     "count": 1
+    },
+    {
+     "name": "Vanguard",
+     "count": 1
+    },
+    {
+     "name": "Juggernaut",
+     "count": 1
+    },
+    {
+     "name": "Primal",
+     "count": 1
+    }
+   ],
+   "carries": [
+    "Aphelios",
+    "Amumu",
+    "Nidalee",
+    "Sentinel"
+   ],
+   "early": {
+    "4": [
+     "Rakan",
+     "Yorick",
+     "Yunara",
+     "Karma"
+    ],
+    "5": [
+     "Akali",
+     "Ornn",
+     "Shen",
+     "Varus",
+     "Xayah"
+    ],
+    "6": [
+     "Akali",
+     "Alistar",
+     "Ornn",
+     "Shen",
+     "Varus",
+     "Xayah"
+    ],
+    "7": [
+     "Aphelios",
+     "Diana",
+     "Varus",
+     "Amumu",
+     "Kog'Maw",
+     "Nidalee",
+     "Vi"
+    ]
+   },
+   "boardsByLevel": {
+    "7": [
+     "Aphelios",
+     "Diana",
+     "Amumu",
+     "Kog'Maw",
+     "Nidalee",
+     "Sentinel",
+     "Vi"
+    ],
+    "8": [
+     "Aphelios",
+     "Diana",
+     "Varus",
+     "Amumu",
+     "Kog'Maw",
+     "Nidalee",
+     "Sentinel",
+     "Vi"
+    ],
+    "9": [
+     "Alune",
+     "Aphelios",
+     "Diana",
+     "Varus",
+     "Amumu",
+     "Kog'Maw",
+     "Nidalee",
+     "Sentinel",
+     "Vi"
+    ],
+    "10": [
+     "Aphelios",
+     "Diana",
+     "Elder Dragon",
+     "Varus",
+     "Amumu",
+     "Kog'Maw",
+     "Nidalee",
+     "Sentinel",
+     "Vi"
+    ]
+   },
+   "positioning": {
+    "rows": [
+     [
+      null,
+      null,
+      null,
+      "Amumu",
+      "Sentinel",
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      "Vi",
+      "Diana",
+      null,
+      null,
+      null
+     ],
+     [
+      "Nidalee",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "Aphelios",
+      "Kog'Maw",
+      null,
+      null,
+      null,
+      null,
+      "Varus"
+     ]
+    ],
+    "cells": {
+     "cell_1": "Aphelios",
+     "cell_2": "Kog'Maw",
+     "cell_7": "Varus",
+     "cell_8": "Nidalee",
+     "cell_17": "Vi",
+     "cell_18": "Diana",
+     "cell_25": "Amumu",
+     "cell_26": "Sentinel"
+    }
+   },
+   "levelTiming": {
+    "levels": {
+     "5": {
+      "stage": "2-5",
+      "games": 50330,
+      "avgRerolls": 0.1
+     },
+     "6": {
+      "stage": "3-2",
+      "games": 51062,
+      "avgRerolls": 0.3
+     },
+     "7": {
+      "stage": "3-5",
+      "games": 51058,
+      "avgRerolls": 0.6
+     },
+     "8": {
+      "stage": "4-2",
+      "games": 51982,
+      "avgRerolls": 32.9
+     },
+     "9": {
+      "stage": "6-1",
+      "games": 26963,
+      "avgRerolls": 12.2
+     }
+    },
+    "rollLevel": "8",
+    "finalLevelPct": {
+     "10": 3.8,
+     "7": 0.1,
+     "8": 61.7,
+     "9": 34.4
+    },
+    "style": "Fast 8"
+   },
+   "itemPriority": [
+    {
+     "name": "Infinity Edge",
+     "perGame": 1.09,
+     "avgPlacement": 4.1816,
+     "bestOn": [
+      "Nidalee",
+      "Aphelios"
+     ]
+    },
+    {
+     "name": "Guinsoo's Rageblade",
+     "perGame": 0.83,
+     "avgPlacement": 4.2916,
+     "bestOn": [
+      "Aphelios",
+      "Kog'Maw"
+     ]
+    },
+    {
+     "name": "Gargoyle Stoneplate",
+     "perGame": 0.82,
+     "avgPlacement": 4.177,
+     "bestOn": [
+      "Amumu",
+      "Sentinel"
+     ]
+    },
+    {
+     "name": "Sterak's Gage",
+     "perGame": 0.64,
+     "avgPlacement": 4.0706,
+     "bestOn": [
+      "Nidalee",
+      "Amumu"
+     ]
+    },
+    {
+     "name": "Kraken's Fury",
+     "perGame": 0.63,
+     "avgPlacement": 4.1489,
+     "bestOn": [
+      "Aphelios",
+      "Kog'Maw"
+     ]
+    },
+    {
+     "name": "Protector's Vow",
+     "perGame": 0.63,
+     "avgPlacement": 4.0494,
+     "bestOn": [
+      "Sentinel",
+      "Amumu"
+     ]
+    },
+    {
+     "name": "Warmogs Armor",
+     "perGame": 0.6,
+     "avgPlacement": 4.0589,
+     "bestOn": [
+      "Amumu",
+      "Sentinel"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "perGame": 0.57,
+     "avgPlacement": 4.1702,
+     "bestOn": [
+      "Nidalee",
+      "Kog'Maw"
+     ]
+    },
+    {
+     "name": "Spirit Visage",
+     "perGame": 0.41,
+     "avgPlacement": 4.1259,
+     "bestOn": [
+      "Amumu",
+      "Sentinel"
+     ]
+    },
+    {
+     "name": "Deathblade",
+     "perGame": 0.4,
+     "avgPlacement": 4.0741,
+     "bestOn": [
+      "Aphelios",
+      "Nidalee"
+     ]
+    }
+   ],
+   "componentPriority": [
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "perGame": 3.82
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "perGame": 2.76
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "perGame": 2.73
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "perGame": 2.68
+    },
+    {
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "perGame": 2.55
+    },
+    {
+     "name": "Sparring Gloves",
+     "id": "DA_Component_SparringGloves",
+     "perGame": 2.51
+    },
+    {
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "perGame": 2.43
+    },
+    {
+     "name": "Needlessly Large Rod",
+     "id": "DA_Component_NeedlesslyLargeRod",
+     "perGame": 1.58
+    },
+    {
+     "name": "Frying Pan",
+     "id": "DA_Component_FryingPan",
+     "perGame": 0.26
+    },
+    {
+     "name": "Spatula",
+     "id": "DA_Component_Spatula",
+     "perGame": 0.19
+    }
+   ],
+   "firstCarousel": null,
+   "augments": {
+    "A": [
+     "Backup Bows",
+     "Caretaker's Ally",
+     "Carve a Path",
+     "Champ Delivery",
+     "Cognitive Tax+",
+     "Expedition",
+     "Find Your Center",
+     "Flowing Tears",
+     "Focused Fire",
+     "Good For Something I",
+     "Iron Assets",
+     "Kick Start",
+     "Missed Connections",
+     "Pandora's Items I",
+     "Silver Destiny",
+     "Silver Destiny+",
+     "Silver Spoon",
+     "Twin Guardians",
+     "Advanced Loan",
+     "Advanced Loan+",
+     "Ascension",
+     "Booster Pack",
+     "Booster Pack++",
+     "Caretaker's Favor",
+     "Cluttered Mind",
+     "Duo Queue",
+     "Epoch",
+     "Epoch+",
+     "Explosive Growth",
+     "Explosive Growth+",
+     "Money Hungry",
+     "Money Hungry+",
+     "Replication",
+     "Portable Forge",
+     "Salvage Bin+",
+     "Slammin'",
+     "Patient Study",
+     "Slammin'+",
+     "Trade Sector+",
+     "Call To Chaos",
+     "Forged In Strength",
+     "Living Forge",
+     "Min-Max",
+     "Money Monsoon",
+     "Prismatic Destiny",
+     "Prismatic Destiny+",
+     "Retribution",
+     "Sweet Treats"
+    ],
+    "B": [
+     "Bodyguard Training",
+     "Cognitive Overload",
+     "Trade Sector"
+    ],
+    "S": [
+     "Band of Thieves",
+     "Champ Delivery+",
+     "Champ Delivery++",
+     "Component Buffet",
+     "Feeling Lucky",
+     "Future Focused",
+     "Glass Cannon I",
+     "Item Grab Bag I",
+     "Latent Forge",
+     "Partial Ascension",
+     "Patience Is A Virtue",
+     "Residual Magic",
+     "Residual Magic +",
+     "Residual Magic ++",
+     "Rolling For Days",
+     "Silver Destiny++",
+     "Slice of Life",
+     "Slightly Magic Roll",
+     "Small Grab Bag",
+     "Wisp Rebate",
+     "Wisp Rebate+",
+     "Big Grab Bag",
+     "Booster Pack+",
+     "Cybernetic Implants",
+     "Epic Rolldown",
+     "Exclusive Customization",
+     "Gain 21 Gold",
+     "Magic Roll",
+     "Salvage Bin",
+     "Swordsmith",
+     "Beast Within",
+     "Beast Within",
+     "Beast Within+",
+     "Beast Within+",
+     "Bronze For Life II",
+     "Stand United",
+     "Belt Overflow",
+     "Buried Treasures III",
+     "Golden Gamble",
+     "Golden Gamble+",
+     "Golden Gamble++",
+     "Nesting Anvils",
+     "Nesting Anvils+",
+     "Shopping Spree",
+     "Sword Overflow",
+     "Bronze For Life I"
+    ]
+   },
+   "proTips": {
+    "title": "APHELIOS > Lvl 8 push",
+    "notes": "- PRIMAL: Attack Speed > Execute > Gain Components only if you hit Primal stage 2 or 3 and are winstreaking;\n- Itemisation: Nidalee2 > Aphelios2 > Nidalee1;\n- try to prioritise BF for Nidalee Items -> Deathblade on Aphelios if you need it for winstreak or hit Aphelios2 early;",
+    "url": "https://www.metatft.com/pro-comps?comp=034d3180-d2d7-41af-837a-74aa2a6803e2"
+   },
+   "trend": [
+    {
+     "day": "2026-09-28",
+     "avgPlacement": 4.2993,
+     "games": 4804
+    },
+    {
+     "day": "2026-09-29",
+     "avgPlacement": 4.322,
+     "games": 46737
+    },
+    {
+     "day": "2026-09-30",
+     "avgPlacement": 4.2976,
+     "games": 47737
+    },
+    {
+     "day": "2026-10-01",
+     "avgPlacement": 4.3076,
+     "games": 49576
+    },
+    {
+     "day": "2026-10-02",
+     "avgPlacement": 4.2937,
+     "games": 51363
+    },
+    {
+     "day": "2026-10-03",
+     "avgPlacement": 4.305,
+     "games": 55306
+    },
+    {
+     "day": "2026-10-04",
+     "avgPlacement": 4.3045,
+     "games": 57861
+    },
+    {
+     "day": "2026-10-05",
+     "avgPlacement": 4.3299,
+     "games": 52919
+    }
+   ]
+  },
+  {
+   "id": "425005",
+   "name": "Invoker Ahri",
+   "tier": "A",
+   "avgPlacement": 4.368,
+   "playRate": 7.32,
+   "games": 111260,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium",
+   "units": [
+    {
+     "name": "Ahri",
+     "id": "DA_18_Ahri",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Invoker Emblem",
+      "Jeweled Gauntlet",
+      "Striker's Flail"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Morgana",
+     "id": "DA_18_Morgana",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Morellonomicon",
+      "Rabadon's Deathcap",
+      "Void Staff"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Pebbles",
+     "id": "DA_18_Sentry",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Sett",
+     "id": "DA_18_Sett",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Gargoyle Stoneplate",
+      "Spirit Visage",
+      "Warmogs Armor"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Karma",
+     "id": "DA_Karma18",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Krug",
+     "id": "DA_Krug18",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Sentinel",
+     "id": "DA_Sentinel18",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Protector's Vow",
+      "Protector's Vow",
+      "Protector's Vow"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Taric",
+     "id": "DA_Taric18",
+     "cost": 5,
+     "stars": 1,
+     "items": [],
+     "carry": false
+    }
+   ],
+   "traits": [
+    {
+     "name": "Blossom",
+     "count": 1
+    },
+    {
+     "name": "Brawler",
+     "count": 1
+    },
+    {
+     "name": "Invoker",
+     "count": 2
+    },
+    {
+     "name": "Spellweaver",
+     "count": 1
+    },
+    {
+     "name": "Vanguard",
+     "count": 1
+    },
+    {
+     "name": "Emerald Aspect",
+     "count": 1
+    },
+    {
+     "name": "Riftbeast",
+     "count": 1
+    }
+   ],
+   "carries": [
+    "Ahri",
+    "Morgana",
+    "Sett",
+    "Sentinel"
+   ],
+   "early": {
+    "4": [
+     "Caitlyn",
+     "Camille",
+     "Cassiopeia",
+     "Elise"
+    ],
+    "5": [
+     "Caitlyn",
+     "Camille",
+     "Cassiopeia",
+     "Elise",
+     "Rakan"
+    ],
+    "6": [
+     "Caitlyn",
+     "Camille",
+     "Cassiopeia",
+     "Diana",
+     "Elise",
+     "Karma"
+    ],
+    "7": [
+     "Ahri",
+     "Morgana",
+     "Pebbles",
+     "Sett",
+     "Karma",
+     "Krug",
+     "Sentinel"
+    ]
+   },
+   "boardsByLevel": {
+    "7": [
+     "Ahri",
+     "Morgana",
+     "Pebbles",
+     "Sett",
+     "Karma",
+     "Krug",
+     "Sentinel"
+    ],
+    "8": [
+     "Ahri",
+     "Morgana",
+     "Pebbles",
+     "Sett",
+     "Karma",
+     "Krug",
+     "Sentinel",
+     "Taric"
+    ],
+    "9": [
+     "Ahri",
+     "Ivern",
+     "Morgana",
+     "Pebbles",
+     "Sett",
+     "Karma",
+     "Krug",
+     "Sentinel",
+     "Taric"
+    ],
+    "10": [
+     "Ahri",
+     "Ivern",
+     "Morgana",
+     "Pebbles",
+     "Sett",
+     "Karma",
+     "Kog'Maw",
+     "Krug",
+     "Sentinel",
+     "Taric"
+    ]
+   },
+   "positioning": {
+    "rows": [
+     [
+      null,
+      null,
+      "Krug",
+      "Sett",
+      "Sentinel",
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Taric",
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      "Morgana",
+      null,
+      null,
+      null
+     ],
+     [
+      "Karma",
+      null,
+      "Ahri",
+      null,
+      null,
+      null,
+      "Pebbles"
+     ]
+    ],
+    "cells": {
+     "cell_1": "Karma",
+     "cell_3": "Ahri",
+     "cell_7": "Pebbles",
+     "cell_11": "Morgana",
+     "cell_18": "Taric",
+     "cell_24": "Krug",
+     "cell_25": "Sett",
+     "cell_26": "Sentinel"
+    }
+   },
+   "levelTiming": {
+    "levels": {
+     "5": {
+      "stage": "2-5",
+      "games": 31496,
+      "avgRerolls": 0.2
+     },
+     "6": {
+      "stage": "3-2",
+      "games": 32007,
+      "avgRerolls": 0.4
+     },
+     "7": {
+      "stage": "3-6",
+      "games": 31765,
+      "avgRerolls": 0.6
+     },
+     "8": {
+      "stage": "4-2",
+      "games": 32572,
+      "avgRerolls": 29.9
+     },
+     "9": {
+      "stage": "6-1",
+      "games": 16175,
+      "avgRerolls": 13.2
+     }
+    },
+    "rollLevel": "8",
+    "finalLevelPct": {
+     "10": 4.3,
+     "7": 0.1,
+     "8": 53.7,
+     "9": 41.9
+    },
+    "style": "Fast 8"
+   },
+   "itemPriority": [
+    {
+     "name": "Jeweled Gauntlet",
+     "perGame": 1.02,
+     "avgPlacement": 4.2376,
+     "bestOn": [
+      "Ahri",
+      "Morgana"
+     ]
+    },
+    {
+     "name": "Gargoyle Stoneplate",
+     "perGame": 1.01,
+     "avgPlacement": 4.2716,
+     "bestOn": [
+      "Sett",
+      "Sentinel"
+     ]
+    },
+    {
+     "name": "Void Staff",
+     "perGame": 0.76,
+     "avgPlacement": 4.178,
+     "bestOn": [
+      "Morgana",
+      "Alune"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "perGame": 0.72,
+     "avgPlacement": 4.1874,
+     "bestOn": [
+      "Ahri",
+      "Morgana"
+     ]
+    },
+    {
+     "name": "Warmogs Armor",
+     "perGame": 0.6,
+     "avgPlacement": 4.1069,
+     "bestOn": [
+      "Sett",
+      "Sentinel"
+     ]
+    },
+    {
+     "name": "Morellonomicon",
+     "perGame": 0.58,
+     "avgPlacement": 4.1207,
+     "bestOn": [
+      "Morgana",
+      "Alune"
+     ]
+    },
+    {
+     "name": "Protector's Vow",
+     "perGame": 0.53,
+     "avgPlacement": 3.9045,
+     "bestOn": [
+      "Sentinel",
+      "Sett"
+     ]
+    },
+    {
+     "name": "Striker's Flail",
+     "perGame": 0.47,
+     "avgPlacement": 4.1928,
+     "bestOn": [
+      "Ahri",
+      "Morgana"
+     ]
+    },
+    {
+     "name": "Invoker Emblem",
+     "perGame": 0.41,
+     "avgPlacement": 4.2095,
+     "bestOn": [
+      "Ahri",
+      "Alune"
+     ]
+    },
+    {
+     "name": "Adaptive Helm",
+     "perGame": 0.4,
+     "avgPlacement": 3.8387,
+     "bestOn": [
+      "Sentinel",
+      "Morgana"
+     ]
+    }
+   ],
+   "componentPriority": [
+    {
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "perGame": 3.8
+    },
+    {
+     "name": "Needlessly Large Rod",
+     "id": "DA_Component_NeedlesslyLargeRod",
+     "perGame": 3.37
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "perGame": 3.03
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "perGame": 2.63
+    },
+    {
+     "name": "Sparring Gloves",
+     "id": "DA_Component_SparringGloves",
+     "perGame": 2.51
+    },
+    {
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "perGame": 2.26
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "perGame": 1.86
+    },
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "perGame": 1.54
+    },
+    {
+     "name": "Frying Pan",
+     "id": "DA_Component_FryingPan",
+     "perGame": 0.67
+    },
+    {
+     "name": "Spatula",
+     "id": "DA_Component_Spatula",
+     "perGame": 0.25
+    }
+   ],
+   "firstCarousel": null,
+   "augments": {
+    "A": [
+     "Branching Out",
+     "Cognitive Tax+",
+     "Expedition",
+     "Find Your Center",
+     "Good For Something I",
+     "Iron Assets",
+     "Item Grab Bag I",
+     "Missed Connections",
+     "Pandora's Items I",
+     "Silver Destiny",
+     "The Tower",
+     "Advanced Loan+",
+     "Booster Pack",
+     "Booster Pack++",
+     "Caretaker's Favor",
+     "Cluttered Mind",
+     "Cybernetic Uplink",
+     "Duo Queue",
+     "Explosive Growth",
+     "Gold Destiny",
+     "Gold Destiny+",
+     "It's Me, Baby",
+     "Magic Roll",
+     "Money Hungry",
+     "Money Hungry+",
+     "Patient Study",
+     "Slammin'",
+     "Slammin'+",
+     "Comeback Story",
+     "Coronation",
+     "Deadlier Caps",
+     "Jeweled Lotus II",
+     "Money Monsoon",
+     "Min-Max",
+     "Prismatic Destiny",
+     "Prismatic Destiny+",
+     "Radiant Relics",
+     "Shopping Spree",
+     "Sweet Treats",
+     "Upward Mobility"
+    ],
+    "B": [
+     "Advanced Loan",
+     "Epoch",
+     "Epoch+",
+     "Trade Sector",
+     "Trade Sector+"
+    ],
+    "S": [
+     "Band of Thieves",
+     "Champ Delivery",
+     "Champ Delivery+",
+     "Champ Delivery++",
+     "Component Buffet",
+     "Feeling Lucky",
+     "Flowing Tears",
+     "Glass Cannon I",
+     "Latent Forge",
+     "Partial Ascension",
+     "Patience Is A Virtue",
+     "Residual Magic",
+     "Residual Magic +",
+     "Residual Magic ++",
+     "Rolling For Days",
+     "Silver Destiny+",
+     "Silver Destiny++",
+     "Slice of Life",
+     "Slightly Magic Roll",
+     "Small Grab Bag",
+     "Twin Guardians",
+     "Wisp Rebate",
+     "Wisp Rebate+",
+     "Ascension",
+     "Big Grab Bag",
+     "Booster Pack+",
+     "Epic Rolldown",
+     "Exclusive Customization",
+     "Gain 21 Gold",
+     "Glass Cannon II",
+     "Item Extraction",
+     "Replication",
+     "Salvage Bin",
+     "Salvage Bin+",
+     "Seraphim's Staff",
+     "Staffsmith",
+     "Belt Overflow",
+     "Buried Treasures III",
+     "Commerce Core",
+     "Golden Gamble",
+     "Golden Gamble+",
+     "Golden Gamble++",
+     "Nesting Anvils",
+     "Nesting Anvils+",
+     "One Buff Two Buff",
+     "The Trait Tree",
+     "The Trait Tree+",
+     "Urf's Grab Bag",
+     "Bronze For Life I",
+     "Bronze For Life II"
+    ]
+   },
+   "proTips": {
+    "title": "AHRI & Morgana > Blossom > Lvl 8 push",
+    "notes": "- AHRI needs Jeweled Gauntlet + Guardbreaker to have enough crit chance to reliably crit and oneshot enemies;",
+    "url": "https://www.metatft.com/pro-comps?comp=3a4116fd-07b1-4642-b8d0-9cce4c5c4c62"
+   },
+   "trend": [
+    {
+     "day": "2026-09-28",
+     "avgPlacement": 4.2529,
+     "games": 3752
+    },
+    {
+     "day": "2026-09-29",
+     "avgPlacement": 4.3564,
+     "games": 35391
+    },
+    {
+     "day": "2026-09-30",
+     "avgPlacement": 4.3514,
+     "games": 34888
+    },
+    {
+     "day": "2026-10-01",
+     "avgPlacement": 4.3697,
+     "games": 36409
+    },
+    {
+     "day": "2026-10-02",
+     "avgPlacement": 4.3474,
+     "games": 36096
+    },
+    {
+     "day": "2026-10-03",
+     "avgPlacement": 4.3606,
+     "games": 37276
+    },
+    {
+     "day": "2026-10-04",
+     "avgPlacement": 4.3645,
+     "games": 37716
+    },
+    {
+     "day": "2026-10-05",
+     "avgPlacement": 4.3911,
+     "games": 32538
+    }
+   ]
+  },
+  {
+   "id": "425007",
+   "name": "Juggernaut Zyra",
+   "tier": "A",
+   "avgPlacement": 4.384,
+   "playRate": 2.56,
+   "games": 38870,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium",
+   "units": [
+    {
+     "name": "Ivern",
+     "id": "DA_18_Ivern",
+     "cost": 5,
+     "stars": 1,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Maokai",
+     "id": "DA_18_Maokai",
+     "cost": 5,
+     "stars": 1,
+     "items": [
+      "Gargoyle Stoneplate",
+      "Spirit Visage",
+      "Warmogs Armor"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Sejuani",
+     "id": "DA_18_Sejuani",
+     "cost": 2,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Yorick",
+     "id": "DA_18_Yorick",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Zyra",
+     "id": "DA_18_Zyra",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Archangel's Staff",
+      "Archangel's Staff",
+      "Hextech Gunblade"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Amumu",
+     "id": "DA_Amumu18",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Gargoyle Stoneplate",
+      "Ionic Spark",
+      "Sunfire Cape"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Nidalee",
+     "id": "DA_Nidalee18_AP",
+     "cost": 4,
+     "stars": 2,
+     "items": [
+      "Archangel's Staff",
+      "Guinsoo's Rageblade",
+      "Rabadon's Deathcap"
+     ],
+     "carry": true
+    },
+    {
+     "name": "Scuttlecrab",
+     "id": "DA_Scuttlecrab18",
+     "cost": 2,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    },
+    {
+     "name": "Vi",
+     "id": "DA_Vi18",
+     "cost": 3,
+     "stars": 2,
+     "items": [],
+     "carry": false
+    }
+   ],
+   "traits": [
+    {
+     "name": "Greenfather",
+     "count": 1
+    },
+    {
+     "name": "Old Growth",
+     "count": 1
+    },
+    {
+     "name": "Summoner",
+     "count": 1
+    },
+    {
+     "name": "Thornmaiden",
+     "count": 1
+    },
+    {
+     "name": "Juggernaut",
+     "count": 3
+    },
+    {
+     "name": "Primal",
+     "count": 1
+    }
+   ],
+   "carries": [
+    "Maokai",
+    "Zyra",
+    "Amumu",
+    "Nidalee"
+   ],
+   "early": {
+    "4": [
+     "Rakan",
+     "Yorick",
+     "Yunara",
+     "Karma"
+    ],
+    "5": [
+     "Rakan",
+     "Sejuani",
+     "Teemo",
+     "Yorick",
+     "Scuttlecrab"
+    ],
+    "6": [
+     "Rakan",
+     "Sejuani",
+     "Yorick",
+     "Yunara",
+     "Karma",
+     "Scuttlecrab"
+    ],
+    "7": [
+     "Rakan",
+     "Sejuani",
+     "Yorick",
+     "Zyra",
+     "Amumu",
+     "Scuttlecrab",
+     "Vi"
+    ]
+   },
+   "boardsByLevel": {
+    "8": [
+     "Rakan",
+     "Sejuani",
+     "Yorick",
+     "Zyra",
+     "Amumu",
+     "Nidalee",
+     "Scuttlecrab",
+     "Vi"
+    ],
+    "9": [
+     "Ivern",
+     "Maokai",
+     "Sejuani",
+     "Yorick",
+     "Zyra",
+     "Amumu",
+     "Nidalee",
+     "Scuttlecrab",
+     "Vi"
+    ],
+    "10": [
+     "Ivern",
+     "Kennen",
+     "Maokai",
+     "Sejuani",
+     "Yorick",
+     "Zyra",
+     "Amumu",
+     "Nidalee",
+     "Scuttlecrab",
+     "Vi"
+    ]
+   },
+   "positioning": {
+    "rows": [
+     [
+      "Vi",
+      "Sejuani",
+      "Yorick",
+      "Maokai",
+      "Amumu",
+      "Scuttlecrab",
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     [
+      "Ivern",
+      null,
+      null,
+      null,
+      null,
+      "Nidalee",
+      "Zyra"
+     ]
+    ],
+    "cells": {
+     "cell_1": "Ivern",
+     "cell_6": "Nidalee",
+     "cell_7": "Zyra",
+     "cell_22": "Vi",
+     "cell_23": "Sejuani",
+     "cell_24": "Yorick",
+     "cell_25": "Maokai",
+     "cell_26": "Amumu",
+     "cell_27": "Scuttlecrab"
+    }
+   },
+   "levelTiming": {
+    "levels": {
+     "5": {
+      "stage": "2-5",
+      "games": 9795,
+      "avgRerolls": 0.1
+     },
+     "6": {
+      "stage": "3-2",
+      "games": 9931,
+      "avgRerolls": 0.3
+     },
+     "7": {
+      "stage": "3-6",
+      "games": 9826,
+      "avgRerolls": 0.7
+     },
+     "8": {
+      "stage": "4-2",
+      "games": 10087,
+      "avgRerolls": 26.4
+     },
+     "9": {
+      "stage": "5-6",
+      "games": 5914,
+      "avgRerolls": 14.6
+     }
+    },
+    "rollLevel": "8",
+    "finalLevelPct": {
+     "10": 4.8,
+     "7": 0.2,
+     "8": 46.4,
+     "9": 48.5
+    },
+    "style": "Fast 8"
+   },
+   "itemPriority": [
+    {
+     "name": "Archangel's Staff",
+     "perGame": 1.36,
+     "avgPlacement": 4.0405,
+     "bestOn": [
+      "Zyra",
+      "Nidalee"
+     ]
+    },
+    {
+     "name": "Gargoyle Stoneplate",
+     "perGame": 0.98,
+     "avgPlacement": 4.2593,
+     "bestOn": [
+      "Amumu",
+      "Vi"
+     ]
+    },
+    {
+     "name": "Hextech Gunblade",
+     "perGame": 0.78,
+     "avgPlacement": 4.1612,
+     "bestOn": [
+      "Zyra",
+      "Nidalee"
+     ]
+    },
+    {
+     "name": "Warmogs Armor",
+     "perGame": 0.74,
+     "avgPlacement": 4.1261,
+     "bestOn": [
+      "Amumu",
+      "Maokai"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "perGame": 0.55,
+     "avgPlacement": 4.1787,
+     "bestOn": [
+      "Zyra",
+      "Nidalee"
+     ]
+    },
+    {
+     "name": "Guinsoo's Rageblade",
+     "perGame": 0.54,
+     "avgPlacement": 4.1733,
+     "bestOn": [
+      "Nidalee",
+      "Ivern"
+     ]
+    },
+    {
+     "name": "Void Staff",
+     "perGame": 0.53,
+     "avgPlacement": 4.102,
+     "bestOn": [
+      "Nidalee",
+      "Zyra"
+     ]
+    },
+    {
+     "name": "Thief's Gloves",
+     "perGame": 0.44,
+     "avgPlacement": 4.0404,
+     "bestOn": [
+      "Vi",
+      "Maokai"
+     ]
+    },
+    {
+     "name": "Spirit Visage",
+     "perGame": 0.37,
+     "avgPlacement": 4.0972,
+     "bestOn": [
+      "Amumu",
+      "Maokai"
+     ]
+    },
+    {
+     "name": "Steadfast Heart",
+     "perGame": 0.36,
+     "avgPlacement": 4.176,
+     "bestOn": [
+      "Amumu",
+      "Vi"
+     ]
+    }
+   ],
+   "componentPriority": [
+    {
+     "name": "Needlessly Large Rod",
+     "id": "DA_Component_NeedlesslyLargeRod",
+     "perGame": 3.91
+    },
+    {
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "perGame": 3.55
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "perGame": 2.71
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "perGame": 2.48
+    },
+    {
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "perGame": 2.2
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "perGame": 2.07
+    },
+    {
+     "name": "Sparring Gloves",
+     "id": "DA_Component_SparringGloves",
+     "perGame": 1.98
+    },
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "perGame": 1.93
+    },
+    {
+     "name": "Spatula",
+     "id": "DA_Component_Spatula",
+     "perGame": 0.16
+    },
+    {
+     "name": "Frying Pan",
+     "id": "DA_Component_FryingPan",
+     "perGame": 0.11
+    }
+   ],
+   "firstCarousel": null,
+   "augments": {
+    "A": [
+     "Branching Out",
+     "Cognitive Tax+",
+     "Expedition",
+     "Find Your Center",
+     "Good For Something I",
+     "Iron Assets",
+     "Item Grab Bag I",
+     "Missed Connections",
+     "Pandora's Items I",
+     "Silver Destiny",
+     "The Tower",
+     "Advanced Loan+",
+     "Booster Pack",
+     "Booster Pack++",
+     "Caretaker's Favor",
+     "Cluttered Mind",
+     "Cybernetic Uplink",
+     "Duo Queue",
+     "Explosive Growth",
+     "Gold Destiny",
+     "Gold Destiny+",
+     "It's Me, Baby",
+     "Magic Roll",
+     "Money Hungry",
+     "Money Hungry+",
+     "Patient Study",
+     "Slammin'",
+     "Slammin'+",
+     "Comeback Story",
+     "Coronation",
+     "Deadlier Caps",
+     "Jeweled Lotus II",
+     "Money Monsoon",
+     "Min-Max",
+     "Prismatic Destiny",
+     "Prismatic Destiny+",
+     "Radiant Relics",
+     "Shopping Spree",
+     "Sweet Treats",
+     "Upward Mobility"
+    ],
+    "B": [
+     "Advanced Loan",
+     "Epoch",
+     "Epoch+",
+     "Trade Sector",
+     "Trade Sector+"
+    ],
+    "S": [
+     "Boxing Lessons",
+     "Partial Ascension",
+     "Band of Thieves",
+     "Champ Delivery",
+     "Champ Delivery+",
+     "Champ Delivery++",
+     "Component Buffet",
+     "Feeling Lucky",
+     "Flowing Tears",
+     "Glass Cannon I",
+     "Latent Forge",
+     "Patience Is A Virtue",
+     "Residual Magic",
+     "Residual Magic +",
+     "Residual Magic ++",
+     "Rolling For Days",
+     "Silver Destiny+",
+     "Silver Destiny++",
+     "Slice of Life",
+     "Slightly Magic Roll",
+     "Small Grab Bag",
+     "Twin Guardians",
+     "Wisp Rebate",
+     "Wisp Rebate+",
+     "Seraphim's Staff",
+     "Ascension",
+     "Big Grab Bag",
+     "Booster Pack+",
+     "Epic Rolldown",
+     "Exclusive Customization",
+     "Gain 21 Gold",
+     "Glass Cannon II",
+     "Item Extraction",
+     "Replication",
+     "Salvage Bin",
+     "Salvage Bin+",
+     "Staffsmith",
+     "Belt Overflow",
+     "Buried Treasures III",
+     "Commerce Core",
+     "Golden Gamble",
+     "Golden Gamble+",
+     "Golden Gamble++",
+     "Nesting Anvils",
+     "Nesting Anvils+",
+     "One Buff Two Buff",
+     "The Trait Tree",
+     "The Trait Tree+",
+     "Urf's Grab Bag",
+     "Group Hug I"
+    ]
+   },
+   "proTips": {
+    "title": "ZYRA > Juggernaut > Lvl 8 push",
+    "notes": "- PRIMAL: Green Healing\n- if you find MAOKAI -> replace Sejuani;\n- if you find IVERN -> replace Sivir;",
+    "url": "https://www.metatft.com/pro-comps?comp=88794de4-b8f4-4e31-8937-abb65c0ba2c2"
+   },
+   "trend": [
+    {
+     "day": "2026-09-28",
+     "avgPlacement": 4.3915,
+     "games": 590
+    },
+    {
+     "day": "2026-09-29",
+     "avgPlacement": 4.3804,
+     "games": 8823
+    },
+    {
+     "day": "2026-09-30",
+     "avgPlacement": 4.396,
+     "games": 9333
+    },
+    {
+     "day": "2026-10-01",
+     "avgPlacement": 4.4209,
+     "games": 9738
+    },
+    {
+     "day": "2026-10-02",
+     "avgPlacement": 4.3816,
+     "games": 10485
+    },
+    {
+     "day": "2026-10-03",
+     "avgPlacement": 4.3888,
+     "games": 11849
+    },
+    {
+     "day": "2026-10-04",
+     "avgPlacement": 4.3936,
+     "games": 13089
+    },
+    {
+     "day": "2026-10-05",
+     "avgPlacement": 4.3617,
+     "games": 13117
+    }
+   ]
+  }
+ ],
+ "all_comps": [
+  {
+   "id": "425014",
+   "name": "Spellweaver Veigar",
+   "tier": "S",
+   "avgPlacement": 4.206,
+   "playRate": 7.17,
+   "games": 109004,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425022",
+   "name": "Executioner Kha'Zix",
+   "tier": "S",
+   "avgPlacement": 4.21,
+   "playRate": 2.74,
+   "games": 41667,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425013",
+   "name": "Flora Fatalis Azir",
+   "tier": "A",
+   "avgPlacement": 4.252,
+   "playRate": 4.58,
+   "games": 69627,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425002",
+   "name": "Lunar Aphelios Nidalee",
+   "tier": "A",
+   "avgPlacement": 4.313,
+   "playRate": 11.26,
+   "games": 171236,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425005",
+   "name": "Invoker Ahri",
+   "tier": "A",
+   "avgPlacement": 4.368,
+   "playRate": 7.32,
+   "games": 111260,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425007",
+   "name": "Juggernaut Zyra",
+   "tier": "A",
+   "avgPlacement": 4.384,
+   "playRate": 2.56,
+   "games": 38870,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425026",
+   "name": "Invoker Morgana Sentinel",
+   "tier": "A",
+   "avgPlacement": 4.394,
+   "playRate": 0.91,
+   "games": 13857,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425000",
+   "name": "Juggernaut Zyra Sivir",
+   "tier": "A",
+   "avgPlacement": 4.395,
+   "playRate": 6.12,
+   "games": 92996,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425025",
+   "name": "Juggernaut Ashe",
+   "tier": "A",
+   "avgPlacement": 4.437,
+   "playRate": 4.84,
+   "games": 73547,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425001",
+   "name": "Rapidfire Aphelios",
+   "tier": "A",
+   "avgPlacement": 4.45,
+   "playRate": 1.17,
+   "games": 17761,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425017",
+   "name": "Executioner Yunara",
+   "tier": "A",
+   "avgPlacement": 4.464,
+   "playRate": 0.33,
+   "games": 4983,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425047",
+   "name": "Juggernaut Elder Dragon",
+   "tier": "A",
+   "avgPlacement": 4.473,
+   "playRate": 9.97,
+   "games": 151480,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425033",
+   "name": "Vanguard Morgana",
+   "tier": "A",
+   "avgPlacement": 4.474,
+   "playRate": 1.2,
+   "games": 18179,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425008",
+   "name": "Defender Cassiopeia",
+   "tier": "A",
+   "avgPlacement": 4.481,
+   "playRate": 1.8,
+   "games": 27394,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425003",
+   "name": "Executioner Draven",
+   "tier": "A",
+   "avgPlacement": 4.485,
+   "playRate": 3.17,
+   "games": 48154,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425006",
+   "name": "Adaptor Master Yi Rengar",
+   "tier": "A",
+   "avgPlacement": 4.485,
+   "playRate": 0.89,
+   "games": 13501,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425023",
+   "name": "Adaptor Master Yi",
+   "tier": "A",
+   "avgPlacement": 4.487,
+   "playRate": 0.55,
+   "games": 8391,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425010",
+   "name": "Executioner Malphite",
+   "tier": "B",
+   "avgPlacement": 4.516,
+   "playRate": 6.49,
+   "games": 98615,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425011",
+   "name": "Elderwood Aphelios",
+   "tier": "B",
+   "avgPlacement": 4.525,
+   "playRate": 1.37,
+   "games": 20816,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425012",
+   "name": "Blossom Ahri Sett",
+   "tier": "B",
+   "avgPlacement": 4.526,
+   "playRate": 1.36,
+   "games": 20651,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425019",
+   "name": "Ravager Warwick",
+   "tier": "B",
+   "avgPlacement": 4.57,
+   "playRate": 0.96,
+   "games": 14612,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425004",
+   "name": "Executioner Sett",
+   "tier": "B",
+   "avgPlacement": 4.58,
+   "playRate": 1.47,
+   "games": 22412,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425024",
+   "name": "Riftbeast Pebbles",
+   "tier": "B",
+   "avgPlacement": 4.65,
+   "playRate": 1.48,
+   "games": 22535,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425045",
+   "name": "Elderwood Ezreal",
+   "tier": "B",
+   "avgPlacement": 4.651,
+   "playRate": 1.18,
+   "games": 17937,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425009",
+   "name": "Inferno Ashe",
+   "tier": "B",
+   "avgPlacement": 4.665,
+   "playRate": 0.99,
+   "games": 15040,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425043",
+   "name": "Blackthorn Malphite Veigar",
+   "tier": "B",
+   "avgPlacement": 4.667,
+   "playRate": 0.13,
+   "games": 1919,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Standard",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425020",
+   "name": "Executioner Azir",
+   "tier": "B",
+   "avgPlacement": 4.674,
+   "playRate": 0.66,
+   "games": 10103,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425030",
+   "name": "Hunter Sett",
+   "tier": "B",
+   "avgPlacement": 4.703,
+   "playRate": 0.36,
+   "games": 5542,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425015",
+   "name": "Juggernaut Caitlyn",
+   "tier": "B",
+   "avgPlacement": 4.709,
+   "playRate": 1.27,
+   "games": 19307,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425016",
+   "name": "Hunter Nidalee",
+   "tier": "B",
+   "avgPlacement": 4.731,
+   "playRate": 1.35,
+   "games": 20542,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425054",
+   "name": "Brawler Sett",
+   "tier": "C",
+   "avgPlacement": 4.771,
+   "playRate": 0.42,
+   "games": 6402,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425028",
+   "name": "Juggernaut Zyra Amumu",
+   "tier": "C",
+   "avgPlacement": 4.782,
+   "playRate": 2.0,
+   "games": 30433,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425048",
+   "name": "Blackthorn Kha'Zix",
+   "tier": "C",
+   "avgPlacement": 4.802,
+   "playRate": 0.3,
+   "games": 4587,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425042",
+   "name": "Inferno Akali",
+   "tier": "C",
+   "avgPlacement": 4.804,
+   "playRate": 0.54,
+   "games": 8208,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425021",
+   "name": "Fae Tristana",
+   "tier": "C",
+   "avgPlacement": 4.866,
+   "playRate": 0.81,
+   "games": 12258,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425035",
+   "name": "Vanguard Aphelios",
+   "tier": "C",
+   "avgPlacement": 4.884,
+   "playRate": 0.89,
+   "games": 13505,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425027",
+   "name": "Juggernaut Nidalee",
+   "tier": "C",
+   "avgPlacement": 4.891,
+   "playRate": 0.49,
+   "games": 7419,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425031",
+   "name": "Rival Kha'Zix",
+   "tier": "C",
+   "avgPlacement": 4.896,
+   "playRate": 0.6,
+   "games": 9103,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425036",
+   "name": "Invoker Nidalee",
+   "tier": "C",
+   "avgPlacement": 4.896,
+   "playRate": 0.45,
+   "games": 6876,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425051",
+   "name": "Vanguard Rengar",
+   "tier": "C",
+   "avgPlacement": 4.903,
+   "playRate": 0.08,
+   "games": 1201,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425018",
+   "name": "Invoker Teemo",
+   "tier": "C",
+   "avgPlacement": 4.909,
+   "playRate": 0.12,
+   "games": 1766,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425049",
+   "name": "Blossom Ahri",
+   "tier": "C",
+   "avgPlacement": 4.919,
+   "playRate": 0.65,
+   "games": 9814,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425050",
+   "name": "Blackthorn Malphite",
+   "tier": "C",
+   "avgPlacement": 4.997,
+   "playRate": 1.13,
+   "games": 17202,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425044",
+   "name": "Juggernaut Yunara",
+   "tier": "C",
+   "avgPlacement": 4.997,
+   "playRate": 0.75,
+   "games": 11372,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425034",
+   "name": "Inferno Amumu",
+   "tier": "D",
+   "avgPlacement": 5.033,
+   "playRate": 0.95,
+   "games": 14458,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Hard"
+  },
+  {
+   "id": "425032",
+   "name": "Sprykin Veigar",
+   "tier": "D",
+   "avgPlacement": 5.036,
+   "playRate": 0.35,
+   "games": 5269,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425046",
+   "name": "Lunar Kayle",
+   "tier": "D",
+   "avgPlacement": 5.038,
+   "playRate": 0.08,
+   "games": 1142,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425029",
+   "name": "Invoker Morgana",
+   "tier": "D",
+   "avgPlacement": 5.039,
+   "playRate": 0.1,
+   "games": 1584,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Standard",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425053",
+   "name": "Lunar Aphelios",
+   "tier": "D",
+   "avgPlacement": 5.089,
+   "playRate": 0.4,
+   "games": 6075,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 9",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425039",
+   "name": "Fae Tristana Sivir",
+   "tier": "D",
+   "avgPlacement": 5.159,
+   "playRate": 0.29,
+   "games": 4358,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425041",
+   "name": "Spellweaver Ahri",
+   "tier": "D",
+   "avgPlacement": 5.211,
+   "playRate": 0.18,
+   "games": 2689,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425040",
+   "name": "Rapidfire Kayle",
+   "tier": "D",
+   "avgPlacement": 5.212,
+   "playRate": 0.74,
+   "games": 11306,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425038",
+   "name": "Sprykin Teemo",
+   "tier": "D",
+   "avgPlacement": 5.301,
+   "playRate": 0.1,
+   "games": 1538,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425052",
+   "name": "Coven Morgana",
+   "tier": "D",
+   "avgPlacement": 5.319,
+   "playRate": 1.31,
+   "games": 19960,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425055",
+   "name": "Flora Fatalis Soraka",
+   "tier": "D",
+   "avgPlacement": 5.389,
+   "playRate": 0.13,
+   "games": 1960,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425037",
+   "name": "Inferno Kayle",
+   "tier": "D",
+   "avgPlacement": 5.504,
+   "playRate": 0.1,
+   "games": 1573,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425056",
+   "name": "Flora Fatalis Kha'Zix",
+   "tier": "D",
+   "avgPlacement": 5.552,
+   "playRate": 0.13,
+   "games": 1917,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "425057",
+   "name": "Invoker Gromp",
+   "tier": "D",
+   "avgPlacement": 5.611,
+   "playRate": 0.18,
+   "games": 2775,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "425058",
+   "name": "Fae Tristana Lillia",
+   "tier": "D",
+   "avgPlacement": 5.862,
+   "playRate": 0.09,
+   "games": 1404,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  }
+ ]
+}
