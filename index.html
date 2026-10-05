@@ -215,9 +215,10 @@ main{max-width:1680px;margin:0 auto;padding:16px var(--pad) 120px}
 .strip .av.carry{box-shadow:0 0 0 2px var(--premium)}
 
 /* ===== Checklist ===== */
-.q{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 6px 6px 12px;background:var(--panel2);border-radius:var(--r-m);margin-top:8px;font-size:14px;font-weight:500}
-.q .seg{flex:0 0 auto;flex-wrap:nowrap;background:var(--control);border-color:transparent}
-.q .seg button{padding:0 14px}
+.q{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 4px 4px 10px;background:var(--panel2);border-radius:var(--r-m);margin-top:6px;font-size:13px;font-weight:500}
+.q>span{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.q .seg{flex:0 0 auto;flex-wrap:nowrap;min-height:0;padding:2px;gap:2px;background:var(--control);border-color:transparent}
+.q .seg button{min-height:26px;padding:0 10px;font-size:12px}
 .verdict{display:flex;align-items:center;gap:10px;margin-top:10px;padding:12px 14px;border-radius:var(--r-m);font-weight:600;font-size:14px;border:1px solid transparent;animation:fade var(--t-base)}
 .verdict svg.ic{width:18px;height:18px}
 .verdict.go{background:color-mix(in srgb,var(--good) 16%,transparent);border-color:color-mix(in srgb,var(--good) 40%,transparent);color:var(--good)}
@@ -573,9 +574,9 @@ const STAGES = [
 ];
 
 const CHECKQ = [
-  "Tenho uma unidade relevante em 2★?",
-  "Tenho um bom item para completar (slam)?",
-  "Tenho um augment que reforça o board agora?"
+  "Unidade relevante em 2★?",
+  "Bom item p/ completar (slam)?",
+  "Augment que reforça o board?"
 ];
 
 /* ================= DADOS (derivados de data/comps.json) ================= */
@@ -1003,7 +1004,7 @@ function verdictHtml(){
   return h;
 }
 function renderChecks(){
-  $("#checks").innerHTML = CHECKQ.map((q,i)=>`<div class="q"><span>${q}</span><div class="seg"><button data-ck="${i}" data-v="1" aria-pressed="${S.checks[i]===1}">Sim</button><button data-ck="${i}" data-v="0" aria-pressed="${S.checks[i]===0}">Não</button></div></div>`).join("");
+  $("#checks").innerHTML = CHECKQ.map((q,i)=>`<div class="q"><span title="${q}">${q}</span><div class="seg"><button data-ck="${i}" data-v="1" aria-pressed="${S.checks[i]===1}">Sim</button><button data-ck="${i}" data-v="0" aria-pressed="${S.checks[i]===0}">Não</button></div></div>`).join("");
   const h = verdictHtml();
   $("#checkVerdict").innerHTML = h;
 }
