@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-05T20:53:26+00:00",
+ "fetched_at": "2026-10-05T20:57:21+00:00",
  "source": {
   "site": "MetaTFT",
   "attribution": "Data by MetaTFT (https://www.metatft.com/comps)",
@@ -16,7 +16,7 @@
  "cluster_id": 425,
  "queue_id": 1100,
  "total_games": 1520092,
- "source_updated_at": "2026-10-05T20:52:21+00:00",
+ "source_updated_at": "2026-10-05T20:55:17+00:00",
  "not_provided_by_source": [
   "patch label",
   "top4Rate",
