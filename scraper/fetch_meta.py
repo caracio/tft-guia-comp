@@ -14,6 +14,27 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
            "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9",
            "Referer": "https://www.metatft.com/"}
 DEFAULT_OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "comps.json")
+CDN = "https://cdn.metatft.com/file/metatft"  # public image CDN used by the MetaTFT frontend
+
+
+def img_url(kind, key):
+    """kind: champions|items|traits|augments|charms|tiers. key: lowercase apiName (see unit_key/trait_key)."""
+    return f"{CDN}/{kind}/{key}.png"
+
+
+def resize_url(url, w, h=None):
+    """Cloudflare on-the-fly resize, as the site does for thumbnails (format=auto -> webp/avif when supported)."""
+    return f"https://cdn.metatft.com/cdn-cgi/image/width={w},height={h or w},format=auto/{url}"
+
+
+def unit_key(u):  # frontend unitImageKey(): characterName || apiName, lowercased. da_18_alistar == tft18_alistar
+    return str(u.get("characterName") or u["apiName"]).lower()
+
+
+def trait_key(api_name):  # frontend traitIconKey(): DA_18_Blackthorn -> da_18_blackthorn, TFT14_Trait_X -> trait
+    if api_name.startswith("DA_"):
+        return re.sub(r"[^\w]", "", re.sub(r"_\d+$", "", api_name)).lower()
+    return re.sub(r"[^\w]", "", api_name.split("_")[1] if "_" in api_name else api_name).lower()
 
 
 def parse_out(argv):
@@ -57,6 +78,12 @@ class Names:
         self.trait = {t["apiName"]: t["name"] for t in lk["traits"]}
         self.aug = {a["apiName"]: a["name"] for a in lk["augments"]}
 
+    # image URLs on MetaTFT's CDN (same keys the site uses); see scraper/fetch_assets.py for the full manifest
+    def u_img(self, i): return img_url("champions", unit_key(self.unit[i]) if i in self.unit else i.lower())
+    def it_img(self, i): return img_url("items", i.lower())
+    def t_img(self, i): return img_url("traits", trait_key(i))
+    def a_img(self, i): return img_url("augments", i.lower())
+
     def u(self, i): return self.unit.get(i, {}).get("name") or humanize(i)
     def shop(self, i): return self.unit.get(i, {}).get("shopUnit", True)  # False = trait-spawned (e.g. Elderwood plants)
     def cost(self, i): return self.unit.get(i, {}).get("cost")
@@ -88,7 +115,17 @@ def detail(base, c, d, augs, nm):
         builds.setdefault(b["unit"], b.get("buildName") or [])
     units = [{"name": nm.u(u), "id": u, "cost": nm.cost(u),
               "stars": stars.get(u) or (3 if u in c.get("stars", []) else 2),
-              "items": [nm.it(i) for i in builds.get(u, [])], "carry": u in builds} for u in unit_ids]
+              "items": [nm.it(i) for i in builds.get(u, [])], "carry": u in builds,
+              "img": nm.u_img(u)} for u in unit_ids]
+    item_ids = ({x for b in builds.values() for x in b} | {i["itemNames"] for i in d.get("itemNames", [])}
+                | set(d.get("first_carousel", [])))
+    trait_ids = [t.rsplit("_", 1)[0] for t in split_units(c["traits_string"], ",") if "_" in t]
+    early_ids = {u for opts in list(d.get("early_options", {}).values()) + list(d.get("options", {}).values()) if opts
+                 for u in split_units(opts[0].get("unit_list") or opts[0].get("units_list") or "", "&")}
+    imgs = {"units": {nm.u(u): nm.u_img(u) for u in list(unit_ids) + sorted(early_ids)},
+            "items": {nm.it(i): nm.it_img(i) for i in sorted(item_ids)},
+            "traits": {nm.t(t): nm.t_img(t) for t in trait_ids},
+            "augments": {nm.a(a["id"]): nm.a_img(a["id"]) for a in augs}}
     # positioning: greedy, same as the site's pfe(): each unit takes its most frequent free cell.
     # cell_1..7 = back row (player side), cell_22..28 = front row. rows[0] = front.
     taken, cells = set(), {}
@@ -119,17 +156,20 @@ def detail(base, c, d, augs, nm):
             comp_prio[comp] = comp_prio.get(comp, 0) + i["count"]
     pro = (d.get("proComps") or [{}])[0].get("content", {})
     return {**base,
-            "units": units, "traits": [{"name": nm.t(t.rsplit("_", 1)[0]), "count": int(t.rsplit("_", 1)[1])}
+            "units": units, "traits": [{"name": nm.t(t.rsplit("_", 1)[0]), "count": int(t.rsplit("_", 1)[1]),
+                                        "img": nm.t_img(t.rsplit("_", 1)[0])}
                                        for t in split_units(c["traits_string"], ",") if "_" in t],
+            "images": imgs,                       # display name -> CDN image URL for everything named in this comp
             "carries": [u["name"] for u in units if u["carry"]],
             "early": early,                       # early boards by level 4..7 (most played option)
             "boardsByLevel": boards,              # most played unit set at levels 7..10 (no positions)
             "positioning": {"rows": rows, "cells": {f"cell_{k}": v for k, v in sorted(cells.items())}},
             "levelTiming": {"levels": lv, "rollLevel": roll_level, "finalLevelPct": final_levels,
                             "style": c.get("levelling")},
-            "itemPriority": [{"name": nm.it(i["itemNames"]), "perGame": round(i["pcnt"], 2), "avgPlacement": i["avg"],
+            "itemPriority": [{"name": nm.it(i["itemNames"]), "id": i["itemNames"], "img": nm.it_img(i["itemNames"]),
+                              "perGame": round(i["pcnt"], 2), "avgPlacement": i["avg"],
                               "bestOn": [nm.u(x["units"]) for x in i.get("units", [])[:2]]} for i in item_prio],
-            "componentPriority": [{"name": nm.it(k), "id": k, "perGame": round(v / total_games, 2)}
+            "componentPriority": [{"name": nm.it(k), "id": k, "img": nm.it_img(k), "perGame": round(v / total_games, 2)}
                                   for k, v in sorted(comp_prio.items(), key=lambda kv: -kv[1])],
             "firstCarousel": [nm.it(x) for x in d.get("first_carousel", [])] or None,
             "augments": {t: [nm.a(a["id"]) for a in augs if a["tier"] == t] for t in sorted({a["tier"] for a in augs})} or None,
@@ -166,6 +206,9 @@ def main(argv=None):
                   "cluster_id": cluster, "queue_id": comps["queue_id"], "total_games": total,
                   "source_updated_at": datetime.fromtimestamp(comps["updated"] / 1000, timezone.utc).isoformat(timespec="seconds"),
                   "not_provided_by_source": ["patch label", "top4Rate", "winRate", "firstCarousel (empty for this set)"],
+                  "images": {"cdn": CDN, "pattern": CDN + "/{champions|items|traits|augments}/{key}.png",
+                             "resize": "https://cdn.metatft.com/cdn-cgi/image/width={w},height={h},format=auto/{img}",
+                             "manifest": "assets/assets.json"},
                   "top": top, "all_comps": [summary(cid, c, total, nm) for cid, c in ranked]}
         os.makedirs(os.path.dirname(OUT), exist_ok=True)
         with open(OUT + ".tmp", "w", encoding="utf-8") as f:
