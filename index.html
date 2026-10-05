@@ -115,7 +115,7 @@ i[data-icon],i[data-badge]{display:inline-flex;align-items:center;font-style:nor
 main{max-width:1680px;margin:0 auto;padding:16px var(--pad) 120px}
 @media (min-width:901px){main{padding-bottom:40px}}
 .view{display:none}.view.on{display:block}
-.layout{display:grid;grid-template-columns:300px minmax(0,1fr) minmax(0,1fr);grid-template-areas:"side units plan";gap:16px;align-items:start}
+.layout{display:grid;grid-template-columns:300px minmax(0,1.7fr) minmax(0,1fr);grid-template-areas:"side units plan";gap:16px;align-items:start}
 .side{grid-area:side}.col-units{grid-area:units;min-width:0}.results-col{grid-area:plan;min-width:0}
 .side,.results-col{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--top-h) + 12px);max-height:calc(100vh - var(--top-h) - 24px);overflow-y:auto;scrollbar-width:thin}
 @media (max-width:1100px){.layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"side side" "units plan"}
