@@ -186,6 +186,30 @@ main{max-width:1200px;margin:0 auto;padding:16px var(--pad) 120px}
 .it.has{border-color:var(--info);color:var(--text)}
 .cnt{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px;padding:0 5px;border-radius:var(--r-full);background:var(--info);color:var(--on-fill);font-size:11px;font-weight:800;line-height:18px}
 
+/* ===== Imagens do jogo (CDN do MetaTFT; URLs vêm do comps.json, ver assets/README.md) ===== */
+.av{position:relative;overflow:hidden;border:1px solid transparent}
+.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.av.c1{border-color:#8e949b}.av.c2{border-color:#1fb36b}.av.c3{border-color:#2c8fff}.av.c4{border-color:#c850ff}.av.c5{border-color:#ffb800}
+.u .av{width:38px;height:38px}
+.it img.ii{width:32px;height:32px;border-radius:var(--r-xs);object-fit:contain}
+.it img.ii+svg.ic{display:none}
+.mini span{display:inline-flex;align-items:center;gap:5px;padding:2px 7px 2px 2px}
+.mini span .av{width:22px;height:22px;font-size:9px;border-radius:3px}
+.cc ul.ipr{padding-left:0}
+.ipr li{display:flex;align-items:center;gap:8px;list-style:none;margin:5px 0}
+.ipr img{width:28px;height:28px;border-radius:var(--r-xs);flex:0 0 auto;background:var(--panel2)}
+.traits{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.trait{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;background:var(--panel2);border:1px solid var(--border-subtle);border-radius:var(--r-full);padding:2px 9px 2px 4px;color:var(--text)}
+.trait img{width:18px;height:18px;filter:drop-shadow(0 0 1px rgba(0,0,0,.7))}
+.trait b{color:var(--muted);font-weight:700}
+.augs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;align-items:center}
+.augs span{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;background:var(--panel2);border:1px solid var(--border-subtle);border-radius:var(--r-xs);padding:2px 8px 2px 2px}
+.augs span.tl{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:none;border:0;padding:0 2px 0 0}
+.augs img{width:22px;height:22px;border-radius:4px}
+.strip{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px}
+.strip .av{width:30px;height:30px;font-size:11px;border-radius:var(--r-xs)}
+.strip .av.carry{box-shadow:0 0 0 2px var(--premium)}
+
 /* ===== Checklist ===== */
 .q{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 6px 6px 12px;background:var(--panel2);border-radius:var(--r-m);margin-top:8px;font-size:14px;font-weight:500}
 .q .seg{flex:0 0 auto;flex-wrap:nowrap;background:var(--control);border-color:transparent}
@@ -356,13 +380,34 @@ td:last-child{border-radius:0 var(--r-s) var(--r-s) 0}
 .cols li{margin:3px 0}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ===== Adições: dados dinâmicos (boot, fonte, posicionamento, itens) ===== */
+a{color:var(--accent)}
+.src{font-size:12px;color:var(--muted);text-align:center;margin-top:12px;line-height:1.5}
+.boot{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:32px var(--card-pad);color:var(--muted);font-size:14px}
+.boot .spin{width:22px;height:22px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.err{border-color:color-mix(in srgb,var(--bad) 40%,transparent)}
+.err h2{display:flex;align-items:center;gap:8px;color:var(--bad)}
+.err p{font-size:14px;margin-top:8px}
+.err code{display:block;background:var(--control);border-radius:var(--r-s);padding:10px 12px;margin:10px 0;font-size:13px;overflow-x:auto}
+.pos{display:flex;flex-direction:column;gap:3px;margin-top:4px;padding-right:7%}
+.pr{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.pr.off{transform:translateX(7%)}
+.pc{aspect-ratio:1;display:grid;place-items:center;background:var(--panel2);border-radius:var(--r-xs);border:1px solid var(--border-subtle);min-height:26px}
+.pc .av{width:24px;height:24px;font-size:10px;border-radius:var(--r-xs)}
+.pos-lab{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:4px;padding-right:7%}
+.cc ul.ipr{font-size:13px}
+.ipr .cn{margin-left:4px}
+.ec-h .tier-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.ec-h .tier-wrap small{font-size:10.5px;color:var(--muted);font-weight:600}
 </style>
 </head>
 <body>
 <header class="top">
   <div class="top-in">
     <div class="brand">
-      <h1><em>TFT</em> Guia de comp<small>dados do Meta TFT</small></h1>
+      <h1><em>TFT</em> Guia de comp<small id="hdrSub">Carregando dados do MetaTFT…</small></h1>
     </div>
     <nav class="tabs" role="tablist">
       <button class="tab" role="tab" data-tab="pick" aria-selected="true"><i data-icon="crosshair"></i>Escolher comp</button>
@@ -379,8 +424,10 @@ td:last-child{border-radius:0 var(--r-s) var(--r-s) 0}
 </header>
 
 <main>
+  <div class="card boot" id="boot" role="status" aria-live="polite"><div class="spin"></div><p>Carregando as comps do dia (data/comps.json)…</p></div>
+
   <!-- ESCOLHER -->
-  <section class="view on" id="v-pick">
+  <section class="view" id="v-pick">
     <div class="layout">
       <div>
         <div class="card">
@@ -402,17 +449,14 @@ td:last-child{border-radius:0 var(--r-s) var(--r-s) 0}
           </div>
           <div class="row" id="famChips" style="margin-top:0"></div>
           <div class="units" id="units"></div>
-          <div class="legend">
-            <span id="famLegend"></span>
-            <span>Selos = comps que usam o boneco</span>
-          </div>
+          <div class="legend" id="famLegend"></div>
         </div>
 
         <div class="card">
           <div class="card-h"><h2><span class="step">3</span>Componentes de item</h2></div>
           <p class="hint">Toque para somar (até 4 de cada). O app indica comps que usam melhor esses componentes.</p>
           <div class="items" id="items"></div>
-          <p class="note">As preferências de item são tendências por tipo de dano (AD / AP / tank). Confirme os itens exatos na aba <i>Units &amp; Items</i> do Meta TFT.</p>
+          <p class="note">As preferências de item vêm da frequência de componentes de cada comp no MetaTFT. Confirme os itens exatos na ficha da comp (aba <i>As 6 comps</i>).</p>
         </div>
 
         <div class="card">
@@ -475,120 +519,22 @@ td:last-child{border-radius:0 var(--r-s) var(--r-s) 0}
 
   <!-- GUIA -->
   <section class="view guide" id="v-guide"></section>
+
+  <p class="src" id="srcLine">Dados: <a href="https://www.metatft.com/comps" target="_blank" rel="noopener">MetaTFT</a></p>
 </main>
-<footer id="srcNote" class="hint" style="text-align:center;padding:14px 16px 90px"></footer>
 
 <div class="dock"><button id="dockBtn"><span id="dockText">Toque nos bonecos para começar</span><span class="dock-go">Ver resultado <i data-icon="chevron-down"></i></span></button></div>
 
 <script>
-/* ================= DADOS (carregados de data/comps.json) ================= */
-let FAM = {}, COMPS = [], BOARDS = {}, LVLT = {}, UNITS = [], META = {};
-const FAM_KEYS = ["A","B","C"], FAM_CLS = {A:"fa",B:"fb",C:"fc"};
-const COMP_KEY = {"Tear Of The Goddess":"tear","Needlessly Large Rod":"rod","Giant's Belt":"belt","Chain Vest":"vest","Negatron Cloak":"cloak","Sparring Gloves":"gloves","Recurve Bow":"bow","B.F. Sword":"sword","Spatula":"spatula"};
-const DIFF_PT = {Easy:"Fácil", Medium:"Médio", Hard:"Difícil"};
-const uniq = a => [...new Set(a)];
-const freqTop = (lists, n) => { const m = {}; lists.forEach(l => l.forEach(x => m[x] = (m[x]||0)+1)); return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,n).map(e=>e[0]); };
-const earlyAt = (c, L) => { const e = c.early||{}; for (let k=L;k>=4;k--) if (e[k] && e[k].length) return e[k]; for (let k=L+1;k<=7;k++) if (e[k] && e[k].length) return e[k]; const bb=c.boardsByLevel||{}; const ks=Object.keys(bb).map(Number).sort((a,b)=>a-b); return bb[ks[0]]||[]; };
-const sigOf = c => new Set([...(c.early&&c.early["4"]||[]), ...(c.early&&c.early["5"]||[])]);
-const jacc = (a,b) => { let i=0; a.forEach(x=>{ if (b.has(x)) i++; }); return i/((a.size+b.size-i)||1); };
-
-function styleOf(c){
-  const lv = c.levelling||"", rl = +((c.levelTiming||{}).rollLevel)||0; let m;
-  let s = (m=/fast\s*(\d)/i.exec(lv)) ? "fast"+m[1] : (m=/lvl\s*(\d)/i.exec(lv)) ? "reroll"+m[1] : rl>=8 ? "fast"+rl : "reroll"+rl;
-  return STYLE[s] ? s : (rl>=8 ? "fast8" : "reroll7");
-}
-function clusterFamilies(list){
-  const groups = [];
-  list.forEach((c,i) => {
-    const s = sigOf(c); let best = -1, bj = 0;
-    groups.forEach((g,gi) => { const j = Math.max(...g.sets.map(x=>jacc(s,x))); if (j>bj){ bj=j; best=gi; } });
-    if (bj>=0.3) { groups[best].sets.push(s); groups[best].idx.push(i); }
-    else if (groups.length<FAM_KEYS.length) groups.push({sets:[s], idx:[i]});
-    else { if (best<0) best = groups.reduce((m,g,gi)=>g.idx.length<groups[m].idx.length?gi:m,0); groups[best].sets.push(s); groups[best].idx.push(i); }
-  });
-  return groups;
-}
-
-function buildFromData(d){
-  META = d;
-  const top = d.top || [];
-  const groups = clusterFamilies(top);
-  const famOf = {}; FAM = {};
-  groups.forEach((g,gi) => {
-    const k = FAM_KEYS[gi], mem = g.idx.map(i=>top[i]);
-    const early = freqTop(mem.map(c=>earlyAt(c,4)), 3), core = freqTop(mem.map(c=>earlyAt(c,7).filter(n=>!earlyAt(c,4).includes(n))), 3);
-    FAM[k] = {name: early.join(" / "), cls: FAM_CLS[k], desc: early.join(", ") + (core.length ? " → " + core.join(", ") : "")};
-    g.idx.forEach(i => famOf[i] = k);
-  });
-
-  COMPS = top.map((c,i) => {
-    const lt = c.levelTiming||{}, lv = lt.levels||{}, rl = +lt.rollLevel||7, style = styleOf(c);
-    const stg = L => (lv[L]||{}).stage;
-    const early4 = earlyAt(c,4), core = (c.boardsByLevel && (c.boardsByLevel[8]||c.boardsByLevel[7])) || earlyAt(c,7);
-    const carries = (c.carries && c.carries.length) ? c.carries : (c.units||[]).filter(u=>u.carry).map(u=>u.name);
-    const allEarly = uniq([...early4, ...earlyAt(c,6)]).slice(0,8);
-    // pesos dos componentes: do mais usado (2) ao menos usado (0)
-    const cp = (c.componentPriority||[]).filter(x=>COMP_KEY[x.name]);
-    const mx = Math.max(...cp.map(x=>x.perGame),0), mn = Math.min(...cp.map(x=>x.perGame),mx);
-    const items = {}; cp.forEach(x => { items[COMP_KEY[x.name]] = mx>mn ? Math.round(((x.perGame-mn)/(mx-mn))*4)/2 : 1; });
-    const topComps = cp.slice().sort((a,b)=>b.perGame-a.perGame).slice(0,2).map(x=>COMPONENTS.find(k=>k.id===COMP_KEY[x.name]).name);
-    const lvlTxt = Object.keys(lv).map(Number).filter(k=>k>=4&&k<=8).sort((a,b)=>a-b).map(k=>`Lvl ${k} no ${lv[k].stage}`).join(" · ") || "Sem dados de nível";
-    const pct = (lt.finalLevelPct||{})[rl];
-    const fast = style.startsWith("fast");
-    const rollStage = stg(rl);
-    const sh = sigOf(c), others = top.filter((o,j)=>j!==i).map(o=>({o, shared:[...sigOf(o)].filter(x=>sh.has(x))})).filter(x=>x.shared.length>=2).sort((a,b)=>b.shared.length-a.shared.length);
-    const alt = top.filter((o,j)=>j!==i && DIFF_PT[o.difficulty]==="Fácil")[0] || others.length && others[0].o;
-    const fnm = FAM[famOf[i]].name;
-    const how = fast ? [
-      `Estágio 2: compre as peças da família ${fnm} e proteja a vida e a economia.`,
-      `Suba os níveis nos tempos certos: ${lvlTxt}.`,
-      `Suba o ${rl} em ${rollStage||"~4-2"} e role para achar 2★ dos carries (${carries.slice(0,3).join(", ")}).`,
-      pct!=null ? `${pct}% dos jogos desta comp terminam no lvl ${rl}.` : `Se estiver forte, suba mais um nível.`
-    ] : [
-      `Estágio 2: compre as peças da família ${fnm} e suba o nível 4 só se cumprir o checklist.`,
-      `Suba o lvl ${rl} em ${rollStage||"~3-2"} e role para achar 3★ de ${carries.slice(0,3).join(", ")}.`,
-      `Médias de rolagem por nível: ${Object.keys(lv).filter(k=>lv[k].avgRerolls!=null&&k>=4&&k<=8).map(k=>`lvl ${k}: ${lv[k].avgRerolls}`).join(" · ")}.`,
-      `Se ainda estiver forte depois de rolar, suba mais um nível.`
-    ];
-    const augTop = Object.keys(STYLE[style]).filter(k=>k!=="label").sort((a,b)=>STYLE[style][b]-STYLE[style][a]).slice(0,3).map(k=>AUGS.find(a=>a.id===k).name.toLowerCase());
-    return {
-      id:c.id, name:c.name, tier:c.tier, fam:famOf[i], style, diff:DIFF_PT[c.difficulty]||c.difficulty||"Médio",
-      spike: fast ? `Fast ${rl}${rollStage?` (${rollStage})`:""}` : `Lvl ${rl}${rollStage?` (rola no ${rollStage})`:""}`,
-      avg:c.avgPlacement, pick:c.playRate, win:c.winRate, top4:c.top4Rate, rw:[null,null,null,null], lt:lv,
-      lvl:lvlTxt,
-      roll: fast ? `Sobe o ${rl}${rollStage?` em ${rollStage}`:""} e rola.` : `Rola forte no lvl ${rl}${pct!=null?` (${pct}% dos jogos terminam nele)`:""}.`,
-      carries, early:allEarly, core, items,
-      stable: style.startsWith("reroll") || c.difficulty==="Easy",
-      when:`Você tem 2★ de ${allEarly.slice(0,4).join(", ")}${stg(5)?` até o ${stg(5)}`:""}${topComps.length?`, e componentes de ${topComps.join(" e ")}`:""}.`,
-      how,
-      aug:`${augTop.join(", ")}.`,
-      warn: others.length ? `Compartilha ${others[0].shared.slice(0,3).join(", ")} com ${others.slice(0,2).map(x=>x.o.name).join(" e ")}. Se rivais pegam as mesmas peças, mude${alt?` para ${alt.name||alt}`:" de plano"}.` : "Poucas comps disputam as mesmas peças: é difícil contestarem."
-    };
-  });
-
-  BOARDS = {}; LVLT = {};
-  top.forEach((c,i) => {
-    BOARDS[c.id] = [4,5,6,7].map(L => earlyAt(c,L));
-    const lt = c.levelTiming||{}, lv = lt.levels||{};
-    LVLT[c.id] = {t:[4,5,6,7,8].map(L => (lv[L]||{}).stage || "-"), roll:+lt.rollLevel||7};
-  });
-
-  const m = {};
-  COMPS.forEach(c => {
-    const add = (n, w) => { (m[n] = m[n] || {name:n, fams:new Set(), w:{}}); m[n].fams.add(c.fam); m[n].w[c.id] = Math.max(m[n].w[c.id]||0, w); };
-    c.core.forEach(n => add(n, 1.5)); c.early.forEach(n => add(n, 2)); c.carries.forEach(n => add(n, 3));
-  });
-  UNITS = Object.values(m).sort((a,b)=>a.name.localeCompare(b.name,"pt"));
-  buildStips();
-}
-
+/* ================= HEURÍSTICAS FIXAS (não mudam por patch) ================= */
+/* Estilos: cada comp recebe um destes. Se o dado trouxer um novo (ex.: "Fast 9", "lvl 6"), ele ganha uma linha aqui com o mesmo formato. */
 const STYLE = {
   reroll5: {label:"Reroll no lvl 5", eco:1, reroll:3, upg:3, xp:0, items:2, power:2, surv:1, emb:1},
+  reroll6: {label:"Reroll no lvl 6", eco:1, reroll:3, upg:3, xp:1, items:2, power:2, surv:1, emb:1},
   reroll7: {label:"Reroll no lvl 7", eco:2, reroll:3, upg:3, xp:1, items:2, power:1, surv:1, emb:1},
   fast8:   {label:"Fast 8", eco:3, reroll:0, upg:1, xp:3, items:2, power:1, surv:2, emb:2},
-  reroll6: {label:"Reroll no lvl 6", eco:1, reroll:3, upg:3, xp:1, items:2, power:2, surv:1, emb:1},
-  fast9:   {label:"Fast 9", eco:3, reroll:0, upg:0, xp:3, items:2, power:1, surv:3, emb:2},
-  fast8weak:{label:"Fast 8 (early fraco)", eco:2, reroll:0, upg:1, xp:2, items:2, power:3, surv:3, emb:2}
+  fast8weak:{label:"Fast 8 (early fraco)", eco:2, reroll:0, upg:1, xp:2, items:2, power:3, surv:3, emb:2},
+  fast9:   {label:"Fast 9", eco:3, reroll:0, upg:0, xp:3, items:2, power:1, surv:2, emb:2}
 };
 
 const AUGS = [
@@ -608,16 +554,256 @@ const COMPONENTS = [
  {id:"belt",ico:"🥋",name:"Cinto do Gigante"},{id:"gloves",ico:"🧤",name:"Luvas"},{id:"spatula",ico:"🥄",name:"Espátula"}
 ];
 
+const STAGES = [
+  {id:"s1", t:"Estágio 1", sub:"Nível 1-3", lvl:3},
+  {id:"s2", t:"Nível 4", sub:"~2-1", lvl:4},
+  {id:"s3", t:"Nível 5", sub:"~2-5", lvl:5},
+  {id:"s4", t:"Nível 6", sub:"~3-2", lvl:6},
+  {id:"s5", t:"Nível 7", sub:"~3-6", lvl:7},
+  {id:"s6", t:"Nível 8", sub:"~4-2", lvl:8}
+];
+
+const CHECKQ = [
+  "Tenho uma unidade relevante em 2★?",
+  "Tenho um bom item para completar (slam)?",
+  "Tenho um augment que reforça o board agora?"
+];
+
+/* ================= DADOS (derivados de data/comps.json) ================= */
+/* caminho de produção primeiro; o segundo serve para rodar direto da pasta do projeto, onde o scraper grava o JSON */
+const DATA_URLS = ["data/comps.json", "scraper/data/comps.json"];
+let META = null, FAM = {}, COMPS = [], UNITS = [], BOARDS = {}, LVLT = {}, STIPS = {};
+let READY = false;
+
+const COMP_MAP = {"Recurve Bow":"bow","B.F. Sword":"sword","Needlessly Large Rod":"rod","Tear Of The Goddess":"tear","Chain Vest":"vest","Negatron Cloak":"cloak","Giant's Belt":"belt","Sparring Gloves":"gloves","Spatula":"spatula","Frying Pan":"spatula"};
+const SUMMON_DENY = new Set(["Lifebloom"]);
+const STYLE_MAP = {"lvl 5":"reroll5","lvl 6":"reroll6","lvl 7":"reroll7","fast 8":"fast8","fast 9":"fast9"};
+const DIFF_MAP = {Easy:"Fácil",Medium:"Médio",Hard:"Difícil"};
+
+const slug = s => String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const uniq = a => [...new Set(a)];
+const joinOu = a => a.length<=1 ? a.join("") : a.slice(0,-1).join(", ")+" ou "+a[a.length-1];
+const joinE  = a => a.length<=1 ? a.join("") : a.slice(0,-1).join(", ")+" e "+a[a.length-1];
+const fmtPct = (v, d=1) => (v===null||v===undefined||isNaN(v)) ? "—" : Number(v).toFixed(d).replace(".",",")+"%";
+const compName = k => (COMPONENTS.find(x=>x.id===k)||{}).name || k;
+const styleOf = (levelling, roll) => {
+  const key = String(levelling||"").trim().toLowerCase();
+  if (STYLE_MAP[key] && STYLE[STYLE_MAP[key]]) return STYLE_MAP[key];
+  const m = key.match(/^(lvl|fast)\s*(\d+)$/);
+  if (m){ const k = (m[1]==="lvl"?"reroll":"fast")+m[2]; if (STYLE[k]) return k; }
+  if (roll<=5) return "reroll5"; if (roll===6) return "reroll6"; if (roll===7) return "reroll7"; if (roll>=9) return "fast9"; return "fast8";
+};
+
+function buildData(json){
+  META = json;
+  // imagens: cada comp traz `images` (nome -> URL) e `img` em units/traits/itemPriority/componentPriority
+  IMG.units = {}; IMG.items = {}; IMG.traits = {}; IMG.augments = {}; IMG.cost = {};
+  (json.top||[]).forEach(c => {
+    const im = c.images || {};
+    Object.assign(IMG.units, im.units||{}); Object.assign(IMG.items, im.items||{}); Object.assign(IMG.traits, im.traits||{}); Object.assign(IMG.augments, im.augments||{});
+    (c.units||[]).forEach(u => { if (u.img && !IMG.units[u.name]) IMG.units[u.name] = u.img; if (u.cost) IMG.cost[u.name] = u.cost; });
+    (c.traits||[]).forEach(t => { if (t.img) IMG.traits[t.name] = t.img; });
+    [...(c.itemPriority||[]), ...(c.componentPriority||[])].forEach(i => { if (i.img) IMG.items[i.name] = i.img; });
+  });
+  // universo de campeões conhecidos (para separar invocações como "Lifebloom")
+  const champs = new Set();
+  [...(json.all_comps||[]), ...(json.top||[])].forEach(c => (c.units||[]).forEach(u => champs.add(u.name)));
+  (json.top||[]).forEach(c => Object.values(c.boardsByLevel||{}).forEach(b => (b||[]).forEach(u => champs.add(typeof u==="string"?u:u.name))));
+  const cleanBoard = list => {
+    const cnt = {}; (list||[]).forEach(n => cnt[n]=(cnt[n]||0)+1);
+    return uniq((list||[]).filter(n => n && !SUMMON_DENY.has(n) && !(cnt[n]>1 && !champs.has(n))));
+  };
+
+  BOARDS = {}; LVLT = {};
+  const top = [...(json.top||[])].filter(c=>c&&c.name).sort((a,b)=>(a.avgPlacement||9)-(b.avgPlacement||9)).slice(0,6);
+  const ids = new Set();
+  COMPS = top.map((j,i) => {
+    let id = slug(j.name) || ("comp-"+i); while (ids.has(id)) id += "-"+i; ids.add(id);
+    const lt = j.levelTiming || {}, lv = lt.levels || {};
+    const stageOf = L => (lv[String(L)] && lv[String(L)].stage) || null;
+    const roll = Number(lt.rollLevel) || 8;
+    const style = styleOf(j.levelling||lt.style, roll);
+    const isReroll = style.startsWith("reroll");
+
+    // boards de early (lvl 4..7); nível sem dados herda o anterior
+    const boards = []; let prev = null;
+    for (let L=4; L<=7; L++){
+      let b = cleanBoard(j.early && j.early[String(L)]);
+      if (prev && b.length < prev.length) b = uniq([...prev, ...b]);
+      if (!b.length) b = prev || [];
+      boards.push(b); prev = b;
+    }
+    BOARDS[id] = boards;
+    LVLT[id] = {t:[4,5,6,7,8].map(L=>stageOf(L)||"-"), roll};
+
+    const units = j.units || [];
+    const core = units.map(u=>u.name);
+    const carries = (j.carries&&j.carries.length) ? j.carries.slice() : units.filter(u=>u.carry).map(u=>u.name);
+    const early = uniq(boards.flat());
+    const starsOf = n => { const u = units.find(x=>x.name===n); return u && u.stars; };
+    const mainCarry = carries.find(n => j.name.toLowerCase().includes(n.toLowerCase())) || carries[0] || core[0];
+    const tgtCarries = uniq([mainCarry, ...carries.filter(n=>(starsOf(n)||0)>=2), ...carries]).filter(Boolean).slice(0,2);
+
+    // pesos de componentes (0,5–2) a partir de componentPriority
+    const raw = {}; (j.componentPriority||[]).forEach(cp => { const k = COMP_MAP[cp.name]; if (k) raw[k] = Math.max(raw[k]||0, Number(cp.perGame ?? cp.pct)||0); }); // o scraper já expôs "pct" e "perGame"; aceita os dois
+    const max = Math.max(1, ...Object.values(raw));
+    const items = {}; Object.entries(raw).forEach(([k,v]) => { const r = v/max; items[k] = Math.round((0.5+1.5*r*r)*4)/4; });
+    const ranked = Object.entries(raw).filter(([k])=>k!=="spatula").sort((a,b)=>b[1]-a[1]).map(([k])=>k);
+    const top2 = ranked.slice(0,2);
+    const nAD = top2.filter(k=>k==="bow"||k==="sword").length, nAP = top2.filter(k=>k==="rod"||k==="tear").length;
+    const dmg = nAP>nAD ? "AP" : nAD>nAP ? "AD" : (ranked[0]==="rod"||ranked[0]==="tear") ? "AP" : (ranked[0]==="bow"||ranked[0]==="sword") ? "AD" : "tank";
+
+    // textos
+    const rr = lv[String(roll)] && lv[String(roll)].avgRerolls;
+    const finEntries = Object.entries(lt.finalLevelPct||{}).map(([L,p])=>[Number(L),Number(p)||0]).sort((a,b)=>b[1]-a[1]);
+    const fin = finEntries.length && finEntries[0][1]>0 ? finEntries[0] : null;
+    const spike = isReroll ? `Lvl ${roll} (rola no ${stageOf(roll)||"—"})` : `Fast ${roll} (${stageOf(roll)||"—"})`;
+    const lvKeys = Object.keys(lv).map(Number).filter(L=>lv[String(L)]&&lv[String(L)].stage).sort((a,b)=>a-b);
+    const lvl = lvKeys.length ? lvKeys.map(L=>`Lvl ${L} no ${lv[String(L)].stage}`).join(" · ") : "Sem dados de nível na fonte.";
+    const rollTxt = `Rola ${isReroll?"forte ":""}no lvl ${roll}${rr?` (~${Math.round(rr)} rolagens em média)`:""}.${fin?` Termina o jogo mais no lvl ${fin[0]} (${Math.round(fin[1])}% das partidas).`:""}`;
+
+    const startUnits = uniq([...boards[0], ...boards[1]]).slice(0,5);
+    const until = (isReroll ? stageOf(roll) : stageOf(6)) || stageOf(5) || "3-2";
+    const compTxt = top2.map(compName).join("/");
+    const when = `Você tem 2★ de ${joinOu(startUnits)} até o ${until}, e ${compTxt} ${dmg==="tank"?"para a frontline":`para um carry ${dmg}`}.`;
+
+    const how = [];
+    const firstL = lvKeys[0];
+    how.push(`Estágio 2: compre ${joinE(boards[0])}${firstL&&stageOf(firstL)?` e suba o nível ${firstL} no ${stageOf(firstL)}`:""}.`);
+    const seq = lvKeys.filter(L=>L<=roll && L!==firstL).map(L=>`lvl ${L} no ${lv[String(L)].stage}`);
+    const tgt = tgtCarries.map(n=>`${n} ${starsOf(n)||(isReroll?3:2)}★`);
+    how.push(`${seq.length?seq.join(", ")+"; role":"Role"} no ${roll}${rr?` (~${Math.round(rr)} rolagens)`:""}${tgt.length?` para ${joinE(tgt)}`:""}.`);
+    const itemized = units.filter(u=>u.items&&u.items.length).sort((a,b)=>(b.carry?1:0)-(a.carry?1:0)).slice(0,3).map(u=>`${u.name}: ${uniq(u.items).slice(0,3).join(", ")}`);
+    if (itemized.length) how.push(`Itens: ${itemized.join(" · ")}.`);
+    const notes = String((j.proTips&&j.proTips.notes)||"").split(/\n?\s*-\s+/).map(s=>s.trim().replace(/[;.]\s*$/,"")).filter(Boolean);
+    notes.slice(0, Math.max(1, 4-how.length)).forEach(n => how.push(`Dica pro: ${n}.`));
+
+    const types = AUGS.filter(a=>STYLE[style][a.id]>=2).map(a=>a.name);
+    const ag = j.augments || {}; const tiers = ["S","A","B"].filter(t=>Array.isArray(ag[t])&&ag[t].length);
+    const augNames = tiers.length ? tiers.map(t=>{ const l = uniq(ag[t]); return `Tier ${t}: ${l.slice(0,5).join(", ")}${l.length>5?"…":""}`; }).join(" ") : "Sem lista de augments para esta comp na fonte.";
+    const aug = `${types.join(", ")}. ${augNames}`;
+    const augTiers = tiers.map(t => ({t, list: uniq(ag[t]).slice(0,6)}));
+    const traits = Array.isArray(j.traits) ? j.traits.filter(t=>t&&t.name).slice().sort((a,b)=>(b.count||0)-(a.count||0)) : [];
+
+    const warn = [];
+    if (j.difficulty==="Hard") warn.push("Difícil: depende de sorte de loja e de ninguém contestar.");
+    if (j.playRate>8) warn.push(`Pick rate alto (${fmtPct(j.playRate)}): peças contestadas, scoute os rivais.`);
+    else if (j.playRate<3) warn.push(`Pouco jogada (${fmtPct(j.playRate)}): raramente contestada, mas a amostra é menor.`);
+
+    const posRows = (j.positioning && Array.isArray(j.positioning.rows)) ? j.positioning.rows : null;
+    const trend = Array.isArray(j.trend) ? j.trend.filter(t=>t&&t.avgPlacement) : [];
+
+    return {id, name:j.name, tier:String(j.tier||"A").toUpperCase(), fam:"A", style, diff:DIFF_MAP[j.difficulty]||j.difficulty||"—", spike,
+      avg:Number(j.avgPlacement)||4.5, pick:(j.playRate===null||j.playRate===undefined)?null:Number(j.playRate), win:j.winRate??null, top4:j.top4Rate??null, games:j.games||0,
+      rw:null, lvl, roll:rollTxt, carries, mainCarry, early, core, items, dmg,
+      stable: isReroll || String(j.tier||"").toUpperCase()==="S",
+      when, how, aug, augTypes:types.join(", "), augTiers, traits, warn, posRows, itemPriority:Array.isArray(j.itemPriority)?j.itemPriority.slice(0,5):[], trend, proUrl:(j.proTips&&j.proTips.url)||null};
+  });
+
+  // avisos sobre peças compartilhadas (segunda passada, precisa de todas as comps)
+  COMPS.forEach(c => {
+    const other = COMPS.filter(o=>o.id!==c.id).map(o=>({o, u:c.early.filter(n=>o.early.includes(n)||o.core.includes(n))})).filter(x=>x.u.length>=2).sort((a,b)=>b.u.length-a.u.length)[0];
+    if (other) c.warn.push(`${joinE(other.u.slice(0,3))} também aparece${other.u.length>1?"m":""} em ${other.o.name}: se rivais pegam as mesmas peças, veja o Plano B.`);
+    if (!c.warn.length) c.warn.push(`Pick rate médio (${fmtPct(c.pick)}). Win rate e top 4 não vêm na fonte; confirme os itens exatos no MetaTFT.`);
+    c.warn = c.warn.join(" ");
+  });
+
+  FAM = buildFamilies(COMPS);
+  UNITS = buildUnits(COMPS);
+  STIPS = buildStageTips(COMPS);
+}
+
+/* famílias: agrupa as comps pela sobreposição (Jaccard) dos earlys de lvl 4 e 5 */
+function buildFamilies(comps){
+  const sets = comps.map(c => new Set(uniq([...BOARDS[c.id][0], ...BOARDS[c.id][1]])));
+  const jac = (a,b) => { let inter=0; sets[a].forEach(x=>{ if (sets[b].has(x)) inter++; }); const uni = sets[a].size+sets[b].size-inter; return uni?inter/uni:0; };
+  const link = (ca,cb) => { let s=0,n=0; ca.forEach(a=>cb.forEach(b=>{ s+=jac(a,b); n++; })); return n?s/n:0; };
+  let clusters = comps.map((c,i)=>[i]);
+  const mergeBest = () => {
+    let best=-1, bi=0, bj=1;
+    for (let i=0;i<clusters.length;i++) for (let j=i+1;j<clusters.length;j++){ const v=link(clusters[i],clusters[j]); if (v>best){best=v;bi=i;bj=j;} }
+    clusters[bi] = clusters[bi].concat(clusters[bj]); clusters.splice(bj,1); return best;
+  };
+  while (clusters.length>3) mergeBest();
+  while (clusters.length>1){
+    let best=-1; for (let i=0;i<clusters.length;i++) for (let j=i+1;j<clusters.length;j++) best=Math.max(best, link(clusters[i],clusters[j]));
+    if (best>=0.6) mergeBest(); else break;
+  }
+  clusters.sort((x,y)=> Math.min(...x.map(i=>comps[i].avg)) - Math.min(...y.map(i=>comps[i].avg)));
+  const keys=["A","B","C"], cls=["fa","fb","fc"], fam={};
+  clusters.forEach((cl,k) => {
+    const cnt={}; cl.forEach(i=>sets[i].forEach(u=>cnt[u]=(cnt[u]||0)+1));
+    let shared;
+    if (cl.length>1) shared = Object.entries(cnt).filter(([u,n])=>n>=2).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],"pt")).map(([u])=>u);
+    else shared = BOARDS[comps[cl[0]].id][0].slice();
+    if (!shared.length) shared = Object.keys(cnt).sort((a,b)=>a.localeCompare(b,"pt"));
+    fam[keys[k]] = {name:shared.slice(0,3).join(" / "), short:shared.slice(0,2).join("/"), cls:cls[k],
+      desc:`${cl.map(i=>comps[i].name).join(", ")}. Peças em comum: ${shared.slice(0,5).join(", ")}`};
+    cl.forEach(i => comps[i].fam = keys[k]);
+  });
+  return fam;
+}
+
+/* lista única de bonecos */
+function buildUnits(comps){
+  const m = {};
+  comps.forEach(c => {
+    const add = (n, w) => { (m[n] = m[n] || {name:n, fams:new Set(), w:{}}); m[n].fams.add(c.fam); m[n].w[c.id] = Math.max(m[n].w[c.id]||0, w); };
+    c.core.forEach(n => add(n, 1.5));
+    c.early.forEach(n => add(n, 2));
+    c.carries.forEach(n => add(n, 3));
+  });
+  return Object.values(m).sort((a,b)=>a.name.localeCompare(b.name,"pt"));
+}
+
+/* dicas por estágio: textos genéricos + linhas geradas dos dados (quem rola / quem sobe neste nível) */
+function buildStageTips(comps){
+  const rollers = L => comps.filter(c=>LVLT[c.id].roll===L);
+  const ups = L => comps.map(c=>({c, s:LVLT[c.id].t[L-4]})).filter(x=>x.s && x.s!=="-");
+  const rollLine = L => { const r = rollers(L); return r.length ? `Rola${r.length>1?"m":""} neste nível: ${joinE(r.map(c=>c.name))}.` : `Nenhuma das ${comps.length} comps rola no nível ${L}.`; };
+  const upLine = L => { const u = ups(L); return u.length ? `Sobe${u.length>1?"m":""} para o ${L}: ${u.map(x=>`${x.c.name} (${x.s})`).join(", ")}.` : null; };
+  const adC = uniq(comps.filter(c=>c.dmg==="AD").map(c=>c.mainCarry||c.name)), apC = uniq(comps.filter(c=>c.dmg==="AP").map(c=>c.mainCarry||c.name));
+  const r5 = rollers(5), fastC = comps.filter(c=>!c.style.startsWith("reroll"));
+  const keep = a => a.filter(Boolean);
+  return {
+    s1:{focus:["Faça 2★ de custo 1: valem mais que custo 3 de 1★.",
+               `Deixe os componentes guiarem: Arco e Espada apontam para AD${adC.length?` (${adC.join(", ")})`:""}; Vara e Lágrima apontam para AP${apC.length?` (${apC.join(", ")})`:""}.`,
+               "Pegue frontline e faça upgrade nela. Só carry não sobrevive.",
+               "Compre as peças que servem em várias comps (lista abaixo)."],
+        avoid:["Comprar só carries.","Decidir a comp final agora.","Se prender ao juros quando aparece uma boa compra."]},
+    s2:{focus:["Responda o checklist do 2-1 (aba Escolher). Sim em 2 ou mais: suba.","Defina seu Plano A, B e C.","Scoute os rivais e veja quem pega as mesmas peças."],
+        avoid:["Subir de nível sem pelo menos 2 respostas sim.","Rolar sem direção."],
+        extra: keep([upLine(4) || "A maioria das comps sobe o 4 por volta do 2-1.", rollLine(4)]).join(" ")},
+    s3:{focus:keep(["Confirme: seu board bate com algum dos quadros abaixo?", rollLine(5), upLine(5)]),
+        avoid:[r5.length ? `Gastar todo o ouro se você não está de ${joinOu(r5.map(c=>c.name))}.` : "Gastar todo o ouro neste nível."]},
+    s4:{focus:keep([rollLine(6), upLine(6), "Prepare o ouro para o nível de rolagem da sua comp."]),
+        avoid:[rollers(6).length ? "Rolar no 6 sem ser uma das comps que rola aqui." : `Rolar no 6: nenhuma das ${comps.length} comps rola neste nível.`]},
+    s5:{focus:keep([rollLine(7), upLine(7), fastC.length ? `Está vencendo? Decida se sobe o 8 (${joinE(uniq(fastC.map(c=>LVLT[c.id].t[4]).filter(s=>s!=="-")))||"~4-2"}).` : null]),
+        avoid:["Ficar no 7 sem plano se for comp de Fast 8."]},
+    s6:{focus:keep([fastC.length ? `Fast 8: ${joinE(fastC.map(c=>`${c.name} (${LVLT[c.id].t[4]})`))} sobem e rolam para o carry 2★.` : null, rollLine(8), "Com vida baixa, estabilize antes de gastar tudo."]),
+        avoid:["Rolar sem ouro e sem vida."]}
+  };
+}
+
 /* ================= ESTADO ================= */
 const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", hpv:55, goldv:25, checks:[null,null,null], mode:"have", fam:"all", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2"};
 let S = JSON.parse(JSON.stringify(DEF));
-try { const raw = localStorage.getItem("tft183b"); if (raw) S = Object.assign({}, DEF, JSON.parse(raw)); } catch(e){}
-function save(){ try{ localStorage.setItem("tft183b", JSON.stringify(S)); }catch(e){} }
+try { const raw = localStorage.getItem("tft-guia-v2"); if (raw) S = Object.assign({}, DEF, JSON.parse(raw)); } catch(e){}
+function save(){ try{ localStorage.setItem("tft-guia-v2", JSON.stringify(S)); }catch(e){} }
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const initials = n => n.replace(/[^A-Za-zÀ-ÿ' ]/g,"").split(/[\s']+/).filter(Boolean).slice(0,2).map(x=>x[0]).join("").toUpperCase();
 const hue = n => { let h=0; for (const ch of n) h = (h*31 + ch.charCodeAt(0)) % 360; return h; };
+
+/* ===== Imagens: nome de exibição -> URL no CDN do MetaTFT (preenchido em buildData a partir do comps.json) ===== */
+const IMG = {units:{}, items:{}, traits:{}, augments:{}, cost:{}};
+const CDN_ITEMS = "https://cdn.metatft.com/file/metatft/items/";
+const COMP_IMG = {bow:"da_component_recurvebow",sword:"da_component_bfsword",rod:"da_component_needlesslylargerod",tear:"da_component_tearofthegoddess",vest:"da_component_chainvest",cloak:"da_component_negatroncloak",belt:"da_component_giantsbelt",gloves:"da_component_sparringgloves",spatula:"da_component_spatula"};
+const thumb = (url, w) => url ? `https://cdn.metatft.com/cdn-cgi/image/width=${w},height=${w},format=auto/${url}` : "";
+const imgTag = (url, w, cls="") => url ? `<img${cls?` class="${cls}"`:""} src="${esc(thumb(url,w))}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : "";
+/* avatar de boneco: a imagem cobre as iniciais; se falhar, some e as iniciais continuam visíveis. Borda = custo. */
+const av = (n, extra="") => { const c = IMG.cost[n]; return `<span class="av${c?" c"+c:""}${extra?" "+extra:""}" style="background:hsl(${hue(n)} 55% 42%)">${esc(initials(n))}${imgTag(IMG.units[n],64)}</span>`; };
 const starMult = {1:1, 2:3, 3:5};
 
 /* ================= PONTUAÇÃO ================= */
@@ -643,14 +829,14 @@ function scoreAll(){
     cont.forEach(n => { const u = UNITS.find(x=>x.name===n); pen += u.w[c.id]*(c.carries.includes(n)?3:1.5); });
     if (pen){ sc -= pen; why.push("Contestada em: "+cont.join(", ")); }
     // situação
-    const fast = c.style.startsWith("fast");
+    const fast = c.style.startsWith("fast"); // fast8, fast8weak, fast9
     if (S.hp==="low"){ if (c.stable){ sc+=3; why.push("Vida baixa favorece comp estável"); } else { sc-=3; why.push("Vida baixa pune comps de early fraco"); } }
     if (S.hp==="high" && S.gold==="high" && fast){ sc+=2.5; why.push("Vida e ouro altos: ótimo para Fast 8"); }
     else if (S.gold==="high" && fast){ sc+=1.5; why.push("Ouro alto ajuda o Fast 8"); }
     if (S.gold==="low" && c.style==="reroll5"){ sc+=1; }
     if (S.gold==="low" && c.style==="fast8weak"){ sc-=1; }
-    // base do meta
-    const base = (4.5 - c.avg)*3;
+    // base do meta (win/top4 ausentes na fonte são neutros: só a média entra)
+    const base = (4.5 - (Number.isFinite(c.avg)?c.avg:4.5))*3;
     sc += base;
     return {c, sc, why, hasSignal, pen};
   }).sort((a,b)=>b.sc-a.sc);
@@ -693,7 +879,8 @@ const ICONS = {
   "pointer":'<path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/>',
   "alert":'<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
   "arrow-right":'<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
-  "chevron-down":'<path d="m6 9 6 6 6-6"/>'
+  "chevron-down":'<path d="m6 9 6 6 6-6"/>',
+  "external":'<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>'
 };
 const I = (n, cls="") => `<svg class="ic${cls?" "+cls:""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICONS[n]||""}</svg>`;
 /* Selos de família: forma + cor (A escudo, B hexágono, C triângulo) */
@@ -702,8 +889,8 @@ const FAMSHAPE = {
   B:'<path d="M12 2 20.7 7v10L12 22 3.3 17V7z"/>',
   C:'<path d="M10.3 4.2a2 2 0 0 1 3.4 0l7.5 12.6A2 2 0 0 1 19.5 20h-15a2 2 0 0 1-1.7-3.2z"/>'
 };
-const famBadge = (f, cls="") => `<svg class="fsh${cls?" "+cls:""}" viewBox="0 0 24 24" fill="var(--f${f.toLowerCase()})" aria-hidden="true" focusable="false">${FAMSHAPE[f]}</svg>`;
-const famTag = f => `<span class="tag ${FAM[f].cls}">${famBadge(f)}${FAM[f].name}</span>`;
+const famBadge = (f, cls="") => `<svg class="fsh${cls?" "+cls:""}" viewBox="0 0 24 24" fill="var(--f${f.toLowerCase()})" aria-hidden="true" focusable="false">${FAMSHAPE[f]||FAMSHAPE.A}</svg>`;
+const famTag = f => `<span class="tag ${FAM[f].cls}">${famBadge(f)}${esc(FAM[f].name)}</span>`;
 const starsSvg = n => `<span class="stars" aria-hidden="true">${I("star").repeat(n)}</span>`;
 /* Mapas da camada visual (os dados em COMPONENTS e AUGS ficam intactos) */
 const ITEM_ICON = {bow:"target",sword:"sword",rod:"wand",tear:"droplet",vest:"shield",cloak:"shirt",belt:"belt",gloves:"hand",spatula:"circle-dot"};
@@ -719,10 +906,23 @@ function mountIcons(){
 const revealTab = () => { const t = document.querySelector('.tab[aria-selected="true"]'); if (t) t.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"}); };
 document.addEventListener("click", e => { if (e.target.closest(".tab")) requestAnimationFrame(revealTab); });
 
+/* ================= RENDER: META (fonte dos dados) ================= */
+function renderMeta(){
+  const setName = META.set_name || META.set || "";
+  const dt = META.source_updated_at ? new Date(META.source_updated_at) : null;
+  const dts = (dt && !isNaN(dt)) ? dt.toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}) : "—";
+  const games = META.total_games ? Number(META.total_games).toLocaleString("pt-BR") : "—";
+  const patch = META.patch ? `patch ${META.patch}` : "patch atual";
+  $("#hdrSub").textContent = `${setName} · ${patch} · dados do MetaTFT`;
+  $("#srcLine").innerHTML = `Dados: <a href="https://www.metatft.com/comps" target="_blank" rel="noopener">MetaTFT</a> · atualizado em ${esc(dts)} · ${esc(setName)} · ${esc(games)} partidas`;
+  document.title = `TFT ${setName} · Guia de escolha de comp`;
+}
+
 /* ================= RENDER: ESCOLHER ================= */
 function renderFam(){
-  const opts = [["all","Todos"], ...Object.keys(FAM).map(k=>[k,FAM[k].name]), ["mine","Só os meus"]];
-  $("#famChips").innerHTML = opts.map(([k,l]) => `<button class="chip${FAM[k]?" f"+k:""}" data-fam="${k}" aria-pressed="${S.fam===k}">${FAM[k]?famBadge(k):""}${l}</button>`).join("");
+  const opts = [["all","Todos"], ...Object.entries(FAM).map(([k,f])=>[k,f.short]), ["mine","Só os meus"]];
+  $("#famChips").innerHTML = opts.map(([k,l]) => `<button class="chip${FAM[k]?" f"+k:""}" data-fam="${k}" aria-pressed="${S.fam===k}">${FAM[k]?famBadge(k):""}${esc(l)}</button>`).join("");
+  $("#famLegend").innerHTML = Object.entries(FAM).map(([k,f])=>`<span>${famBadge(k)}${esc(f.name)}</span>`).join("") + `<span>Selos = comps que usam o boneco</span>`;
 }
 function renderUnits(){
   const q = S.q.trim().toLowerCase();
@@ -737,21 +937,21 @@ function renderUnits(){
     const dots = [...u.fams].sort().map(f=>famBadge(f)).join("");
     return `<button class="u ${st?"own":""} ${st===3?"own3":""} ${ct?"cont":""}" data-u="${encodeURIComponent(u.name)}" aria-label="${esc(u.name)}${st?", "+st+" estrelas":""}${ct?", contestado":""}" title="${esc(u.name)}">
       ${st?starsSvg(st):""}${ct?`<span class="xmark">${I("swords")}</span>`:""}
-      <span class="av" style="background:hsl(${hue(u.name)} 55% 42%)">${esc(initials(u.name))}</span>
+      ${av(u.name)}
       <span class="un">${esc(u.name)}</span><span class="dots">${dots}</span></button>`;
   }).join("") || `<p class="hint">Nenhum boneco encontrado.</p>`;
 }
 function renderItems(){
   $("#items").innerHTML = COMPONENTS.map(c => {
     const n = S.items[c.id]||0;
-    return `<button class="it ${n?"has":""}" data-it="${c.id}" aria-label="${c.name}, ${n} unidades">${n?`<span class="cnt">${n}</span>`:""}${I(ITEM_ICON[c.id])}<span class="in">${c.name}</span></button>`;
+    return `<button class="it ${n?"has":""}" data-it="${c.id}" aria-label="${c.name}, ${n} unidades">${n?`<span class="cnt">${n}</span>`:""}${imgTag(CDN_ITEMS+COMP_IMG[c.id]+".png",64,"ii")}${I(ITEM_ICON[c.id])}<span class="in">${c.name}</span></button>`;
   }).join("");
 }
 const hpZone = v => v<40?"low":v>=70?"high":"mid";
 const goldZone = v => v<20?"low":v>30?"high":"mid";
 function syncSit(){ S.hp = hpZone(S.hpv); S.gold = goldZone(S.goldv); }
 function sitAdvice(){
-  const hv=S.hpv, gv=S.goldv, hz=S.hp, gz=S.gold, out=[];
+  const gv=S.goldv, hz=S.hp, gz=S.gold, out=[];
   const int = Math.min(5, Math.floor(gv/10)), next = int<5 ? (int+1)*10-gv : 0;
   out.push(`<div class="note">${I("coins")}<span>Juros: <b>+${int}</b> por rodada${next?` · faltam ${next} de ouro para +${int+1}`:" (máximo)"}.</span></div>`);
   let t, k;
@@ -773,11 +973,6 @@ function renderSit(){
   document.querySelectorAll("#modeSeg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.mode===S.mode));
   $("#modeSeg").classList.toggle("contest", S.mode==="cont");
 }
-const CHECKQ = [
-  "Tenho uma unidade relevante em 2★?",
-  "Tenho um bom item para completar (slam)?",
-  "Tenho um augment que reforça o board agora?"
-];
 function verdictHtml(){
   const ans = S.checks.filter(x=>x!==null).length, yes = S.checks.filter(x=>x===1).length;
   let h;
@@ -797,7 +992,7 @@ function nextAction(r){
   const top = r[0], c = top.c;
   const noSig = !top.hasSignal;
   if (noSig) return {t:"Comece por aqui", b:"Toque nos bonecos que você tem na loja e no banco, e nos componentes de item. O app monta seu Plano A, B e C automaticamente."};
-  const lead = r[0].sc - r[1].sc;
+  const lead = r[0].sc - (r[1]?r[1].sc:0);
   const conf = lead>=6 ? "forte" : lead>=2.5 ? "média" : "baixa";
   let t = `Plano A: ${c.name}`;
   let b = "";
@@ -820,23 +1015,25 @@ function renderResults(){
   if (noSig) html += `<p class="hint">Ranking base (só pelo meta, sem seus bonecos):</p>`;
   top.forEach((r,i) => {
     const c = r.c, f = FAM[c.fam]; const pct = Math.max(4, Math.min(100, (r.sc/maxSc)*100));
+    const extra = (c.top4!==null?`<span class="tag">Top 4 ${fmtPct(c.top4)}</span>`:"") + (c.win!==null?`<span class="tag">Win ${fmtPct(c.win)}</span>`:"");
     html += `<div class="plan ${i===0?"A":""}"><div class="plan-h"><div class="badge">${"ABC"[i]}</div>
-      <div class="plan-t"><strong>${esc(c.name)}</strong><small>${f.name} · ${STYLE[c.style].label} · ${c.diff}</small></div>
+      <div class="plan-t"><strong>${esc(c.name)}</strong><small>${esc(f.name)} · ${STYLE[c.style].label} · ${esc(c.diff)}</small></div>
       <span class="tier tier${c.tier}">${c.tier}</span></div>
+      <div class="strip">${c.core.map(n=>`<span title="${esc(n)}">${av(n, c.carries.includes(n)?"carry":"")}</span>`).join("")}</div>
       <div class="bar"><div style="width:${pct}%"></div></div>
       ${r.why.length?`<ul class="why">${r.why.map(w=>`<li class="${w.startsWith("Contestada")?"ct":""}">${esc(w)}</li>`).join("")}</ul>`:""}
-      <div class="tags"><span class="tag">Média ${c.avg.toFixed(2)}</span>${c.top4!=null?`<span class="tag">Top 4 ${c.top4}%</span>`:""}${c.win!=null?`<span class="tag">Win ${c.win}%</span>`:""}<span class="tag">Pick ${c.pick}%</span>${famTag(c.fam)}</div>
+      <div class="tags"><span class="tag">Média ${c.avg.toFixed(2)}</span><span class="tag">Pick ${fmtPct(c.pick)}</span>${extra}${famTag(c.fam)}</div>
       <button class="link" data-open="${c.id}">Ver como jogar esta comp ${I("arrow-right")}</button></div>`;
   });
   // outras
   const rest = RANK.slice(3);
-  html += `<details class="note"><summary>Ver as outras 3 comps</summary><ul class="why">${rest.map(r=>`<li><button class="link" data-open="${r.c.id}">${esc(r.c.name)}</button> (${Math.round(r.sc*10)/10} pts)</li>`).join("")}</ul></details>`;
+  if (rest.length) html += `<details class="note"><summary>Ver as outras ${rest.length} comps</summary><ul class="why">${rest.map(r=>`<li><button class="link" data-open="${r.c.id}">${esc(r.c.name)}</button> (${Math.round(r.sc*10)/10} pts)</li>`).join("")}</ul></details>`;
   // aviso de contestação
   const nc = Object.keys(S.cont).length;
   if (nc) html += `<div class="note warn">${I("swords")}<span>Você marcou ${nc} boneco(s) como contestado(s). Comps que dependem deles perdem pontos. Priorize a família oposta ou o carry diferente.</span></div>`;
   html += `</div>`;
   $("#results").innerHTML = html;
-  $("#dockText").innerHTML = RANK[0].hasSignal ? `<b>A:</b> ${esc(top[0].c.name)} · <b>B:</b> ${esc(top[1].c.name)}` : "Toque nos bonecos para começar";
+  $("#dockText").innerHTML = RANK[0].hasSignal ? `<b>A:</b> ${esc(top[0].c.name)}${top[1]?` · <b>B:</b> ${esc(top[1].c.name)}`:""}` : "Toque nos bonecos para começar";
 }
 
 /* ================= AUGMENTS ================= */
@@ -846,10 +1043,9 @@ function augRating(c, aid){
   if (S.hp==="high" && S.gold!=="low" && aid==="eco") v = Math.min(3, v+0.5);
   return Math.round(v);
 }
-function augCompId(){ if (S.augComp!=="auto") return S.augComp; return (RANK[0]||scoreAll()[0]).c.id; }
+function augCompId(){ if (S.augComp!=="auto" && COMPS.some(c=>c.id===S.augComp)) return S.augComp; return (RANK[0]||scoreAll()[0]).c.id; }
 const LAB = {3:"Pegue",2:"Bom",1:"Ok",0:"Evite"};
 function whyAug(c, aid, v){
-  const s = STYLE[c.style];
   const map = {
     eco:"Juros e ouro ajudam a chegar ao seu nível de rolagem.",
     reroll:"Mais rolagens trazem as cópias e o 3★ que sua comp precisa.",
@@ -875,8 +1071,9 @@ function whyAug(c, aid, v){
 function renderAug(){
   RANK = RANK.length?RANK:scoreAll();
   const cid = augCompId();
-  $("#augComp").innerHTML = `<button class="chip" data-ac="auto" aria-pressed="${S.augComp==="auto"}">Automático (${esc(RANK[0].c.name)})</button>` +
-    COMPS.map(c=>`<button class="chip f${c.fam}" data-ac="${c.id}" aria-pressed="${S.augComp===c.id}">${famBadge(c.fam)}${esc(c.name)}</button>`).join("");
+  const selAuto = S.augComp==="auto" || !COMPS.some(c=>c.id===S.augComp);
+  $("#augComp").innerHTML = `<button class="chip" data-ac="auto" aria-pressed="${selAuto}">Automático (${esc(RANK[0].c.name)})</button>` +
+    COMPS.map(c=>`<button class="chip f${c.fam}" data-ac="${c.id}" aria-pressed="${!selAuto && S.augComp===c.id}">${famBadge(c.fam)}${esc(c.name)}</button>`).join("");
   $("#augTypes").innerHTML = AUGS.map(a=>{ const on = S.augSel.includes(a.id); return `<button class="ag" data-ag="${a.id}" aria-pressed="${on}" style="--c:${AUG_COLOR[a.id]}" aria-label="${a.name}: ${a.desc}">${hexBadge(a.id,on)}<strong>${a.name}</strong><small>${a.desc}</small></button>`; }).join("");
   const c = COMPS.find(x=>x.id===cid);
   if (!S.augSel.length){
@@ -890,66 +1087,45 @@ function renderAug(){
 }
 
 /* ================= COMPS ================= */
+function posGrid(rows){
+  if (!rows || !rows.length) return "";
+  const cell = n => n ? `<span class="pc" title="${esc(n)}" aria-label="${esc(n)}">${av(n)}</span>` : `<span class="pc"></span>`;
+  return `<h4>Posicionamento</h4><div class="pos">${rows.map((r,ri)=>`<div class="pr ${ri%2?"off":""}">${(r||[]).slice(0,7).map(cell).join("")}</div>`).join("")}</div><div class="pos-lab"><span>↑ frente (inimigo)</span><span>trás ↓</span></div>`;
+}
+function trendTxt(c){
+  const t = c.trend; if (!t || t.length<2) return "";
+  const a = t[0].avgPlacement, b = t[t.length-1].avgPlacement; const d = b-a;
+  const arrow = Math.abs(d)<0.03 ? "estável" : d<0 ? "melhorando" : "piorando";
+  return ` · tendência ${t.length}d: ${a.toFixed(2)} → ${b.toFixed(2)} (${arrow})`;
+}
 function renderComps(){
-  const fams = [["all","Todas"],["A","Frontline/Vi"],["B","Invoker"],["C","Reroll"]];
-  const cf = window._cf || "all";
-  $("#compFam").innerHTML = fams.map(([k,l])=>`<button class="chip${FAM[k]?" f"+k:""}" data-cf="${k}" aria-pressed="${cf===k}">${FAM[k]?famBadge(k):""}${l}</button>`).join("");
+  const fams = [["all","Todas"], ...Object.entries(FAM).map(([k,f])=>[k,f.short])];
+  const cf = (window._cf && (window._cf==="all" || FAM[window._cf])) ? window._cf : "all";
+  $("#compFam").innerHTML = fams.map(([k,l])=>`<button class="chip${FAM[k]?" f"+k:""}" data-cf="${k}" aria-pressed="${cf===k}">${FAM[k]?famBadge(k):""}${esc(l)}</button>`).join("");
   $("#compCards").innerHTML = COMPS.filter(c=>cf==="all"||c.fam===cf).map(c=>{
     const f = FAM[c.fam];
     return `<article class="card cc" id="cc-${c.id}">
-      <div class="cc-top f${c.fam}">${famBadge(c.fam,"fbadge")}<div class="plan-t"><strong>${esc(c.name)}</strong><small>${f.name} · ${STYLE[c.style].label} · ${c.diff}</small></div><span class="tier tier${c.tier}">${c.tier}</span></div>
-      <div class="stat"><div><b>${c.avg.toFixed(2)}</b><span>Média</span></div><div><b>${c.top4!=null?c.top4+"%":"-"}</b><span>Top 4</span></div><div><b>${c.win!=null?c.win+"%":"-"}</b><span>Win</span></div><div><b>${c.pick}%</b><span>Pick</span></div></div>
+      <div class="cc-top f${c.fam}">${famBadge(c.fam,"fbadge")}<div class="plan-t"><strong>${esc(c.name)}</strong><small>${esc(f.name)} · ${STYLE[c.style].label} · ${esc(c.diff)}</small></div><span class="tier tier${c.tier}">${c.tier}</span></div>
+      ${c.traits.length?`<div class="traits">${c.traits.map(t=>`<span class="trait" title="${esc(t.name)} ${t.count}">${imgTag(t.img||IMG.traits[t.name],36)}${esc(t.name)}<b>${t.count}</b></span>`).join("")}</div>`:""}
+      <div class="stat"><div><b>${c.avg.toFixed(2)}</b><span>Média</span></div><div><b>${fmtPct(c.top4)}</b><span>Top 4</span></div><div><b>${fmtPct(c.win)}</b><span>Win</span></div><div><b>${fmtPct(c.pick)}</b><span>Pick</span></div></div>
+      <p class="why" style="padding:0">${c.games?Number(c.games).toLocaleString("pt-BR")+" partidas":""}${esc(trendTxt(c))}</p>
       <h4>Quando ir para esta comp</h4><p>${esc(c.when)}</p>
-      <h4>Timing por nível</h4>
-      <div class="rw">${Object.keys(c.lt).filter(k=>k>=4&&k<=8).map(k=>`<div><small>Lvl ${k}</small>${c.lt[k].stage}${c.lt[k].avgRerolls!=null?`<small>${c.lt[k].avgRerolls} rolls</small>`:""}</div>`).join("")}</div>
-      <h4>Bonecos de início</h4><div class="mini">${c.early.map(n=>`<span>${esc(n)}</span>`).join("")}</div>
-      <h4>Board final</h4><div class="mini">${c.core.map(n=>`<span class="${c.carries.includes(n)?"carry":""}">${esc(n)}</span>`).join("")}</div>
+      <h4>Bonecos de início</h4><div class="mini">${c.early.map(n=>`<span>${av(n)}${esc(n)}</span>`).join("")}</div>
+      <h4>Board final</h4><div class="mini">${c.core.map(n=>`<span class="${c.carries.includes(n)?"carry":""}">${av(n)}${esc(n)}</span>`).join("")}</div>
+      ${posGrid(c.posRows)}
+      ${c.itemPriority.length?`<h4>Itens prioritários</h4><ul class="ipr">${c.itemPriority.map(i=>`<li>${imgTag(i.img||IMG.items[i.name],56)}<span><b>${esc(i.name)}</b>${(i.bestOn&&i.bestOn.length)?` · ${esc(i.bestOn.join(", "))}`:""}${i.avgPlacement?`<span class="cn">média ${Number(i.avgPlacement).toFixed(2)}</span>`:""}</span></li>`).join("")}</ul>`:""}
       <h4>Como jogar</h4><ul>${c.how.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
-      <p class="why" style="margin-top:8px;padding:0"><b>Níveis:</b> ${esc(c.lvl)}</p>
-      <h4>Tipos de augment</h4><p>${esc(c.aug)}</p>
+      <p class="why" style="margin-top:8px;padding:0"><b>Níveis:</b> ${esc(c.lvl)}${c.proUrl?` · <a href="${esc(c.proUrl)}" target="_blank" rel="noopener">guia pro no MetaTFT ${I("external")}</a>`:""}</p>
+      <h4>Tipos de augment</h4><p>${esc(c.augTypes)}.</p>
+      ${c.augTiers.length?`<div class="augs">${c.augTiers.map(x=>`<span class="tl">Tier ${esc(x.t)}</span>`+x.list.map(n=>`<span title="${esc(n)}">${imgTag(IMG.augments[n],44)}${esc(n)}</span>`).join("")).join("")}</div>`:`<p class="hint">Sem lista de augments para esta comp na fonte.</p>`}
       <div class="note warn">${I("alert")}<span>${esc(c.warn)}</span></div></article>`;
   }).join("");
 }
 
 /* ================= EARLYS ================= */
-const STAGES = [
-  {id:"s1", t:"Estágio 1", sub:"Nível 1-3", lvl:3},
-  {id:"s2", t:"Nível 4", sub:"~2-1", lvl:4},
-  {id:"s3", t:"Nível 5", sub:"~2-5", lvl:5},
-  {id:"s4", t:"Nível 6", sub:"~3-2", lvl:6},
-  {id:"s5", t:"Nível 7", sub:"~3-6", lvl:7},
-  {id:"s6", t:"Nível 8", sub:"~4-2", lvl:8}
-];
-let STIPS = {};
-function buildStips(){
-  const list = a => a.join(", ");
-  const rollers = L => COMPS.filter(c=>LVLT[c.id].roll===L).map(c=>c.name);
-  const later = L => COMPS.filter(c=>LVLT[c.id].roll>L).map(c=>c.name);
-  const byAvg = COMPS.slice().sort((a,b)=>a.avg-b.avg);
-  const lvlAt = L => COMPS.map(c=>({c, w:LVLT[c.id].t[L-4]})).filter(x=>x.w && x.w!=="-").sort((a,b)=>a.w.localeCompare(b.w));
-  const tipFor = L => {
-    const rl = rollers(L), lt = later(L), past = COMPS.filter(c=>LVLT[c.id].roll<L).map(c=>c.name);
-    const t = lvlAt(L).slice(0,3).map(x=>`${x.c.name} (${x.w})`);
-    const focus = [], avoid = [];
-    if (rl.length) focus.push(`Rolam neste nível: ${list(rl)}.`);
-    if (t.length) focus.push(`Sobem para o lvl ${L} mais cedo: ${list(t)}.`);
-    if (lt.length) focus.push(`Ainda juntando ouro para rolar mais tarde: ${list(lt)}.`);
-    if (!focus.length) focus.push("Confirme se seu board bate com algum dos quadros abaixo.");
-    if (lt.length) avoid.push(`Rolar no lvl ${L} com ${list(lt)}.`);
-    if (past.length) avoid.push(`Ficar parado se for ${list(past)}: já passou da hora de completar o board.`);
-    if (!avoid.length) avoid.push("Rolar sem ouro e sem vida.");
-    return {focus, avoid};
-  };
-  STIPS = {
-    s1:{focus:["Faça 2★ de custo 1: valem mais que custo 3 de 1★.","Deixe os componentes guiarem a escolha: AD, AP e tank apontam para famílias diferentes (veja a aba Escolher).","Pegue frontline e faça upgrade nela. Só carry não sobrevive.","Compre as peças que servem em várias comps (lista abaixo)."],avoid:["Comprar só carries.","Decidir a comp final agora.","Gastar ouro acima dos juros sem necessidade."]},
-    s2:{focus:["Responda o checklist do 2-1. Sim em 2 ou mais: suba.","Defina seu Plano A, B e C.","Scoute os rivais e veja quem pega as mesmas peças."],avoid:["Subir de nível sem pelo menos 2 respostas sim.","Rolar sem direção."],extra:byAvg.length?`Melhores médias hoje: ${list(byAvg.slice(0,3).map(c=>`${c.name} (${c.avg.toFixed(2)})`))}. Com vida baixa, prefira as comps estáveis.`:""},
-    s3:tipFor(5), s4:tipFor(6), s5:tipFor(7), s6:tipFor(8)
-  };
-}
-
 function chip(n){
   const st = S.owned[n], ct = S.cont[n];
-  return `<button class="ch ${st?"own":""} ${ct?"cont":""}" data-eu="${encodeURIComponent(n)}" aria-label="${esc(n)}${st?", "+st+" estrelas":""}${ct?", contestado":""}"><span class="av" style="background:hsl(${hue(n)} 55% 42%)">${esc(initials(n))}</span>${esc(n)}${st?`<span class="st">${I("star").repeat(st)}</span>`:""}${ct?`<span class="ci">${I("swords")}</span>`:""}</button>`;
+  return `<button class="ch ${st?"own":""} ${ct?"cont":""}" data-eu="${encodeURIComponent(n)}" aria-label="${esc(n)}${st?", "+st+" estrelas":""}${ct?", contestado":""}">${av(n)}${esc(n)}${st?`<span class="st">${I("star").repeat(st)}</span>`:""}${ct?`<span class="ci">${I("swords")}</span>`:""}</button>`;
 }
 
 function decision21Html(){
@@ -971,8 +1147,7 @@ function renderEarly(){
     const cnt = {};
     Object.entries(BOARDS).forEach(([id,b]) => { const seen=new Set(); b.slice(0,3).flat().forEach(n=>{ if(!seen.has(n)){seen.add(n); (cnt[n]=cnt[n]||[]).push(id);} }); });
     const flex = Object.entries(cnt).filter(([n,a])=>a.length>=2).sort((a,b)=>b[1].length-a[1].length || a[0].localeCompare(b[0],"pt"));
-    html += `<div class="card"><h2>Peças flexíveis</h2><p class="hint">Aparecem nos boards de early de 2 ou mais comps. Comprar essas mantém suas opções abertas.</p><div class="ech">${flex.map(([n,a])=>`<span class="flex-item">${chip(n)}<span class="cn">×${a.length}</span></span>`).join("")}</div></div>`;
-    const sorted = COMPS.map(c=>({c, k:(BOARDS[c.id][0]).filter(n=>S.owned[n]).length})).sort((a,b)=>b.k-a.k);
+    html += `<div class="card"><h2>Peças flexíveis</h2><p class="hint">Aparecem nos boards de early de 2 ou mais comps. Comprar essas mantém suas opções abertas.</p><div class="ech">${flex.length?flex.map(([n,a])=>`<span class="flex-item">${chip(n)}<span class="cn">×${a.length}</span></span>`).join(""):`<span class="hint" style="margin:0">Nenhuma peça compartilhada entre as comps do dia.</span>`}</div></div>`;
     html += `<div class="card"><h2>Quais famílias seguir</h2><p class="hint">Quando os componentes e peças mostrarem um caminho, anote aqui (aba Escolher). Boards de nível 4 de cada comp:</p>${COMPS.map(c=>`<div class="fam-row"><div class="fam-row-h"><b>${esc(c.name)}</b>${famTag(c.fam)}</div><div class="ech">${BOARDS[c.id][0].map(chip).join("")}</div></div>`).join("")}</div>`;
     $("#stageBody").innerHTML = html; return;
   }
@@ -982,7 +1157,7 @@ function renderEarly(){
     const board = L>=8 ? c.core : BOARDS[c.id][idx];
     const have = board.filter(n=>S.owned[n]).length;
     const w = board.reduce((s,n)=>s+(S.owned[n]?starMult[S.owned[n]]:0),0);
-    const rw = L>=8 ? null : c.rw[idx];
+    const rw = (L>=8 || !c.rw) ? null : c.rw[idx];
     return {c, board, have, w, rw};
   });
   const anyOwned = Object.keys(S.owned).length>0;
@@ -990,7 +1165,7 @@ function renderEarly(){
   const bestRw = Math.max(...cards.map(x=>x.rw||0));
   const topIds = (RANK.length?RANK:scoreAll()).slice(0,3).map(r=>r.c.id);
 
-  html += `<p class="hint" style="margin:4px 2px 10px">${anyOwned?"Ordenado pelo que você já tem. ":"Sem bonecos marcados: ordenado por força neste nível. "}Roxo = você tem · tracejado = rival pegando.</p><div class="egrid">`;
+  html += `<p class="hint" style="margin:4px 2px 10px">${anyOwned?"Ordenado pelo que você já tem. ":"Sem bonecos marcados: ordenado pela média de colocação. "}Roxo = você tem · tracejado = rival pegando.</p><div class="egrid">`;
   cards.forEach(x => {
     const c = x.c, lt = LVLT[c.id];
     const when = lt.t[idx];
@@ -1001,8 +1176,8 @@ function renderEarly(){
     if (L>=8){ act = `Board final. ${c.roll}`; ico="target"; }
     const pl = topIds.indexOf(c.id);
     html += `<article class="card ec ${x.rw && x.rw===bestRw && !anyOwned?"best":""}">
-      <div class="ec-h">${famBadge(c.fam,"fbadge")}<div class="plan-t"><strong>${pl>=0?"ABC"[pl]+" · ":""}${esc(c.name)}</strong><small>${FAM[c.fam].name} · ${STYLE[c.style].label}</small></div>
-      ${x.rw!==null?`<span class="tag rwbig ${rwc(x.rw)}">${x.rw}%<small>round win</small></span>`:`<span class="tier tier${c.tier}">${c.tier}</span>`}</div>
+      <div class="ec-h">${famBadge(c.fam,"fbadge")}<div class="plan-t"><strong>${pl>=0?"ABC"[pl]+" · ":""}${esc(c.name)}</strong><small>${esc(FAM[c.fam].name)} · ${STYLE[c.style].label}</small></div>
+      ${x.rw!==null?`<span class="tag rwbig ${rwc(x.rw)}">${x.rw}%<small>round win</small></span>`:`<span class="tier-wrap"><span class="tier tier${c.tier}">${c.tier}</span><small>média ${c.avg.toFixed(2)}</small></span>`}</div>
       <div class="have">Você tem ${x.have}/${x.board.length}</div>
       <div class="ech">${x.board.map(chip).join("")}</div>
       <div class="act ${cls}">${I(ico)}<span>${esc(act)}</span></div></article>`;
@@ -1013,22 +1188,25 @@ function renderEarly(){
 
 /* ================= GUIA ================= */
 function renderGuide(){
+  const stable = COMPS.filter(c=>c.stable).map(c=>c.name), weak = COMPS.filter(c=>!c.stable).map(c=>c.name);
+  const nFam = Object.keys(FAM).length;
   $("#v-guide").innerHTML = `<div class="card">
   <h2>Como decidir sem se perder</h2>
   <h3>Antes do jogo</h3>
-  <ul><li>Conheça as ${COMPS.length} comps e em qual das ${Object.keys(FAM).length} famílias cada uma está.</li><li>Saiba os itens centrais dos carries e quais bonecos seguram bem os itens.</li><li>Use este app como cola: toque nos bonecos e confira o resultado.</li></ul>
+  <ul><li>Conheça as ${COMPS.length} comps e em qual das ${nFam} famílias cada uma está.</li><li>Saiba os itens centrais dos carries e quais bonecos seguram bem os itens.</li><li>Use este app como cola: toque nos bonecos e confira o resultado.</li></ul>
   <h3>Estágio 1: flexibilidade</h3>
   <ul><li>Faça 2★ de unidades de custo 1: elas superam muitos custo 3 de 1★.</li><li>Deixe os componentes guiarem a escolha. Arco aponta para AD, Vara e Lágrima apontam para AP.</li><li>Não esqueça da frontline com upgrade. Só carry não sobrevive.</li></ul>
   <h3>Estágio 2: escolha 3 comps</h3>
   <ul><li>Defina Plano A, B e C. É o que o app faz por você.</li><li>Antes do nível 4 (2-1), responda ao checklist. Duas respostas sim = suba.</li><li>Sem sinais claros: fique no nível 3, faça lose streak controlada e junte ouro.</li><li>Scoute os rivais. Se alguém pega as mesmas peças, marque como "Rivais estão pegando" e veja o Plano B.</li></ul>
-  <h3>As ${Object.keys(FAM).length} famílias</h3>
-  ${Object.entries(FAM).map(([k,f])=>`<p>${famTag(k)} ${f.desc}.</p>`).join("")}
-  <h3>Reroll ou Fast?</h3>
-  <ul>${COMPS.map(c=>`<li><b>${esc(c.name)}:</b> ${esc(c.spike)}.</li>`).join("")}</ul>
+  <h3>As ${nFam} famílias</h3>
+  ${Object.entries(FAM).map(([k,f])=>`<p>${famTag(k)} ${esc(f.desc)}.</p>`).join("")}
+  <h3>Reroll ou Fast 8?</h3>
+  <ul>${COMPS.map(c=>`<li><b>${esc(c.name)}:</b> ${esc(c.spike)}. ${esc(c.roll)}</li>`).join("")}</ul>
   <h3>Economia sem se prender</h3>
   <ul><li>Respeite as faixas de 10, 20 e 30 de ouro.</li><li>Compre as unidades do seu plano se isso não quebrar o juros.</li></ul>
   <h3>Saúde do jogo</h3>
-  <ul><li>Vida abaixo de ~50 antes do 4-1: vá para uma opção estável (${COMPS.filter(c=>c.stable).map(c=>esc(c.name)).join(", ")||"a comp mais fácil"}).</li><li>Não force: os componentes que você tem escolhem a comp, não o contrário.</li></ul>
+  <ul>${stable.length?`<li>Vida abaixo de ~50 antes do 4-1: vá para a opção estável (${esc(joinOu(stable))}).</li>`:""}${weak.length?`<li>Com vida baixa, evite ${esc(joinE(weak))}: dependem de chegar ao nível 8 com ouro.</li>`:""}<li>Não force: os componentes que você tem escolhem a comp, não o contrário.</li></ul>
+  <p class="src" style="text-align:left">Fonte dos dados: <a href="https://www.metatft.com/comps" target="_blank" rel="noopener">MetaTFT · Comps</a>. Pesos de pontuação e tipos de augment são heurísticas do app.</p>
   </div>`;
 }
 
@@ -1048,6 +1226,8 @@ function setTab(t){
 
 document.addEventListener("click", e => {
   const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.retry){ boot(); return; }
+  if (!READY) return;
   if (t.dataset.tab) return setTab(t.dataset.tab);
   if (t.dataset.stage){ S.stage=t.dataset.stage; renderEarly(); return save(); }
   if (t.dataset.eu){
@@ -1070,11 +1250,12 @@ document.addEventListener("click", e => {
   if (t.dataset.ag){ const id=t.dataset.ag; const i=S.augSel.indexOf(id); if(i>=0) S.augSel.splice(i,1); else { if (S.augSel.length>=3) S.augSel.shift(); S.augSel.push(id);} renderAug(); return save(); }
   if (t.dataset.cf){ window._cf=t.dataset.cf; return renderComps(); }
 });
-$("#hpRange").addEventListener("input", e => { S.hpv = +e.target.value; refresh(); });
-$("#goldRange").addEventListener("input", e => { S.goldv = +e.target.value; refresh(); });
-$("#q").addEventListener("input", e => { S.q = e.target.value; renderUnits(); save(); });
+$("#hpRange").addEventListener("input", e => { S.hpv = +e.target.value; if (READY) refresh(); });
+$("#goldRange").addEventListener("input", e => { S.goldv = +e.target.value; if (READY) refresh(); });
+$("#q").addEventListener("input", e => { S.q = e.target.value; if (READY){ renderUnits(); save(); } });
 $("#dockBtn").addEventListener("click", () => $("#results").scrollIntoView({behavior:"smooth",block:"start"}));
 $("#btnReset").addEventListener("click", () => {
+  if (!READY) return;
   if (!confirm("Limpar bonecos, itens e situação para um novo jogo?")) return;
   const tab = S.tab; S = JSON.parse(JSON.stringify(DEF)); S.tab = tab; $("#q").value=""; renderFam(); refresh(); if (tab==="aug") renderAug();
 });
@@ -1084,19 +1265,46 @@ $("#btnTheme").addEventListener("click", () => {
   document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
 });
 
-/* init */
-function start(){
-  if (S.augComp!=="auto" && !COMPS.some(c=>c.id===S.augComp)) S.augComp="auto";
-  const tb = document.querySelector('.tab[data-tab="comps"]'); if (tb && tb.lastChild) tb.lastChild.textContent = "As "+COMPS.length+" comps";
-  const sub = document.querySelector("h1 small"); if (sub) sub.textContent = "Dados do Meta TFT · "+(META.set_name||"")+" · "+(META.fetched_at||"").slice(0,10);
-  const sn = document.getElementById("srcNote"); if (sn) sn.textContent = ((META.source&&META.source.attribution)||"Data by MetaTFT")+" · atualizado em "+(META.fetched_at||"").slice(0,10);
-  const lg=document.getElementById("famLegend"); if(lg) lg.outerHTML=Object.keys(FAM).map(k=>`<span><i data-badge="${k}"></i>${esc(FAM[k].name)}</span>`).join("");
-  mountIcons(); renderFam(); renderGuide(); $("#q").value = S.q || ""; refresh(); setTab(S.tab || "pick"); revealTab();
+/* ================= BOOT (espera o JSON antes de renderizar) ================= */
+function errorCard(err){
+  const isFile = location.protocol==="file:";
+  return `<h2>${I("alert")}Não consegui carregar os dados</h2>
+    <p>O app lê <b>data/comps.json</b> ao abrir, e essa leitura falhou${isFile?" porque a página foi aberta direto do arquivo (file://)":""}.</p>
+    <p>Sirva a pasta por HTTP e abra de novo:</p>
+    <code>python -m http.server 8765</code>
+    <p>Depois acesse <b>http://localhost:8765/index.html</b>. Em um site estático (Vercel, GitHub Pages) basta publicar a pasta com o <b>data/comps.json</b> junto.</p>
+    <p class="hint" style="margin-top:10px">Detalhe técnico: ${esc(err && err.message ? err.message : err)}</p>
+    <button class="btn" data-retry="1" style="margin-top:4px">${I("rotate-ccw")}Tentar de novo</button>`;
 }
-fetch("data/comps.json", {cache:"no-store"})
-  .then(r => { if (!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
-  .then(d => { buildFromData(d); start(); })
-  .catch(err => { console.error(err); document.querySelector("main").innerHTML = `<div class="card"><h2>Não foi possível carregar os dados</h2><p class="hint">${esc(err.message)}. Se abriu o arquivo direto no navegador, sirva por HTTP (python -m http.server).</p></div>`; });
+async function boot(){
+  const bootEl = $("#boot");
+  bootEl.className = "card boot"; bootEl.innerHTML = `<div class="spin"></div><p>Carregando as comps do dia (data/comps.json)…</p>`;
+  try {
+    let json = null, lastErr = null;
+    for (const url of DATA_URLS){
+      try {
+        const res = await fetch(url, {cache:"no-store"});
+        if (!res.ok) throw new Error("HTTP "+res.status+" ao buscar "+url);
+        json = await res.json(); break;
+      } catch(e){ lastErr = e; }
+    }
+    if (!json) throw lastErr || new Error("sem resposta");
+    if (!json || !Array.isArray(json.top) || !json.top.length) throw new Error("JSON sem a lista 'top' de comps");
+    buildData(json);
+  } catch(err){
+    console.error("[tft] falha ao carregar dados:", err);
+    bootEl.className = "card err"; bootEl.innerHTML = errorCard(err);
+    $("#hdrSub").textContent = "dados indisponíveis";
+    return;
+  }
+  bootEl.remove();
+  READY = true;
+  if (S.fam!=="all" && S.fam!=="mine" && !FAM[S.fam]) S.fam = "all";
+  if (S.augComp!=="auto" && !COMPS.some(c=>c.id===S.augComp)) S.augComp = "auto";
+  renderMeta(); renderFam(); renderGuide(); $("#q").value = S.q || ""; refresh(); setTab(S.tab || "pick"); revealTab();
+}
+mountIcons();
+boot();
 </script>
 </body>
 </html>

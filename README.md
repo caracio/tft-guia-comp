@@ -10,7 +10,9 @@ Os dados são atualizados **uma vez por dia, automaticamente**, a partir da API 
 GitHub Actions (cron 06:00 BRT)
   └─ python scraper/fetch_meta.py --out data/comps.json
        └─ 9 requests ao MetaTFT (lista + detalhes das 6 melhores), 1 s de intervalo
-  └─ commit "data: atualiza meta TFT" se o JSON mudou
+  └─ python scraper/fetch_assets.py --download
+       └─ manifesto assets/assets.json + baixa só as imagens novas do CDN do MetaTFT
+  └─ commit "data: atualiza meta TFT" se o JSON ou os assets mudaram
        └─ Vercel / GitHub Pages republicam o site a cada commit
 ```
 
@@ -18,7 +20,9 @@ GitHub Actions (cron 06:00 BRT)
 | --- | --- |
 | `index.html` | A página. Faz `fetch("data/comps.json")` e monta COMPS, BOARDS, LVLT e UNITS a partir dele. |
 | `data/comps.json` | Dados do dia: top 6 comps com unidades, itens, early boards, timing de nível, augments e posicionamento. |
-| `scraper/fetch_meta.py` | Coletor. Só depende de `requests`. Sai com código 1 em falha e nunca corrompe o JSON anterior. |
+| `scraper/fetch_meta.py` | Coletor. Só depende de `requests`. Sai com código 1 em falha e nunca corrompe o JSON anterior. Cada unidade, trait e item sai com `img` (URL no CDN do MetaTFT) e cada comp tem `images` (nome → URL). |
+| `scraper/fetch_assets.py` | Coletor de imagens. Gera `assets/assets.json` (URL de todo boneco, item, trait, augment, charm e estrela do set) e, com `--download`, salva os PNGs em `assets/<categoria>/`. |
+| `assets/` | Imagens do jogo para o design. Veja `assets/README.md` para o padrão de URL e como usar. |
 | `.github/workflows/update-meta.yml` | Agendamento diário e commit automático. |
 | `Estudo · Scraping diário do meta TFT (gratuito).md` | Estudo de fontes, ferramentas, custos e riscos que embasou a solução. |
 | `PRD · ...md`, `Design System ...md` | Especificação de comportamento e design da página. |
@@ -29,6 +33,7 @@ GitHub Actions (cron 06:00 BRT)
 python -m venv scraper/.venv
 scraper/.venv/Scripts/python -m pip install -r scraper/requirements.txt
 scraper/.venv/Scripts/python scraper/fetch_meta.py --out data/comps.json
+scraper/.venv/Scripts/python scraper/fetch_assets.py --download
 python -m http.server 8765
 ```
 
