@@ -408,11 +408,69 @@ a{color:var(--accent)}
 .ec-h .tier-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 .ec-h .tier-wrap small{font-size:10.5px;color:var(--muted);font-weight:600}
 
-/* ===== Desktop: tudo numa tela, sem rolagem vertical ===== */
-@media (min-width:1101px){
+/* ===== Guia, Comps e Earlys: base (rolagem normal) ===== */
+#compPick{display:none}
+#compPick .tier{margin-left:2px;padding:1px 5px}
+.gh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.gh .src{margin:0}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.gc{margin:0}
+.gc h3{display:flex;align-items:center;gap:8px;font-size:16px;margin-bottom:8px}
+.gc h3 svg.ic{color:var(--accent);width:18px;height:18px}
+.gc ul{margin:0;padding-left:18px;font-size:14px}
+.gc li{margin:5px 0}
+.plans3,.fams6{display:grid;gap:8px}
+
+/* ===== Modo "uma tela" (base: monitor 24" 1920x1080). Abaixo de 1280x860 úteis volta a rolagem normal ===== */
+@media (min-width:1280px) and (min-height:860px){
   html,body{height:100%;overflow:hidden}
-  main{height:calc(100vh - var(--top-h));padding-top:10px;padding-bottom:10px;overflow:hidden}
-  #v-pick,#v-pick .layout{height:100%}
+  .top-in,main{max-width:1880px}
+  main{height:calc(100vh - var(--top-h));padding-top:12px;padding-bottom:12px;overflow:hidden;display:flex;flex-direction:column}
+  main>.src{display:none}
+  .view.on{flex:1;min-height:0}
+  .view .card{margin-bottom:0}
+  #v-pick .layout{height:100%}
+  .layout{grid-template-columns:340px minmax(0,1.7fr) minmax(0,1fr)}
+
+  /* Earlys: estágios + dicas à esquerda, boards à direita */
+  #v-early.on{display:grid;grid-template-columns:360px minmax(0,1fr);gap:12px}
+  .early-l,.early-r{min-height:0;overflow-y:auto;scrollbar-width:thin;display:flex;flex-direction:column;gap:12px}
+  #stageSeg button{flex:1 1 45%}
+  .early-r>.hint{margin:0!important}
+  .egrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  .ec{padding:12px 14px}
+  .plans3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .plans3 .fam-row{margin-top:0}
+  .fams6{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .fams6 .fam-row{margin-top:0}
+  .early-l .cols{grid-template-columns:1fr;gap:10px}
+
+  /* Augments: escolha à esquerda, tabela à direita */
+  #v-aug.on{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px}
+  .aug-l{display:flex;flex-direction:column;gap:12px;min-height:0;overflow-y:auto;scrollbar-width:thin}
+  .aug-r{min-height:0;overflow-y:auto}
+  .augs{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .aug-r table{min-width:0}
+  .aug-r td{padding:10px 6px}
+
+  /* As 6 comps: seletor + ficha da comp escolhida em 3 colunas */
+  #v-comps.on{display:flex;flex-direction:column;gap:10px}
+  #compFam{display:none}
+  #compPick{display:flex;margin:0}
+  .cgrid{flex:1;min-height:0;display:block}
+  .cc{display:none;height:100%}
+  .cc.sel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;overflow-y:auto}
+  .cc-c1,.cc-c2,.cc-c3{min-width:0}
+  .cc-c1 .cc-top{margin:calc(var(--card-pad) * -1) 0 12px calc(var(--card-pad) * -1)}
+  .cc h4:first-child{margin-top:0}
+
+  /* Guia: cartões de bullets */
+  #v-guide.on{display:flex;flex-direction:column}
+  .ggrid{flex:1;min-height:0;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);overflow-y:auto}
+  .gc-wide{grid-column:span 2}
+  .gc h3{font-size:18px;margin-bottom:12px}.gc ul{font-size:15.5px}.gc li{margin:9px 0}
+  .cc .pos,.cc .pos-lab{max-width:440px}
+  .cc ul,.cc p{font-size:14.5px}
   .layout{gap:10px;align-items:stretch}
   .side,.results-col{position:static;max-height:none;height:100%;overflow-y:auto}
   .col-units{overflow:hidden;display:flex;flex-direction:column;gap:8px;min-height:0}
@@ -443,6 +501,11 @@ a{color:var(--accent)}
   .u .av{width:30px;height:30px}.un{font-size:10.5px}.u .dots{position:absolute;top:4px;left:4px;flex-direction:column;height:auto;gap:2px}
 }
 
+/* Monitor grande (24"): bonecos um pouco maiores aproveitando a largura */
+@media (min-width:1600px) and (min-height:900px){
+  .ugr .ugrid{grid-template-columns:repeat(var(--ucols,7),minmax(0,104px));gap:7px 14px}
+  .u .av{width:35px;height:35px}.un{font-size:11px}
+}
 </style>
 </head>
 <body>
@@ -528,16 +591,20 @@ a{color:var(--accent)}
 
   <!-- EARLYS -->
   <section class="view" id="v-early">
-    <div class="card">
-      <h2>Earlys por estágio</h2>
-      <p class="hint">Escolha o estágio em que você está. Veja o board de cada comp nesse nível e quais peças você já tem. Toque nas peças para marcar (1★ → 2★ → 3★ → remove).</p>
-      <div class="seg" id="stageSeg"></div>
+    <div class="early-l">
+      <div class="card">
+        <h2>Earlys por estágio</h2>
+        <p class="hint">Escolha o estágio em que você está. Toque nas peças para marcar (1★ → 2★ → 3★ → remove).</p>
+        <div class="seg" id="stageSeg"></div>
+      </div>
+      <div id="stageTips"></div>
     </div>
-    <div id="stageBody"></div>
+    <div class="early-r" id="stageBody"></div>
   </section>
 
   <!-- AUGMENTS -->
   <section class="view" id="v-aug">
+    <div class="aug-l">
     <div class="card">
       <h2>Qual augment pegar?</h2>
       <p class="hint">1) Veja a comp alvo. 2) Toque nos <b>tipos</b> que apareceram nas 3 opções. O app diz qual pegar.</p>
@@ -550,7 +617,8 @@ a{color:var(--accent)}
       <div class="augs" id="augTypes"></div>
       <div id="augVerdict" style="margin-top:12px"></div>
     </div>
-    <div class="card">
+    </div>
+    <div class="card aug-r">
       <h2>Tabela completa por comp</h2>
       <p class="hint">3 = prioridade máxima · 0 = evite. Ajustada pela sua vida (aba Escolher).</p>
       <div class="tw" id="augTable"></div>
@@ -560,6 +628,7 @@ a{color:var(--accent)}
   <!-- COMPS -->
   <section class="view" id="v-comps">
     <div class="row" id="compFam" style="margin-top:0"></div>
+    <div class="row" id="compPick" style="margin-top:0"></div>
     <div class="cgrid" id="compCards"></div>
   </section>
 
@@ -1161,24 +1230,26 @@ function trendTxt(c){
 function renderComps(){
   const fams = [["all","Todas"], ...Object.entries(FAM).map(([k,f])=>[k,f.short])];
   const cf = (window._cf && (window._cf==="all" || FAM[window._cf])) ? window._cf : "all";
+  if (!COMPS.some(c=>c.id===window._cc)) window._cc = (RANK[0]||scoreAll()[0]).c.id;
+  $("#compPick").innerHTML = COMPS.map(c=>`<button class="chip f${c.fam}" data-cs="${c.id}" aria-pressed="${window._cc===c.id}">${famBadge(c.fam)}${esc(c.name)}<span class="tier tier${c.tier}">${c.tier}</span></button>`).join("");
   $("#compFam").innerHTML = fams.map(([k,l])=>`<button class="chip${FAM[k]?" f"+k:""}" data-cf="${k}" aria-pressed="${cf===k}">${FAM[k]?famBadge(k):""}${esc(l)}</button>`).join("");
   $("#compCards").innerHTML = COMPS.filter(c=>cf==="all"||c.fam===cf).map(c=>{
     const f = FAM[c.fam];
-    return `<article class="card cc" id="cc-${c.id}">
+    return `<article class="card cc${window._cc===c.id?" sel":""}" id="cc-${c.id}"><div class="cc-c1">
       <div class="cc-top f${c.fam}">${famBadge(c.fam,"fbadge")}<div class="plan-t"><strong>${esc(c.name)}</strong><small>${esc(f.name)} · ${STYLE[c.style].label} · ${esc(c.diff)}</small></div><span class="tier tier${c.tier}">${c.tier}</span></div>
       ${c.traits.length?`<div class="traits">${c.traits.map(t=>`<span class="trait" title="${esc(t.name)} ${t.count}">${imgTag(t.img||IMG.traits[t.name],36)}${esc(t.name)}<b>${t.count}</b></span>`).join("")}</div>`:""}
       <div class="stat"><div><b>${c.avg.toFixed(2)}</b><span>Média</span></div><div><b>${fmtPct(c.top4)}</b><span>Top 4</span></div><div><b>${fmtPct(c.win)}</b><span>Win</span></div><div><b>${fmtPct(c.pick)}</b><span>Pick</span></div></div>
       <p class="why" style="padding:0">${c.games?Number(c.games).toLocaleString("pt-BR")+" partidas":""}${esc(trendTxt(c))}</p>
       <h4>Quando ir para esta comp</h4><p>${esc(c.when)}</p>
+      <p class="why" style="margin-top:8px;padding:0"><b>Níveis:</b> ${esc(c.lvl)}${c.proUrl?` · <a href="${esc(c.proUrl)}" target="_blank" rel="noopener">guia pro no MetaTFT ${I("external")}</a>`:""}</p>
+      <div class="note warn">${I("alert")}<span>${esc(c.warn)}</span></div></div><div class="cc-c2">
       <h4>Bonecos de início</h4><div class="mini">${c.early.map(n=>`<span>${av(n)}${esc(n)}</span>`).join("")}</div>
       <h4>Board final</h4><div class="mini">${c.core.map(n=>`<span class="${c.carries.includes(n)?"carry":""}">${av(n)}${esc(n)}</span>`).join("")}</div>
-      ${posGrid(c.posRows)}
+      ${posGrid(c.posRows)}</div><div class="cc-c3">
       ${c.itemPriority.length?`<h4>Itens prioritários</h4><ul class="ipr">${c.itemPriority.map(i=>`<li>${imgTag(i.img||IMG.items[i.name],56)}<span><b>${esc(i.name)}</b>${(i.bestOn&&i.bestOn.length)?` · ${esc(i.bestOn.join(", "))}`:""}${i.avgPlacement?`<span class="cn">média ${Number(i.avgPlacement).toFixed(2)}</span>`:""}</span></li>`).join("")}</ul>`:""}
       <h4>Como jogar</h4><ul>${c.how.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
-      <p class="why" style="margin-top:8px;padding:0"><b>Níveis:</b> ${esc(c.lvl)}${c.proUrl?` · <a href="${esc(c.proUrl)}" target="_blank" rel="noopener">guia pro no MetaTFT ${I("external")}</a>`:""}</p>
       <h4>Tipos de augment</h4><p>${esc(c.augTypes)}.</p>
-      ${c.augTiers.length?`<div class="augs">${c.augTiers.map(x=>`<span class="tl">Tier ${esc(x.t)}</span>`+x.list.map(n=>`<span title="${esc(n)}">${imgTag(IMG.augments[n],44)}${esc(n)}</span>`).join("")).join("")}</div>`:`<p class="hint">Sem lista de augments para esta comp na fonte.</p>`}
-      <div class="note warn">${I("alert")}<span>${esc(c.warn)}</span></div></article>`;
+      ${c.augTiers.length?`<div class="augs">${c.augTiers.map(x=>`<span class="tl">Tier ${esc(x.t)}</span>`+x.list.map(n=>`<span title="${esc(n)}">${imgTag(IMG.augments[n],44)}${esc(n)}</span>`).join("")).join("")}</div>`:`<p class="hint">Sem lista de augments para esta comp na fonte.</p>`}</div></article>`;
   }).join("");
 }
 
@@ -1195,20 +1266,21 @@ function decision21Html(){
     const c = r.c, b = BOARDS[c.id][0], have = b.filter(n=>S.owned[n]).length, t = LVLT[c.id].t[0];
     return `<div class="fam-row"><div class="fam-row-h"><b>${"ABC"[i]} · ${esc(c.name)}</b>${famTag(c.fam)}</div><div class="have">Board do lvl 4: você tem ${have}/${b.length}${t&&t!=="-"?` · esta comp sobe o 4 em ${t}`:""}</div><div class="ech">${b.map(chip).join("")}</div></div>`;
   }).join("") : `<div class="note">${I("pointer")}<span>Marque seus bonecos e componentes na aba Escolher para ver seu Plano A, B e C aqui.</span></div>`;
-  return `<div class="card"><div class="card-h"><h2>Decisão do 2-1</h2><span class="hint" style="margin:0">Suba para o lvl 4 com 2 de 3 sim</span></div>${verdictHtml()}<h3>Seus 3 planos</h3>${rows}<button class="btn" data-tab="pick" style="margin-top:10px">${I("arrow-right")}<span class="lbl">Ir para Escolher e responder o checklist</span></button></div>`;
+  return `<div class="card"><div class="card-h"><h2>Decisão do 2-1</h2><span class="hint" style="margin:0">Suba para o lvl 4 com 2 de 3 sim</span></div>${verdictHtml()}<h3>Seus 3 planos</h3><div class="plans3">${rows}</div><button class="btn" data-tab="pick" style="margin-top:10px">${I("arrow-right")}<span class="lbl">Ir para Escolher e responder o checklist</span></button></div>`;
 }
 function renderEarly(){
   const stg = STAGES.find(s=>s.id===S.stage) || STAGES[1];
   $("#stageSeg").innerHTML = STAGES.map(s=>`<button data-stage="${s.id}" aria-pressed="${s.id===stg.id}">${s.t}<small>${s.sub}</small></button>`).join("");
   const tip = STIPS[stg.id];
-  let html = (stg.id==="s2" ? decision21Html() : "") + `<div class="card"><div class="cols"><div><h3>${I("check","c-good")}Foque em</h3><ul>${tip.focus.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div><h3>${I("x","c-bad")}Evite</h3><ul>${tip.avoid.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>${tip.extra?`<div class="note">${I("alert")}<span>${esc(tip.extra)}</span></div>`:""}</div>`;
+  $("#stageTips").innerHTML = `<div class="card"><div class="cols"><div><h3>${I("check","c-good")}Foque em</h3><ul>${tip.focus.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div><div><h3>${I("x","c-bad")}Evite</h3><ul>${tip.avoid.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>${tip.extra?`<div class="note">${I("alert")}<span>${esc(tip.extra)}</span></div>`:""}</div>`;
+  let html = stg.id==="s2" ? decision21Html() : "";
 
   if (stg.lvl===3){
     const cnt = {};
     Object.entries(BOARDS).forEach(([id,b]) => { const seen=new Set(); b.slice(0,3).flat().forEach(n=>{ if(!seen.has(n)){seen.add(n); (cnt[n]=cnt[n]||[]).push(id);} }); });
     const flex = Object.entries(cnt).filter(([n,a])=>a.length>=2).sort((a,b)=>b[1].length-a[1].length || a[0].localeCompare(b[0],"pt"));
     html += `<div class="card"><h2>Peças flexíveis</h2><p class="hint">Aparecem nos boards de early de 2 ou mais comps. Comprar essas mantém suas opções abertas.</p><div class="ech">${flex.length?flex.map(([n,a])=>`<span class="flex-item">${chip(n)}<span class="cn">×${a.length}</span></span>`).join(""):`<span class="hint" style="margin:0">Nenhuma peça compartilhada entre as comps do dia.</span>`}</div></div>`;
-    html += `<div class="card"><h2>Quais famílias seguir</h2><p class="hint">Quando os componentes e peças mostrarem um caminho, anote aqui (aba Escolher). Boards de nível 4 de cada comp:</p>${COMPS.map(c=>`<div class="fam-row"><div class="fam-row-h"><b>${esc(c.name)}</b>${famTag(c.fam)}</div><div class="ech">${BOARDS[c.id][0].map(chip).join("")}</div></div>`).join("")}</div>`;
+    html += `<div class="card"><h2>Quais famílias seguir</h2><p class="hint">Quando os componentes e peças mostrarem um caminho, anote aqui (aba Escolher). Boards de nível 4 de cada comp:</p><div class="fams6">${COMPS.map(c=>`<div class="fam-row"><div class="fam-row-h"><b>${esc(c.name)}</b>${famTag(c.fam)}</div><div class="ech">${BOARDS[c.id][0].map(chip).join("")}</div></div>`).join("")}</div></div>`;
     $("#stageBody").innerHTML = html; return;
   }
 
@@ -1250,23 +1322,15 @@ function renderEarly(){
 function renderGuide(){
   const stable = COMPS.filter(c=>c.stable).map(c=>c.name), weak = COMPS.filter(c=>!c.stable).map(c=>c.name);
   const nFam = Object.keys(FAM).length;
-  $("#v-guide").innerHTML = `<div class="card">
-  <h2>Como decidir sem se perder</h2>
-  <h3>Antes do jogo</h3>
-  <ul><li>Conheça as ${COMPS.length} comps e em qual das ${nFam} famílias cada uma está.</li><li>Saiba os itens centrais dos carries e quais bonecos seguram bem os itens.</li><li>Use este app como cola: toque nos bonecos e confira o resultado.</li></ul>
-  <h3>Estágio 1: flexibilidade</h3>
-  <ul><li>Faça 2★ de unidades de custo 1: elas superam muitos custo 3 de 1★.</li><li>Deixe os componentes guiarem a escolha. Arco aponta para AD, Vara e Lágrima apontam para AP.</li><li>Não esqueça da frontline com upgrade. Só carry não sobrevive.</li></ul>
-  <h3>Estágio 2: escolha 3 comps</h3>
-  <ul><li>Defina Plano A, B e C. É o que o app faz por você.</li><li>Antes do nível 4 (2-1), responda ao checklist. Duas respostas sim = suba.</li><li>Sem sinais claros: fique no nível 3, faça lose streak controlada e junte ouro.</li><li>Scoute os rivais. Se alguém pega as mesmas peças, marque como "Rivais estão pegando" e veja o Plano B.</li></ul>
-  <h3>As ${nFam} famílias</h3>
-  ${Object.entries(FAM).map(([k,f])=>`<p>${famTag(k)} ${esc(f.desc)}.</p>`).join("")}
-  <h3>Reroll ou Fast 8?</h3>
-  <ul>${COMPS.map(c=>`<li><b>${esc(c.name)}:</b> ${esc(c.spike)}. ${esc(c.roll)}</li>`).join("")}</ul>
-  <h3>Economia sem se prender</h3>
-  <ul><li>Respeite as faixas de 10, 20 e 30 de ouro.</li><li>Compre as unidades do seu plano se isso não quebrar o juros.</li></ul>
-  <h3>Saúde do jogo</h3>
-  <ul>${stable.length?`<li>Vida abaixo de ~50 antes do 4-1: vá para a opção estável (${esc(joinOu(stable))}).</li>`:""}${weak.length?`<li>Com vida baixa, evite ${esc(joinE(weak))}: dependem de chegar ao nível 8 com ouro.</li>`:""}<li>Não force: os componentes que você tem escolhem a comp, não o contrário.</li></ul>
-  <p class="src" style="text-align:left">Fonte dos dados: <a href="https://www.metatft.com/comps" target="_blank" rel="noopener">MetaTFT · Comps</a>. Pesos de pontuação e tipos de augment são heurísticas do app.</p>
+  const box = (ico, t, items) => `<div class="card gc"><h3>${I(ico)}${t}</h3><ul>${items.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+  $("#v-guide").innerHTML = `<div class="gh"><h2>Como decidir sem se perder</h2><p class="src">Fonte: <a href="https://www.metatft.com/comps" target="_blank" rel="noopener">MetaTFT · Comps</a> · pesos e tipos de augment são heurísticas do app</p></div><div class="ggrid">
+  ${box("book-open","Antes do jogo",[`Conheça as ${COMPS.length} comps e as ${nFam} famílias.`,"Saiba os itens dos carries e quem segura item.","Use o app como cola: marque bonecos e itens."])}
+  ${box("trending-up","Estágio 1: flexível",["2★ de custo 1 vence custo 3 de 1★.","Componentes guiam: Arco = AD; Vara/Lágrima = AP.","Tenha frontline com upgrade, não só carry."])}
+  ${box("crosshair","Estágio 2: 3 comps",["Defina Plano A, B e C (o app faz isso).","No 2-1: 2 respostas sim no checklist = suba.","Sem sinal: fique no 3, lose streak e junte ouro.","Rival nas mesmas peças: marque e vá pro Plano B."])}
+  ${box("layers",`As ${nFam} famílias`,Object.entries(FAM).map(([k,f])=>`${famTag(k)} ${esc(f.desc)}`))}
+  <div class="card gc gc-wide"><h3>${I("refresh")}Reroll ou Fast 8?</h3><ul>${COMPS.map(c=>`<li><b>${esc(c.name)}:</b> ${esc(c.spike)}. ${esc(c.roll)}</li>`).join("")}</ul></div>
+  ${box("coins","Economia",["Respeite as faixas de 10, 20 e 30 de ouro.","Compre peças do plano sem quebrar o juros.","Ouro alto + vida alta: suba de nível."])}
+  ${box("shield","Saúde do jogo",[...(stable.length?[`Vida &lt; ~50 antes do 4-1: vá de ${esc(joinOu(stable))}.`]:[]),...(weak.length?[`Vida baixa: evite ${esc(joinE(weak))} (precisam do nível 8).`]:[]),"Os componentes escolhem a comp, não o contrário."])}
   </div>`;
 }
 
@@ -1306,7 +1370,8 @@ document.addEventListener("click", e => {
   if (t.dataset.sort){ S.sort=t.dataset.sort; return refresh(); }
   if (t.dataset.fam){ S.fam=t.dataset.fam; renderFam(); return refresh(); }
   if (t.dataset.ck){ const i=+t.dataset.ck, v=+t.dataset.v; S.checks[i] = S.checks[i]===v?null:v; return refresh(); }
-  if (t.dataset.open){ setTab("comps"); window._cf="all"; renderComps(); const el=$("#cc-"+t.dataset.open); if(el){el.scrollIntoView({behavior:"smooth",block:"start"});} return; }
+  if (t.dataset.cs){ window._cc=t.dataset.cs; return renderComps(); }
+  if (t.dataset.open){ window._cc=t.dataset.open; setTab("comps"); window._cf="all"; renderComps(); const el=$("#cc-"+t.dataset.open); if(el){el.scrollIntoView({behavior:"smooth",block:"start"});} return; }
   if (t.dataset.ac){ S.augComp=t.dataset.ac; renderAug(); return save(); }
   if (t.dataset.ag){ const id=t.dataset.ag; const i=S.augSel.indexOf(id); if(i>=0) S.augSel.splice(i,1); else { if (S.augSel.length>=3) S.augSel.shift(); S.augSel.push(id);} renderAug(); return save(); }
   if (t.dataset.cf){ window._cf=t.dataset.cf; return renderComps(); }
