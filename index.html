@@ -422,6 +422,22 @@ a{color:var(--accent)}
 .gc li{margin:5px 0}
 .plans3,.fams6{display:grid;gap:8px}
 
+/* Flex */
+.flex-l{display:flex;flex-direction:column;gap:12px}
+#v-flex .card{margin-bottom:12px}
+#flexSeg button{flex:1 1 0;min-width:40px}
+.ch.buy{border-style:dashed;border-color:var(--good)}
+.ch.sell{opacity:.55}
+.fx-traits .trait.on{border-color:color-mix(in srgb,var(--premium) 70%,transparent)}
+.fx-traits .trait.off{opacity:.55}
+.fx-sub{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+.fx-near{margin:0;padding-left:18px;font-size:14px}
+.fx-near li{margin:4px 0}
+.fx-row{display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px;align-items:start;padding:10px 0;border-top:1px solid var(--border-subtle)}
+.fx-row:first-of-type{border-top:0}
+.fx-k{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:var(--muted);min-width:52px}
+.fx-lv{font-weight:700;font-size:13px;color:var(--muted);padding-top:6px}
+
 /* ===== Modo "uma tela" (base: monitor 24" 1920x1080). Abaixo de 1280x860 úteis volta a rolagem normal ===== */
 @media (min-width:1280px) and (min-height:860px){
   html,body{height:100%;overflow:hidden}
@@ -445,6 +461,14 @@ a{color:var(--accent)}
   .fams6{grid-template-columns:repeat(3,minmax(0,1fr))}
   .fams6 .fam-row{margin-top:0}
   .early-l .cols{grid-template-columns:1fr;gap:10px}
+
+  /* Flex: bonecos à esquerda, board e caminho à direita */
+  #v-flex.on{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:12px}
+  #v-flex .card{margin-bottom:0}
+  .flex-l{min-height:0;overflow:hidden}
+  .flex-l>.card:last-child{flex:1;min-height:0;display:flex;flex-direction:column}
+  #flexUnits{flex:1;max-height:none;min-height:0}
+  .flex-r{min-height:0;overflow-y:auto;scrollbar-width:thin;display:flex;flex-direction:column;gap:12px}
 
   /* Augments: escolha à esquerda, tabela à direita */
   #v-aug.on{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px}
@@ -518,6 +542,7 @@ a{color:var(--accent)}
     <nav class="tabs" role="tablist">
       <button class="tab" role="tab" data-tab="pick" aria-selected="true"><i data-icon="crosshair"></i>Escolher comp</button>
       <button class="tab" role="tab" data-tab="early" aria-selected="false"><i data-icon="trending-up"></i>Earlys</button>
+      <button class="tab" role="tab" data-tab="flex" aria-selected="false"><i data-icon="shuffle"></i>Flex</button>
       <button class="tab" role="tab" data-tab="aug" aria-selected="false"><i data-icon="hexagon"></i>Augments</button>
       <button class="tab" role="tab" data-tab="comps" aria-selected="false"><i data-icon="layers"></i>As 6 comps</button>
       <button class="tab" role="tab" data-tab="guide" aria-selected="false"><i data-icon="book-open"></i>Guia</button>
@@ -604,6 +629,21 @@ a{color:var(--accent)}
   </section>
 
   <!-- AUGMENTS -->
+  <!-- FLEX -->
+  <section class="view" id="v-flex">
+    <div class="flex-l">
+      <div class="card">
+        <h2>Jogar flex</h2>
+        <p class="hint">Marque os bonecos que você tem (1★ → 2★ → 3★ → remove), inclusive os que não estão em nenhuma comp do meta. O app monta o melhor board com eles e mostra como levar até o late game.</p>
+        <h3>Seu nível</h3>
+        <div class="seg" id="flexSeg"></div>
+        <div class="search-wrap" style="margin-top:12px"><i data-icon="search"></i><input class="search" id="fq" type="search" placeholder="Buscar boneco ou trait…" aria-label="Buscar boneco ou trait" autocomplete="off"></div>
+      </div>
+      <div class="card"><div class="units" id="flexUnits"></div></div>
+    </div>
+    <div class="flex-r" id="flexBody"></div>
+  </section>
+
   <section class="view" id="v-aug">
     <div class="aug-l">
     <div class="card">
@@ -902,7 +942,7 @@ function buildStageTips(comps){
 }
 
 /* ================= ESTADO ================= */
-const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", hpv:55, goldv:25, checks:[null,null,null], mode:"have", fam:"all", sort:"cost", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2"};
+const DEF = {owned:{}, cont:{}, items:{}, hp:"mid", gold:"mid", hpv:55, goldv:25, checks:[null,null,null], mode:"have", fam:"all", sort:"cost", q:"", augComp:"auto", augSel:[], tab:"pick", stage:"s2", flexL:7, fq:""};
 let S = JSON.parse(JSON.stringify(DEF));
 try { const raw = localStorage.getItem("tft-guia-v2"); if (raw) S = Object.assign({}, DEF, JSON.parse(raw)); } catch(e){}
 function save(){ try{ localStorage.setItem("tft-guia-v2", JSON.stringify(S)); }catch(e){} }
@@ -996,6 +1036,9 @@ const ICONS = {
   "alert":'<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
   "arrow-right":'<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
   "chevron-down":'<path d="m6 9 6 6 6-6"/>',
+  "shuffle":'<path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/><path d="M2 6h1.4c1.3 0 2.5.6 3.3 1.7l.5.7"/><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"/>',
+  "plus":'<path d="M5 12h14"/><path d="M12 5v14"/>',
+  "minus":'<path d="M5 12h14"/>',
   "external":'<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>'
 };
 const I = (n, cls="") => `<svg class="ic${cls?" "+cls:""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${ICONS[n]||""}</svg>`;
@@ -1335,8 +1378,164 @@ function renderGuide(){
   </div>`;
 }
 
+/* ================= FLEX ================= */
+/* Modo flex: monta o melhor board com os bonecos que você já tem (estrela pesa mais que custo) e os traits que eles ativam
+   (breakpoints do assets/assets.json), mostra o caminho até o nível 9 e quais comps do meta aproveitam esses upgrades. */
+const FLEX = {units:{}, traits:{}};   // units: nome -> {cost, traits[]}; traits: nome -> {bp[], unique}
+const FLEX_LVLS = [4,5,6,7,8,9];
+const FLEX_CAP = {4:2, 5:3, 6:3, 7:4, 8:5, 9:5}; // custo mais alto que vale ir atrás em cada nível (odds da loja)
+const FLEX_BUY = 0.7;  // boneco que você ainda não tem vale menos: precisa aparecer na loja
+const FLEX_HAVE = 1;   // bônus por já estar com você (evita trocar o que tem por peça que ainda vai achar)
+const FLEX_META = 1.5; // bônus para peças da comp do meta que dá para virar (puxa o board na direção dela)
+const FLEX_STAY = 1;   // bônus para quem já estava no board do nível anterior (evita vender e recomprar)
+const FLEX_SWAPS = 1;  // quantas peças novas dá para achar por nível além de preencher os slots vazios
+
+function flexTraits(board){
+  const cnt = {};
+  board.forEach(n => ((FLEX.units[n]||{}).traits||[]).forEach(t => cnt[t]=(cnt[t]||0)+1));
+  return Object.entries(cnt).map(([t,c]) => {
+    const tr = FLEX.traits[t] || {bp:[]};
+    const tier = tr.bp.filter(b=>b<=c).length;
+    return {t, c, tier, bp:tr.bp, cur:tier?tr.bp[tier-1]:0, next:tr.bp.find(b=>b>c)||null, unique:!!tr.unique};
+  }).filter(x=>x.bp.length).sort((a,b)=>b.tier-a.tier || b.c-a.c || a.t.localeCompare(b.t));
+}
+function flexValue(board, have, pref, prev){
+  let v = 0;
+  board.forEach(n => { const cost = (FLEX.units[n]||{}).cost||1; v += have[n] ? cost*starMult[have[n]] + FLEX_HAVE : cost*FLEX_BUY; if (pref && pref.includes(n)) v += FLEX_META; if (prev && prev.includes(n)) v += FLEX_STAY; });
+  flexTraits(board).forEach(x => {
+    if (x.unique){ if (x.tier) v += 1; return; }
+    v += 3*x.tier;
+    if (x.next) v += 1.5*(x.c-x.cur)/(x.next-x.cur); // progresso até o próximo breakpoint
+  });
+  return v;
+}
+/* guloso + trocas 1 por 1, com limite de peças novas */
+function flexBoard(L, have, pref, prev){
+  const nHave = Object.keys(have).filter(n=>FLEX.units[n]).length;
+  const maxBuy = Math.max(0, L-nHave) + FLEX_SWAPS;
+  const pool = Object.keys(FLEX.units).filter(n => have[n] || FLEX.units[n].cost<=FLEX_CAP[L]);
+  const buys = b => b.filter(n=>!have[n]).length;
+  let board = [];
+  while (board.length < L){
+    const base = flexValue(board, have, pref, prev); let best = null, bv = -Infinity;
+    pool.forEach(n => {
+      if (board.includes(n) || (!have[n] && buys(board)>=maxBuy)) return;
+      const v = flexValue([...board,n], have, pref, prev) - base; if (v>bv){ bv=v; best=n; }
+    });
+    if (!best) break; board.push(best);
+  }
+  for (let it=0; it<40; it++){
+    const cur = flexValue(board, have, pref, prev); let next = null;
+    for (let i=0; i<board.length && !next; i++) for (const n of pool){
+      if (board.includes(n)) continue;
+      const nb = board.slice(); nb[i] = n;
+      if (buys(nb)<=maxBuy && flexValue(nb, have, pref, prev) > cur+0.01){ next = nb; break; }
+    }
+    if (!next) break; board = next;
+  }
+  const cost = n => (FLEX.units[n]||{}).cost||0;
+  return board.sort((a,b)=>(have[b]?1:0)-(have[a]?1:0) || cost(b)-cost(a) || a.localeCompare(b));
+}
+/* do nível atual até o 9: o que você compra num nível vira 1★ no seguinte */
+function flexPath(L0, pref){
+  const have = {}; Object.entries(S.owned).forEach(([n,st]) => { if (FLEX.units[n]) have[n] = st; });
+  const out = []; let prev = null;
+  for (let L=L0; L<=9; L++){
+    const board = flexBoard(L, have, pref, prev);
+    out.push({L, board, have:{...have}, add: prev ? board.filter(n=>!prev.includes(n)) : [], drop: prev ? prev.filter(n=>!board.includes(n)) : []});
+    board.forEach(n => { if (!have[n]) have[n] = 1; });
+    prev = board;
+  }
+  return out;
+}
+function flexMeta(){
+  const val = n => starMult[S.owned[n]] * ((FLEX.units[n]||{}).cost||IMG.cost[n]||1);
+  return COMPS.map(c => {
+    const keep = c.core.filter(n=>S.owned[n]), buy = c.core.filter(n=>!S.owned[n]);
+    const sell = Object.keys(S.owned).filter(n=>!c.core.includes(n));
+    return {c, keep, buy, sell, sc: keep.reduce((s,n)=>s+val(n),0)};
+  }).filter(x=>x.keep.length).sort((a,b)=>b.sc-a.sc || a.c.avg-b.c.avg).slice(0,3);
+}
+
+const fxChip = (n, cls="") => cls ? chip(n).replace('class="ch ', `class="ch ${cls} `) : chip(n);
+const fxTraits = list => `<div class="traits fx-traits">${list.map(x=>`<span class="trait ${x.tier?"on":"off"}" title="${esc(x.t)}: ${x.c} de ${x.bp.join(" / ")}">${imgTag(IMG.traits[x.t],36)}${esc(x.t)}<b>${x.c}${x.unique?"":"/"+(x.next||x.bp[x.bp.length-1])}</b></span>`).join("")}</div>`;
+
+function renderFlexUnits(){
+  const q = (S.fq||"").trim().toLowerCase();
+  const list = Object.entries(FLEX.units).filter(([n,u]) => !q || n.toLowerCase().includes(q) || u.traits.some(t=>t.toLowerCase().includes(q)));
+  const tile = ([n,u]) => { const st = S.owned[n];
+    return `<button class="u ${st?"own":""} ${st===3?"own3":""}" data-fu="${encodeURIComponent(n)}" aria-label="${esc(n)}${st?", "+st+" estrelas":""}" title="${esc(n)} · ${esc(u.traits.join(", "))}">
+      ${st?starsSvg(st):""}${av(n)}<span class="un">${esc(n)}</span></button>`; };
+  const html = [1,2,3,4,5].map(c => { const l = list.filter(([,u])=>u.cost===c).sort((a,b)=>a[0].localeCompare(b[0]));
+    return l.length ? `<div class="ugr"><div class="ugh">${c} ouro<i></i></div><div class="ugrid">${l.map(tile).join("")}</div></div>` : ""; }).join("");
+  const el = $("#flexUnits"), sc = el.scrollTop;
+  el.style.setProperty("--ucols", 7);
+  el.innerHTML = html || `<p class="hint">Nenhum boneco encontrado.</p>`;
+  el.scrollTop = sc;
+}
+
+function renderFlex(){
+  const L = S.flexL || 7;
+  $("#flexSeg").innerHTML = FLEX_LVLS.map(l=>`<button data-flvl="${l}" aria-pressed="${l===L}">${l}</button>`).join("");
+  const body = $("#flexBody"), sc = body.scrollTop;
+  if (!Object.keys(FLEX.units).length){
+    $("#flexUnits").innerHTML = "";
+    body.innerHTML = `<div class="card"><div class="note warn">${I("alert")}<span>Não consegui carregar os traits dos bonecos (assets/assets.json). O modo flex precisa deles.</span></div></div>`;
+    return;
+  }
+  renderFlexUnits();
+  const owned = Object.keys(S.owned).filter(n=>FLEX.units[n]);
+  if (!owned.length){
+    body.innerHTML = `<div class="card"><h2>Seu board flex</h2><div class="note">${I("pointer")}<span>Marque à esquerda os bonecos que estão no seu banco e no seu board, com as estrelas. Os 2★ e 3★ são o que mais pesa: o app monta o board em volta deles.</span></div></div>`;
+    return;
+  }
+
+  const meta = flexMeta(), up = owned.filter(n=>S.owned[n]>=2);
+  const best = meta[0], bestUp = best ? up.filter(n=>best.c.core.includes(n)) : [];
+  const toMeta = up.length && best && bestUp.length*2 >= up.length;
+  const path = flexPath(L, toMeta ? best.c.core : null), now = path[0];
+  const starTxt = l => esc(joinE(l.map(n=>`${n} ${S.owned[n]}★`)));
+  let verdict;
+  if (!up.length) verdict = `<div class="verdict hold">${I("pause")}<span>Ainda sem 2★: jogue o board mais forte abaixo e guarde pares no banco. O primeiro 2★ que sair define para onde ir.</span></div>`;
+  else if (toMeta) verdict = `<div class="verdict go">${I("check")}<span>Dá para virar <b>${esc(best.c.name)}</b>: ela usa ${starTxt(bestUp)}. Jogue o board flex enquanto junta as peças e troque aos poucos.</span></div>`;
+  else verdict = `<div class="verdict hold">${I("shuffle")}<span>Nenhuma comp do meta aproveita bem seus upgrades (${starTxt(up)}). Jogue flex: o board abaixo usa o que você tem e cresce até o nível 9.</span></div>`;
+
+  const nowTraits = flexTraits(now.board);
+  const bench = owned.filter(n=>!now.board.includes(n));
+  const cap = FLEX_CAP[L];
+  const near = nowTraits.filter(x=>!x.unique && x.next && x.next-x.c===1).slice(0,3).map(x => {
+    const opts = Object.entries(FLEX.units).filter(([n,u])=>!now.board.includes(n) && u.cost<=cap && u.traits.includes(x.t)).sort((a,b)=>b[1].cost-a[1].cost).slice(0,3).map(([n])=>n);
+    return opts.length ? `<li>+1 ${esc(x.t)} ativa o ${x.next}: ${esc(joinOu(opts))}.</li>` : "";
+  }).join("");
+
+  let html = `<div class="card"><div class="card-h"><h2>Seu board no nível ${L}</h2><span class="hint" style="margin:0">tracejado verde = comprar</span></div>${verdict}
+    <div class="ech" style="margin-top:12px">${now.board.map(n=>fxChip(n, now.have[n]?"":"buy")).join("")}</div>
+    ${fxTraits(nowTraits)}
+    ${bench.length?`<h3 class="fx-sub">Fora do board</h3><p class="hint" style="margin:0 0 6px">Guarde se for par de um 2★ próximo; senão venda.</p><div class="ech">${bench.map(n=>fxChip(n,"sell")).join("")}</div>`:""}
+    ${near?`<h3 class="fx-sub">Quase ativando</h3><ul class="fx-near">${near}</ul>`:""}</div>`;
+
+  if (path.length>1){
+    html += `<div class="card"><h2>Caminho até o late game</h2><p class="hint">O que entra e o que sai a cada nível, mantendo seus upgrades. Peças novas entram como 1★.</p>${path.slice(1).map(p => {
+      const tr = flexTraits(p.board).filter(x=>x.tier && !x.unique).slice(0,4);
+      return `<div class="fx-row"><div class="fx-lv">Nível ${p.L}</div><div>${p.add.length?`<div class="ech"><span class="fx-k">${I("plus","c-good")}Entra</span>${p.add.map(n=>fxChip(n, p.have[n]?"":"buy")).join("")}</div>`:""}${p.drop.length?`<div class="ech" style="margin-top:6px"><span class="fx-k">${I("minus","c-bad")}Sai</span>${p.drop.map(n=>fxChip(n,"sell")).join("")}</div>`:""}
+        ${tr.length?`<p class="hint" style="margin:6px 0 0">Traits: ${tr.map(x=>`${esc(x.t)} ${x.cur}`).join(" · ")}</p>`:""}</div></div>`;
+    }).join("")}
+    <div class="note">${I("alert")}<span>Itens: coloque os completos nos bonecos de maior custo com 2★ do board final. A sugestão é pelos traits e estrelas; não leva em conta itens nem posição.</span></div></div>`;
+  }
+
+  html += `<div class="card"><h2>Comps do meta que aproveitam seu board</h2>${meta.length ? meta.map(m => `<div class="fam-row"><div class="fam-row-h"><b>${esc(m.c.name)}</b>${famTag(m.c.fam)}</div>
+      <div class="have">Usa ${m.keep.length} dos seus · ${esc(STYLE[m.c.style].label)}</div>
+      <div class="ech">${m.keep.map(n=>fxChip(n)).join("")}${m.buy.map(n=>fxChip(n,"buy")).join("")}</div>
+      ${m.sell.length?`<p class="hint" style="margin:6px 0 0">Sai: ${esc(joinE(m.sell))}</p>`:""}
+      <button class="btn" data-open="${esc(m.c.id)}" style="margin-top:8px">${I("arrow-right")}Ver a comp</button></div>`).join("")
+    : `<div class="note">${I("shuffle")}<span>Nenhum dos seus bonecos está no board final das ${COMPS.length} comps do meta. Siga o caminho flex acima.</span></div>`}</div>`;
+
+  body.innerHTML = html;
+  body.scrollTop = sc;
+}
+
 /* ================= EVENTOS ================= */
-function refresh(){ renderUnits(); renderItems(); renderSit(); renderChecks(); renderResults(); if (S.tab==="aug") renderAug(); if (S.tab==="early") renderEarly(); save(); }
+function refresh(){ renderUnits(); renderItems(); renderSit(); renderChecks(); renderResults(); if (S.tab==="aug") renderAug(); if (S.tab==="early") renderEarly(); if (S.tab==="flex") renderFlex(); save(); }
 function setTab(t){
   S.tab = t;
   document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected", b.dataset.tab===t));
@@ -1344,6 +1543,7 @@ function setTab(t){
   if (t==="aug") renderAug();
   if (t==="early") renderEarly();
   if (t==="comps") renderComps();
+  if (t==="flex") renderFlex();
   $("#dockBtn").parentElement.style.display = (t==="pick") ? "" : "none";
   window.scrollTo({top:0});
   save();
@@ -1354,6 +1554,8 @@ document.addEventListener("click", e => {
   if (t.dataset.retry){ boot(); return; }
   if (!READY) return;
   if (t.dataset.tab) return setTab(t.dataset.tab);
+  if (t.dataset.flvl){ S.flexL=+t.dataset.flvl; renderFlex(); return save(); }
+  if (t.dataset.fu){ const n = decodeURIComponent(t.dataset.fu); const cur = S.owned[n]||0; if (cur>=3) delete S.owned[n]; else S.owned[n]=cur+1; return refresh(); }
   if (t.dataset.stage){ S.stage=t.dataset.stage; renderEarly(); return save(); }
   if (t.dataset.eu){
     const n = decodeURIComponent(t.dataset.eu); const cur = S.owned[n]||0;
@@ -1380,11 +1582,12 @@ document.addEventListener("click", e => {
 $("#hpRange").addEventListener("input", e => { S.hpv = +e.target.value; if (READY) refresh(); });
 $("#goldRange").addEventListener("input", e => { S.goldv = +e.target.value; if (READY) refresh(); });
 $("#q").addEventListener("input", e => { S.q = e.target.value; if (READY){ renderUnits(); save(); } });
+$("#fq").addEventListener("input", e => { S.fq = e.target.value; if (READY){ renderFlexUnits(); save(); } });
 $("#dockBtn").addEventListener("click", () => $("#results").scrollIntoView({behavior:"smooth",block:"start"}));
 $("#btnReset").addEventListener("click", () => {
   if (!READY) return;
   if (!confirm("Limpar bonecos, itens e situação para um novo jogo?")) return;
-  const tab = S.tab; S = JSON.parse(JSON.stringify(DEF)); S.tab = tab; $("#q").value=""; renderFam(); refresh(); if (tab==="aug") renderAug();
+  const tab = S.tab; S = JSON.parse(JSON.stringify(DEF)); S.tab = tab; $("#q").value=""; $("#fq").value=""; renderFam(); refresh(); if (tab==="aug") renderAug();
 });
 $("#btnTheme").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme");
@@ -1419,7 +1622,15 @@ async function boot(){
     if (!json || !Array.isArray(json.top) || !json.top.length) throw new Error("JSON sem a lista 'top' de comps");
     buildData(json);
     try { /* custos de todos os bonecos (opcional): assets/assets.json */
-      const ar = await fetch("assets/assets.json"); if (ar.ok){ const aj = await ar.json(); (aj.units||[]).forEach(u => { if (u.name && u.cost && !IMG.cost[u.name]) IMG.cost[u.name] = u.cost; }); }
+      const ar = await fetch("assets/assets.json"); if (ar.ok){ const aj = await ar.json();
+        (aj.units||[]).forEach(u => {
+          if (u.name && u.cost && !IMG.cost[u.name]) IMG.cost[u.name] = u.cost;
+          if (u.name && u.img && !IMG.units[u.name]) IMG.units[u.name] = u.img;
+          if (u.shopUnit && u.cost>=1 && u.cost<=5 && (u.traits||[]).length) FLEX.units[u.name] = {cost:u.cost, traits:u.traits};
+        });
+        (aj.traits||[]).forEach(t => { if (!t.name) return; FLEX.traits[t.name] = {bp:t.breakpoints||[], unique:t.type==="unique"}; if (t.img && !IMG.traits[t.name]) IMG.traits[t.name] = t.img; });
+        if (!Object.values(FLEX.traits).some(t=>t.bp.length)) FLEX.units = {}; // assets.json antigo, sem breakpoints
+      }
     } catch(e){}
   } catch(err){
     console.error("[tft] falha ao carregar dados:", err);
@@ -1431,7 +1642,7 @@ async function boot(){
   READY = true;
   if (S.fam!=="all" && S.fam!=="mine" && !FAM[S.fam]) S.fam = "all";
   if (S.augComp!=="auto" && !COMPS.some(c=>c.id===S.augComp)) S.augComp = "auto";
-  renderMeta(); renderFam(); renderGuide(); $("#q").value = S.q || ""; refresh(); setTab(S.tab || "pick"); revealTab();
+  renderMeta(); renderFam(); renderGuide(); $("#q").value = S.q || ""; $("#fq").value = S.fq || ""; refresh(); setTab(S.tab || "pick"); revealTab();
 }
 mountIcons();
 boot();

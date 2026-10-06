@@ -109,7 +109,10 @@ def main(argv=None):
             by_name["items"].setdefault(n, e["img"])
     traits = []
     for t in lk["traits"]:
-        e = entry("traits", trait_key(t["apiName"]), t["name"], {"apiName": t["apiName"], "type": t.get("type")})
+        # breakpoints = quantos bonecos ativam cada nível do trait (usado pela aba Flex do guia)
+        bps = sorted({e["minUnits"] for e in t.get("effects") or [] if e.get("minUnits")})
+        e = entry("traits", trait_key(t["apiName"]), t["name"], {"apiName": t["apiName"], "type": t.get("type"),
+                                                                 "breakpoints": bps})
         traits.append(e)
         for n in [t["name"], t["apiName"]]:
             by_name["traits"].setdefault(n, e["img"])
