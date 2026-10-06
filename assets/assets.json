@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-05T21:05:49+00:00",
+ "fetched_at": "2026-10-06T15:37:04+00:00",
  "set": "TFTSet18",
  "set_name": "Enchanted Wilds",
  "source": {
@@ -19,8 +19,8 @@
   "traits": 36,
   "augments": 257,
   "charms": 370,
-  "ok": 957,
-  "missing": 27
+  "ok": 889,
+  "missing": 19
  },
  "byName": {
   "units": {
@@ -1748,8 +1748,7 @@
    "file": "champions/tft_goldenegg.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft_goldenegg.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft_goldenegg.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft_goldenegg.png"
   },
   {
    "name": "The Tower",
@@ -1766,8 +1765,7 @@
    "file": "champions/tft_trainingdummy.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft_trainingdummy.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft_trainingdummy.png",
-   "splashFile": "splashes/tft_trainingdummy.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft_trainingdummy.png"
   },
   {
    "name": "Golem",
@@ -1783,8 +1781,7 @@
    "file": "champions/tft_bluegolem.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft_bluegolem.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft_bluegolem.png",
-   "splashFile": "splashes/tft_bluegolem.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft_bluegolem.png"
   },
   {
    "name": "Ahri",
@@ -1803,8 +1800,7 @@
    "file": "champions/tft18_ahri.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_ahri.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ahri.png",
-   "splashFile": "splashes/tft18_ahri.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ahri.png"
   },
   {
    "name": "Akali",
@@ -1825,8 +1821,7 @@
    "file": "champions/tft18_akali.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_akali.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_akali.png",
-   "splashFile": "splashes/tft18_akali.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_akali.png"
   },
   {
    "name": "Alistar",
@@ -1845,8 +1840,7 @@
    "file": "champions/tft18_alistar.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_alistar.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_alistar.png",
-   "splashFile": "splashes/tft18_alistar.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_alistar.png"
   },
   {
    "name": "Alune",
@@ -1866,8 +1860,7 @@
    "file": "champions/tft18_alune.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_alune.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_alune.png",
-   "splashFile": "splashes/tft18_alune.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_alune.png"
   },
   {
    "name": "Amumu",
@@ -1886,8 +1879,7 @@
    "file": "champions/tft18_amumu.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_amumu.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_amumu.png",
-   "splashFile": "splashes/tft18_amumu.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_amumu.png"
   },
   {
    "name": "Aphelios",
@@ -1906,8 +1898,7 @@
    "file": "champions/tft18_aphelios.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_aphelios.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_aphelios.png",
-   "splashFile": "splashes/tft18_aphelios.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_aphelios.png"
   },
   {
    "name": "Ashe",
@@ -1926,8 +1917,7 @@
    "file": "champions/tft18_ashe.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_ashe.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ashe.png",
-   "splashFile": "splashes/tft18_ashe.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ashe.png"
   },
   {
    "name": "Azir",
@@ -1943,8 +1933,7 @@
    "file": "champions/tft18_azirsoldier.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_azirsoldier.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_azirsoldier.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_azirsoldier.png"
   },
   {
    "name": "Azir",
@@ -1964,8 +1953,7 @@
    "file": "champions/tft18_azir.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_azir.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_azir.png",
-   "splashFile": "splashes/tft18_azir.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_azir.png"
   },
   {
    "name": "Brambleback",
@@ -1984,8 +1972,7 @@
    "file": "champions/tft18_brambleback.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_brambleback.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_brambleback.png",
-   "splashFile": "splashes/tft18_brambleback.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_brambleback.png"
   },
   {
    "name": "Caitlyn",
@@ -2004,8 +1991,7 @@
    "file": "champions/tft18_caitlyn.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_caitlyn.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_caitlyn.png",
-   "splashFile": "splashes/tft18_caitlyn.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_caitlyn.png"
   },
   {
    "name": "Camille",
@@ -2024,8 +2010,7 @@
    "file": "champions/tft18_camille.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_camille.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_camille.png",
-   "splashFile": "splashes/tft18_camille.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_camille.png"
   },
   {
    "name": "Cassiopeia",
@@ -2044,8 +2029,7 @@
    "file": "champions/tft18_cassiopeia.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_cassiopeia.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_cassiopeia.png",
-   "splashFile": "splashes/tft18_cassiopeia.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_cassiopeia.png"
   },
   {
    "name": "Cinderling",
@@ -2064,8 +2048,7 @@
    "file": "champions/tft18_cinderling.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_cinderling.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_cinderling.png",
-   "splashFile": "splashes/tft18_cinderling.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_cinderling.png"
   },
   {
    "name": "Mama Beak",
@@ -2085,8 +2068,7 @@
    "file": "champions/tft18_mamabeak.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_mamabeak.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_mamabeak.png",
-   "splashFile": "splashes/tft18_mamabeak.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_mamabeak.png"
   },
   {
    "name": "Tiny Beak",
@@ -2102,8 +2084,7 @@
    "file": "champions/tft18_crimsonraptor_mini.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_crimsonraptor_mini.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_crimsonraptor_mini.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_crimsonraptor_mini.png"
   },
   {
    "name": "Diana",
@@ -2123,8 +2104,7 @@
    "file": "champions/tft18_diana.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_diana.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_diana.png",
-   "splashFile": "splashes/tft18_diana.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_diana.png"
   },
   {
    "name": "Draven",
@@ -2142,8 +2122,7 @@
    "file": "champions/tft18_draven.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_draven.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_draven.png",
-   "splashFile": "splashes/tft18_draven.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_draven.png"
   },
   {
    "name": "Elder Dragon",
@@ -2162,8 +2141,7 @@
    "file": "champions/tft18_elderdragon.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderdragon.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderdragon.png",
-   "splashFile": "splashes/tft18_elderdragon.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderdragon.png"
   },
   {
    "name": "Elise",
@@ -2182,8 +2160,7 @@
    "file": "champions/tft18_elise.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_elise.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elise.png",
-   "splashFile": "splashes/tft18_elise.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elise.png"
   },
   {
    "name": "Elise",
@@ -2202,8 +2179,7 @@
    "file": "champions/tft18_elisespider.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_elisespider.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elisespider.png",
-   "splashFile": "splashes/tft18_elisespider.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elisespider.png"
   },
   {
    "name": "Ezreal",
@@ -2222,8 +2198,7 @@
    "file": "champions/tft18_ezreal.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_ezreal.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ezreal.png",
-   "splashFile": "splashes/tft18_ezreal.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ezreal.png"
   },
   {
    "name": "Fiddlesticks",
@@ -2243,8 +2218,7 @@
    "file": "champions/tft18_fiddlesticks.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_fiddlesticks.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_fiddlesticks.png",
-   "splashFile": "splashes/tft18_fiddlesticks.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_fiddlesticks.png"
   },
   {
    "name": "Gnar",
@@ -2264,8 +2238,7 @@
    "file": "champions/tft18_gnar.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_gnar.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_gnar.png",
-   "splashFile": "splashes/tft18_gnar.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_gnar.png"
   },
   {
    "name": "Gromp",
@@ -2285,8 +2258,7 @@
    "file": "champions/tft18_gromp.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_gromp.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_gromp.png",
-   "splashFile": "splashes/tft18_gromp.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_gromp.png"
   },
   {
    "name": "Hecarim",
@@ -2305,8 +2277,7 @@
    "file": "champions/tft18_hecarim.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_hecarim.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_hecarim.png",
-   "splashFile": "splashes/tft18_hecarim.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_hecarim.png"
   },
   {
    "name": "Ivern",
@@ -2324,8 +2295,7 @@
    "file": "champions/tft18_ivern.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_ivern.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ivern.png",
-   "splashFile": "splashes/tft18_ivern.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ivern.png"
   },
   {
    "name": "Karma",
@@ -2344,8 +2314,7 @@
    "file": "champions/tft18_karma.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_karma.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_karma.png",
-   "splashFile": "splashes/tft18_karma.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_karma.png"
   },
   {
    "name": "Kayle",
@@ -2364,8 +2333,7 @@
    "file": "champions/tft18_kayle.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_kayle.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kayle.png",
-   "splashFile": "splashes/tft18_kayle.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kayle.png"
   },
   {
    "name": "Kennen",
@@ -2384,8 +2352,7 @@
    "file": "champions/tft18_kennen.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_kennen.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kennen.png",
-   "splashFile": "splashes/tft18_kennen.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kennen.png"
   },
   {
    "name": "Kha'Zix",
@@ -2403,8 +2370,7 @@
    "file": "champions/tft18_khazix.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_khazix.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_khazix.png",
-   "splashFile": "splashes/tft18_khazix.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_khazix.png"
   },
   {
    "name": "Kobuko",
@@ -2423,8 +2389,7 @@
    "file": "champions/tft18_kobuko.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_kobuko.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kobuko.png",
-   "splashFile": "splashes/tft18_kobuko.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kobuko.png"
   },
   {
    "name": "Kog'Maw",
@@ -2445,8 +2410,7 @@
    "file": "champions/tft18_kogmaw.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_kogmaw.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kogmaw.png",
-   "splashFile": "splashes/tft18_kogmaw.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_kogmaw.png"
   },
   {
    "name": "Kruglette",
@@ -2462,8 +2426,7 @@
    "file": "champions/tft18_krugmini.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_krugmini.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_krugmini.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_krugmini.png"
   },
   {
    "name": "Krug",
@@ -2482,8 +2445,7 @@
    "file": "champions/tft18_krug.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_krug.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_krug.png",
-   "splashFile": "splashes/tft18_krug.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_krug.png"
   },
   {
    "name": "LeBlanc",
@@ -2502,8 +2464,7 @@
    "file": "champions/tft18_leblanc.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_leblanc.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_leblanc.png",
-   "splashFile": "splashes/tft18_leblanc.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_leblanc.png"
   },
   {
    "name": "Leona",
@@ -2522,8 +2483,7 @@
    "file": "champions/tft18_leona.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_leona.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_leona.png",
-   "splashFile": "splashes/tft18_leona.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_leona.png"
   },
   {
    "name": "Lillia",
@@ -2542,8 +2502,7 @@
    "file": "champions/tft18_lillia.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_lillia.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_lillia.png",
-   "splashFile": "splashes/tft18_lillia.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_lillia.png"
   },
   {
    "name": "Lux",
@@ -2570,8 +2529,7 @@
    "file": "champions/tft18_lux_base.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_lux_base.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_lux_base.png",
-   "splashFile": "splashes/tft18_lux_base.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_lux_base.png"
   },
   {
    "name": "Malphite",
@@ -2590,8 +2548,7 @@
    "file": "champions/tft18_malphite.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_malphite.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_malphite.png",
-   "splashFile": "splashes/tft18_malphite.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_malphite.png"
   },
   {
    "name": "Maokai",
@@ -2610,8 +2567,7 @@
    "file": "champions/tft18_maokai.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_maokai.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_maokai.png",
-   "splashFile": "splashes/tft18_maokai.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_maokai.png"
   },
   {
    "name": null,
@@ -2663,8 +2619,7 @@
    "file": "champions/tft18_masteryi.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_masteryi.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_masteryi.png",
-   "splashFile": "splashes/tft18_masteryi.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_masteryi.png"
   },
   {
    "name": "Morgana",
@@ -2683,8 +2638,7 @@
    "file": "champions/tft18_morgana.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_morgana.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_morgana.png",
-   "splashFile": "splashes/tft18_morgana.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_morgana.png"
   },
   {
    "name": "Murkwolf",
@@ -2703,8 +2657,7 @@
    "file": "champions/tft18_murkwolf.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_murkwolf.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_murkwolf.png",
-   "splashFile": "splashes/tft18_murkwolf.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_murkwolf.png"
   },
   {
    "name": "Nidalee",
@@ -2724,8 +2677,7 @@
    "file": "champions/tft18_nidalee.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_nidalee.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_nidalee.png",
-   "splashFile": "splashes/tft18_nidalee.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_nidalee.png"
   },
   {
    "name": "Nunu and Willump",
@@ -2741,8 +2693,7 @@
    "file": "champions/tft18_nunuwillump.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_nunuwillump.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_nunuwillump.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_nunuwillump.png"
   },
   {
    "name": "Ornn",
@@ -2761,8 +2712,7 @@
    "file": "champions/tft18_ornn.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_ornn.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ornn.png",
-   "splashFile": "splashes/tft18_ornn.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_ornn.png"
   },
   {
    "name": "Rakan",
@@ -2782,8 +2732,7 @@
    "file": "champions/tft18_rakan.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_rakan.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_rakan.png",
-   "splashFile": "splashes/tft18_rakan.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_rakan.png"
   },
   {
    "name": "Rammus",
@@ -2802,8 +2751,7 @@
    "file": "champions/tft18_rammus.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_rammus.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_rammus.png",
-   "splashFile": "splashes/tft18_rammus.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_rammus.png"
   },
   {
    "name": "Rek'Sai",
@@ -2822,8 +2770,7 @@
    "file": "champions/tft18_reksai.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_reksai.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_reksai.png",
-   "splashFile": "splashes/tft18_reksai.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_reksai.png"
   },
   {
    "name": "Rengar",
@@ -2841,8 +2788,7 @@
    "file": "champions/tft18_rengar.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_rengar.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_rengar.png",
-   "splashFile": "splashes/tft18_rengar.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_rengar.png"
   },
   {
    "name": "Scuttlecrab",
@@ -2861,8 +2807,7 @@
    "file": "champions/tft18_scuttlecrab.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_scuttlecrab.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_scuttlecrab.png",
-   "splashFile": "splashes/tft18_scuttlecrab.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_scuttlecrab.png"
   },
   {
    "name": "Sejuani",
@@ -2881,8 +2826,7 @@
    "file": "champions/tft18_sejuani.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_sejuani.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sejuani.png",
-   "splashFile": "splashes/tft18_sejuani.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sejuani.png"
   },
   {
    "name": "Sentinel",
@@ -2902,8 +2846,7 @@
    "file": "champions/tft18_sentinel.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_sentinel.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sentinel.png",
-   "splashFile": "splashes/tft18_sentinel.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sentinel.png"
   },
   {
    "name": "Pebbles",
@@ -2922,8 +2865,7 @@
    "file": "champions/tft18_pebbles.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_pebbles.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_pebbles.png",
-   "splashFile": "splashes/tft18_pebbles.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_pebbles.png"
   },
   {
    "name": "Sett",
@@ -2942,8 +2884,7 @@
    "file": "champions/tft18_sett.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_sett.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sett.png",
-   "splashFile": "splashes/tft18_sett.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sett.png"
   },
   {
    "name": "Shen",
@@ -2962,8 +2903,7 @@
    "file": "champions/tft18_shen.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_shen.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_shen.png",
-   "splashFile": "splashes/tft18_shen.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_shen.png"
   },
   {
    "name": "Sivir",
@@ -2982,8 +2922,7 @@
    "file": "champions/tft18_sivir.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_sivir.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sivir.png",
-   "splashFile": "splashes/tft18_sivir.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_sivir.png"
   },
   {
    "name": "Soraka",
@@ -3002,8 +2941,7 @@
    "file": "champions/tft18_soraka.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_soraka.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_soraka.png",
-   "splashFile": "splashes/tft18_soraka.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_soraka.png"
   },
   {
    "name": "Taric",
@@ -3022,8 +2960,7 @@
    "file": "champions/tft18_taric.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_taric.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_taric.png",
-   "splashFile": "splashes/tft18_taric.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_taric.png"
   },
   {
    "name": "Teemo",
@@ -3042,8 +2979,7 @@
    "file": "champions/tft18_teemo.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_teemo.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_teemo.png",
-   "splashFile": "splashes/tft18_teemo.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_teemo.png"
   },
   {
    "name": "Tristana",
@@ -3063,8 +2999,7 @@
    "file": "champions/tft18_tristana.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_tristana.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_tristana.png",
-   "splashFile": "splashes/tft18_tristana.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_tristana.png"
   },
   {
    "name": "Varus",
@@ -3083,8 +3018,7 @@
    "file": "champions/tft18_varus.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_varus.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_varus.png",
-   "splashFile": "splashes/tft18_varus.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_varus.png"
   },
   {
    "name": "Veigar",
@@ -3104,8 +3038,7 @@
    "file": "champions/tft18_veigar.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_veigar.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_veigar.png",
-   "splashFile": "splashes/tft18_veigar.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_veigar.png"
   },
   {
    "name": "Vi",
@@ -3124,8 +3057,7 @@
    "file": "champions/tft18_vi.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_vi.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_vi.png",
-   "splashFile": "splashes/tft18_vi.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_vi.png"
   },
   {
    "name": "Warwick",
@@ -3144,8 +3076,7 @@
    "file": "champions/tft18_warwick.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_warwick.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_warwick.png",
-   "splashFile": "splashes/tft18_warwick.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_warwick.png"
   },
   {
    "name": "Xayah",
@@ -3165,8 +3096,7 @@
    "file": "champions/tft18_xayah.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_xayah.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_xayah.png",
-   "splashFile": "splashes/tft18_xayah.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_xayah.png"
   },
   {
    "name": "Yorick",
@@ -3186,8 +3116,7 @@
    "file": "champions/tft18_yorick.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_yorick.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_yorick.png",
-   "splashFile": "splashes/tft18_yorick.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_yorick.png"
   },
   {
    "name": "Spirit Walker",
@@ -3203,8 +3132,7 @@
    "file": "champions/tft18_yorick_spirit.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_yorick_spirit.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_yorick_spirit.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_yorick_spirit.png"
   },
   {
    "name": "Yunara",
@@ -3223,8 +3151,7 @@
    "file": "champions/tft18_yunara.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_yunara.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_yunara.png",
-   "splashFile": "splashes/tft18_yunara.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_yunara.png"
   },
   {
    "name": "Zyra",
@@ -3243,8 +3170,7 @@
    "file": "champions/tft18_zyra.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_zyra.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_zyra.png",
-   "splashFile": "splashes/tft18_zyra.png"
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_zyra.png"
   },
   {
    "name": null,
@@ -3277,8 +3203,7 @@
    "file": "champions/tft18_elderwood_treesummon.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderwood_treesummon.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderwood_treesummon.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderwood_treesummon.png"
   },
   {
    "name": "Deepwood Protector",
@@ -3294,8 +3219,7 @@
    "file": "champions/tft18_elderwood_golemsummon.png",
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderwood_golemsummon.png",
-   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderwood_golemsummon.png",
-   "splashFile": null
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_elderwood_golemsummon.png"
   },
   {
    "name": "Drag a Sprykin over BFF and hold to set them as the rider!",
