@@ -5102,6 +5102,9 @@
    "name": "Attuned",
    "apiName": "DA_AluneUniqueTrait18",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_aluneuniquetrait18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_aluneuniquetrait18.png",
    "file": "traits/da_aluneuniquetrait18.png",
@@ -5111,6 +5114,9 @@
    "name": "Bounty Seeker",
    "apiName": "DA_DravenUniqueTrait18",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_dravenuniquetrait18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_dravenuniquetrait18.png",
    "file": "traits/da_dravenuniquetrait18.png",
@@ -5120,6 +5126,9 @@
    "name": "Apex Predator",
    "apiName": "DA_18_ApexPredator",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_apexpredator.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_apexpredator.png",
    "file": "traits/da_18_apexpredator.png",
@@ -5129,6 +5138,9 @@
    "name": "Greenfather",
    "apiName": "DA_18_Greenfather",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_greenfather.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_greenfather.png",
    "file": "traits/da_18_greenfather.png",
@@ -5138,6 +5150,9 @@
    "name": "Avatar",
    "apiName": "DA_18_LuxUniqueTrait",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_luxuniquetrait.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_luxuniquetrait.png",
    "file": "traits/da_18_luxuniquetrait.png",
@@ -5147,6 +5162,9 @@
    "name": "Old Growth",
    "apiName": "DA_18_Maokai_UniqueTrait",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
    "file": "traits/da_18_maokai_uniquetrait.png",
@@ -5156,6 +5174,9 @@
    "name": "Thornmaiden",
    "apiName": "DA_18_ZyraUniqueTrait",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_zyrauniquetrait.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_zyrauniquetrait.png",
    "file": "traits/da_18_zyrauniquetrait.png",
@@ -5165,6 +5186,11 @@
    "name": "Adaptor",
    "apiName": "DA_18_Adaptor",
    "type": "class",
+   "breakpoints": [
+    2,
+    3,
+    4
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_adaptor.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_adaptor.png",
    "file": "traits/da_18_adaptor.png",
@@ -5174,6 +5200,9 @@
    "name": "Monolith",
    "apiName": "DA_18_Battlemage",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_battlemage.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_battlemage.png",
    "file": "traits/da_18_battlemage.png",
@@ -5183,6 +5212,11 @@
    "name": "Blackthorn",
    "apiName": "DA_18_Blackthorn",
    "type": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_blackthorn.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_blackthorn.png",
    "file": "traits/da_18_blackthorn.png",
@@ -5192,6 +5226,13 @@
    "name": "Blossom",
    "apiName": "DA_18_Blossom",
    "type": "origin",
+   "breakpoints": [
+    3,
+    5,
+    7,
+    9,
+    11
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_blossom.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_blossom.png",
    "file": "traits/da_18_blossom.png",
@@ -5201,6 +5242,11 @@
    "name": "Brawler",
    "apiName": "DA_18_Brawler",
    "type": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_brawler.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_brawler.png",
    "file": "traits/da_18_brawler.png",
@@ -5210,6 +5256,9 @@
    "name": "Caustic",
    "apiName": "DA_18_Caustic",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_caustic.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_caustic.png",
    "file": "traits/da_18_caustic.png",
@@ -5219,6 +5268,12 @@
    "name": "Coven",
    "apiName": "DA_18_Coven",
    "type": "origin",
+   "breakpoints": [
+    3,
+    4,
+    5,
+    7
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_coven.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_coven.png",
    "file": "traits/da_18_coven.png",
@@ -5228,6 +5283,11 @@
    "name": "Defender",
    "apiName": "DA_18_Defender",
    "type": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_defender.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_defender.png",
    "file": "traits/da_18_defender.png",
@@ -5237,6 +5297,7 @@
    "name": "Eclipse",
    "apiName": "DA_18_Eclipse",
    "type": "origin",
+   "breakpoints": [],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_eclipse.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_eclipse.png",
    "file": "traits/da_18_eclipse.png",
@@ -5246,6 +5307,13 @@
    "name": "Elderwood",
    "apiName": "DA_18_Elderwood",
    "type": "origin",
+   "breakpoints": [
+    3,
+    5,
+    7,
+    9,
+    11
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_elderwood.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_elderwood.png",
    "file": "traits/da_18_elderwood.png",
@@ -5255,6 +5323,9 @@
    "name": "Emerald Aspect",
    "apiName": "DA_Emerald18",
    "type": "unique",
+   "breakpoints": [
+    1
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_emerald18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_emerald18.png",
    "file": "traits/da_emerald18.png",
@@ -5264,6 +5335,11 @@
    "name": "Executioner",
    "apiName": "DA_18_Executioner",
    "type": "class",
+   "breakpoints": [
+    2,
+    3,
+    4
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_executioner.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_executioner.png",
    "file": "traits/da_18_executioner.png",
@@ -5273,6 +5349,10 @@
    "name": "Fae",
    "apiName": "DA_18_Fae",
    "type": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_fae.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_fae.png",
    "file": "traits/da_18_fae.png",
@@ -5282,6 +5362,10 @@
    "name": "Flora Fatalis",
    "apiName": "DA_FloraFatalis18",
    "type": "origin",
+   "breakpoints": [
+    1,
+    2
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_florafatalis18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_florafatalis18.png",
    "file": "traits/da_florafatalis18.png",
@@ -5291,6 +5375,12 @@
    "name": "Hunter",
    "apiName": "DA_18_Hunter",
    "type": "class",
+   "breakpoints": [
+    2,
+    3,
+    4,
+    5
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_hunter.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_hunter.png",
    "file": "traits/da_18_hunter.png",
@@ -5300,6 +5390,12 @@
    "name": "Inferno",
    "apiName": "DA_18_Inferno",
    "type": "origin",
+   "breakpoints": [
+    2,
+    3,
+    5,
+    7
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_inferno.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_inferno.png",
    "file": "traits/da_18_inferno.png",
@@ -5309,6 +5405,12 @@
    "name": "Invoker",
    "apiName": "DA_18_Invoker",
    "type": "class",
+   "breakpoints": [
+    2,
+    3,
+    4,
+    5
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_invoker.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_invoker.png",
    "file": "traits/da_18_invoker.png",
@@ -5318,6 +5420,11 @@
    "name": "Juggernaut",
    "apiName": "DA_Juggernaut18",
    "type": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_juggernaut18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_juggernaut18.png",
    "file": "traits/da_juggernaut18.png",
@@ -5327,6 +5434,12 @@
    "name": "Lunar",
    "apiName": "DA_18_Lunar",
    "type": "origin",
+   "breakpoints": [
+    2,
+    3,
+    4,
+    5
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_lunar.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_lunar.png",
    "file": "traits/da_18_lunar.png",
@@ -5336,6 +5449,10 @@
    "name": "Primal",
    "apiName": "DA_Primal18",
    "type": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_primal18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_primal18.png",
    "file": "traits/da_primal18.png",
@@ -5345,6 +5462,12 @@
    "name": "Rapidfire",
    "apiName": "DA_18_Rapidfire",
    "type": "class",
+   "breakpoints": [
+    2,
+    3,
+    4,
+    5
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_rapidfire.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_rapidfire.png",
    "file": "traits/da_18_rapidfire.png",
@@ -5354,6 +5477,12 @@
    "name": "Riftbeast",
    "apiName": "DA_Riftbeast18",
    "type": "origin",
+   "breakpoints": [
+    3,
+    5,
+    7,
+    10
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_riftbeast18.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_riftbeast18.png",
    "file": "traits/da_riftbeast18.png",
@@ -5363,6 +5492,10 @@
    "name": "Rival",
    "apiName": "DA_18_Rival",
    "type": "origin",
+   "breakpoints": [
+    1,
+    2
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_rival.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_rival.png",
    "file": "traits/da_18_rival.png",
@@ -5372,6 +5505,11 @@
    "name": "Ravager",
    "apiName": "DA_18_Slayer",
    "type": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_slayer.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_slayer.png",
    "file": "traits/da_18_slayer.png",
@@ -5381,6 +5519,9 @@
    "name": "Solar",
    "apiName": "DA_18_Solar",
    "type": "origin",
+   "breakpoints": [
+    3
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_solar.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_solar.png",
    "file": "traits/da_18_solar.png",
@@ -5390,6 +5531,11 @@
    "name": "Spellweaver",
    "apiName": "DA_18_Spellweaver",
    "type": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_spellweaver.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_spellweaver.png",
    "file": "traits/da_18_spellweaver.png",
@@ -5399,6 +5545,11 @@
    "name": "Sprykin",
    "apiName": "DA_18_Sprykin",
    "type": "origin",
+   "breakpoints": [
+    3,
+    5,
+    7
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_sprykin.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_sprykin.png",
    "file": "traits/da_18_sprykin.png",
@@ -5408,6 +5559,10 @@
    "name": "Summoner",
    "apiName": "DA_18_Summoner",
    "type": "class",
+   "breakpoints": [
+    2,
+    3
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_summoner.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_summoner.png",
    "file": "traits/da_18_summoner.png",
@@ -5417,6 +5572,11 @@
    "name": "Vanguard",
    "apiName": "DA_18_Vanguard",
    "type": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
    "img": "https://cdn.metatft.com/file/metatft/traits/da_18_vanguard.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_vanguard.png",
    "file": "traits/da_18_vanguard.png",
