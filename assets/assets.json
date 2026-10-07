@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-06T15:37:04+00:00",
+ "fetched_at": "2026-10-07T15:57:03+00:00",
  "set": "TFTSet18",
  "set_name": "Enchanted Wilds",
  "source": {
@@ -14,13 +14,13 @@
   "local": "assets/{category}/{key}.png (present when `file` is not null)"
  },
  "counts": {
-  "units": 81,
-  "items": 160,
-  "traits": 36,
-  "augments": 257,
-  "charms": 370,
-  "ok": 889,
-  "missing": 19
+  "units": 82,
+  "items": 161,
+  "traits": 37,
+  "augments": 260,
+  "charms": 376,
+  "ok": 891,
+  "missing": 29
  },
  "byName": {
   "units": {
@@ -103,7 +103,9 @@
    "Fiddlesticks": "https://cdn.metatft.com/file/metatft/champions/tft18_fiddlesticks.png",
    "TFT18_Fiddlesticks": "https://cdn.metatft.com/file/metatft/champions/tft18_fiddlesticks.png",
    "DA_Fiddlesticks18": "https://cdn.metatft.com/file/metatft/champions/tft18_fiddlesticks.png",
-   "Gnar": "https://cdn.metatft.com/file/metatft/champions/tft18_gnar.png",
+   "Gnar": "https://cdn.metatft.com/file/metatft/champions/tft18_gnarbig.png",
+   "TFT18_GnarBig": "https://cdn.metatft.com/file/metatft/champions/tft18_gnarbig.png",
+   "DA_18_GnarBig": "https://cdn.metatft.com/file/metatft/champions/tft18_gnarbig.png",
    "TFT18_Gnar": "https://cdn.metatft.com/file/metatft/champions/tft18_gnar.png",
    "DA_18_GnarSmall": "https://cdn.metatft.com/file/metatft/champions/tft18_gnar.png",
    "Gromp": "https://cdn.metatft.com/file/metatft/champions/tft18_gromp.png",
@@ -299,6 +301,8 @@
    "DA_Artifact_CappaJuice": "https://cdn.metatft.com/file/metatft/items/da_artifact_cappajuice.png",
    "Dawncore": "https://cdn.metatft.com/file/metatft/items/da_artifact_dawncore.png",
    "DA_Artifact_Dawncore": "https://cdn.metatft.com/file/metatft/items/da_artifact_dawncore.png",
+   "Death's Defiance": "https://cdn.metatft.com/file/metatft/items/da_artifact_deathsdefiance.png",
+   "DA_Artifact_DeathsDefiance": "https://cdn.metatft.com/file/metatft/items/da_artifact_deathsdefiance.png",
    "Eternal Pact": "https://cdn.metatft.com/file/metatft/items/da_artifact_eternalpact.png",
    "DA_Artifact_EternalPact": "https://cdn.metatft.com/file/metatft/items/da_artifact_eternalpact.png",
    "Fishbones": "https://cdn.metatft.com/file/metatft/items/da_artifact_fishbones.png",
@@ -327,7 +331,7 @@
    "DA_Artifact_Manazane": "https://cdn.metatft.com/file/metatft/items/da_artifact_manazane.png",
    "Mittens": "https://cdn.metatft.com/file/metatft/items/da_artifact_mittens.png",
    "DA_Artifact_Mittens": "https://cdn.metatft.com/file/metatft/items/da_artifact_mittens.png",
-   "Mogul'sMail": "https://cdn.metatft.com/file/metatft/items/da_artifact_mogulsmail.png",
+   "Mogul's Mail": "https://cdn.metatft.com/file/metatft/items/da_artifact_mogulsmail.png",
    "DA_Artifact_MogulsMail": "https://cdn.metatft.com/file/metatft/items/da_artifact_mogulsmail.png",
    "Flickerblades": "https://cdn.metatft.com/file/metatft/items/da_artifact_navoriflickerblade.png",
    "DA_Artifact_NavoriFlickerblade": "https://cdn.metatft.com/file/metatft/items/da_artifact_navoriflickerblade.png",
@@ -515,7 +519,7 @@
    "DA_VoidStaff": "https://cdn.metatft.com/file/metatft/items/da_voidstaff.png",
    "Radiant Void Staff": "https://cdn.metatft.com/file/metatft/items/da_voidstaffradiant.png",
    "DA_VoidStaffRadiant": "https://cdn.metatft.com/file/metatft/items/da_voidstaffradiant.png",
-   "Warmogs Armor": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
+   "Warmog's Armor": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
    "DA_WarmogsArmor": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
    "Radiant Warmog's Armor": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmorradiant.png",
    "DA_WarmogsArmorRadiant": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmorradiant.png",
@@ -613,6 +617,8 @@
    "DA_18_LuxUniqueTrait": "https://cdn.metatft.com/file/metatft/traits/da_18_luxuniquetrait.png",
    "Old Growth": "https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
    "DA_18_Maokai_UniqueTrait": "https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
+   "Prowler": null,
+   "TFT18_Prowler": null,
    "Thornmaiden": "https://cdn.metatft.com/file/metatft/traits/da_18_zyrauniquetrait.png",
    "DA_18_ZyraUniqueTrait": "https://cdn.metatft.com/file/metatft/traits/da_18_zyrauniquetrait.png",
    "Adaptor": "https://cdn.metatft.com/file/metatft/traits/da_18_adaptor.png",
@@ -707,6 +713,8 @@
    "DA_BronzeForLifeII": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifeii.png",
    "Build A Bud": "https://cdn.metatft.com/file/metatft/augments/da_buildabud.png",
    "DA_BuildABud": "https://cdn.metatft.com/file/metatft/augments/da_buildabud.png",
+   "Calculated Loss": "https://cdn.metatft.com/file/metatft/augments/da_calculatedloss.png",
+   "DA_CalculatedLoss": "https://cdn.metatft.com/file/metatft/augments/da_calculatedloss.png",
    "Called Shot": "https://cdn.metatft.com/file/metatft/augments/da_calledshot.png",
    "DA_CalledShot": "https://cdn.metatft.com/file/metatft/augments/da_calledshot.png",
    "Capital Gains I": "https://cdn.metatft.com/file/metatft/augments/da_capitalgainsi.png",
@@ -743,6 +751,8 @@
    "DA_CommerceCore": "https://cdn.metatft.com/file/metatft/augments/da_commercecore.png",
    "Construct a Companion": "https://cdn.metatft.com/file/metatft/augments/da_constructacompanion.png",
    "DA_ConstructACompanion": "https://cdn.metatft.com/file/metatft/augments/da_constructacompanion.png",
+   "Forge A Friend": "https://cdn.metatft.com/file/metatft/augments/da_forgeafriend.png",
+   "DA_ForgeAFriend": "https://cdn.metatft.com/file/metatft/augments/da_forgeafriend.png",
    "Corrosion": "https://cdn.metatft.com/file/metatft/augments/da_corrosion.png",
    "DA_Corrosion": "https://cdn.metatft.com/file/metatft/augments/da_corrosion.png",
    "Cursed Crown": "https://cdn.metatft.com/file/metatft/augments/da_cursedcrown.png",
@@ -1142,7 +1152,8 @@
    "DA_18_ResidualMagicPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplusplus.png",
    "Weight The Worth": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
    "DA_18_WeightTheWorth": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
-   "Wisp Rebate": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplus.png",
+   "Wisp Rebate": null,
+   "DA_18_WispRebate": null,
    "DA_18_WispRebatePlus": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplus.png",
    "Wisp Rebate+": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplusplus.png",
    "DA_18_WispRebatePlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplusplus.png",
@@ -1316,9 +1327,6 @@
    "DA_18_Counterspell_Prismatic": "https://cdn.metatft.com/file/metatft/charms/da_18_counterspell_prismatic.png",
    "DA_18_Counterspell_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_18_counterspell_upgrade.png",
    "DA_18_Counterspell": "https://cdn.metatft.com/file/metatft/charms/da_18_counterspell.png",
-   "Crystal Ball": "https://cdn.metatft.com/file/metatft/charms/da_crystalball18_upgrade.png",
-   "DA_CrystalBall18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_crystalball18_upgrade.png",
-   "DA_CrystalBall18": "https://cdn.metatft.com/file/metatft/charms/da_crystalball18.png",
    "Curio Cart": "https://cdn.metatft.com/file/metatft/charms/da_curiocart18_upgrade.png",
    "DA_CurioCart18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_curiocart18_upgrade.png",
    "DA_CurioCart18": "https://cdn.metatft.com/file/metatft/charms/da_curiocart18.png",
@@ -1335,6 +1343,12 @@
    "DA_Downpour18_Prismatic": "https://cdn.metatft.com/file/metatft/charms/da_downpour18_prismatic.png",
    "DA_Downpour18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_downpour18_upgrade.png",
    "DA_Downpour18": "https://cdn.metatft.com/file/metatft/charms/da_downpour18.png",
+   "Drizzle": null,
+   "DA_18_Drizzle_Upgrade": null,
+   "DA_18_Drizzle": null,
+   "Returning Friend": null,
+   "DA_FoundBigFriend18_Upgrade": null,
+   "DA_FoundBigFriend18": null,
    "Found Friend": "https://cdn.metatft.com/file/metatft/charms/da_foundfriend18_upgrade.png",
    "DA_FoundFriend18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_foundfriend18_upgrade.png",
    "DA_FoundFriend18": "https://cdn.metatft.com/file/metatft/charms/da_foundfriend18.png",
@@ -1390,6 +1404,9 @@
    "Good Loss": "https://cdn.metatft.com/file/metatft/charms/da_goodloss18_upgrade.png",
    "DA_GoodLoss18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_goodloss18_upgrade.png",
    "DA_GoodLoss18": "https://cdn.metatft.com/file/metatft/charms/da_goodloss18.png",
+   "Grove Armor": null,
+   "DA_18_GroveArmor_Upgrade": null,
+   "DA_18_GroveArmor": null,
    "Grow Up": "https://cdn.metatft.com/file/metatft/charms/da_growup18_upgrade.png",
    "DA_GrowUp18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_growup18_upgrade.png",
    "DA_GrowUp18": "https://cdn.metatft.com/file/metatft/charms/da_growup18.png",
@@ -1631,6 +1648,9 @@
    "Roly-Polys": "https://cdn.metatft.com/file/metatft/charms/da_rolypolys18.png",
    "DA_RolyPolys18": "https://cdn.metatft.com/file/metatft/charms/da_rolypolys18.png",
    "DA_RolyPolysUpgrade18": "https://cdn.metatft.com/file/metatft/charms/da_rolypolysupgrade18.png",
+   "Room for a Shroom": null,
+   "DA_RoomForAShroom": null,
+   "DA_RoomForAShroomUpgrade": null,
    "Salvager": "https://cdn.metatft.com/file/metatft/charms/da_salvager18.png",
    "DA_Salvager18": "https://cdn.metatft.com/file/metatft/charms/da_salvager18.png",
    "DA_SalvagerUpgrade18": "https://cdn.metatft.com/file/metatft/charms/da_salvagerupgrade18.png",
@@ -1673,7 +1693,7 @@
    "DA_18_SunfireSorcery": "https://cdn.metatft.com/file/metatft/charms/da_18_sunfiresorcery.png",
    "Supercritical": "https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
    "DA_18_SuperCritical": "https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
-   "DA_18_SuperCriticalUpgrade": "https://cdn.metatft.com/file/metatft/charms/da_18_supercriticalupgrade.png",
+   "DA_18_SupercriticalUpgrade": "https://cdn.metatft.com/file/metatft/charms/da_18_supercriticalupgrade.png",
    "Take One With Ya": "https://cdn.metatft.com/file/metatft/charms/da_takeonewithya18_upgrade.png",
    "DA_TakeOneWithYa18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_takeonewithya18_upgrade.png",
    "DA_TakeOneWithYa18": "https://cdn.metatft.com/file/metatft/charms/da_takeonewithya18.png",
@@ -2219,6 +2239,26 @@
    "status": 200,
    "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_fiddlesticks.png",
    "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_fiddlesticks.png"
+  },
+  {
+   "name": "Gnar",
+   "apiName": "TFT18_GnarBig",
+   "assetNames": [
+    "DA_18_GnarBig"
+   ],
+   "cost": 5,
+   "traits": [
+    "Elderwood",
+    "Sprykin",
+    "Brawler"
+   ],
+   "shopUnit": false,
+   "img": "https://cdn.metatft.com/file/metatft/champions/tft18_gnarbig.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/champions/tft18_gnarbig.png",
+   "file": "champions/tft18_gnarbig.png",
+   "status": 200,
+   "splash": "https://cdn.metatft.com/file/metatft/championsplashes/tft18_gnarbig.png",
+   "splash512": "https://cdn.metatft.com/cdn-cgi/image/width=512,height=303,format=auto/https://cdn.metatft.com/file/metatft/championsplashes/tft18_gnarbig.png"
   },
   {
    "name": "Gnar",
@@ -3352,6 +3392,16 @@
    "status": 200
   },
   {
+   "name": "Death's Defiance",
+   "apiName": "DA_Artifact_DeathsDefiance",
+   "kind": "artifact",
+   "composition": [],
+   "img": "https://cdn.metatft.com/file/metatft/items/da_artifact_deathsdefiance.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/items/da_artifact_deathsdefiance.png",
+   "file": "items/da_artifact_deathsdefiance.png",
+   "status": 200
+  },
+  {
    "name": "Eternal Pact",
    "apiName": "DA_Artifact_EternalPact",
    "kind": "artifact",
@@ -3492,7 +3542,7 @@
    "status": 200
   },
   {
-   "name": "Mogul'sMail",
+   "name": "Mogul's Mail",
    "apiName": "DA_Artifact_MogulsMail",
    "kind": "artifact",
    "composition": [],
@@ -4540,7 +4590,7 @@
    "status": 200
   },
   {
-   "name": "Warmogs Armor",
+   "name": "Warmog's Armor",
    "apiName": "DA_WarmogsArmor",
    "kind": "craftable",
    "composition": [
@@ -5093,6 +5143,18 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
    "file": "traits/da_18_maokai_uniquetrait.png",
    "status": 200
+  },
+  {
+   "name": "Prowler",
+   "apiName": "TFT18_Prowler",
+   "type": "unique",
+   "breakpoints": [
+    1
+   ],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Thornmaiden",
@@ -5704,6 +5766,18 @@
    "status": 200
   },
   {
+   "name": "Calculated Loss",
+   "apiName": "DA_CalculatedLoss",
+   "rarity": "Gold",
+   "tags": [
+    "econ"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_calculatedloss.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_calculatedloss.png",
+   "file": "augments/da_calculatedloss.png",
+   "status": 200
+  },
+  {
    "name": "Called Shot",
    "apiName": "DA_CalledShot",
    "rarity": "Silver",
@@ -5919,6 +5993,19 @@
    "img": "https://cdn.metatft.com/file/metatft/augments/da_constructacompanion.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_constructacompanion.png",
    "file": "augments/da_constructacompanion.png",
+   "status": 200
+  },
+  {
+   "name": "Forge A Friend",
+   "apiName": "DA_ForgeAFriend",
+   "rarity": "Silver",
+   "tags": [
+    "econ",
+    "misc"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_forgeafriend.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_forgeafriend.png",
+   "file": "augments/da_forgeafriend.png",
    "status": 200
   },
   {
@@ -8467,6 +8554,16 @@
   },
   {
    "name": "Wisp Rebate",
+   "apiName": "DA_18_WispRebate",
+   "rarity": "Silver",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Wisp Rebate",
    "apiName": "DA_18_WispRebatePlus",
    "rarity": "Silver",
    "tags": [
@@ -8720,7 +8817,7 @@
   {
    "name": "Chosen of the Sun",
    "apiName": "DA_18_SolarTraitAugment",
-   "rarity": "Gold",
+   "rarity": "Silver",
    "tags": [
     "trait",
     "scaling"
@@ -9547,24 +9644,6 @@
    "status": 200
   },
   {
-   "name": "Crystal Ball",
-   "apiName": "DA_CrystalBall18_Upgrade",
-   "tier": 1,
-   "img": "https://cdn.metatft.com/file/metatft/charms/da_crystalball18_upgrade.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/charms/da_crystalball18_upgrade.png",
-   "file": "charms/da_crystalball18_upgrade.png",
-   "status": 200
-  },
-  {
-   "name": "Crystal Ball",
-   "apiName": "DA_CrystalBall18",
-   "tier": 1,
-   "img": "https://cdn.metatft.com/file/metatft/charms/da_crystalball18.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/charms/da_crystalball18.png",
-   "file": "charms/da_crystalball18.png",
-   "status": 200
-  },
-  {
    "name": "Curio Cart",
    "apiName": "DA_CurioCart18_Upgrade",
    "tier": 2,
@@ -9662,6 +9741,42 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/charms/da_downpour18.png",
    "file": "charms/da_downpour18.png",
    "status": 200
+  },
+  {
+   "name": "Drizzle",
+   "apiName": "DA_18_Drizzle_Upgrade",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Drizzle",
+   "apiName": "DA_18_Drizzle",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Returning Friend",
+   "apiName": "DA_FoundBigFriend18_Upgrade",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Returning Friend",
+   "apiName": "DA_FoundBigFriend18",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Found Friend",
@@ -9995,6 +10110,24 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/charms/da_goodloss18.png",
    "file": "charms/da_goodloss18.png",
    "status": 200
+  },
+  {
+   "name": "Grove Armor",
+   "apiName": "DA_18_GroveArmor_Upgrade",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Grove Armor",
+   "apiName": "DA_18_GroveArmor",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Grow Up",
@@ -11464,6 +11597,24 @@
    "status": 200
   },
   {
+   "name": "Room for a Shroom",
+   "apiName": "DA_RoomForAShroom",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Room for a Shroom",
+   "apiName": "DA_RoomForAShroomUpgrade",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
    "name": "Salvager",
    "apiName": "DA_Salvager18",
    "tier": 1,
@@ -11717,7 +11868,7 @@
   },
   {
    "name": "Supercritical",
-   "apiName": "DA_18_SuperCriticalUpgrade",
+   "apiName": "DA_18_SupercriticalUpgrade",
    "tier": 2,
    "img": "https://cdn.metatft.com/file/metatft/charms/da_18_supercriticalupgrade.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/charms/da_18_supercriticalupgrade.png",
