@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-03T16:45:33+00:00",
+ "fetched_at": "2026-11-04T16:42:50+00:00",
  "set": "TFTSet18",
  "set_name": "Enchanted Wilds",
  "source": {
@@ -16,11 +16,11 @@
  "counts": {
   "units": 82,
   "items": 161,
-  "traits": 37,
-  "augments": 260,
+  "traits": 36,
+  "augments": 261,
   "charms": 376,
-  "ok": 891,
-  "missing": 29
+  "ok": 885,
+  "missing": 35
  },
  "byName": {
   "units": {
@@ -617,8 +617,6 @@
    "DA_18_LuxUniqueTrait": "https://cdn.metatft.com/file/metatft/traits/da_18_luxuniquetrait.png",
    "Old Growth": "https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
    "DA_18_Maokai_UniqueTrait": "https://cdn.metatft.com/file/metatft/traits/da_18_maokai_uniquetrait.png",
-   "Prowler": null,
-   "TFT18_Prowler": null,
    "Thornmaiden": "https://cdn.metatft.com/file/metatft/traits/da_18_zyrauniquetrait.png",
    "DA_18_ZyraUniqueTrait": "https://cdn.metatft.com/file/metatft/traits/da_18_zyrauniquetrait.png",
    "Adaptor": "https://cdn.metatft.com/file/metatft/traits/da_18_adaptor.png",
@@ -699,6 +697,10 @@
    "DA_BirthdayPresent": "https://cdn.metatft.com/file/metatft/augments/da_birthdaypresent.png",
    "Bodyguard Training": "https://cdn.metatft.com/file/metatft/augments/da_bodyguardtraining.png",
    "DA_BodyguardTraining": "https://cdn.metatft.com/file/metatft/augments/da_bodyguardtraining.png",
+   "Bonus Gifts": "https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
+   "DA_BonusGift": "https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
+   "Bonus Gifts+": "https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
+   "DA_BonusGiftPlus": "https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
    "Booster Pack": "https://cdn.metatft.com/file/metatft/augments/da_boosterpack.png",
    "DA_BoosterPack": "https://cdn.metatft.com/file/metatft/augments/da_boosterpack.png",
    "Booster Pack+": "https://cdn.metatft.com/file/metatft/augments/da_boosterpackplus.png",
@@ -707,6 +709,10 @@
    "DA_BoosterPackPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_boosterpackplusplus.png",
    "Boxing Lessons": "https://cdn.metatft.com/file/metatft/augments/da_boxinglessons.png",
    "DA_BoxingLessons": "https://cdn.metatft.com/file/metatft/augments/da_boxinglessons.png",
+   "Branching Out": null,
+   "DA_BranchingOut": null,
+   "Branching Out+": null,
+   "DA_BranchingOutPlus": null,
    "Bronze For Life I": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifei.png",
    "DA_BronzeForLifeI": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifei.png",
    "Bronze For Life II": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifeii.png",
@@ -721,6 +727,8 @@
    "DA_CapitalGainsI": "https://cdn.metatft.com/file/metatft/augments/da_capitalgainsi.png",
    "Capital Gains II": "https://cdn.metatft.com/file/metatft/augments/da_capitalgainsii.png",
    "DA_CapitalGainsII": "https://cdn.metatft.com/file/metatft/augments/da_capitalgainsii.png",
+   "Caretaker's Ally": "https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
+   "DA_18_CaretakersAlly": "https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
    "Celestial Blessing I": "https://cdn.metatft.com/file/metatft/augments/da_celestialblessingi.png",
    "DA_CelestialBlessingI": "https://cdn.metatft.com/file/metatft/augments/da_celestialblessingi.png",
    "Celestial Blessing II": "https://cdn.metatft.com/file/metatft/augments/da_celestialblessingii.png",
@@ -793,6 +801,8 @@
    "DA_FindYourCenter": "https://cdn.metatft.com/file/metatft/augments/da_findyourcenter.png",
    "Focused Fire": "https://cdn.metatft.com/file/metatft/augments/da_focusedfire.png",
    "DA_FocusedFire": "https://cdn.metatft.com/file/metatft/augments/da_focusedfire.png",
+   "FOURcing": "https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
+   "DA_18_FOURcing": "https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
    "Frontline Foundation": "https://cdn.metatft.com/file/metatft/augments/da_frontlinefoundation.png",
    "DA_FrontlineFoundation": "https://cdn.metatft.com/file/metatft/augments/da_frontlinefoundation.png",
    "Future Focused": "https://cdn.metatft.com/file/metatft/augments/da_futurefocused.png",
@@ -809,6 +819,8 @@
    "DA_GlassCannon_Gold": "https://cdn.metatft.com/file/metatft/augments/da_glasscannon_gold.png",
    "Going Long": "https://cdn.metatft.com/file/metatft/augments/da_goinglong.png",
    "DA_GoingLong": "https://cdn.metatft.com/file/metatft/augments/da_goinglong.png",
+   "Good For Something I": null,
+   "DA_GoodForSomethingI": null,
    "Group Hug I": "https://cdn.metatft.com/file/metatft/augments/da_grouphugi.png",
    "DA_GroupHugI": "https://cdn.metatft.com/file/metatft/augments/da_grouphugi.png",
    "Group Hug II": "https://cdn.metatft.com/file/metatft/augments/da_grouphugii.png",
@@ -849,6 +861,8 @@
    "DA_LevelUp": "https://cdn.metatft.com/file/metatft/augments/da_levelup.png",
    "Twin Guardians": "https://cdn.metatft.com/file/metatft/augments/da_lineup.png",
    "DA_Lineup": "https://cdn.metatft.com/file/metatft/augments/da_lineup.png",
+   "Loaded Dice": "https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
+   "DA_LoadedDice": "https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
    "Makeshift Armor I": "https://cdn.metatft.com/file/metatft/augments/da_makeshiftarmori.png",
    "DA_MakeshiftArmorI": "https://cdn.metatft.com/file/metatft/augments/da_makeshiftarmori.png",
    "Makeshift Armor II": "https://cdn.metatft.com/file/metatft/augments/da_makeshiftarmorii.png",
@@ -869,6 +883,8 @@
    "DA_NestingDollsPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_nestingdollsplusplus.png",
    "NO SCOUT NO PIVOT": "https://cdn.metatft.com/file/metatft/augments/da_noscoutnopivot.png",
    "DA_NoScoutNoPivot": "https://cdn.metatft.com/file/metatft/augments/da_noscoutnopivot.png",
+   "One, Two, Five!": null,
+   "DA_OneTwoFive": null,
    "Pandora's Bench": "https://cdn.metatft.com/file/metatft/augments/da_pandorasbench.png",
    "DA_PandorasBench": "https://cdn.metatft.com/file/metatft/augments/da_pandorasbench.png",
    "Patience Is A Virtue": "https://cdn.metatft.com/file/metatft/augments/da_patienceisavirtue.png",
@@ -914,6 +930,8 @@
    "DA_VerticalityII": "https://cdn.metatft.com/file/metatft/augments/da_verticalityii.png",
    "Verticality III": "https://cdn.metatft.com/file/metatft/augments/da_verticalityiii.png",
    "DA_VerticalityIII": "https://cdn.metatft.com/file/metatft/augments/da_verticalityiii.png",
+   "Weight The Worth": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
+   "DA_18_WeightTheWorth": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
    "Worth the Wait": "https://cdn.metatft.com/file/metatft/augments/da_worththewait.png",
    "DA_WorththeWait": "https://cdn.metatft.com/file/metatft/augments/da_worththewait.png",
    "Worth the Wait II": "https://cdn.metatft.com/file/metatft/augments/da_worththewaitii.png",
@@ -1042,8 +1060,12 @@
    "DA_OneBuffTwoBuff": "https://cdn.metatft.com/file/metatft/augments/da_onebufftwobuff.png",
    "Pandora's Items I": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsi.png",
    "DA_PandorasItemsI": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsi.png",
-   "Pandora's Items II": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsii.png",
-   "DA_PandorasItemsII": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsii.png",
+   "Pandora's Items II": null,
+   "DA_PandorasItemsIIMinus": null,
+   "Pandora's Items II+": null,
+   "DA_PandorasItemsIIPlus": null,
+   "Pandora's Items II++": null,
+   "DA_PandorasItemsIIPlusPlus": null,
    "Pandora's Items III": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiii.png",
    "DA_PandorasItemsIII": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiii.png",
    "Pilfer": "https://cdn.metatft.com/file/metatft/augments/da_pilfer.png",
@@ -1120,40 +1142,19 @@
    "DA_WeStickTogether": "https://cdn.metatft.com/file/metatft/augments/da_westicktogether.png",
    "Woven Magic": "https://cdn.metatft.com/file/metatft/augments/da_wovenmagic.png",
    "DA_WovenMagic": "https://cdn.metatft.com/file/metatft/augments/da_wovenmagic.png",
-   "Big Grab Bag": "https://cdn.metatft.com/file/metatft/augments/da_18_biggrabbag.png",
-   "DA_18_BigGrabBag": "https://cdn.metatft.com/file/metatft/augments/da_18_biggrabbag.png",
-   "Bonus Gifts": "https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
-   "DA_BonusGift": "https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
-   "Bonus Gifts+": "https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
-   "DA_BonusGiftPlus": "https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
-   "Branching Out": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingout.png",
-   "DA_18_BranchingOut": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingout.png",
-   "Branching Out+": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingoutplus.png",
-   "DA_18_BranchingOutPlus": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingoutplus.png",
-   "Caretaker's Ally": "https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
-   "DA_18_CaretakersAlly": "https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
+   "Big Grab Bag": null,
+   "DA_BigGrabBag": null,
    "Duo Queue": "https://cdn.metatft.com/file/metatft/augments/da_18_duoqueue.png",
    "DA_18_DuoQueue": "https://cdn.metatft.com/file/metatft/augments/da_18_duoqueue.png",
-   "FOURcing": "https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
-   "DA_18_FOURcing": "https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
-   "Good For Something I": "https://cdn.metatft.com/file/metatft/augments/da_18_goodforsomethingi.png",
-   "DA_18_GoodForSomethingI": "https://cdn.metatft.com/file/metatft/augments/da_18_goodforsomethingi.png",
-   "Loaded Dice": "https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
-   "DA_LoadedDice": "https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
    "Ones Two Three": "https://cdn.metatft.com/file/metatft/augments/da_18_onestwosthree.png",
    "DA_18_OnesTwosThree": "https://cdn.metatft.com/file/metatft/augments/da_18_onestwosthree.png",
-   "One, Two, Five!": "https://cdn.metatft.com/file/metatft/augments/da_18_onetwofive.png",
-   "DA_18_OneTwoFive": "https://cdn.metatft.com/file/metatft/augments/da_18_onetwofive.png",
    "Residual Magic": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagic.png",
    "DA_18_ResidualMagic": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagic.png",
    "Residual Magic +": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplus.png",
    "DA_18_ResidualMagicPlus": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplus.png",
    "Residual Magic ++": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplusplus.png",
    "DA_18_ResidualMagicPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplusplus.png",
-   "Weight The Worth": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
-   "DA_18_WeightTheWorth": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
-   "Wisp Rebate": null,
-   "DA_18_WispRebate": null,
+   "Wisp Rebate": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplus.png",
    "DA_18_WispRebatePlus": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplus.png",
    "Wisp Rebate+": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplusplus.png",
    "DA_18_WispRebatePlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplusplus.png",
@@ -1344,11 +1345,11 @@
    "DA_Downpour18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_downpour18_upgrade.png",
    "DA_Downpour18": "https://cdn.metatft.com/file/metatft/charms/da_downpour18.png",
    "Drizzle": null,
-   "DA_18_Drizzle_Upgrade": null,
    "DA_18_Drizzle": null,
+   "DA_18_DrizzleUpgrade": null,
    "Returning Friend": null,
-   "DA_FoundBigFriend18_Upgrade": null,
-   "DA_FoundBigFriend18": null,
+   "DA_ReturningFriend": null,
+   "DA_ReturningFriendUpgrade": null,
    "Found Friend": "https://cdn.metatft.com/file/metatft/charms/da_foundfriend18_upgrade.png",
    "DA_FoundFriend18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_foundfriend18_upgrade.png",
    "DA_FoundFriend18": "https://cdn.metatft.com/file/metatft/charms/da_foundfriend18.png",
@@ -1405,8 +1406,8 @@
    "DA_GoodLoss18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_goodloss18_upgrade.png",
    "DA_GoodLoss18": "https://cdn.metatft.com/file/metatft/charms/da_goodloss18.png",
    "Grove Armor": null,
-   "DA_18_GroveArmor_Upgrade": null,
    "DA_18_GroveArmor": null,
+   "DA_18_GroveArmorUpgrade": null,
    "Grow Up": "https://cdn.metatft.com/file/metatft/charms/da_growup18_upgrade.png",
    "DA_GrowUp18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_growup18_upgrade.png",
    "DA_GrowUp18": "https://cdn.metatft.com/file/metatft/charms/da_growup18.png",
@@ -1692,7 +1693,7 @@
    "DA_18_SunfireSorcery_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_18_sunfiresorcery_upgrade.png",
    "DA_18_SunfireSorcery": "https://cdn.metatft.com/file/metatft/charms/da_18_sunfiresorcery.png",
    "Supercritical": "https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
-   "DA_18_SuperCritical": "https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
+   "DA_18_Supercritical": "https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
    "DA_18_SupercriticalUpgrade": "https://cdn.metatft.com/file/metatft/charms/da_18_supercriticalupgrade.png",
    "Take One With Ya": "https://cdn.metatft.com/file/metatft/charms/da_takeonewithya18_upgrade.png",
    "DA_TakeOneWithYa18_Upgrade": "https://cdn.metatft.com/file/metatft/charms/da_takeonewithya18_upgrade.png",
@@ -5145,18 +5146,6 @@
    "status": 200
   },
   {
-   "name": "Prowler",
-   "apiName": "TFT18_Prowler",
-   "type": "unique",
-   "breakpoints": [
-    1
-   ],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
-  },
-  {
    "name": "Thornmaiden",
    "apiName": "DA_18_ZyraUniqueTrait",
    "type": "unique",
@@ -5684,6 +5673,30 @@
    "status": 200
   },
   {
+   "name": "Bonus Gifts",
+   "apiName": "DA_BonusGift",
+   "rarity": "Gold",
+   "tags": [
+    "econ"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
+   "file": "augments/da_bonusgift.png",
+   "status": 200
+  },
+  {
+   "name": "Bonus Gifts+",
+   "apiName": "DA_BonusGiftPlus",
+   "rarity": "Gold",
+   "tags": [
+    "econ"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
+   "file": "augments/da_bonusgiftplus.png",
+   "status": 200
+  },
+  {
    "name": "Booster Pack",
    "apiName": "DA_BoosterPack",
    "rarity": "Gold",
@@ -5730,6 +5743,26 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_boxinglessons.png",
    "file": "augments/da_boxinglessons.png",
    "status": 200
+  },
+  {
+   "name": "Branching Out",
+   "apiName": "DA_BranchingOut",
+   "rarity": "Silver",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Branching Out+",
+   "apiName": "DA_BranchingOutPlus",
+   "rarity": "Silver",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Bronze For Life I",
@@ -5811,6 +5844,19 @@
    "img": "https://cdn.metatft.com/file/metatft/augments/da_capitalgainsii.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_capitalgainsii.png",
    "file": "augments/da_capitalgainsii.png",
+   "status": 200
+  },
+  {
+   "name": "Caretaker's Ally",
+   "apiName": "DA_18_CaretakersAlly",
+   "rarity": "Silver",
+   "tags": [
+    "econ",
+    "scaling"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
+   "file": "augments/da_18_caretakersally.png",
    "status": 200
   },
   {
@@ -6261,6 +6307,19 @@
    "status": 200
   },
   {
+   "name": "FOURcing",
+   "apiName": "DA_18_FOURcing",
+   "rarity": "Gold",
+   "tags": [
+    "combat",
+    "econ"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
+   "file": "augments/da_18_fourcing.png",
+   "status": 200
+  },
+  {
    "name": "Frontline Foundation",
    "apiName": "DA_FrontlineFoundation",
    "rarity": "Gold",
@@ -6360,6 +6419,16 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_goinglong.png",
    "file": "augments/da_goinglong.png",
    "status": 200
+  },
+  {
+   "name": "Good For Something I",
+   "apiName": "DA_GoodForSomethingI",
+   "rarity": "Silver",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Group Hug I",
@@ -6608,6 +6677,19 @@
    "status": 200
   },
   {
+   "name": "Loaded Dice",
+   "apiName": "DA_LoadedDice",
+   "rarity": "Silver",
+   "tags": [
+    "econ",
+    "misc"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
+   "file": "augments/da_loadeddice.png",
+   "status": 200
+  },
+  {
    "name": "Makeshift Armor I",
    "apiName": "DA_MakeshiftArmorI",
    "rarity": "Silver",
@@ -6744,6 +6826,16 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_noscoutnopivot.png",
    "file": "augments/da_noscoutnopivot.png",
    "status": 200
+  },
+  {
+   "name": "One, Two, Five!",
+   "apiName": "DA_OneTwoFive",
+   "rarity": "Silver",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Pandora's Bench",
@@ -7027,6 +7119,19 @@
    "img": "https://cdn.metatft.com/file/metatft/augments/da_verticalityiii.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_verticalityiii.png",
    "file": "augments/da_verticalityiii.png",
+   "status": 200
+  },
+  {
+   "name": "Weight The Worth",
+   "apiName": "DA_18_WeightTheWorth",
+   "rarity": "Gold",
+   "tags": [
+    "econ",
+    "misc"
+   ],
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
+   "file": "augments/da_18_weighttheworth.png",
    "status": 200
   },
   {
@@ -7847,15 +7952,33 @@
   },
   {
    "name": "Pandora's Items II",
-   "apiName": "DA_PandorasItemsII",
+   "apiName": "DA_PandorasItemsIIMinus",
    "rarity": "Gold",
-   "tags": [
-    "items"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsii.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsii.png",
-   "file": "augments/da_pandorasitemsii.png",
-   "status": 200
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Pandora's Items II+",
+   "apiName": "DA_PandorasItemsIIPlus",
+   "rarity": "Gold",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Pandora's Items II++",
+   "apiName": "DA_PandorasItemsIIPlusPlus",
+   "rarity": "Gold",
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Pandora's Items III",
@@ -8351,78 +8474,13 @@
   },
   {
    "name": "Big Grab Bag",
-   "apiName": "DA_18_BigGrabBag",
+   "apiName": "DA_BigGrabBag",
    "rarity": "Gold",
-   "tags": [
-    "items"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_biggrabbag.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_biggrabbag.png",
-   "file": "augments/da_18_biggrabbag.png",
-   "status": 200
-  },
-  {
-   "name": "Bonus Gifts",
-   "apiName": "DA_BonusGift",
-   "rarity": "Gold",
-   "tags": [
-    "econ"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_bonusgift.png",
-   "file": "augments/da_bonusgift.png",
-   "status": 200
-  },
-  {
-   "name": "Bonus Gifts+",
-   "apiName": "DA_BonusGiftPlus",
-   "rarity": "Gold",
-   "tags": [
-    "econ"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_bonusgiftplus.png",
-   "file": "augments/da_bonusgiftplus.png",
-   "status": 200
-  },
-  {
-   "name": "Branching Out",
-   "apiName": "DA_18_BranchingOut",
-   "rarity": "Silver",
-   "tags": [
-    "items",
-    "trait"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingout.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_branchingout.png",
-   "file": "augments/da_18_branchingout.png",
-   "status": 200
-  },
-  {
-   "name": "Branching Out+",
-   "apiName": "DA_18_BranchingOutPlus",
-   "rarity": "Silver",
-   "tags": [
-    "items",
-    "trait"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingoutplus.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_branchingoutplus.png",
-   "file": "augments/da_18_branchingoutplus.png",
-   "status": 200
-  },
-  {
-   "name": "Caretaker's Ally",
-   "apiName": "DA_18_CaretakersAlly",
-   "rarity": "Silver",
-   "tags": [
-    "econ",
-    "scaling"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_caretakersally.png",
-   "file": "augments/da_18_caretakersally.png",
-   "status": 200
+   "tags": [],
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
   },
   {
    "name": "Duo Queue",
@@ -8438,44 +8496,6 @@
    "status": 200
   },
   {
-   "name": "FOURcing",
-   "apiName": "DA_18_FOURcing",
-   "rarity": "Gold",
-   "tags": [
-    "combat",
-    "econ"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_fourcing.png",
-   "file": "augments/da_18_fourcing.png",
-   "status": 200
-  },
-  {
-   "name": "Good For Something I",
-   "apiName": "DA_18_GoodForSomethingI",
-   "rarity": "Silver",
-   "tags": [
-    "econ"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_goodforsomethingi.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_goodforsomethingi.png",
-   "file": "augments/da_18_goodforsomethingi.png",
-   "status": 200
-  },
-  {
-   "name": "Loaded Dice",
-   "apiName": "DA_LoadedDice",
-   "rarity": "Silver",
-   "tags": [
-    "econ",
-    "misc"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_loadeddice.png",
-   "file": "augments/da_loadeddice.png",
-   "status": 200
-  },
-  {
    "name": "Ones Two Three",
    "apiName": "DA_18_OnesTwosThree",
    "rarity": "Silver",
@@ -8485,19 +8505,6 @@
    "img": "https://cdn.metatft.com/file/metatft/augments/da_18_onestwosthree.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_onestwosthree.png",
    "file": "augments/da_18_onestwosthree.png",
-   "status": 200
-  },
-  {
-   "name": "One, Two, Five!",
-   "apiName": "DA_18_OneTwoFive",
-   "rarity": "Silver",
-   "tags": [
-    "items",
-    "econ"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_onetwofive.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_onetwofive.png",
-   "file": "augments/da_18_onetwofive.png",
    "status": 200
   },
   {
@@ -8538,29 +8545,6 @@
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplusplus.png",
    "file": "augments/da_18_residualmagicplusplus.png",
    "status": 200
-  },
-  {
-   "name": "Weight The Worth",
-   "apiName": "DA_18_WeightTheWorth",
-   "rarity": "Gold",
-   "tags": [
-    "econ",
-    "misc"
-   ],
-   "img": "https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
-   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_18_weighttheworth.png",
-   "file": "augments/da_18_weighttheworth.png",
-   "status": 200
-  },
-  {
-   "name": "Wisp Rebate",
-   "apiName": "DA_18_WispRebate",
-   "rarity": "Silver",
-   "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
   },
   {
    "name": "Wisp Rebate",
@@ -9744,15 +9728,6 @@
   },
   {
    "name": "Drizzle",
-   "apiName": "DA_18_Drizzle_Upgrade",
-   "tier": 1,
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
-  },
-  {
-   "name": "Drizzle",
    "apiName": "DA_18_Drizzle",
    "tier": 1,
    "img": null,
@@ -9761,8 +9736,8 @@
    "status": 404
   },
   {
-   "name": "Returning Friend",
-   "apiName": "DA_FoundBigFriend18_Upgrade",
+   "name": "Drizzle",
+   "apiName": "DA_18_DrizzleUpgrade",
    "tier": 1,
    "img": null,
    "thumb": null,
@@ -9771,7 +9746,16 @@
   },
   {
    "name": "Returning Friend",
-   "apiName": "DA_FoundBigFriend18",
+   "apiName": "DA_ReturningFriend",
+   "tier": 1,
+   "img": null,
+   "thumb": null,
+   "file": null,
+   "status": 404
+  },
+  {
+   "name": "Returning Friend",
+   "apiName": "DA_ReturningFriendUpgrade",
    "tier": 1,
    "img": null,
    "thumb": null,
@@ -10113,7 +10097,7 @@
   },
   {
    "name": "Grove Armor",
-   "apiName": "DA_18_GroveArmor_Upgrade",
+   "apiName": "DA_18_GroveArmor",
    "tier": 1,
    "img": null,
    "thumb": null,
@@ -10122,7 +10106,7 @@
   },
   {
    "name": "Grove Armor",
-   "apiName": "DA_18_GroveArmor",
+   "apiName": "DA_18_GroveArmorUpgrade",
    "tier": 1,
    "img": null,
    "thumb": null,
@@ -11859,7 +11843,7 @@
   },
   {
    "name": "Supercritical",
-   "apiName": "DA_18_SuperCritical",
+   "apiName": "DA_18_Supercritical",
    "tier": 2,
    "img": "https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
    "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/charms/da_18_supercritical.png",
