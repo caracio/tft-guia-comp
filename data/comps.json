@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-12T17:16:33+00:00",
+ "fetched_at": "2026-11-13T16:52:47+00:00",
  "source": {
   "site": "MetaTFT",
   "attribution": "Data by MetaTFT (https://www.metatft.com/comps)",
@@ -15,8 +15,8 @@
  "patch": null,
  "cluster_id": 426,
  "queue_id": 1100,
- "total_games": 1141791,
- "source_updated_at": "2026-11-12T17:15:27+00:00",
+ "total_games": 1122253,
+ "source_updated_at": "2026-11-13T16:50:40+00:00",
  "not_provided_by_source": [
   "patch label",
   "top4Rate",
@@ -34,9 +34,9 @@
    "id": "426007",
    "name": "Riftbeast Brambleback",
    "tier": "S",
-   "avgPlacement": 4.162,
-   "playRate": 7.32,
-   "games": 83606,
+   "avgPlacement": 4.157,
+   "playRate": 7.3,
+   "games": 81923,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -114,8 +114,8 @@
      "cost": 4,
      "stars": 2,
      "items": [
-      "Protector's Vow",
-      "Protector's Vow",
+      "Adaptive Helm",
+      "Evenshroud",
       "Protector's Vow"
      ],
      "carry": true,
@@ -438,9 +438,9 @@
      [
       null,
       null,
-      "Taric",
-      "Krug",
       "Sentinel",
+      "Sett",
+      "Krug",
       null,
       null
      ],
@@ -458,7 +458,7 @@
       null,
       null,
       "Elder Dragon",
-      "Sett",
+      "Taric",
       null,
       null
      ],
@@ -477,48 +477,48 @@
      "cell_7": "Brambleback",
      "cell_8": "Murkwolf",
      "cell_11": "Elder Dragon",
-     "cell_12": "Sett",
-     "cell_24": "Taric",
-     "cell_25": "Krug",
-     "cell_26": "Sentinel"
+     "cell_12": "Taric",
+     "cell_24": "Sentinel",
+     "cell_25": "Sett",
+     "cell_26": "Krug"
     }
    },
    "levelTiming": {
     "levels": {
      "5": {
       "stage": "2-5",
-      "games": 19342,
+      "games": 20353,
       "avgRerolls": 0.8
      },
      "6": {
       "stage": "3-2",
-      "games": 19561,
+      "games": 20547,
       "avgRerolls": 1.1
      },
      "7": {
       "stage": "3-6",
-      "games": 19434,
-      "avgRerolls": 2.5
+      "games": 20443,
+      "avgRerolls": 2.4
      },
      "8": {
       "stage": "4-2",
-      "games": 19848,
-      "avgRerolls": 18.8
+      "games": 20868,
+      "avgRerolls": 18.3
      },
      "9": {
       "stage": "5-6",
-      "games": 12612,
-      "avgRerolls": 19.7
+      "games": 13319,
+      "avgRerolls": 19.3
      }
     },
     "rollLevel": "9",
     "finalLevelPct": {
-     "10": 8.9,
+     "10": 8.8,
      "5": 0.1,
      "6": 0.2,
      "7": 1.8,
-     "8": 34.9,
-     "9": 54.1
+     "8": 34.8,
+     "9": 54.2
     },
     "style": "Fast 8"
    },
@@ -528,7 +528,7 @@
      "id": "DA_GuinsoosRageblade",
      "img": "https://cdn.metatft.com/file/metatft/items/da_guinsoosrageblade.png",
      "perGame": 0.97,
-     "avgPlacement": 4.1261,
+     "avgPlacement": 4.1186,
      "bestOn": [
       "Brambleback",
       "Elder Dragon"
@@ -539,7 +539,7 @@
      "id": "DA_EdgeOfNight",
      "img": "https://cdn.metatft.com/file/metatft/items/da_edgeofnight.png",
      "perGame": 0.87,
-     "avgPlacement": 4.0388,
+     "avgPlacement": 4.0321,
      "bestOn": [
       "Brambleback",
       "Elder Dragon"
@@ -550,7 +550,7 @@
      "id": "DA_GargoyleStoneplate",
      "img": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
      "perGame": 0.79,
-     "avgPlacement": 4.0105,
+     "avgPlacement": 4.003,
      "bestOn": [
       "Krug",
       "Sentinel"
@@ -561,7 +561,7 @@
      "id": "DA_Quicksilver",
      "img": "https://cdn.metatft.com/file/metatft/items/da_quicksilver.png",
      "perGame": 0.59,
-     "avgPlacement": 3.9968,
+     "avgPlacement": 3.9951,
      "bestOn": [
       "Brambleback",
       "Elder Dragon"
@@ -571,8 +571,8 @@
      "name": "Spirit Visage",
      "id": "DA_SpiritVisage",
      "img": "https://cdn.metatft.com/file/metatft/items/da_spiritvisage.png",
-     "perGame": 0.58,
-     "avgPlacement": 4.0113,
+     "perGame": 0.59,
+     "avgPlacement": 4.01,
      "bestOn": [
       "Krug",
       "Sentinel"
@@ -583,7 +583,7 @@
      "id": "DA_WarmogsArmor",
      "img": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
      "perGame": 0.58,
-     "avgPlacement": 3.9686,
+     "avgPlacement": 3.9722,
      "bestOn": [
       "Krug",
       "Sentinel"
@@ -594,7 +594,7 @@
      "id": "DA_InfinityEdge",
      "img": "https://cdn.metatft.com/file/metatft/items/da_infinityedge.png",
      "perGame": 0.56,
-     "avgPlacement": 3.8916,
+     "avgPlacement": 3.8831,
      "bestOn": [
       "Elder Dragon",
       "Murkwolf"
@@ -605,7 +605,7 @@
      "id": "DA_LastWhisper",
      "img": "https://cdn.metatft.com/file/metatft/items/da_lastwhisper.png",
      "perGame": 0.48,
-     "avgPlacement": 3.8635,
+     "avgPlacement": 3.8527,
      "bestOn": [
       "Elder Dragon",
       "Cinderling"
@@ -616,7 +616,7 @@
      "id": "DA_ProtectorsVow",
      "img": "https://cdn.metatft.com/file/metatft/items/da_protectorsvow.png",
      "perGame": 0.4,
-     "avgPlacement": 3.838,
+     "avgPlacement": 3.8349,
      "bestOn": [
       "Sentinel",
       "Krug"
@@ -627,7 +627,7 @@
      "id": "DA_HandOfJustice",
      "img": "https://cdn.metatft.com/file/metatft/items/da_handofjustice.png",
      "perGame": 0.32,
-     "avgPlacement": 3.929,
+     "avgPlacement": 3.9167,
      "bestOn": [
       "Brambleback",
       "Elder Dragon"
@@ -669,13 +669,13 @@
      "name": "Recurve Bow",
      "id": "DA_Component_RecurveBow",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
-     "perGame": 2.21
+     "perGame": 2.22
     },
     {
      "name": "Tear Of The Goddess",
      "id": "DA_Component_TearOfTheGoddess",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
-     "perGame": 2.13
+     "perGame": 2.12
     },
     {
      "name": "Needlessly Large Rod",
@@ -729,14 +729,9 @@
    },
    "trend": [
     {
-     "day": "2026-11-05",
-     "avgPlacement": 4.1886,
-     "games": 7743
-    },
-    {
      "day": "2026-11-06",
-     "avgPlacement": 4.1761,
-     "games": 28180
+     "avgPlacement": 4.1827,
+     "games": 8012
     },
     {
      "day": "2026-11-07",
@@ -760,13 +755,18 @@
     },
     {
      "day": "2026-11-11",
-     "avgPlacement": 4.1543,
-     "games": 28042
+     "avgPlacement": 4.1542,
+     "games": 28072
     },
     {
      "day": "2026-11-12",
-     "avgPlacement": 4.1489,
-     "games": 19180
+     "avgPlacement": 4.1565,
+     "games": 27161
+    },
+    {
+     "day": "2026-11-13",
+     "avgPlacement": 4.1619,
+     "games": 19124
     }
    ]
   },
@@ -774,9 +774,9 @@
    "id": "426029",
    "name": "Adaptor Master Yi",
    "tier": "S",
-   "avgPlacement": 4.194,
-   "playRate": 1.48,
-   "games": 16863,
+   "avgPlacement": 4.166,
+   "playRate": 1.47,
+   "games": 16476,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -852,7 +852,7 @@
      "name": "Vi",
      "id": "DA_Vi18",
      "cost": 3,
-     "stars": 2,
+     "stars": 3,
      "items": [
       "Brawler Emblem",
       "Gargoyle Stoneplate",
@@ -906,8 +906,7 @@
      "Rakan": "https://cdn.metatft.com/file/metatft/champions/tft18_rakan.png",
      "Gromp": "https://cdn.metatft.com/file/metatft/champions/tft18_gromp.png",
      "Karma": "https://cdn.metatft.com/file/metatft/champions/tft18_karma.png",
-     "Sentinel": "https://cdn.metatft.com/file/metatft/champions/tft18_sentinel.png",
-     "Taric": "https://cdn.metatft.com/file/metatft/champions/tft18_taric.png"
+     "Sentinel": "https://cdn.metatft.com/file/metatft/champions/tft18_sentinel.png"
     },
     "items": {
      "Blackthorn Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemblackthorn.png",
@@ -979,7 +978,6 @@
      "Spatula": "https://cdn.metatft.com/file/metatft/items/da_component_spatula.png",
      "Tear Of The Goddess": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
      "Crownguard": "https://cdn.metatft.com/file/metatft/items/da_crownguard.png",
-     "Radiant Crownguard": "https://cdn.metatft.com/file/metatft/items/da_crownguardradiant.png",
      "Deathblade": "https://cdn.metatft.com/file/metatft/items/da_deathblade.png",
      "Radiant Deathblade": "https://cdn.metatft.com/file/metatft/items/da_deathbladeradiant.png",
      "Dragon's Claw": "https://cdn.metatft.com/file/metatft/items/da_dragonsclaw.png",
@@ -994,7 +992,6 @@
      "Radiant Guinsoo's Rageblade": "https://cdn.metatft.com/file/metatft/items/da_guinsoosragebladeradiant.png",
      "Hand Of Justice": "https://cdn.metatft.com/file/metatft/items/da_handofjustice.png",
      "Radiant Hand of Justice": "https://cdn.metatft.com/file/metatft/items/da_handofjusticeradiant.png",
-     "Radiant Health Potion": "https://cdn.metatft.com/file/metatft/items/da_healthpotion18_radiant.png",
      "Hextech Gunblade": "https://cdn.metatft.com/file/metatft/items/da_hextechgunblade.png",
      "Infinity Edge": "https://cdn.metatft.com/file/metatft/items/da_infinityedge.png",
      "Radiant Infinity Edge": "https://cdn.metatft.com/file/metatft/items/da_infinityedgeradiant.png",
@@ -1026,6 +1023,7 @@
      "Striker's Flail": "https://cdn.metatft.com/file/metatft/items/da_strikersflail.png",
      "Radiant Striker's Flail": "https://cdn.metatft.com/file/metatft/items/da_strikersflailradiant.png",
      "Sunfire Cape": "https://cdn.metatft.com/file/metatft/items/da_sunfirecape.png",
+     "Radiant Sunfire Cape": "https://cdn.metatft.com/file/metatft/items/da_sunfirecape_radiant.png",
      "Tactician's Cape": "https://cdn.metatft.com/file/metatft/items/da_tacticianscape.png",
      "Tacticians Crown": "https://cdn.metatft.com/file/metatft/items/da_tacticianscrown.png",
      "Tacticians Shield": "https://cdn.metatft.com/file/metatft/items/da_tacticiansshield.png",
@@ -1184,18 +1182,6 @@
      "Nidalee",
      "Sentinel",
      "Vi"
-    ],
-    "10": [
-     "Master Yi",
-     "Sett",
-     "Yorick",
-     "Gromp",
-     "Kog'Maw",
-     "Krug",
-     "Nidalee",
-     "Sentinel",
-     "Taric",
-     "Vi"
     ]
    },
    "positioning": {
@@ -1251,33 +1237,32 @@
     "levels": {
      "5": {
       "stage": "2-6",
-      "games": 3681,
+      "games": 3948,
       "avgRerolls": 0.2
      },
      "6": {
       "stage": "3-2",
-      "games": 3764,
-      "avgRerolls": 0.9
+      "games": 4037,
+      "avgRerolls": 0.7
      },
      "7": {
       "stage": "3-6",
-      "games": 3766,
-      "avgRerolls": 45.5
+      "games": 4026,
+      "avgRerolls": 45.1
      },
      "8": {
       "stage": "6-1",
-      "games": 2129,
-      "avgRerolls": 12.1
+      "games": 2288,
+      "avgRerolls": 12.9
      }
     },
     "rollLevel": "7",
     "finalLevelPct": {
-     "10": 0.6,
-     "5": 0.1,
+     "10": 0.5,
      "6": 0.3,
-     "7": 48.5,
-     "8": 42.2,
-     "9": 8.3
+     "7": 48.2,
+     "8": 42.4,
+     "9": 8.6
     },
     "style": "lvl 7"
    },
@@ -1287,7 +1272,7 @@
      "id": "DA_GuinsoosRageblade",
      "img": "https://cdn.metatft.com/file/metatft/items/da_guinsoosrageblade.png",
      "perGame": 1.25,
-     "avgPlacement": 4.0553,
+     "avgPlacement": 4.0268,
      "bestOn": [
       "Master Yi",
       "Nidalee"
@@ -1298,7 +1283,7 @@
      "id": "DA_GargoyleStoneplate",
      "img": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
      "perGame": 0.99,
-     "avgPlacement": 4.0026,
+     "avgPlacement": 3.9647,
      "bestOn": [
       "Vi",
       "Krug"
@@ -1309,7 +1294,7 @@
      "id": "DA_EdgeOfNight",
      "img": "https://cdn.metatft.com/file/metatft/items/da_edgeofnight.png",
      "perGame": 0.79,
-     "avgPlacement": 4.1167,
+     "avgPlacement": 4.0967,
      "bestOn": [
       "Master Yi",
       "Nidalee"
@@ -1320,7 +1305,7 @@
      "id": "DA_SpearOfShojin",
      "img": "https://cdn.metatft.com/file/metatft/items/da_spearofshojin.png",
      "perGame": 0.62,
-     "avgPlacement": 3.9497,
+     "avgPlacement": 3.928,
      "bestOn": [
       "Kog'Maw",
       "Nidalee"
@@ -1330,8 +1315,8 @@
      "name": "Warmog's Armor",
      "id": "DA_WarmogsArmor",
      "img": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
-     "perGame": 0.61,
-     "avgPlacement": 3.9452,
+     "perGame": 0.62,
+     "avgPlacement": 3.9182,
      "bestOn": [
       "Vi",
       "Krug"
@@ -1342,7 +1327,7 @@
      "id": "DA_SpiritVisage",
      "img": "https://cdn.metatft.com/file/metatft/items/da_spiritvisage.png",
      "perGame": 0.52,
-     "avgPlacement": 3.9866,
+     "avgPlacement": 3.9619,
      "bestOn": [
       "Vi",
       "Krug"
@@ -1352,8 +1337,8 @@
      "name": "Brawler Emblem",
      "id": "DA_18_EmblemBrawler",
      "img": "https://cdn.metatft.com/file/metatft/items/da_18_emblembrawler.png",
-     "perGame": 0.51,
-     "avgPlacement": 3.9694,
+     "perGame": 0.5,
+     "avgPlacement": 3.9268,
      "bestOn": [
       "Master Yi",
       "Vi"
@@ -1363,8 +1348,8 @@
      "name": "Red Buff",
      "id": "DA_RedBuff",
      "img": "https://cdn.metatft.com/file/metatft/items/da_redbuff.png",
-     "perGame": 0.4,
-     "avgPlacement": 3.778,
+     "perGame": 0.41,
+     "avgPlacement": 3.7824,
      "bestOn": [
       "Kog'Maw",
       "Nidalee"
@@ -1375,7 +1360,7 @@
      "id": "DA_ThiefsGloves",
      "img": "https://cdn.metatft.com/file/metatft/items/da_thiefsgloves.png",
      "perGame": 0.36,
-     "avgPlacement": 3.9163,
+     "avgPlacement": 3.909,
      "bestOn": [
       "Sett",
       "Krug"
@@ -1385,8 +1370,8 @@
      "name": "Titan's Resolve",
      "id": "DA_TitansResolve",
      "img": "https://cdn.metatft.com/file/metatft/items/da_titansresolve.png",
-     "perGame": 0.32,
-     "avgPlacement": 4.0949,
+     "perGame": 0.31,
+     "avgPlacement": 4.0665,
      "bestOn": [
       "Master Yi",
       "Nidalee"
@@ -1398,31 +1383,31 @@
      "name": "Giant's Belt",
      "id": "DA_Component_GiantsBelt",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_giantsbelt.png",
-     "perGame": 3.04
+     "perGame": 3.05
     },
     {
      "name": "Chain Vest",
      "id": "DA_Component_ChainVest",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_chainvest.png",
-     "perGame": 3.02
+     "perGame": 3.01
     },
     {
      "name": "Recurve Bow",
      "id": "DA_Component_RecurveBow",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
-     "perGame": 2.88
+     "perGame": 2.89
     },
     {
      "name": "B.F. Sword",
      "id": "DA_Component_BFSword",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_bfsword.png",
-     "perGame": 2.57
+     "perGame": 2.59
     },
     {
      "name": "Needlessly Large Rod",
      "id": "DA_Component_NeedlesslyLargeRod",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_needlesslylargerod.png",
-     "perGame": 2.49
+     "perGame": 2.48
     },
     {
      "name": "Negatron Cloak",
@@ -1434,7 +1419,7 @@
      "name": "Tear Of The Goddess",
      "id": "DA_Component_TearOfTheGoddess",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
-     "perGame": 2.15
+     "perGame": 2.14
     },
     {
      "name": "Sparring Gloves",
@@ -1446,7 +1431,7 @@
      "name": "Frying Pan",
      "id": "DA_Component_FryingPan",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_fryingpan.png",
-     "perGame": 0.62
+     "perGame": 0.61
     },
     {
      "name": "Spatula",
@@ -1539,14 +1524,9 @@
    },
    "trend": [
     {
-     "day": "2026-11-05",
-     "avgPlacement": 4.2026,
-     "games": 1900
-    },
-    {
      "day": "2026-11-06",
-     "avgPlacement": 4.2163,
-     "games": 6358
+     "avgPlacement": 4.1658,
+     "games": 1822
     },
     {
      "day": "2026-11-07",
@@ -1560,8 +1540,8 @@
     },
     {
      "day": "2026-11-09",
-     "avgPlacement": 4.1806,
-     "games": 5698
+     "avgPlacement": 4.1811,
+     "games": 5699
     },
     {
      "day": "2026-11-10",
@@ -1570,13 +1550,18 @@
     },
     {
      "day": "2026-11-11",
-     "avgPlacement": 4.2198,
-     "games": 5532
+     "avgPlacement": 4.2193,
+     "games": 5537
     },
     {
      "day": "2026-11-12",
-     "avgPlacement": 4.1877,
-     "games": 3755
+     "avgPlacement": 4.154,
+     "games": 5514
+    },
+    {
+     "day": "2026-11-13",
+     "avgPlacement": 4.1363,
+     "games": 3785
     }
    ]
   },
@@ -1584,9 +1569,9 @@
    "id": "426000",
    "name": "Defender Rengar",
    "tier": "S",
-   "avgPlacement": 4.209,
-   "playRate": 0.66,
-   "games": 7502,
+   "avgPlacement": 4.23,
+   "playRate": 0.65,
+   "games": 7274,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -1630,8 +1615,8 @@
      "stars": 3,
      "items": [
       "Bramble Vest",
-      "Spirit Visage",
-      "Warmog's Armor"
+      "Dragon's Claw",
+      "Spirit Visage"
      ],
      "carry": true,
      "img": "https://cdn.metatft.com/file/metatft/champions/tft18_rammus.png"
@@ -1664,9 +1649,9 @@
      "cost": 3,
      "stars": 2,
      "items": [
-      "Crownguard",
+      "Evenshroud",
       "Ionic Spark",
-      "Warmog's Armor"
+      "Sunfire Cape"
      ],
      "carry": true,
      "img": "https://cdn.metatft.com/file/metatft/champions/tft18_fiddlesticks.png"
@@ -1756,6 +1741,7 @@
      "Rapid Firecannon": "https://cdn.metatft.com/file/metatft/items/da_artifact_rapidfirecannon.png",
      "Seeker's Armguard": "https://cdn.metatft.com/file/metatft/items/da_artifact_seekersarmguard.png",
      "Silvermere Dawn": "https://cdn.metatft.com/file/metatft/items/da_artifact_silvermeredawn.png",
+     "Statikk Shiv": "https://cdn.metatft.com/file/metatft/items/da_artifact_statikkshiv.png",
      "The Indomitable": "https://cdn.metatft.com/file/metatft/items/da_artifact_theindomitable.png",
      "Titanic Hydra": "https://cdn.metatft.com/file/metatft/items/da_artifact_titanichydra.png",
      "Void Gauntlet": "https://cdn.metatft.com/file/metatft/items/da_artifact_voidgauntlet.png",
@@ -1768,17 +1754,18 @@
      "Bramble Vest": "https://cdn.metatft.com/file/metatft/items/da_bramblevest.png",
      "B.F. Sword": "https://cdn.metatft.com/file/metatft/items/da_component_bfsword.png",
      "Chain Vest": "https://cdn.metatft.com/file/metatft/items/da_component_chainvest.png",
-     "Frying Pan": "https://cdn.metatft.com/file/metatft/items/da_component_fryingpan.png",
      "Giant's Belt": "https://cdn.metatft.com/file/metatft/items/da_component_giantsbelt.png",
      "Needlessly Large Rod": "https://cdn.metatft.com/file/metatft/items/da_component_needlesslylargerod.png",
      "Negatron Cloak": "https://cdn.metatft.com/file/metatft/items/da_component_negatroncloak.png",
      "Recurve Bow": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
      "Sparring Gloves": "https://cdn.metatft.com/file/metatft/items/da_component_sparringgloves.png",
+     "Spatula": "https://cdn.metatft.com/file/metatft/items/da_component_spatula.png",
      "Tear Of The Goddess": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
      "Crownguard": "https://cdn.metatft.com/file/metatft/items/da_crownguard.png",
      "Deathblade": "https://cdn.metatft.com/file/metatft/items/da_deathblade.png",
      "Dragon's Claw": "https://cdn.metatft.com/file/metatft/items/da_dragonsclaw.png",
      "Edge of Night": "https://cdn.metatft.com/file/metatft/items/da_edgeofnight.png",
+     "Radiant Edge of Night": "https://cdn.metatft.com/file/metatft/items/da_edgeofnightradiant.png",
      "Evenshroud": "https://cdn.metatft.com/file/metatft/items/da_evenshroud.png",
      "Gargoyle Stoneplate": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
      "Radiant Gargoyle Stoneplate": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate_radiant.png",
@@ -1796,9 +1783,7 @@
      "Radiant Jeweled Gauntlet": "https://cdn.metatft.com/file/metatft/items/da_jeweledgauntletradiant.png",
      "Kraken's Fury": "https://cdn.metatft.com/file/metatft/items/da_krakensfury.png",
      "Last Whisper": "https://cdn.metatft.com/file/metatft/items/da_lastwhisper.png",
-     "Mana Potion": "https://cdn.metatft.com/file/metatft/items/da_manapotion18.png",
      "Morellonomicon": "https://cdn.metatft.com/file/metatft/items/da_morellonomicon.png",
-     "Radiant Morellonomicon": "https://cdn.metatft.com/file/metatft/items/da_morellonomiconradiant.png",
      "Nashor's Tooth": "https://cdn.metatft.com/file/metatft/items/da_nashorstooth.png",
      "Protector's Vow": "https://cdn.metatft.com/file/metatft/items/da_protectorsvow.png",
      "Quicksilver": "https://cdn.metatft.com/file/metatft/items/da_quicksilver.png",
@@ -2034,36 +2019,36 @@
     "levels": {
      "4": {
       "stage": "2-2",
-      "games": 1941,
+      "games": 2066,
       "avgRerolls": 0.6
      },
      "5": {
       "stage": "2-6",
-      "games": 1979,
+      "games": 2102,
       "avgRerolls": 0.2
      },
      "6": {
       "stage": "3-2",
-      "games": 2023,
-      "avgRerolls": 0.7
+      "games": 2152,
+      "avgRerolls": 0.8
      },
      "7": {
       "stage": "3-6",
-      "games": 2002,
-      "avgRerolls": 48.0
+      "games": 2132,
+      "avgRerolls": 48.1
      },
      "8": {
-      "stage": "6-1",
-      "games": 1142,
-      "avgRerolls": 12.3
+      "stage": "6-2",
+      "games": 875,
+      "avgRerolls": 12.2
      }
     },
     "rollLevel": "7",
     "finalLevelPct": {
      "10": 0.7,
-     "6": 0.3,
-     "7": 54.6,
-     "8": 36.1,
+     "6": 0.2,
+     "7": 54.8,
+     "8": 36.0,
      "9": 8.3
     },
     "style": "lvl 7"
@@ -2074,7 +2059,7 @@
      "id": "DA_18_EmblemDefender",
      "img": "https://cdn.metatft.com/file/metatft/items/da_18_emblemdefender.png",
      "perGame": 0.99,
-     "avgPlacement": 4.1478,
+     "avgPlacement": 4.1609,
      "bestOn": [
       "Rengar",
       "Soraka"
@@ -2085,7 +2070,7 @@
      "id": "DA_ArchangelsStaff",
      "img": "https://cdn.metatft.com/file/metatft/items/da_archangelsstaff.png",
      "perGame": 0.75,
-     "avgPlacement": 3.9934,
+     "avgPlacement": 4.0026,
      "bestOn": [
       "Cassiopeia",
       "Fiddlesticks"
@@ -2095,8 +2080,8 @@
      "name": "Hextech Gunblade",
      "id": "DA_HextechGunblade",
      "img": "https://cdn.metatft.com/file/metatft/items/da_hextechgunblade.png",
-     "perGame": 0.72,
-     "avgPlacement": 4.0344,
+     "perGame": 0.71,
+     "avgPlacement": 4.0445,
      "bestOn": [
       "Cassiopeia",
       "Fiddlesticks"
@@ -2106,11 +2091,11 @@
      "name": "Guinsoo's Rageblade",
      "id": "DA_GuinsoosRageblade",
      "img": "https://cdn.metatft.com/file/metatft/items/da_guinsoosrageblade.png",
-     "perGame": 0.71,
-     "avgPlacement": 4.1685,
+     "perGame": 0.7,
+     "avgPlacement": 4.2041,
      "bestOn": [
       "Rengar",
-      "Tristana"
+      "Cassiopeia"
      ]
     },
     {
@@ -2118,7 +2103,7 @@
      "id": "DA_TitansResolve",
      "img": "https://cdn.metatft.com/file/metatft/items/da_titansresolve.png",
      "perGame": 0.63,
-     "avgPlacement": 4.0025,
+     "avgPlacement": 4.0033,
      "bestOn": [
       "Rengar",
       "Fiddlesticks"
@@ -2128,8 +2113,8 @@
      "name": "Gargoyle Stoneplate",
      "id": "DA_GargoyleStoneplate",
      "img": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
-     "perGame": 0.61,
-     "avgPlacement": 4.1491,
+     "perGame": 0.6,
+     "avgPlacement": 4.2034,
      "bestOn": [
       "Rammus",
       "Fiddlesticks"
@@ -2140,7 +2125,7 @@
      "id": "DA_WarmogsArmor",
      "img": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
      "perGame": 0.56,
-     "avgPlacement": 4.0311,
+     "avgPlacement": 4.0224,
      "bestOn": [
       "Rammus",
       "Fiddlesticks"
@@ -2151,7 +2136,7 @@
      "id": "DA_SpearOfShojin",
      "img": "https://cdn.metatft.com/file/metatft/items/da_spearofshojin.png",
      "perGame": 0.51,
-     "avgPlacement": 3.9307,
+     "avgPlacement": 3.9542,
      "bestOn": [
       "Cassiopeia",
       "Soraka"
@@ -2162,7 +2147,7 @@
      "id": "DA_SunfireCape",
      "img": "https://cdn.metatft.com/file/metatft/items/da_sunfirecape.png",
      "perGame": 0.45,
-     "avgPlacement": 3.8808,
+     "avgPlacement": 3.8918,
      "bestOn": [
       "Rammus",
       "Fiddlesticks"
@@ -2172,8 +2157,8 @@
      "name": "Thief's Gloves",
      "id": "DA_ThiefsGloves",
      "img": "https://cdn.metatft.com/file/metatft/items/da_thiefsgloves.png",
-     "perGame": 0.42,
-     "avgPlacement": 3.954,
+     "perGame": 0.41,
+     "avgPlacement": 3.9791,
      "bestOn": [
       "Fiddlesticks",
       "Lillia"
@@ -2185,19 +2170,19 @@
      "name": "Needlessly Large Rod",
      "id": "DA_Component_NeedlesslyLargeRod",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_needlesslylargerod.png",
-     "perGame": 3.31
+     "perGame": 3.3
     },
     {
      "name": "Tear Of The Goddess",
      "id": "DA_Component_TearOfTheGoddess",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
-     "perGame": 3.0
+     "perGame": 2.99
     },
     {
      "name": "Chain Vest",
      "id": "DA_Component_ChainVest",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_chainvest.png",
-     "perGame": 2.91
+     "perGame": 2.89
     },
     {
      "name": "Giant's Belt",
@@ -2209,7 +2194,7 @@
      "name": "Negatron Cloak",
      "id": "DA_Component_NegatronCloak",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_negatroncloak.png",
-     "perGame": 2.26
+     "perGame": 2.25
     },
     {
      "name": "Recurve Bow",
@@ -2221,25 +2206,25 @@
      "name": "B.F. Sword",
      "id": "DA_Component_BFSword",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_bfsword.png",
-     "perGame": 1.98
+     "perGame": 1.96
     },
     {
      "name": "Sparring Gloves",
      "id": "DA_Component_SparringGloves",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_sparringgloves.png",
-     "perGame": 1.73
+     "perGame": 1.72
     },
     {
      "name": "Spatula",
      "id": "DA_Component_Spatula",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_spatula.png",
-     "perGame": 0.23
+     "perGame": 0.22
     },
     {
      "name": "Frying Pan",
      "id": "DA_Component_FryingPan",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_fryingpan.png",
-     "perGame": 0.17
+     "perGame": 0.18
     }
    ],
    "firstCarousel": null,
@@ -2323,14 +2308,9 @@
    },
    "trend": [
     {
-     "day": "2026-11-05",
-     "avgPlacement": 4.1278,
-     "games": 681
-    },
-    {
      "day": "2026-11-06",
-     "avgPlacement": 4.2781,
-     "games": 2632
+     "avgPlacement": 4.147,
+     "games": 687
     },
     {
      "day": "2026-11-07",
@@ -2354,13 +2334,18 @@
     },
     {
      "day": "2026-11-11",
-     "avgPlacement": 4.1588,
-     "games": 2519
+     "avgPlacement": 4.1563,
+     "games": 2521
     },
     {
      "day": "2026-11-12",
-     "avgPlacement": 4.3035,
-     "games": 1753
+     "avgPlacement": 4.2935,
+     "games": 2399
+    },
+    {
+     "day": "2026-11-13",
+     "avgPlacement": 4.2247,
+     "games": 1700
     }
    ]
   },
@@ -2368,9 +2353,9 @@
    "id": "426008",
    "name": "Vanguard Alune",
    "tier": "S",
-   "avgPlacement": 4.24,
-   "playRate": 4.42,
-   "games": 50417,
+   "avgPlacement": 4.231,
+   "playRate": 4.52,
+   "games": 50670,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 9",
@@ -2453,8 +2438,8 @@
      "cost": 4,
      "stars": 2,
      "items": [
-      "Crownguard",
-      "Gargoyle Stoneplate",
+      "Adaptive Helm",
+      "Adaptive Helm",
       "Protector's Vow"
      ],
      "carry": true,
@@ -2915,36 +2900,36 @@
     "levels": {
      "5": {
       "stage": "2-5",
-      "games": 11415,
-      "avgRerolls": 0.3
+      "games": 12315,
+      "avgRerolls": 0.2
      },
      "6": {
       "stage": "3-2",
-      "games": 11539,
-      "avgRerolls": 0.6
+      "games": 12466,
+      "avgRerolls": 0.5
      },
      "7": {
       "stage": "3-5",
-      "games": 11583,
-      "avgRerolls": 0.8
+      "games": 12506,
+      "avgRerolls": 0.7
      },
      "8": {
       "stage": "4-2",
-      "games": 11768,
+      "games": 12719,
       "avgRerolls": 8.2
      },
      "9": {
       "stage": "5-1",
-      "games": 11429,
-      "avgRerolls": 26.6
+      "games": 12323,
+      "avgRerolls": 26.9
      }
     },
     "rollLevel": "9",
     "finalLevelPct": {
-     "10": 15.2,
+     "10": 15.5,
      "7": 0.1,
      "8": 10.9,
-     "9": 73.8
+     "9": 73.5
     },
     "style": "Fast 9"
    },
@@ -2954,7 +2939,7 @@
      "id": "DA_GargoyleStoneplate",
      "img": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
      "perGame": 1.02,
-     "avgPlacement": 4.1074,
+     "avgPlacement": 4.0919,
      "bestOn": [
       "Sentinel",
       "Taric"
@@ -2965,7 +2950,7 @@
      "id": "DA_JeweledGauntlet",
      "img": "https://cdn.metatft.com/file/metatft/items/da_jeweledgauntlet.png",
      "perGame": 0.89,
-     "avgPlacement": 4.0498,
+     "avgPlacement": 4.0369,
      "bestOn": [
       "Alune",
       "Morgana"
@@ -2976,7 +2961,7 @@
      "id": "DA_SpearOfShojin",
      "img": "https://cdn.metatft.com/file/metatft/items/da_spearofshojin.png",
      "perGame": 0.83,
-     "avgPlacement": 3.9497,
+     "avgPlacement": 3.9513,
      "bestOn": [
       "Alune",
       "Lux"
@@ -2987,7 +2972,7 @@
      "id": "DA_VoidStaff",
      "img": "https://cdn.metatft.com/file/metatft/items/da_voidstaff.png",
      "perGame": 0.72,
-     "avgPlacement": 3.9812,
+     "avgPlacement": 3.9714,
      "bestOn": [
       "Morgana",
       "Alune"
@@ -2998,7 +2983,7 @@
      "id": "DA_WarmogsArmor",
      "img": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
      "perGame": 0.63,
-     "avgPlacement": 3.9647,
+     "avgPlacement": 3.9425,
      "bestOn": [
       "Sentinel",
       "Taric"
@@ -3009,7 +2994,7 @@
      "id": "DA_Morellonomicon",
      "img": "https://cdn.metatft.com/file/metatft/items/da_morellonomicon.png",
      "perGame": 0.57,
-     "avgPlacement": 3.9778,
+     "avgPlacement": 3.9817,
      "bestOn": [
       "Morgana",
       "Lux"
@@ -3020,7 +3005,7 @@
      "id": "DA_ProtectorsVow",
      "img": "https://cdn.metatft.com/file/metatft/items/da_protectorsvow.png",
      "perGame": 0.51,
-     "avgPlacement": 3.8664,
+     "avgPlacement": 3.8588,
      "bestOn": [
       "Sentinel",
       "Lillia"
@@ -3031,7 +3016,7 @@
      "id": "DA_AdaptiveHelm",
      "img": "https://cdn.metatft.com/file/metatft/items/da_adaptivehelm.png",
      "perGame": 0.44,
-     "avgPlacement": 3.7298,
+     "avgPlacement": 3.6977,
      "bestOn": [
       "Sentinel",
       "Alune"
@@ -3042,7 +3027,7 @@
      "id": "DA_ThiefsGloves",
      "img": "https://cdn.metatft.com/file/metatft/items/da_thiefsgloves.png",
      "perGame": 0.38,
-     "avgPlacement": 3.7444,
+     "avgPlacement": 3.7683,
      "bestOn": [
       "Lillia",
       "Taric"
@@ -3052,8 +3037,8 @@
      "name": "Rabadon's Deathcap",
      "id": "DA_RabadonsDeathcap",
      "img": "https://cdn.metatft.com/file/metatft/items/da_rabadonsdeathcap.png",
-     "perGame": 0.35,
-     "avgPlacement": 3.7734,
+     "perGame": 0.36,
+     "avgPlacement": 3.7539,
      "bestOn": [
       "Alune",
       "Morgana"
@@ -3065,13 +3050,13 @@
      "name": "Tear Of The Goddess",
      "id": "DA_Component_TearOfTheGoddess",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
-     "perGame": 4.11
+     "perGame": 4.1
     },
     {
      "name": "Needlessly Large Rod",
      "id": "DA_Component_NeedlesslyLargeRod",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_needlesslylargerod.png",
-     "perGame": 3.28
+     "perGame": 3.29
     },
     {
      "name": "Giant's Belt",
@@ -3101,7 +3086,7 @@
      "name": "Recurve Bow",
      "id": "DA_Component_RecurveBow",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
-     "perGame": 1.94
+     "perGame": 1.93
     },
     {
      "name": "B.F. Sword",
@@ -3226,14 +3211,9 @@
    },
    "trend": [
     {
-     "day": "2026-11-05",
-     "avgPlacement": 4.2636,
-     "games": 4362
-    },
-    {
      "day": "2026-11-06",
-     "avgPlacement": 4.2217,
-     "games": 17613
+     "avgPlacement": 4.2117,
+     "games": 4369
     },
     {
      "day": "2026-11-07",
@@ -3257,13 +3237,18 @@
     },
     {
      "day": "2026-11-11",
-     "avgPlacement": 4.2333,
-     "games": 16849
+     "avgPlacement": 4.2337,
+     "games": 16878
     },
     {
      "day": "2026-11-12",
-     "avgPlacement": 4.2484,
-     "games": 12487
+     "avgPlacement": 4.2296,
+     "games": 16901
+    },
+    {
+     "day": "2026-11-13",
+     "avgPlacement": 4.2163,
+     "games": 12803
     }
    ]
   },
@@ -3271,9 +3256,9 @@
    "id": "426002",
    "name": "Elderwood Ezreal Aphelios",
    "tier": "A",
-   "avgPlacement": 4.271,
-   "playRate": 3.62,
-   "games": 41335,
+   "avgPlacement": 4.27,
+   "playRate": 3.56,
+   "games": 39899,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -3351,7 +3336,7 @@
      "cost": 4,
      "stars": 2,
      "items": [
-      "Evenshroud",
+      "Elderwood Emblem",
       "Protector's Vow",
       "Sunfire Cape"
      ],
@@ -3525,7 +3510,6 @@
      "Radiant Last Whisper": "https://cdn.metatft.com/file/metatft/items/da_lastwhisperradiant.png",
      "Mana Potion": "https://cdn.metatft.com/file/metatft/items/da_manapotion18.png",
      "Morellonomicon": "https://cdn.metatft.com/file/metatft/items/da_morellonomicon.png",
-     "Radiant Morellonomicon": "https://cdn.metatft.com/file/metatft/items/da_morellonomiconradiant.png",
      "Nashor's Tooth": "https://cdn.metatft.com/file/metatft/items/da_nashorstooth.png",
      "Protector's Vow": "https://cdn.metatft.com/file/metatft/items/da_protectorsvow.png",
      "Radiant Protector's Vow": "https://cdn.metatft.com/file/metatft/items/da_protectorsvowradiant.png",
@@ -3786,36 +3770,36 @@
     "levels": {
      "5": {
       "stage": "2-5",
-      "games": 9307,
+      "games": 9804,
       "avgRerolls": 0.2
      },
      "6": {
       "stage": "3-2",
-      "games": 9426,
+      "games": 9915,
       "avgRerolls": 0.4
      },
      "7": {
       "stage": "3-6",
-      "games": 9402,
+      "games": 9905,
       "avgRerolls": 0.6
      },
      "8": {
       "stage": "4-2",
-      "games": 9607,
-      "avgRerolls": 21.1
+      "games": 10123,
+      "avgRerolls": 21.6
      },
      "9": {
       "stage": "5-6",
-      "games": 6008,
-      "avgRerolls": 14.8
+      "games": 6350,
+      "avgRerolls": 15.0
      }
     },
     "rollLevel": "8",
     "finalLevelPct": {
-     "10": 11.4,
+     "10": 11.3,
      "7": 0.3,
-     "8": 37.7,
-     "9": 50.7
+     "8": 37.4,
+     "9": 51.0
     },
     "style": "Fast 8"
    },
@@ -3825,7 +3809,7 @@
      "id": "DA_GuinsoosRageblade",
      "img": "https://cdn.metatft.com/file/metatft/items/da_guinsoosrageblade.png",
      "perGame": 0.86,
-     "avgPlacement": 4.2561,
+     "avgPlacement": 4.2555,
      "bestOn": [
       "Aphelios",
       "Draven"
@@ -3835,22 +3819,11 @@
      "name": "Elderwood Emblem",
      "id": "DA_18_EmblemElderwood",
      "img": "https://cdn.metatft.com/file/metatft/items/da_18_emblemelderwood.png",
-     "perGame": 0.83,
-     "avgPlacement": 4.0705,
+     "perGame": 0.82,
+     "avgPlacement": 4.0679,
      "bestOn": [
       "Aphelios",
       "Lillia"
-     ]
-    },
-    {
-     "name": "Spear of Shojin",
-     "id": "DA_SpearOfShojin",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_spearofshojin.png",
-     "perGame": 0.72,
-     "avgPlacement": 4.099,
-     "bestOn": [
-      "Ezreal",
-      "Lux"
      ]
     },
     {
@@ -3858,10 +3831,21 @@
      "id": "DA_InfinityEdge",
      "img": "https://cdn.metatft.com/file/metatft/items/da_infinityedge.png",
      "perGame": 0.72,
-     "avgPlacement": 4.1002,
+     "avgPlacement": 4.1137,
      "bestOn": [
       "Ezreal",
       "Aphelios"
+     ]
+    },
+    {
+     "name": "Spear of Shojin",
+     "id": "DA_SpearOfShojin",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_spearofshojin.png",
+     "perGame": 0.72,
+     "avgPlacement": 4.0961,
+     "bestOn": [
+      "Ezreal",
+      "Lux"
      ]
     },
     {
@@ -3869,7 +3853,7 @@
      "id": "DA_GargoyleStoneplate",
      "img": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
      "perGame": 0.53,
-     "avgPlacement": 4.3673,
+     "avgPlacement": 4.3883,
      "bestOn": [
       "Hecarim",
       "Lillia"
@@ -3879,8 +3863,8 @@
      "name": "Kraken's Fury",
      "id": "DA_KrakensFury",
      "img": "https://cdn.metatft.com/file/metatft/items/da_krakensfury.png",
-     "perGame": 0.51,
-     "avgPlacement": 4.1017,
+     "perGame": 0.52,
+     "avgPlacement": 4.1002,
      "bestOn": [
       "Aphelios",
       "Draven"
@@ -3891,7 +3875,7 @@
      "id": "DA_LastWhisper",
      "img": "https://cdn.metatft.com/file/metatft/items/da_lastwhisper.png",
      "perGame": 0.48,
-     "avgPlacement": 4.2049,
+     "avgPlacement": 4.2158,
      "bestOn": [
       "Ezreal",
       "Aphelios"
@@ -3902,21 +3886,10 @@
      "id": "DA_ProtectorsVow",
      "img": "https://cdn.metatft.com/file/metatft/items/da_protectorsvow.png",
      "perGame": 0.47,
-     "avgPlacement": 3.9827,
+     "avgPlacement": 3.9605,
      "bestOn": [
       "Lillia",
       "Hecarim"
-     ]
-    },
-    {
-     "name": "Deathblade",
-     "id": "DA_Deathblade",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_deathblade.png",
-     "perGame": 0.46,
-     "avgPlacement": 4.0535,
-     "bestOn": [
-      "Ezreal",
-      "Aphelios"
      ]
     },
     {
@@ -3924,10 +3897,21 @@
      "id": "DA_WarmogsArmor",
      "img": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
      "perGame": 0.46,
-     "avgPlacement": 4.2218,
+     "avgPlacement": 4.2331,
      "bestOn": [
       "Hecarim",
       "Lillia"
+     ]
+    },
+    {
+     "name": "Deathblade",
+     "id": "DA_Deathblade",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_deathblade.png",
+     "perGame": 0.46,
+     "avgPlacement": 4.0629,
+     "bestOn": [
+      "Ezreal",
+      "Aphelios"
      ]
     }
    ],
@@ -3939,16 +3923,16 @@
      "perGame": 2.81
     },
     {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
+     "perGame": 2.8
+    },
+    {
      "name": "Chain Vest",
      "id": "DA_Component_ChainVest",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_chainvest.png",
      "perGame": 2.8
-    },
-    {
-     "name": "Recurve Bow",
-     "id": "DA_Component_RecurveBow",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
-     "perGame": 2.79
     },
     {
      "name": "Tear Of The Goddess",
@@ -3978,7 +3962,7 @@
      "name": "Needlessly Large Rod",
      "id": "DA_Component_NeedlesslyLargeRod",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_needlesslylargerod.png",
-     "perGame": 1.68
+     "perGame": 1.69
     },
     {
      "name": "Spatula",
@@ -4104,14 +4088,9 @@
    },
    "trend": [
     {
-     "day": "2026-11-05",
-     "avgPlacement": 4.3338,
-     "games": 3715
-    },
-    {
      "day": "2026-11-06",
-     "avgPlacement": 4.2879,
-     "games": 15736
+     "avgPlacement": 4.2955,
+     "games": 3784
     },
     {
      "day": "2026-11-07",
@@ -4136,151 +4115,165 @@
     {
      "day": "2026-11-11",
      "avgPlacement": 4.2596,
-     "games": 13876
+     "games": 13892
     },
     {
      "day": "2026-11-12",
-     "avgPlacement": 4.26,
-     "games": 9853
+     "avgPlacement": 4.271,
+     "games": 13246
+    },
+    {
+     "day": "2026-11-13",
+     "avgPlacement": 4.2788,
+     "games": 9560
     }
    ]
   },
   {
-   "id": "426022",
-   "name": "Adaptor Master Yi Rengar",
+   "id": "426006",
+   "name": "Invoker Teemo Alistar",
    "tier": "A",
-   "avgPlacement": 4.294,
-   "playRate": 2.68,
-   "games": 30551,
+   "avgPlacement": 4.304,
+   "playRate": 2.51,
+   "games": 28128,
    "top4Rate": null,
    "winRate": null,
-   "levelling": "lvl 7",
-   "difficulty": "Medium",
+   "levelling": "lvl 6",
+   "difficulty": "Easy",
    "units": [
     {
-     "name": "Master Yi",
-     "id": "DA_18_MasterYi_AD",
-     "cost": 3,
+     "name": "Alistar",
+     "id": "DA_18_Alistar",
+     "cost": 2,
      "stars": 3,
      "items": [
-      "Edge of Night",
-      "Guinsoo's Rageblade",
-      "Titan's Resolve"
+      "Gargoyle Stoneplate",
+      "Gargoyle Stoneplate",
+      "Warmog's Armor"
      ],
      "carry": true,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_masteryi.png"
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_alistar.png"
     },
     {
-     "name": "Rengar",
-     "id": "DA_18_Rengar",
+     "name": "Hecarim",
+     "id": "DA_18_Hecarim",
      "cost": 3,
-     "stars": 3,
-     "items": [
-      "Edge of Night",
-      "Guinsoo's Rageblade",
-      "Titan's Resolve"
-     ],
-     "carry": true,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_rengar.png"
-    },
-    {
-     "name": "Sett",
-     "id": "DA_18_Sett",
-     "cost": 4,
      "stars": 2,
      "items": [],
      "carry": false,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_sett.png"
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_hecarim.png"
     },
     {
-     "name": "Yorick",
-     "id": "DA_18_Yorick",
+     "name": "Kobuko",
+     "id": "DA_18_Kobuko",
      "cost": 1,
      "stars": 2,
      "items": [],
      "carry": false,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_yorick.png"
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_kobuko.png"
     },
     {
-     "name": "Krug",
-     "id": "DA_Krug18",
-     "cost": 3,
-     "stars": 2,
-     "items": [],
-     "carry": false,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_krug.png"
+     "name": "LeBlanc",
+     "id": "DA_18_LeBlanc",
+     "cost": 2,
+     "stars": 3,
+     "items": [
+      "Giant Slayer",
+      "Rabadon's Deathcap",
+      "Spear of Shojin"
+     ],
+     "carry": true,
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_leblanc.png"
     },
     {
-     "name": "Nidalee",
-     "id": "DA_Nidalee18_AP",
+     "name": "Morgana",
+     "id": "DA_18_Morgana",
      "cost": 4,
      "stars": 2,
      "items": [
-      "Hand Of Justice",
-      "Infinity Edge",
-      "Sterak's Gage"
+      "Adaptive Helm",
+      "Morellonomicon",
+      "Void Staff"
      ],
      "carry": true,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_nidalee.png"
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_morgana.png"
     },
     {
-     "name": "Vi",
-     "id": "DA_Vi18",
-     "cost": 3,
+     "name": "Teemo",
+     "id": "DA_18_Teemo",
+     "cost": 2,
      "stars": 3,
      "items": [
-      "Evenshroud",
-      "Spirit Visage",
-      "Sunfire Cape"
+      "Jeweled Gauntlet",
+      "Spear of Shojin",
+      "Striker's Flail"
      ],
      "carry": true,
-     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_vi.png"
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_teemo.png"
+    },
+    {
+     "name": "Veigar",
+     "id": "DA_18_Veigar",
+     "cost": 1,
+     "stars": 2,
+     "items": [],
+     "carry": false,
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_veigar.png"
+    },
+    {
+     "name": "Sentinel",
+     "id": "DA_Sentinel18",
+     "cost": 4,
+     "stars": 1,
+     "items": [],
+     "carry": false,
+     "img": "https://cdn.metatft.com/file/metatft/champions/tft18_sentinel.png"
     }
    ],
    "traits": [
-    {
-     "name": "Adaptor",
-     "count": 1,
-     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_adaptor.png"
-    },
-    {
-     "name": "Blossom",
-     "count": 1,
-     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_blossom.png"
-    },
     {
      "name": "Brawler",
      "count": 1,
      "img": "https://cdn.metatft.com/file/metatft/traits/da_18_brawler.png"
     },
     {
-     "name": "Rival",
+     "name": "Elderwood",
      "count": 1,
-     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_rival.png"
+     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_elderwood.png"
     },
     {
-     "name": "Juggernaut",
-     "count": 1,
-     "img": "https://cdn.metatft.com/file/metatft/traits/da_juggernaut18.png"
+     "name": "Invoker",
+     "count": 2,
+     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_invoker.png"
     },
     {
-     "name": "Primal",
+     "name": "Spellweaver",
      "count": 1,
-     "img": "https://cdn.metatft.com/file/metatft/traits/da_primal18.png"
+     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_spellweaver.png"
+    },
+    {
+     "name": "Sprykin",
+     "count": 1,
+     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_sprykin.png"
+    },
+    {
+     "name": "Vanguard",
+     "count": 1,
+     "img": "https://cdn.metatft.com/file/metatft/traits/da_18_vanguard.png"
     }
    ],
    "images": {
     "units": {
-     "Master Yi": "https://cdn.metatft.com/file/metatft/champions/tft18_masteryi.png",
-     "Rengar": "https://cdn.metatft.com/file/metatft/champions/tft18_rengar.png",
-     "Sett": "https://cdn.metatft.com/file/metatft/champions/tft18_sett.png",
-     "Yorick": "https://cdn.metatft.com/file/metatft/champions/tft18_yorick.png",
-     "Krug": "https://cdn.metatft.com/file/metatft/champions/tft18_krug.png",
-     "Nidalee": "https://cdn.metatft.com/file/metatft/champions/tft18_nidalee.png",
-     "Vi": "https://cdn.metatft.com/file/metatft/champions/tft18_vi.png",
-     "Elder Dragon": "https://cdn.metatft.com/file/metatft/champions/tft18_elderdragon.png",
-     "Gromp": "https://cdn.metatft.com/file/metatft/champions/tft18_gromp.png",
-     "Karma": "https://cdn.metatft.com/file/metatft/champions/tft18_karma.png",
+     "Alistar": "https://cdn.metatft.com/file/metatft/champions/tft18_alistar.png",
+     "Hecarim": "https://cdn.metatft.com/file/metatft/champions/tft18_hecarim.png",
+     "Kobuko": "https://cdn.metatft.com/file/metatft/champions/tft18_kobuko.png",
+     "LeBlanc": "https://cdn.metatft.com/file/metatft/champions/tft18_leblanc.png",
+     "Morgana": "https://cdn.metatft.com/file/metatft/champions/tft18_morgana.png",
+     "Teemo": "https://cdn.metatft.com/file/metatft/champions/tft18_teemo.png",
+     "Veigar": "https://cdn.metatft.com/file/metatft/champions/tft18_veigar.png",
+     "Sentinel": "https://cdn.metatft.com/file/metatft/champions/tft18_sentinel.png",
+     "Ivern": "https://cdn.metatft.com/file/metatft/champions/tft18_ivern.png",
+     "Lifebloom": "https://cdn.metatft.com/file/metatft/champions/tft18_elderwood_treesummon.png",
      "Kog'Maw": "https://cdn.metatft.com/file/metatft/champions/tft18_kogmaw.png"
     },
     "items": {
@@ -4292,7 +4285,7 @@
      "Elderwood Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemelderwood.png",
      "Executioner Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemexecutioner.png",
      "Fae Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemfae.png",
-     "Flora Fatalis Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemflorafatalis.png",
+     "Flora Fatalis Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemflorafatalisaugment.png",
      "Hunter Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemhunter.png",
      "Inferno Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_embleminferno.png",
      "Invoker Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_embleminvoker.png",
@@ -4305,7 +4298,9 @@
      "Sprykin Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemsprykin.png",
      "Vanguard Emblem": "https://cdn.metatft.com/file/metatft/items/da_18_emblemvanguard.png",
      "Adaptive Helm": "https://cdn.metatft.com/file/metatft/items/da_adaptivehelm.png",
+     "Radiant Adaptive Helm": "https://cdn.metatft.com/file/metatft/items/da_adaptivehelm_radiant.png",
      "Archangel's Staff": "https://cdn.metatft.com/file/metatft/items/da_archangelsstaff.png",
+     "Radiant Archangel's Staff": "https://cdn.metatft.com/file/metatft/items/da_archangelsstaffradiant.png",
      "Aegis of Dawn": "https://cdn.metatft.com/file/metatft/items/da_artifact_aegisofdawn.png",
      "Aegis of Dusk": "https://cdn.metatft.com/file/metatft/items/da_artifact_aegisofdusk.png",
      "Blighting Jewel": "https://cdn.metatft.com/file/metatft/items/da_artifact_blightingjewel.png",
@@ -4336,10 +4331,9 @@
      "Wit's End": "https://cdn.metatft.com/file/metatft/items/da_artifact_witsend.png",
      "Zhonya's Paradox": "https://cdn.metatft.com/file/metatft/items/da_artifact_zhonyasparadox.png",
      "Blast Potion": "https://cdn.metatft.com/file/metatft/items/da_blastpotion18.png",
-     "Radiant Blast Potion": "https://cdn.metatft.com/file/metatft/items/da_blastpotion18_radiant.png",
      "Bloodthirster": "https://cdn.metatft.com/file/metatft/items/da_bloodthirster.png",
-     "Radiant Bloodthirster": "https://cdn.metatft.com/file/metatft/items/da_bloodthirsterradiant.png",
      "Blue Buff": "https://cdn.metatft.com/file/metatft/items/da_bluebuff.png",
+     "Radiant Blue Buff": "https://cdn.metatft.com/file/metatft/items/da_bluebuffradiant.png",
      "Bramble Vest": "https://cdn.metatft.com/file/metatft/items/da_bramblevest.png",
      "Radiant Bramble Vest": "https://cdn.metatft.com/file/metatft/items/da_bramblevestradiant.png",
      "B.F. Sword": "https://cdn.metatft.com/file/metatft/items/da_component_bfsword.png",
@@ -4353,42 +4347,37 @@
      "Spatula": "https://cdn.metatft.com/file/metatft/items/da_component_spatula.png",
      "Tear Of The Goddess": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
      "Crownguard": "https://cdn.metatft.com/file/metatft/items/da_crownguard.png",
+     "Radiant Crownguard": "https://cdn.metatft.com/file/metatft/items/da_crownguardradiant.png",
      "Deathblade": "https://cdn.metatft.com/file/metatft/items/da_deathblade.png",
-     "Radiant Deathblade": "https://cdn.metatft.com/file/metatft/items/da_deathbladeradiant.png",
      "Dragon's Claw": "https://cdn.metatft.com/file/metatft/items/da_dragonsclaw.png",
      "Radiant Dragon's Claw": "https://cdn.metatft.com/file/metatft/items/da_dragonsclawradiant.png",
      "Edge of Night": "https://cdn.metatft.com/file/metatft/items/da_edgeofnight.png",
-     "Radiant Edge of Night": "https://cdn.metatft.com/file/metatft/items/da_edgeofnightradiant.png",
      "Evenshroud": "https://cdn.metatft.com/file/metatft/items/da_evenshroud.png",
-     "Radiant Evenshroud": "https://cdn.metatft.com/file/metatft/items/da_evenshroudradiant.png",
      "Gargoyle Stoneplate": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
      "Radiant Gargoyle Stoneplate": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate_radiant.png",
      "Giant Slayer": "https://cdn.metatft.com/file/metatft/items/da_giantslayer.png",
      "Radiant Giant Slayer": "https://cdn.metatft.com/file/metatft/items/da_giantslayer_radiant.png",
      "Guinsoo's Rageblade": "https://cdn.metatft.com/file/metatft/items/da_guinsoosrageblade.png",
-     "Radiant Guinsoo's Rageblade": "https://cdn.metatft.com/file/metatft/items/da_guinsoosragebladeradiant.png",
      "Hand Of Justice": "https://cdn.metatft.com/file/metatft/items/da_handofjustice.png",
-     "Radiant Hand of Justice": "https://cdn.metatft.com/file/metatft/items/da_handofjusticeradiant.png",
-     "Radiant Health Potion": "https://cdn.metatft.com/file/metatft/items/da_healthpotion18_radiant.png",
+     "Health Potion": "https://cdn.metatft.com/file/metatft/items/da_healthpotion18.png",
      "Hextech Gunblade": "https://cdn.metatft.com/file/metatft/items/da_hextechgunblade.png",
      "Radiant Hextech Gunblade": "https://cdn.metatft.com/file/metatft/items/da_hextechgunbladeradiant.png",
      "Infinity Edge": "https://cdn.metatft.com/file/metatft/items/da_infinityedge.png",
-     "Radiant Infinity Edge": "https://cdn.metatft.com/file/metatft/items/da_infinityedgeradiant.png",
      "Ionic Spark": "https://cdn.metatft.com/file/metatft/items/da_ionicspark.png",
+     "Radiant Ionic Spark": "https://cdn.metatft.com/file/metatft/items/da_ionicsparkradiant.png",
      "Talisman of Ascension": "https://cdn.metatft.com/file/metatft/items/da_item_artifact_talismanofascension.png",
      "Jeweled Gauntlet": "https://cdn.metatft.com/file/metatft/items/da_jeweledgauntlet.png",
      "Radiant Jeweled Gauntlet": "https://cdn.metatft.com/file/metatft/items/da_jeweledgauntletradiant.png",
      "Kraken's Fury": "https://cdn.metatft.com/file/metatft/items/da_krakensfury.png",
-     "Radiant Kraken's Fury": "https://cdn.metatft.com/file/metatft/items/da_krakensfury_radiant.png",
      "Last Whisper": "https://cdn.metatft.com/file/metatft/items/da_lastwhisper.png",
-     "Radiant Last Whisper": "https://cdn.metatft.com/file/metatft/items/da_lastwhisperradiant.png",
-     "Radiant Mana Potion": "https://cdn.metatft.com/file/metatft/items/da_manapotion18_radiant.png",
+     "Mana Potion": "https://cdn.metatft.com/file/metatft/items/da_manapotion18.png",
      "Morellonomicon": "https://cdn.metatft.com/file/metatft/items/da_morellonomicon.png",
+     "Radiant Morellonomicon": "https://cdn.metatft.com/file/metatft/items/da_morellonomiconradiant.png",
      "Nashor's Tooth": "https://cdn.metatft.com/file/metatft/items/da_nashorstooth.png",
+     "Radiant Nashor's Tooth": "https://cdn.metatft.com/file/metatft/items/da_nashorstoothradiant.png",
      "Protector's Vow": "https://cdn.metatft.com/file/metatft/items/da_protectorsvow.png",
      "Radiant Protector's Vow": "https://cdn.metatft.com/file/metatft/items/da_protectorsvowradiant.png",
      "Quicksilver": "https://cdn.metatft.com/file/metatft/items/da_quicksilver.png",
-     "Radiant Quicksilver": "https://cdn.metatft.com/file/metatft/items/da_quicksilverradiant.png",
      "Rabadon's Deathcap": "https://cdn.metatft.com/file/metatft/items/da_rabadonsdeathcap.png",
      "Radiant Rabadon's Deathcap": "https://cdn.metatft.com/file/metatft/items/da_rabadonsdeathcap_radiant.png",
      "Red Buff": "https://cdn.metatft.com/file/metatft/items/da_redbuff.png",
@@ -4400,8 +4389,8 @@
      "Steadfast Heart": "https://cdn.metatft.com/file/metatft/items/da_steadfastheart.png",
      "Radiant Steadfast Heart": "https://cdn.metatft.com/file/metatft/items/da_steadfastheartradiant.png",
      "Sterak's Gage": "https://cdn.metatft.com/file/metatft/items/da_steraksgage.png",
-     "Radiant Sterak's Gage": "https://cdn.metatft.com/file/metatft/items/da_steraksgageradiant.png",
      "Striker's Flail": "https://cdn.metatft.com/file/metatft/items/da_strikersflail.png",
+     "Radiant Striker's Flail": "https://cdn.metatft.com/file/metatft/items/da_strikersflailradiant.png",
      "Sunfire Cape": "https://cdn.metatft.com/file/metatft/items/da_sunfirecape.png",
      "Radiant Sunfire Cape": "https://cdn.metatft.com/file/metatft/items/da_sunfirecape_radiant.png",
      "Tactician's Cape": "https://cdn.metatft.com/file/metatft/items/da_tacticianscape.png",
@@ -4410,187 +4399,110 @@
      "Thief's Gloves": "https://cdn.metatft.com/file/metatft/items/da_thiefsgloves.png",
      "Radiant Thief's Gloves": "https://cdn.metatft.com/file/metatft/items/da_thiefsglovesradiant.png",
      "Titan's Resolve": "https://cdn.metatft.com/file/metatft/items/da_titansresolve.png",
-     "Radiant Titan's Resolve": "https://cdn.metatft.com/file/metatft/items/da_titansresolve_radiant.png",
      "Void Staff": "https://cdn.metatft.com/file/metatft/items/da_voidstaff.png",
+     "Radiant Void Staff": "https://cdn.metatft.com/file/metatft/items/da_voidstaffradiant.png",
      "Warmog's Armor": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
      "Radiant Warmog's Armor": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmorradiant.png"
     },
     "traits": {
-     "Adaptor": "https://cdn.metatft.com/file/metatft/traits/da_18_adaptor.png",
-     "Blossom": "https://cdn.metatft.com/file/metatft/traits/da_18_blossom.png",
      "Brawler": "https://cdn.metatft.com/file/metatft/traits/da_18_brawler.png",
-     "Rival": "https://cdn.metatft.com/file/metatft/traits/da_18_rival.png",
-     "Juggernaut": "https://cdn.metatft.com/file/metatft/traits/da_juggernaut18.png",
-     "Primal": "https://cdn.metatft.com/file/metatft/traits/da_primal18.png"
+     "Elderwood": "https://cdn.metatft.com/file/metatft/traits/da_18_elderwood.png",
+     "Invoker": "https://cdn.metatft.com/file/metatft/traits/da_18_invoker.png",
+     "Spellweaver": "https://cdn.metatft.com/file/metatft/traits/da_18_spellweaver.png",
+     "Sprykin": "https://cdn.metatft.com/file/metatft/traits/da_18_sprykin.png",
+     "Vanguard": "https://cdn.metatft.com/file/metatft/traits/da_18_vanguard.png"
     },
-    "augments": {
-     "Branching Out": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingout.png",
-     "Branching Out Plus": "https://cdn.metatft.com/file/metatft/augments/da_18_branchingoutplus.png",
-     "Champ Delivery+": "https://cdn.metatft.com/file/metatft/augments/da_champdeliveryplus.png",
-     "Latent Forge": "https://cdn.metatft.com/file/metatft/augments/da_latentforge.png",
-     "Partial Ascension": "https://cdn.metatft.com/file/metatft/augments/da_partialascension.png",
-     "Rolling For Days": "https://cdn.metatft.com/file/metatft/augments/da_rollingfordays.png",
-     "Silver Destiny++": "https://cdn.metatft.com/file/metatft/augments/da_silverdestinyplusplus.png",
-     "Slightly Magic Roll": "https://cdn.metatft.com/file/metatft/augments/da_slightlymagicroll.png",
-     "Small Grab Bag": "https://cdn.metatft.com/file/metatft/augments/da_smallgrabbag.png",
-     "Team Building": "https://cdn.metatft.com/file/metatft/augments/da_teambuilding.png",
-     "Wisp Rebate": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplus.png",
-     "Wisp Rebate+": "https://cdn.metatft.com/file/metatft/augments/da_18_wisprebateplusplus.png",
-     "Ascension": "https://cdn.metatft.com/file/metatft/augments/da_ascension.png",
-     "Big Grab Bag": "https://cdn.metatft.com/file/metatft/augments/da_18_biggrabbag.png",
-     "Cooking Pot": "https://cdn.metatft.com/file/metatft/augments/da_cookingpot.png",
-     "Exclusive Customization": "https://cdn.metatft.com/file/metatft/augments/da_exclusivecustomization.png",
-     "Gain 21 Gold": "https://cdn.metatft.com/file/metatft/augments/da_gaingold.png",
-     "Heroic Grab Bag": "https://cdn.metatft.com/file/metatft/augments/da_heroicgrabbag.png",
-     "Heroic Grab Bag+": "https://cdn.metatft.com/file/metatft/augments/da_heroicgrabbagplus.png",
-     "Heroic Grab Bag++": "https://cdn.metatft.com/file/metatft/augments/da_heroicgrabbagplusplus.png",
-     "Portable Forge": "https://cdn.metatft.com/file/metatft/augments/da_portableforge.png",
-     "Salvage Bin": "https://cdn.metatft.com/file/metatft/augments/da_salvagebin.png",
-     "Salvage Bin+": "https://cdn.metatft.com/file/metatft/augments/da_salvagebinplus.png",
-     "Spreading Roots": "https://cdn.metatft.com/file/metatft/augments/da_spreadingroots.png",
-     "Spreading Roots+": "https://cdn.metatft.com/file/metatft/augments/da_spreadingrootsplus.png",
-     "Forged In Strength": "https://cdn.metatft.com/file/metatft/augments/da_forgedinstrength.png",
-     "Living Forge": "https://cdn.metatft.com/file/metatft/augments/da_livingforge.png",
-     "Nesting Anvils": "https://cdn.metatft.com/file/metatft/augments/da_nestinganvils.png",
-     "Nesting Anvils+": "https://cdn.metatft.com/file/metatft/augments/da_nestinganvilsplus.png",
-     "Sweet Treats": "https://cdn.metatft.com/file/metatft/augments/da_sweettreats.png",
-     "Backup Bows": "https://cdn.metatft.com/file/metatft/augments/da_backupbows.png",
-     "Band of Thieves": "https://cdn.metatft.com/file/metatft/augments/da_bandofthieves.png",
-     "Boxing Lessons": "https://cdn.metatft.com/file/metatft/augments/da_boxinglessons.png",
-     "Component Buffet": "https://cdn.metatft.com/file/metatft/augments/da_componentbuffet.png",
-     "Feeling Lucky": "https://cdn.metatft.com/file/metatft/augments/da_feelinglucky.png",
-     "Group Hug I": "https://cdn.metatft.com/file/metatft/augments/da_grouphugi.png",
-     "Iron Assets": "https://cdn.metatft.com/file/metatft/augments/da_ironassets.png",
-     "Missed Connections": "https://cdn.metatft.com/file/metatft/augments/da_missedconnections.png",
-     "Patience Is A Virtue": "https://cdn.metatft.com/file/metatft/augments/da_patienceisavirtue.png",
-     "Residual Magic": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagic.png",
-     "Residual Magic +": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplus.png",
-     "Residual Magic ++": "https://cdn.metatft.com/file/metatft/augments/da_18_residualmagicplusplus.png",
-     "Silver Destiny": "https://cdn.metatft.com/file/metatft/augments/da_silverdestiny.png",
-     "Silver Destiny+": "https://cdn.metatft.com/file/metatft/augments/da_silverdestinyplus.png",
-     "Booster Pack": "https://cdn.metatft.com/file/metatft/augments/da_boosterpack.png",
-     "Booster Pack+": "https://cdn.metatft.com/file/metatft/augments/da_boosterpackplus.png",
-     "Booster Pack++": "https://cdn.metatft.com/file/metatft/augments/da_boosterpackplusplus.png",
-     "Duo Queue": "https://cdn.metatft.com/file/metatft/augments/da_18_duoqueue.png",
-     "Gold Destiny": "https://cdn.metatft.com/file/metatft/augments/da_golddestiny.png",
-     "Gold Destiny+": "https://cdn.metatft.com/file/metatft/augments/da_golddestinyplus.png",
-     "Magic Roll": "https://cdn.metatft.com/file/metatft/augments/da_magicroll.png",
-     "Money Hungry": "https://cdn.metatft.com/file/metatft/augments/da_moneyhungry_notbroken.png",
-     "Money Hungry+": "https://cdn.metatft.com/file/metatft/augments/da_moneyhungryplus.png",
-     "Replication": "https://cdn.metatft.com/file/metatft/augments/da_replication.png",
-     "Speedy Double Kill": "https://cdn.metatft.com/file/metatft/augments/da_speedydoublekill.png",
-     "Trade Sector": "https://cdn.metatft.com/file/metatft/augments/da_tradesector.png",
-     "Trade Sector+": "https://cdn.metatft.com/file/metatft/augments/da_tradesectorplus.png",
-     "Baron's Lair": "https://cdn.metatft.com/file/metatft/augments/da_baronslair.png",
-     "Buried Treasures III": "https://cdn.metatft.com/file/metatft/augments/da_buriedtreasuresiii.png",
-     "Call To Chaos": "https://cdn.metatft.com/file/metatft/augments/da_calltochaos.png",
-     "Commerce Core": "https://cdn.metatft.com/file/metatft/augments/da_commercecore.png",
-     "Comeback Story": "https://cdn.metatft.com/file/metatft/augments/da_comebackstory.png",
-     "Golden Gamble": "https://cdn.metatft.com/file/metatft/augments/da_goldengamble.png",
-     "Golden Gamble+": "https://cdn.metatft.com/file/metatft/augments/da_goldengambleplus.png",
-     "Golden Gamble++": "https://cdn.metatft.com/file/metatft/augments/da_goldengambleplusplus.png",
-     "Money Monsoon": "https://cdn.metatft.com/file/metatft/augments/da_moneymonsoon.png",
-     "Prismatic Ticket": "https://cdn.metatft.com/file/metatft/augments/da_prismaticticket.png",
-     "Crafted Crafting": "https://cdn.metatft.com/file/metatft/augments/da_craftedcrafting.png"
-    }
+    "augments": {}
    },
    "carries": [
-    "Master Yi",
-    "Rengar",
-    "Nidalee",
-    "Vi"
+    "Alistar",
+    "LeBlanc",
+    "Morgana",
+    "Teemo"
    ],
    "early": {
     "4": [
-     "Master Yi",
-     "Rengar",
-     "Yorick",
-     "Karma"
+     "Alistar",
+     "Kobuko",
+     "Teemo",
+     "Veigar"
     ],
     "5": [
-     "Master Yi",
-     "Rengar",
-     "Yorick",
-     "Karma",
-     "Vi"
+     "Alistar",
+     "Kobuko",
+     "LeBlanc",
+     "Teemo",
+     "Veigar"
     ],
     "6": [
-     "Master Yi",
-     "Rengar",
-     "Yorick",
-     "Karma",
-     "Krug",
-     "Vi"
+     "Alistar",
+     "Hecarim",
+     "Kobuko",
+     "LeBlanc",
+     "Teemo",
+     "Veigar"
     ],
     "7": [
-     "Master Yi",
-     "Rengar",
-     "Sett",
-     "Yorick",
-     "Krug",
-     "Nidalee",
-     "Vi"
+     "Alistar",
+     "Hecarim",
+     "Kobuko",
+     "LeBlanc",
+     "Teemo",
+     "Veigar",
+     "Sentinel"
     ]
    },
    "boardsByLevel": {
     "7": [
-     "Master Yi",
-     "Rengar",
-     "Sett",
-     "Yorick",
-     "Krug",
-     "Nidalee",
-     "Vi"
+     "Alistar",
+     "Hecarim",
+     "Kobuko",
+     "LeBlanc",
+     "Teemo",
+     "Veigar",
+     "Sentinel"
     ],
     "8": [
-     "Master Yi",
-     "Rengar",
-     "Sett",
-     "Yorick",
-     "Kog'Maw",
-     "Krug",
-     "Nidalee",
-     "Vi"
+     "Alistar",
+     "Hecarim",
+     "Kobuko",
+     "LeBlanc",
+     "Morgana",
+     "Teemo",
+     "Veigar",
+     "Sentinel"
     ],
     "9": [
-     "Master Yi",
-     "Rengar",
-     "Sett",
-     "Yorick",
-     "Gromp",
+     "Alistar",
+     "Hecarim",
+     "Kobuko",
+     "LeBlanc",
+     "Morgana",
+     "Teemo",
+     "Veigar",
      "Kog'Maw",
-     "Krug",
-     "Nidalee",
-     "Vi"
+     "Sentinel"
     ],
     "10": [
-     "Elder Dragon",
-     "Master Yi",
-     "Rengar",
-     "Sett",
-     "Yorick",
+     "Alistar",
+     "Hecarim",
+     "Ivern",
+     "Kobuko",
+     "LeBlanc",
+     "Morgana",
+     "Teemo",
+     "Veigar",
      "Kog'Maw",
-     "Krug",
-     "Nidalee",
-     "Vi"
+     "Sentinel"
     ]
    },
    "positioning": {
     "rows": [
      [
       null,
-      "Krug",
-      "Yorick",
-      "Sett",
-      null,
-      "Vi",
-      null
-     ],
-     [
       null,
       null,
-      null,
-      null,
+      "Alistar",
       null,
       null,
       null
@@ -4598,366 +4510,307 @@
      [
       null,
       null,
+      "Morgana",
+      "Hecarim",
       null,
       null,
-      null,
-      "Rengar",
-      "Master Yi"
+      null
      ],
      [
       null,
+      "Kobuko",
+      null,
+      null,
+      "Sentinel",
+      null,
+      null
+     ],
+     [
+      "Teemo",
+      "LeBlanc",
       null,
       null,
       null,
       null,
-      null,
-      "Nidalee"
+      "Veigar"
      ]
     ],
     "cells": {
-     "cell_7": "Nidalee",
-     "cell_13": "Rengar",
-     "cell_14": "Master Yi",
-     "cell_23": "Krug",
-     "cell_24": "Yorick",
-     "cell_25": "Sett",
-     "cell_27": "Vi"
+     "cell_1": "Teemo",
+     "cell_2": "LeBlanc",
+     "cell_7": "Veigar",
+     "cell_9": "Kobuko",
+     "cell_12": "Sentinel",
+     "cell_17": "Morgana",
+     "cell_18": "Hecarim",
+     "cell_25": "Alistar"
     }
    },
    "levelTiming": {
     "levels": {
+     "4": {
+      "stage": "2-2",
+      "games": 6946,
+      "avgRerolls": 0.8
+     },
      "5": {
-      "stage": "2-5",
-      "games": 6950,
-      "avgRerolls": 0.2
+      "stage": "3-1",
+      "games": 7451,
+      "avgRerolls": 1.2
      },
      "6": {
       "stage": "3-2",
-      "games": 6987,
-      "avgRerolls": 0.8
+      "games": 7178,
+      "avgRerolls": 35.6
      },
      "7": {
-      "stage": "3-6",
-      "games": 6950,
-      "avgRerolls": 44.1
+      "stage": "4-5",
+      "games": 7175,
+      "avgRerolls": 10.7
      },
      "8": {
-      "stage": "6-1",
-      "games": 3702,
-      "avgRerolls": 13.6
+      "stage": "5-5",
+      "games": 5787,
+      "avgRerolls": 15.6
      },
      "9": {
-      "stage": "7-3",
-      "games": 13,
-      "avgRerolls": 7.3
+      "stage": "7-2",
+      "games": 70,
+      "avgRerolls": 11.1
      }
     },
-    "rollLevel": "7",
+    "rollLevel": "6",
     "finalLevelPct": {
-     "10": 0.7,
-     "6": 0.2,
-     "7": 48.4,
-     "8": 40.9,
-     "9": 9.8
+     "10": 1.8,
+     "5": 0.1,
+     "6": 4.4,
+     "7": 25.6,
+     "8": 51.1,
+     "9": 17.0
     },
-    "style": "lvl 7"
+    "style": "lvl 6"
    },
    "itemPriority": [
-    {
-     "name": "Guinsoo's Rageblade",
-     "id": "DA_GuinsoosRageblade",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_guinsoosrageblade.png",
-     "perGame": 1.51,
-     "avgPlacement": 4.2223,
-     "bestOn": [
-      "Master Yi",
-      "Rengar"
-     ]
-    },
-    {
-     "name": "Edge of Night",
-     "id": "DA_EdgeOfNight",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_edgeofnight.png",
-     "perGame": 1.23,
-     "avgPlacement": 4.1534,
-     "bestOn": [
-      "Master Yi",
-      "Rengar"
-     ]
-    },
     {
      "name": "Gargoyle Stoneplate",
      "id": "DA_GargoyleStoneplate",
      "img": "https://cdn.metatft.com/file/metatft/items/da_gargoylestoneplate.png",
-     "perGame": 0.63,
-     "avgPlacement": 4.0892,
+     "perGame": 1.4,
+     "avgPlacement": 4.2076,
      "bestOn": [
-      "Vi",
-      "Krug"
+      "Alistar",
+      "Hecarim"
      ]
     },
     {
-     "name": "Titan's Resolve",
-     "id": "DA_TitansResolve",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_titansresolve.png",
-     "perGame": 0.6,
-     "avgPlacement": 4.0519,
+     "name": "Jeweled Gauntlet",
+     "id": "DA_JeweledGauntlet",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_jeweledgauntlet.png",
+     "perGame": 1.1,
+     "avgPlacement": 4.2001,
      "bestOn": [
-      "Rengar",
-      "Master Yi"
+      "Teemo",
+      "LeBlanc"
      ]
     },
     {
-     "name": "Quicksilver",
-     "id": "DA_Quicksilver",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_quicksilver.png",
-     "perGame": 0.52,
-     "avgPlacement": 4.1133,
+     "name": "Spear of Shojin",
+     "id": "DA_SpearOfShojin",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_spearofshojin.png",
+     "perGame": 1.04,
+     "avgPlacement": 4.1783,
      "bestOn": [
-      "Master Yi",
-      "Rengar"
+      "Teemo",
+      "LeBlanc"
      ]
     },
     {
-     "name": "Spirit Visage",
-     "id": "DA_SpiritVisage",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_spiritvisage.png",
-     "perGame": 0.5,
-     "avgPlacement": 4.1242,
+     "name": "Void Staff",
+     "id": "DA_VoidStaff",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_voidstaff.png",
+     "perGame": 0.73,
+     "avgPlacement": 4.1096,
      "bestOn": [
-      "Vi",
-      "Krug"
+      "Morgana",
+      "LeBlanc"
      ]
     },
     {
      "name": "Warmog's Armor",
      "id": "DA_WarmogsArmor",
      "img": "https://cdn.metatft.com/file/metatft/items/da_warmogsarmor.png",
-     "perGame": 0.46,
-     "avgPlacement": 4.0278,
+     "perGame": 0.64,
+     "avgPlacement": 4.161,
      "bestOn": [
-      "Vi",
-      "Krug"
+      "Alistar",
+      "Hecarim"
      ]
     },
     {
-     "name": "Brawler Emblem",
-     "id": "DA_18_EmblemBrawler",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_18_emblembrawler.png",
-     "perGame": 0.4,
-     "avgPlacement": 4.1334,
+     "name": "Striker's Flail",
+     "id": "DA_StrikersFlail",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_strikersflail.png",
+     "perGame": 0.5,
+     "avgPlacement": 4.1297,
      "bestOn": [
-      "Master Yi",
-      "Rengar"
+      "Teemo",
+      "LeBlanc"
      ]
     },
     {
-     "name": "Hand Of Justice",
-     "id": "DA_HandOfJustice",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_handofjustice.png",
-     "perGame": 0.39,
-     "avgPlacement": 4.099,
+     "name": "Morellonomicon",
+     "id": "DA_Morellonomicon",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_morellonomicon.png",
+     "perGame": 0.47,
+     "avgPlacement": 4.03,
      "bestOn": [
-      "Rengar",
-      "Nidalee"
+      "Morgana",
+      "LeBlanc"
      ]
     },
     {
-     "name": "Evenshroud",
-     "id": "DA_Evenshroud",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_evenshroud.png",
-     "perGame": 0.38,
-     "avgPlacement": 3.954,
+     "name": "Rabadon's Deathcap",
+     "id": "DA_RabadonsDeathcap",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_rabadonsdeathcap.png",
+     "perGame": 0.43,
+     "avgPlacement": 3.95,
      "bestOn": [
-      "Vi",
-      "Krug"
+      "Teemo",
+      "LeBlanc"
+     ]
+    },
+    {
+     "name": "Spirit Visage",
+     "id": "DA_SpiritVisage",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_spiritvisage.png",
+     "perGame": 0.37,
+     "avgPlacement": 3.9979,
+     "bestOn": [
+      "Alistar",
+      "Hecarim"
+     ]
+    },
+    {
+     "name": "Adaptive Helm",
+     "id": "DA_AdaptiveHelm",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_adaptivehelm.png",
+     "perGame": 0.28,
+     "avgPlacement": 3.7701,
+     "bestOn": [
+      "Morgana",
+      "Sentinel"
      ]
     }
    ],
    "componentPriority": [
     {
-     "name": "Chain Vest",
-     "id": "DA_Component_ChainVest",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_chainvest.png",
-     "perGame": 3.35
-    },
-    {
-     "name": "Giant's Belt",
-     "id": "DA_Component_GiantsBelt",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_giantsbelt.png",
-     "perGame": 3.01
-    },
-    {
-     "name": "Recurve Bow",
-     "id": "DA_Component_RecurveBow",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
-     "perGame": 2.87
-    },
-    {
-     "name": "B.F. Sword",
-     "id": "DA_Component_BFSword",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_bfsword.png",
-     "perGame": 2.79
-    },
-    {
-     "name": "Negatron Cloak",
-     "id": "DA_Component_NegatronCloak",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_negatroncloak.png",
-     "perGame": 2.3
+     "name": "Tear Of The Goddess",
+     "id": "DA_Component_TearOfTheGoddess",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
+     "perGame": 3.64
     },
     {
      "name": "Needlessly Large Rod",
      "id": "DA_Component_NeedlesslyLargeRod",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_needlesslylargerod.png",
-     "perGame": 2.18
+     "perGame": 3.32
+    },
+    {
+     "name": "Giant's Belt",
+     "id": "DA_Component_GiantsBelt",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_giantsbelt.png",
+     "perGame": 3.07
+    },
+    {
+     "name": "Chain Vest",
+     "id": "DA_Component_ChainVest",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_chainvest.png",
+     "perGame": 2.57
     },
     {
      "name": "Sparring Gloves",
      "id": "DA_Component_SparringGloves",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_sparringgloves.png",
-     "perGame": 2.15
+     "perGame": 2.42
     },
     {
-     "name": "Tear Of The Goddess",
-     "id": "DA_Component_TearOfTheGoddess",
-     "img": "https://cdn.metatft.com/file/metatft/items/da_component_tearofthegoddess.png",
+     "name": "Negatron Cloak",
+     "id": "DA_Component_NegatronCloak",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_negatroncloak.png",
+     "perGame": 2.39
+    },
+    {
+     "name": "Recurve Bow",
+     "id": "DA_Component_RecurveBow",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_recurvebow.png",
      "perGame": 1.73
+    },
+    {
+     "name": "B.F. Sword",
+     "id": "DA_Component_BFSword",
+     "img": "https://cdn.metatft.com/file/metatft/items/da_component_bfsword.png",
+     "perGame": 1.67
     },
     {
      "name": "Frying Pan",
      "id": "DA_Component_FryingPan",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_fryingpan.png",
-     "perGame": 0.48
+     "perGame": 0.22
     },
     {
      "name": "Spatula",
      "id": "DA_Component_Spatula",
      "img": "https://cdn.metatft.com/file/metatft/items/da_component_spatula.png",
-     "perGame": 0.17
+     "perGame": 0.2
     }
    ],
    "firstCarousel": null,
-   "augments": {
-    "A": [
-     "Backup Bows",
-     "Band of Thieves",
-     "Boxing Lessons",
-     "Component Buffet",
-     "Feeling Lucky",
-     "Group Hug I",
-     "Iron Assets",
-     "Missed Connections",
-     "Patience Is A Virtue",
-     "Residual Magic",
-     "Residual Magic +",
-     "Residual Magic ++",
-     "Silver Destiny",
-     "Silver Destiny+",
-     "Booster Pack",
-     "Booster Pack+",
-     "Booster Pack++",
-     "Duo Queue",
-     "Gold Destiny",
-     "Gold Destiny+",
-     "Magic Roll",
-     "Money Hungry",
-     "Money Hungry+",
-     "Replication",
-     "Speedy Double Kill",
-     "Trade Sector",
-     "Trade Sector+",
-     "Baron's Lair",
-     "Buried Treasures III",
-     "Call To Chaos",
-     "Commerce Core",
-     "Comeback Story",
-     "Golden Gamble",
-     "Golden Gamble+",
-     "Golden Gamble++",
-     "Money Monsoon",
-     "Prismatic Ticket"
-    ],
-    "B": [
-     "Crafted Crafting"
-    ],
-    "S": [
-     "Branching Out",
-     "Branching Out Plus",
-     "Champ Delivery+",
-     "Latent Forge",
-     "Partial Ascension",
-     "Rolling For Days",
-     "Silver Destiny++",
-     "Slightly Magic Roll",
-     "Small Grab Bag",
-     "Team Building",
-     "Wisp Rebate",
-     "Wisp Rebate+",
-     "Ascension",
-     "Big Grab Bag",
-     "Cooking Pot",
-     "Exclusive Customization",
-     "Gain 21 Gold",
-     "Heroic Grab Bag",
-     "Heroic Grab Bag+",
-     "Heroic Grab Bag++",
-     "Portable Forge",
-     "Salvage Bin",
-     "Salvage Bin+",
-     "Spreading Roots",
-     "Spreading Roots+",
-     "Forged In Strength",
-     "Living Forge",
-     "Nesting Anvils",
-     "Nesting Anvils+",
-     "Sweet Treats"
-    ]
-   },
+   "augments": null,
    "proTips": {
-    "title": "MASTER YI > Adaptor > Lvl 7 reroll",
-    "notes": "- PRIMAL: Tank (green Turtle one);\n- RENGAR farms us gold so prioritise item / combat augments early for winstreak;",
-    "url": "https://www.metatft.com/pro-comps?comp=8c51379e-a96a-4767-bf58-8b90bc75925b"
+    "title": "TEEMO > Invoker > Lvl 6 reroll",
+    "notes": "- best to play from reroll augments like Trade Sector;",
+    "url": "https://www.metatft.com/pro-comps?comp=a78d9f18-e260-4b1a-a481-8591b84b0822"
    },
    "trend": [
     {
-     "day": "2026-11-05",
-     "avgPlacement": 4.3608,
-     "games": 2930
-    },
-    {
      "day": "2026-11-06",
-     "avgPlacement": 4.2951,
-     "games": 11588
+     "avgPlacement": 4.3413,
+     "games": 2980
     },
     {
      "day": "2026-11-07",
-     "avgPlacement": 4.3146,
-     "games": 11480
+     "avgPlacement": 4.3056,
+     "games": 10684
     },
     {
      "day": "2026-11-08",
-     "avgPlacement": 4.3011,
-     "games": 11783
+     "avgPlacement": 4.3172,
+     "games": 10443
     },
     {
      "day": "2026-11-09",
-     "avgPlacement": 4.2872,
-     "games": 10740
+     "avgPlacement": 4.2825,
+     "games": 9870
     },
     {
      "day": "2026-11-10",
-     "avgPlacement": 4.264,
-     "games": 10404
+     "avgPlacement": 4.2884,
+     "games": 9673
     },
     {
      "day": "2026-11-11",
-     "avgPlacement": 4.3359,
-     "games": 10160
+     "avgPlacement": 4.3051,
+     "games": 9489
     },
     {
      "day": "2026-11-12",
-     "avgPlacement": 4.288,
-     "games": 7216
+     "avgPlacement": 4.3064,
+     "games": 9376
+    },
+    {
+     "day": "2026-11-13",
+     "avgPlacement": 4.2971,
+     "games": 6523
     }
    ]
   }
@@ -4967,9 +4820,9 @@
    "id": "426007",
    "name": "Riftbeast Brambleback",
    "tier": "S",
-   "avgPlacement": 4.162,
-   "playRate": 7.32,
-   "games": 83606,
+   "avgPlacement": 4.157,
+   "playRate": 7.3,
+   "games": 81923,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -4979,9 +4832,9 @@
    "id": "426029",
    "name": "Adaptor Master Yi",
    "tier": "S",
-   "avgPlacement": 4.194,
-   "playRate": 1.48,
-   "games": 16863,
+   "avgPlacement": 4.166,
+   "playRate": 1.47,
+   "games": 16476,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -4991,9 +4844,9 @@
    "id": "426000",
    "name": "Defender Rengar",
    "tier": "S",
-   "avgPlacement": 4.209,
-   "playRate": 0.66,
-   "games": 7502,
+   "avgPlacement": 4.23,
+   "playRate": 0.65,
+   "games": 7274,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -5003,9 +4856,9 @@
    "id": "426008",
    "name": "Vanguard Alune",
    "tier": "S",
-   "avgPlacement": 4.24,
-   "playRate": 4.42,
-   "games": 50417,
+   "avgPlacement": 4.231,
+   "playRate": 4.52,
+   "games": 50670,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 9",
@@ -5015,45 +4868,45 @@
    "id": "426002",
    "name": "Elderwood Ezreal Aphelios",
    "tier": "A",
-   "avgPlacement": 4.271,
-   "playRate": 3.62,
-   "games": 41335,
+   "avgPlacement": 4.27,
+   "playRate": 3.56,
+   "games": 39899,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
    "difficulty": "Medium"
   },
   {
-   "id": "426022",
-   "name": "Adaptor Master Yi Rengar",
-   "tier": "A",
-   "avgPlacement": 4.294,
-   "playRate": 2.68,
-   "games": 30551,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "lvl 7",
-   "difficulty": "Medium"
-  },
-  {
    "id": "426006",
    "name": "Invoker Teemo Alistar",
    "tier": "A",
-   "avgPlacement": 4.298,
+   "avgPlacement": 4.304,
    "playRate": 2.51,
-   "games": 28617,
+   "games": 28128,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
    "difficulty": "Easy"
   },
   {
+   "id": "426022",
+   "name": "Adaptor Master Yi Rengar",
+   "tier": "A",
+   "avgPlacement": 4.314,
+   "playRate": 2.63,
+   "games": 29506,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
    "id": "426027",
    "name": "Vanguard Morgana",
    "tier": "A",
-   "avgPlacement": 4.32,
-   "playRate": 2.09,
-   "games": 23814,
+   "avgPlacement": 4.324,
+   "playRate": 2.12,
+   "games": 23835,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 9",
@@ -5063,9 +4916,9 @@
    "id": "426003",
    "name": "Flora Fatalis Azir",
    "tier": "A",
-   "avgPlacement": 4.338,
-   "playRate": 2.06,
-   "games": 23575,
+   "avgPlacement": 4.335,
+   "playRate": 2.05,
+   "games": 22998,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -5075,45 +4928,45 @@
    "id": "426023",
    "name": "Ravager Warwick",
    "tier": "A",
-   "avgPlacement": 4.343,
-   "playRate": 0.69,
-   "games": 7876,
+   "avgPlacement": 4.34,
+   "playRate": 0.7,
+   "games": 7803,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
    "difficulty": "Medium"
   },
   {
-   "id": "426014",
-   "name": "Spellweaver Veigar",
-   "tier": "A",
-   "avgPlacement": 4.343,
-   "playRate": 4.16,
-   "games": 47523,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "lvl 5",
-   "difficulty": "Hard"
-  },
-  {
    "id": "426033",
    "name": "Rapidfire Mama Beak",
    "tier": "A",
-   "avgPlacement": 4.381,
-   "playRate": 1.01,
-   "games": 11528,
+   "avgPlacement": 4.354,
+   "playRate": 1.06,
+   "games": 11945,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
    "difficulty": "Medium"
   },
   {
+   "id": "426014",
+   "name": "Spellweaver Veigar",
+   "tier": "A",
+   "avgPlacement": 4.357,
+   "playRate": 4.18,
+   "games": 46896,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Hard"
+  },
+  {
    "id": "426035",
    "name": "Blossom Karma",
    "tier": "A",
-   "avgPlacement": 4.41,
-   "playRate": 6.05,
-   "games": 69081,
+   "avgPlacement": 4.405,
+   "playRate": 6.07,
+   "games": 68170,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 5",
@@ -5123,21 +4976,33 @@
    "id": "426010",
    "name": "Invoker Ahri",
    "tier": "A",
-   "avgPlacement": 4.412,
-   "playRate": 4.1,
-   "games": 46810,
+   "avgPlacement": 4.41,
+   "playRate": 4.06,
+   "games": 45535,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
    "difficulty": "Hard"
   },
   {
+   "id": "426015",
+   "name": "Juggernaut Zyra",
+   "tier": "A",
+   "avgPlacement": 4.426,
+   "playRate": 1.03,
+   "games": 11565,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
    "id": "426011",
    "name": "Elderwood Draven",
    "tier": "A",
-   "avgPlacement": 4.431,
-   "playRate": 5.08,
-   "games": 58045,
+   "avgPlacement": 4.434,
+   "playRate": 5.04,
+   "games": 56518,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 9",
@@ -5147,33 +5012,21 @@
    "id": "426030",
    "name": "Inferno Draven",
    "tier": "A",
-   "avgPlacement": 4.439,
-   "playRate": 12.31,
-   "games": 140583,
+   "avgPlacement": 4.444,
+   "playRate": 12.54,
+   "games": 140693,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 9",
    "difficulty": "Hard"
   },
   {
-   "id": "426015",
-   "name": "Juggernaut Zyra",
-   "tier": "A",
-   "avgPlacement": 4.453,
-   "playRate": 1.04,
-   "games": 11923,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Medium"
-  },
-  {
    "id": "426013",
    "name": "Invoker Teemo",
    "tier": "A",
-   "avgPlacement": 4.47,
-   "playRate": 0.2,
-   "games": 2313,
+   "avgPlacement": 4.454,
+   "playRate": 0.21,
+   "games": 2324,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
@@ -5183,33 +5036,33 @@
    "id": "426016",
    "name": "Hunter Sivir",
    "tier": "A",
-   "avgPlacement": 4.482,
-   "playRate": 1.18,
-   "games": 13477,
+   "avgPlacement": 4.461,
+   "playRate": 1.17,
+   "games": 13165,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
    "difficulty": "Medium"
   },
   {
-   "id": "426021",
-   "name": "Rapidfire Kayle",
+   "id": "426036",
+   "name": "Elderwood Ezreal",
    "tier": "A",
-   "avgPlacement": 4.489,
-   "playRate": 0.76,
-   "games": 8675,
+   "avgPlacement": 4.5,
+   "playRate": 2.26,
+   "games": 25377,
    "top4Rate": null,
    "winRate": null,
-   "levelling": "lvl 6",
+   "levelling": "Fast 8",
    "difficulty": "Easy"
   },
   {
    "id": "426005",
    "name": "Executioner Sett",
-   "tier": "A",
-   "avgPlacement": 4.492,
-   "playRate": 1.23,
-   "games": 13990,
+   "tier": "B",
+   "avgPlacement": 4.504,
+   "playRate": 1.19,
+   "games": 13410,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5218,22 +5071,10 @@
   {
    "id": "426038",
    "name": "Blossom Ahri",
-   "tier": "A",
-   "avgPlacement": 4.493,
-   "playRate": 0.96,
-   "games": 10971,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Easy"
-  },
-  {
-   "id": "426036",
-   "name": "Elderwood Ezreal",
    "tier": "B",
-   "avgPlacement": 4.503,
-   "playRate": 2.28,
-   "games": 25992,
+   "avgPlacement": 4.506,
+   "playRate": 0.98,
+   "games": 11024,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5243,9 +5084,45 @@
    "id": "426004",
    "name": "Lunar Nidalee",
    "tier": "B",
-   "avgPlacement": 4.522,
-   "playRate": 3.67,
-   "games": 41851,
+   "avgPlacement": 4.509,
+   "playRate": 3.59,
+   "games": 40240,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "426021",
+   "name": "Rapidfire Kayle",
+   "tier": "B",
+   "avgPlacement": 4.529,
+   "playRate": 0.75,
+   "games": 8464,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "426045",
+   "name": "Primal Nidalee",
+   "tier": "B",
+   "avgPlacement": 4.548,
+   "playRate": 1.65,
+   "games": 18531,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Fast 8",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "426028",
+   "name": "Executioner Malphite",
+   "tier": "B",
+   "avgPlacement": 4.555,
+   "playRate": 2.4,
+   "games": 26962,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5255,45 +5132,21 @@
    "id": "426009",
    "name": "Invoker Sentinel",
    "tier": "B",
-   "avgPlacement": 4.562,
-   "playRate": 0.37,
-   "games": 4263,
+   "avgPlacement": 4.571,
+   "playRate": 0.38,
+   "games": 4251,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
    "difficulty": "Easy"
   },
   {
-   "id": "426028",
-   "name": "Executioner Malphite",
-   "tier": "B",
-   "avgPlacement": 4.565,
-   "playRate": 2.41,
-   "games": 27559,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Medium"
-  },
-  {
-   "id": "426045",
-   "name": "Primal Nidalee",
-   "tier": "B",
-   "avgPlacement": 4.582,
-   "playRate": 1.66,
-   "games": 18949,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Medium"
-  },
-  {
    "id": "426048",
    "name": "Fae Tristana Sivir",
    "tier": "B",
-   "avgPlacement": 4.585,
-   "playRate": 1.55,
-   "games": 17684,
+   "avgPlacement": 4.572,
+   "playRate": 1.54,
+   "games": 17291,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -5303,9 +5156,9 @@
    "id": "426032",
    "name": "Juggernaut Zyra Amumu",
    "tier": "B",
-   "avgPlacement": 4.605,
-   "playRate": 0.95,
-   "games": 10887,
+   "avgPlacement": 4.624,
+   "playRate": 0.94,
+   "games": 10578,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5315,9 +5168,9 @@
    "id": "426039",
    "name": "Juggernaut Caitlyn",
    "tier": "B",
-   "avgPlacement": 4.612,
-   "playRate": 0.75,
-   "games": 8573,
+   "avgPlacement": 4.629,
+   "playRate": 0.8,
+   "games": 8929,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
@@ -5327,9 +5180,9 @@
    "id": "426020",
    "name": "Blossom Ahri Zyra",
    "tier": "B",
-   "avgPlacement": 4.632,
-   "playRate": 3.44,
-   "games": 39258,
+   "avgPlacement": 4.638,
+   "playRate": 3.41,
+   "games": 38244,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5339,57 +5192,69 @@
    "id": "426025",
    "name": "Inferno Akali",
    "tier": "B",
-   "avgPlacement": 4.635,
-   "playRate": 1.92,
-   "games": 21937,
+   "avgPlacement": 4.641,
+   "playRate": 1.9,
+   "games": 21307,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 5",
    "difficulty": "Hard"
   },
   {
-   "id": "426037",
-   "name": "Ravager Brambleback",
+   "id": "426017",
+   "name": "Vanguard Aphelios",
    "tier": "B",
-   "avgPlacement": 4.647,
-   "playRate": 0.12,
-   "games": 1415,
+   "avgPlacement": 4.643,
+   "playRate": 0.58,
+   "games": 6534,
    "top4Rate": null,
    "winRate": null,
-   "levelling": "Standard",
+   "levelling": "Fast 8",
    "difficulty": "Easy"
   },
   {
    "id": "426040",
    "name": "Juggernaut Sivir",
    "tier": "B",
-   "avgPlacement": 4.654,
+   "avgPlacement": 4.657,
    "playRate": 2.45,
-   "games": 27950,
+   "games": 27485,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
    "difficulty": "Medium"
   },
   {
-   "id": "426017",
-   "name": "Vanguard Aphelios",
+   "id": "426037",
+   "name": "Ravager Brambleback",
    "tier": "B",
-   "avgPlacement": 4.657,
-   "playRate": 0.59,
-   "games": 6731,
+   "avgPlacement": 4.689,
+   "playRate": 0.12,
+   "games": 1338,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "Standard",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "426001",
+   "name": "Rapidfire Aphelios",
+   "tier": "B",
+   "avgPlacement": 4.714,
+   "playRate": 0.44,
+   "games": 4900,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
-   "difficulty": "Easy"
+   "difficulty": "Medium"
   },
   {
    "id": "426041",
    "name": "Invoker Nidalee",
    "tier": "B",
-   "avgPlacement": 4.696,
+   "avgPlacement": 4.72,
    "playRate": 0.73,
-   "games": 8310,
+   "games": 8150,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5398,70 +5263,46 @@
   {
    "id": "426026",
    "name": "Lunar Lillia",
-   "tier": "B",
-   "avgPlacement": 4.736,
-   "playRate": 0.58,
-   "games": 6600,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Easy"
-  },
-  {
-   "id": "426049",
-   "name": "Blackthorn Veigar",
-   "tier": "B",
-   "avgPlacement": 4.736,
-   "playRate": 0.1,
-   "games": 1156,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "lvl 5",
-   "difficulty": "Medium"
-  },
-  {
-   "id": "426001",
-   "name": "Rapidfire Aphelios",
-   "tier": "B",
-   "avgPlacement": 4.746,
-   "playRate": 0.44,
-   "games": 5078,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Medium"
-  },
-  {
-   "id": "426018",
-   "name": "Defender Cassiopeia",
    "tier": "C",
-   "avgPlacement": 4.795,
-   "playRate": 0.93,
-   "games": 10571,
+   "avgPlacement": 4.777,
+   "playRate": 0.59,
+   "games": 6579,
    "top4Rate": null,
    "winRate": null,
-   "levelling": "lvl 7",
+   "levelling": "Fast 8",
    "difficulty": "Easy"
   },
   {
    "id": "426031",
    "name": "Rapidfire Xayah",
    "tier": "C",
-   "avgPlacement": 4.806,
-   "playRate": 1.71,
-   "games": 19512,
+   "avgPlacement": 4.782,
+   "playRate": 1.69,
+   "games": 18952,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 5",
    "difficulty": "Medium"
   },
   {
+   "id": "426018",
+   "name": "Defender Cassiopeia",
+   "tier": "C",
+   "avgPlacement": 4.787,
+   "playRate": 0.93,
+   "games": 10404,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
    "id": "426046",
    "name": "Blossom Sett",
    "tier": "C",
-   "avgPlacement": 4.81,
-   "playRate": 0.32,
-   "games": 3623,
+   "avgPlacement": 4.818,
+   "playRate": 0.31,
+   "games": 3519,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5471,45 +5312,57 @@
    "id": "426042",
    "name": "Fae Tristana",
    "tier": "C",
-   "avgPlacement": 4.821,
-   "playRate": 0.86,
-   "games": 9817,
+   "avgPlacement": 4.82,
+   "playRate": 0.84,
+   "games": 9449,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
    "difficulty": "Medium"
   },
   {
-   "id": "426034",
-   "name": "Executioner Azir",
-   "tier": "C",
-   "avgPlacement": 4.909,
-   "playRate": 0.14,
-   "games": 1585,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "lvl 7",
-   "difficulty": "Easy"
-  },
-  {
    "id": "426019",
    "name": "Blackthorn Warwick",
    "tier": "C",
-   "avgPlacement": 4.913,
+   "avgPlacement": 4.878,
    "playRate": 0.13,
-   "games": 1477,
+   "games": 1428,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
    "difficulty": "Medium"
   },
   {
+   "id": "426049",
+   "name": "Blackthorn Veigar",
+   "tier": "C",
+   "avgPlacement": 4.885,
+   "playRate": 0.1,
+   "games": 1071,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 5",
+   "difficulty": "Medium"
+  },
+  {
+   "id": "426034",
+   "name": "Executioner Azir",
+   "tier": "C",
+   "avgPlacement": 4.89,
+   "playRate": 0.14,
+   "games": 1555,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Medium"
+  },
+  {
    "id": "426012",
    "name": "Executioner Hecarim",
    "tier": "C",
-   "avgPlacement": 4.939,
-   "playRate": 0.59,
-   "games": 6711,
+   "avgPlacement": 4.952,
+   "playRate": 0.57,
+   "games": 6401,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -5518,22 +5371,22 @@
   {
    "id": "426053",
    "name": "Lunar Aphelios",
-   "tier": "C",
-   "avgPlacement": 4.997,
-   "playRate": 0.48,
-   "games": 5452,
+   "tier": "D",
+   "avgPlacement": 5.001,
+   "playRate": 0.47,
+   "games": 5308,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 9",
-   "difficulty": "Hard"
+   "difficulty": "Easy"
   },
   {
    "id": "426044",
    "name": "Sprykin Veigar",
    "tier": "D",
-   "avgPlacement": 5.027,
-   "playRate": 0.36,
-   "games": 4087,
+   "avgPlacement": 5.016,
+   "playRate": 0.35,
+   "games": 3957,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 5",
@@ -5543,105 +5396,105 @@
    "id": "426050",
    "name": "Flora Fatalis Soraka",
    "tier": "D",
-   "avgPlacement": 5.169,
+   "avgPlacement": 5.179,
    "playRate": 0.3,
-   "games": 3469,
+   "games": 3399,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "426024",
+   "name": "Rival Kha'Zix",
+   "tier": "D",
+   "avgPlacement": 5.186,
+   "playRate": 0.39,
+   "games": 4426,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
    "difficulty": "Easy"
   },
   {
    "id": "426052",
    "name": "Spellweaver Ahri",
    "tier": "D",
-   "avgPlacement": 5.183,
+   "avgPlacement": 5.208,
    "playRate": 0.4,
-   "games": 4520,
+   "games": 4476,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
    "difficulty": "Medium"
-  },
-  {
-   "id": "426043",
-   "name": "Juggernaut Zyra Azir",
-   "tier": "D",
-   "avgPlacement": 5.218,
-   "playRate": 0.15,
-   "games": 1681,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "Fast 8",
-   "difficulty": "Medium"
-  },
-  {
-   "id": "426024",
-   "name": "Rival Kha'Zix",
-   "tier": "D",
-   "avgPlacement": 5.22,
-   "playRate": 0.4,
-   "games": 4524,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "lvl 7",
-   "difficulty": "Easy"
   },
   {
    "id": "426047",
    "name": "Sprykin Rammus",
    "tier": "D",
-   "avgPlacement": 5.243,
+   "avgPlacement": 5.216,
    "playRate": 0.12,
-   "games": 1398,
+   "games": 1395,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
    "difficulty": "Easy"
   },
   {
-   "id": "426056",
-   "name": "Blackthorn Azir",
+   "id": "426043",
+   "name": "Juggernaut Zyra Azir",
    "tier": "D",
-   "avgPlacement": 5.523,
-   "playRate": 0.13,
-   "games": 1448,
+   "avgPlacement": 5.24,
+   "playRate": 0.14,
+   "games": 1603,
    "top4Rate": null,
    "winRate": null,
-   "levelling": "lvl 7",
-   "difficulty": "Easy"
-  },
-  {
-   "id": "426051",
-   "name": "Riftbeast Scuttlecrab",
-   "tier": "D",
-   "avgPlacement": 5.59,
-   "playRate": 0.21,
-   "games": 2428,
-   "top4Rate": null,
-   "winRate": null,
-   "levelling": "lvl 6",
+   "levelling": "Fast 8",
    "difficulty": "Easy"
   },
   {
    "id": "426058",
    "name": "Fae Xayah",
    "tier": "D",
-   "avgPlacement": 5.6,
-   "playRate": 0.29,
-   "games": 3364,
+   "avgPlacement": 5.577,
+   "playRate": 0.3,
+   "games": 3320,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 5",
    "difficulty": "Easy"
   },
   {
+   "id": "426051",
+   "name": "Riftbeast Scuttlecrab",
+   "tier": "D",
+   "avgPlacement": 5.578,
+   "playRate": 0.21,
+   "games": 2372,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 6",
+   "difficulty": "Easy"
+  },
+  {
+   "id": "426056",
+   "name": "Blackthorn Azir",
+   "tier": "D",
+   "avgPlacement": 5.586,
+   "playRate": 0.13,
+   "games": 1489,
+   "top4Rate": null,
+   "winRate": null,
+   "levelling": "lvl 7",
+   "difficulty": "Easy"
+  },
+  {
    "id": "426055",
    "name": "Inferno Amumu",
    "tier": "D",
-   "avgPlacement": 5.674,
+   "avgPlacement": 5.759,
    "playRate": 0.16,
-   "games": 1809,
+   "games": 1835,
    "top4Rate": null,
    "winRate": null,
    "levelling": "Fast 8",
@@ -5651,9 +5504,9 @@
    "id": "426054",
    "name": "Coven Morgana",
    "tier": "D",
-   "avgPlacement": 5.782,
-   "playRate": 2.4,
-   "games": 27426,
+   "avgPlacement": 5.791,
+   "playRate": 2.44,
+   "games": 27395,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
@@ -5663,9 +5516,9 @@
    "id": "426057",
    "name": "Rival Kha'Zix Fiddlesticks",
    "tier": "D",
-   "avgPlacement": 6.222,
-   "playRate": 0.04,
-   "games": 499,
+   "avgPlacement": 6.298,
+   "playRate": 0.05,
+   "games": 507,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 7",
@@ -5675,9 +5528,9 @@
    "id": "426059",
    "name": "Vanguard Elise",
    "tier": "D",
-   "avgPlacement": 6.631,
+   "avgPlacement": 6.628,
    "playRate": 0.27,
-   "games": 3122,
+   "games": 3075,
    "top4Rate": null,
    "winRate": null,
    "levelling": "lvl 6",
