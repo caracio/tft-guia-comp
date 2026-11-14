@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-13T16:53:07+00:00",
+ "fetched_at": "2026-11-14T15:27:21+00:00",
  "set": "TFTSet18",
  "set_name": "Enchanted Wilds",
  "source": {
@@ -2328,7 +2328,8 @@
    ],
    "cost": 5,
    "traits": [
-    "Greenfather"
+    "Greenfather",
+    "Elderwood"
    ],
    "shopUnit": true,
    "img": "https://cdn.metatft.com/file/metatft/champions/tft18_ivern.png",
@@ -2385,7 +2386,8 @@
    "cost": 5,
    "traits": [
     "Inferno",
-    "Executioner"
+    "Executioner",
+    "Sprykin"
    ],
    "shopUnit": true,
    "img": "https://cdn.metatft.com/file/metatft/champions/tft18_kennen.png",
@@ -2478,7 +2480,8 @@
    "cost": 3,
    "traits": [
     "Riftbeast",
-    "Brawler"
+    "Brawler",
+    "Summoner"
    ],
    "shopUnit": true,
    "img": "https://cdn.metatft.com/file/metatft/champions/tft18_krug.png",
