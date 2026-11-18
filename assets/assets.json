@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-17T18:01:07+00:00",
+ "fetched_at": "2026-11-18T17:42:27+00:00",
  "set": "TFTSet18",
  "set_name": "Enchanted Wilds",
  "source": {
@@ -19,8 +19,8 @@
   "traits": 36,
   "augments": 261,
   "charms": 376,
-  "ok": 885,
-  "missing": 35
+  "ok": 890,
+  "missing": 30
  },
  "byName": {
   "units": {
@@ -709,10 +709,10 @@
    "DA_BoosterPackPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_boosterpackplusplus.png",
    "Boxing Lessons": "https://cdn.metatft.com/file/metatft/augments/da_boxinglessons.png",
    "DA_BoxingLessons": "https://cdn.metatft.com/file/metatft/augments/da_boxinglessons.png",
-   "Branching Out": null,
-   "DA_BranchingOut": null,
-   "Branching Out+": null,
-   "DA_BranchingOutPlus": null,
+   "Branching Out": "https://cdn.metatft.com/file/metatft/augments/da_branchingout.png",
+   "DA_BranchingOut": "https://cdn.metatft.com/file/metatft/augments/da_branchingout.png",
+   "Branching Out+": "https://cdn.metatft.com/file/metatft/augments/da_branchingoutplus.png",
+   "DA_BranchingOutPlus": "https://cdn.metatft.com/file/metatft/augments/da_branchingoutplus.png",
    "Bronze For Life I": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifei.png",
    "DA_BronzeForLifeI": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifei.png",
    "Bronze For Life II": "https://cdn.metatft.com/file/metatft/augments/da_bronzeforlifeii.png",
@@ -819,8 +819,8 @@
    "DA_GlassCannon_Gold": "https://cdn.metatft.com/file/metatft/augments/da_glasscannon_gold.png",
    "Going Long": "https://cdn.metatft.com/file/metatft/augments/da_goinglong.png",
    "DA_GoingLong": "https://cdn.metatft.com/file/metatft/augments/da_goinglong.png",
-   "Good For Something I": null,
-   "DA_GoodForSomethingI": null,
+   "Good For Something I": "https://cdn.metatft.com/file/metatft/augments/da_goodforsomethingi.png",
+   "DA_GoodForSomethingI": "https://cdn.metatft.com/file/metatft/augments/da_goodforsomethingi.png",
    "Group Hug I": "https://cdn.metatft.com/file/metatft/augments/da_grouphugi.png",
    "DA_GroupHugI": "https://cdn.metatft.com/file/metatft/augments/da_grouphugi.png",
    "Group Hug II": "https://cdn.metatft.com/file/metatft/augments/da_grouphugii.png",
@@ -883,8 +883,8 @@
    "DA_NestingDollsPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_nestingdollsplusplus.png",
    "NO SCOUT NO PIVOT": "https://cdn.metatft.com/file/metatft/augments/da_noscoutnopivot.png",
    "DA_NoScoutNoPivot": "https://cdn.metatft.com/file/metatft/augments/da_noscoutnopivot.png",
-   "One, Two, Five!": null,
-   "DA_OneTwoFive": null,
+   "One, Two, Five!": "https://cdn.metatft.com/file/metatft/augments/da_onetwofive.png",
+   "DA_OneTwoFive": "https://cdn.metatft.com/file/metatft/augments/da_onetwofive.png",
    "Pandora's Bench": "https://cdn.metatft.com/file/metatft/augments/da_pandorasbench.png",
    "DA_PandorasBench": "https://cdn.metatft.com/file/metatft/augments/da_pandorasbench.png",
    "Patience Is A Virtue": "https://cdn.metatft.com/file/metatft/augments/da_patienceisavirtue.png",
@@ -1062,8 +1062,8 @@
    "DA_PandorasItemsI": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsi.png",
    "Pandora's Items II": null,
    "DA_PandorasItemsIIMinus": null,
-   "Pandora's Items II+": null,
-   "DA_PandorasItemsIIPlus": null,
+   "Pandora's Items II+": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplus.png",
+   "DA_PandorasItemsIIPlus": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplus.png",
    "Pandora's Items II++": null,
    "DA_PandorasItemsIIPlusPlus": null,
    "Pandora's Items III": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiii.png",
@@ -5752,20 +5752,20 @@
    "apiName": "DA_BranchingOut",
    "rarity": "Silver",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_branchingout.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_branchingout.png",
+   "file": "augments/da_branchingout.png",
+   "status": 200
   },
   {
    "name": "Branching Out+",
    "apiName": "DA_BranchingOutPlus",
    "rarity": "Silver",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_branchingoutplus.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_branchingoutplus.png",
+   "file": "augments/da_branchingoutplus.png",
+   "status": 200
   },
   {
    "name": "Bronze For Life I",
@@ -6428,10 +6428,10 @@
    "apiName": "DA_GoodForSomethingI",
    "rarity": "Silver",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_goodforsomethingi.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_goodforsomethingi.png",
+   "file": "augments/da_goodforsomethingi.png",
+   "status": 200
   },
   {
    "name": "Group Hug I",
@@ -6835,10 +6835,10 @@
    "apiName": "DA_OneTwoFive",
    "rarity": "Silver",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_onetwofive.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_onetwofive.png",
+   "file": "augments/da_onetwofive.png",
+   "status": 200
   },
   {
    "name": "Pandora's Bench",
@@ -7968,10 +7968,10 @@
    "apiName": "DA_PandorasItemsIIPlus",
    "rarity": "Gold",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplus.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplus.png",
+   "file": "augments/da_pandorasitemsiiplus.png",
+   "status": 200
   },
   {
    "name": "Pandora's Items II++",
