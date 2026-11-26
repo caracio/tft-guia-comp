@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T18:55:22+00:00",
+ "fetched_at": "2026-11-26T18:45:16+00:00",
  "set": "TFTSet18",
  "set_name": "Enchanted Wilds",
  "source": {
@@ -19,8 +19,8 @@
   "traits": 36,
   "augments": 261,
   "charms": 376,
-  "ok": 890,
-  "missing": 30
+  "ok": 893,
+  "missing": 27
  },
  "byName": {
   "units": {
@@ -1060,12 +1060,12 @@
    "DA_OneBuffTwoBuff": "https://cdn.metatft.com/file/metatft/augments/da_onebufftwobuff.png",
    "Pandora's Items I": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsi.png",
    "DA_PandorasItemsI": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsi.png",
-   "Pandora's Items II": null,
-   "DA_PandorasItemsIIMinus": null,
+   "Pandora's Items II": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiminus.png",
+   "DA_PandorasItemsIIMinus": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiminus.png",
    "Pandora's Items II+": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplus.png",
    "DA_PandorasItemsIIPlus": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplus.png",
-   "Pandora's Items II++": null,
-   "DA_PandorasItemsIIPlusPlus": null,
+   "Pandora's Items II++": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplusplus.png",
+   "DA_PandorasItemsIIPlusPlus": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplusplus.png",
    "Pandora's Items III": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiii.png",
    "DA_PandorasItemsIII": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiii.png",
    "Pilfer": "https://cdn.metatft.com/file/metatft/augments/da_pilfer.png",
@@ -1142,8 +1142,8 @@
    "DA_WeStickTogether": "https://cdn.metatft.com/file/metatft/augments/da_westicktogether.png",
    "Woven Magic": "https://cdn.metatft.com/file/metatft/augments/da_wovenmagic.png",
    "DA_WovenMagic": "https://cdn.metatft.com/file/metatft/augments/da_wovenmagic.png",
-   "Big Grab Bag": null,
-   "DA_BigGrabBag": null,
+   "Big Grab Bag": "https://cdn.metatft.com/file/metatft/augments/da_biggrabbag.png",
+   "DA_BigGrabBag": "https://cdn.metatft.com/file/metatft/augments/da_biggrabbag.png",
    "Duo Queue": "https://cdn.metatft.com/file/metatft/augments/da_18_duoqueue.png",
    "DA_18_DuoQueue": "https://cdn.metatft.com/file/metatft/augments/da_18_duoqueue.png",
    "Ones Two Three": "https://cdn.metatft.com/file/metatft/augments/da_18_onestwosthree.png",
@@ -7958,10 +7958,10 @@
    "apiName": "DA_PandorasItemsIIMinus",
    "rarity": "Gold",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiminus.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiminus.png",
+   "file": "augments/da_pandorasitemsiiminus.png",
+   "status": 200
   },
   {
    "name": "Pandora's Items II+",
@@ -7978,10 +7978,10 @@
    "apiName": "DA_PandorasItemsIIPlusPlus",
    "rarity": "Gold",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplusplus.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_pandorasitemsiiplusplus.png",
+   "file": "augments/da_pandorasitemsiiplusplus.png",
+   "status": 200
   },
   {
    "name": "Pandora's Items III",
@@ -8480,10 +8480,10 @@
    "apiName": "DA_BigGrabBag",
    "rarity": "Gold",
    "tags": [],
-   "img": null,
-   "thumb": null,
-   "file": null,
-   "status": 404
+   "img": "https://cdn.metatft.com/file/metatft/augments/da_biggrabbag.png",
+   "thumb": "https://cdn.metatft.com/cdn-cgi/image/width=48,height=48,format=auto/https://cdn.metatft.com/file/metatft/augments/da_biggrabbag.png",
+   "file": "augments/da_biggrabbag.png",
+   "status": 200
   },
   {
    "name": "Duo Queue",
